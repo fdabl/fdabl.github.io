@@ -582,8 +582,7 @@ which is visualized in the Figure on the left. Intuitively, the smaller the erro
 
 
 ## Conclusion
-In this blog post, we have discussed the mother of all curve fitting problems --- fitting a straight line to data points --- in great detail. On this journey, we have met the method of least squares, a pillar of statistical thinking. We have seen how Gauss arrived at "his" distribution, and how Laplace gave it a beautiful justification in terms of the central limit theorem. With this, it was only a small step towards linear regression, one of the most important tool in statistics and machine learning.
-
+In this blog post, we have discussed the mother of all curve fitting problems --- fitting a straight line to data points --- in great detail. On this journey, we have met the method of least squares, a pillar of statistical thinking. We have seen how Gauss arrived at "his" distribution, and how Laplace gave it a beautiful justification in terms of the central limit theorem. With this, it was only a small step towards linear regression, one of the most important tools in statistics and machine learning.
 
 ---
 *I would like to thank Don van den Bergh and Jonas Haslbeck for helpful comments on this blogpost.*

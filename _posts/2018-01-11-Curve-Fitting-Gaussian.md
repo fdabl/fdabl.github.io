@@ -26,7 +26,7 @@ $$
 $$
  
 <div style= "float: left; padding: 10px 10px 10px 0px;">
-<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-1-1.png" title="*Figure 1*. Trying to fit lines with only one point (underdetermined)." alt="*Figure 1*. Trying to fit lines with only one point (underdetermined)." style="display: block; margin: auto auto auto 0;" />
+<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-1-1.png" title="Fitting a line with only one point (underdetermined)." alt="Fitting a line with only one point (underdetermined)." style="display: block; margin: auto auto auto 0;" />
 </div>
 an equation with two unknowns. We call this system of equations *underdetermined* because we cannot uniquely solve for $b_0$ and $b_1$, but will have a number of solutions all for which $b_1 = 2 - b_0$; see Figure 1 on the left. However, if we add another point $P_2 = (3, 1)$, the resulting system of equations becomes
  
@@ -40,7 +40,7 @@ $$
 We have two equations in two unknowns, and this is *determined* or *identified*: there is a unique solution for $b_0$ and $b_1$. After some rearranging, we find $b_1 = -0.5$ and $b_0 = 2.5$. This specifies exactly one line, as you can see in Figure 2 on the right.
  
 <div style= "float: right; padding: 10px 0px 10px 10px">
-<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-2-1.png" title="*Figure 2*. Trying to fit lines with two points (determined)." alt="*Figure 2*. Trying to fit lines with two points (determined)." style="display: block; margin: auto 0 auto auto;" />
+<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-2-1.png" title="Fitting a line with two points (determined)." alt="Fitting a line with two points (determined)." style="display: block; margin: auto 0 auto auto;" />
 </div>
  
 We could end the blog post here, but that would not be particularly insightful for data analysis problems in which we have more data points. Thus, let's see where it takes us when we add another point, $P_3 = (2, 2)$. The resulting system of equations becomes
@@ -53,12 +53,11 @@ $$
 \end{aligned}
 $$
 <div style= "float: left;">
-<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-3-1.png" title="*Figure 3*. Trying to fit lines with three points (overdetermined)." alt="*Figure 3*. Trying to fit lines with three points (overdetermined)." style="display: block; margin: auto 0 auto auto;" />
+<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-3-1.png" title="Fitting lines with three points (overdetermined)." alt="Fitting lines with three points (overdetermined)." style="display: block; margin: auto 0 auto auto;" />
 </div>
  
 which is *overdetermined* --- we cannot fit a line that passes through all three of these points. We can only fit three *separate* lines, given by two out of three of the equations; see Figure 3. But which of these lines, if any, is the "best" line?
  
-
  
 ## (Over)Fitting a curve
 Lacking justification to choose between any of these three, we could reduce the case to one that we have solved already, which is usually a good strategy in mathematics. In particular, we could try to reduce the *overdetermined* to the *determined* case. Above, we noticed that we can exactly solve for the two parameters $(b_0, b_1)$ using two data points $\{P_1, P_2\}$. This generalizes such that we can exactly solve for $p$ parameters using $p$ data points. In the problem above, we have three data points, but only two parameters. Let's bend the notion of a *line* a bit --- call it *curve* --- and introduce a third parameter $b_2$. But what multiplies this parameter $b_2$ in our equations? It seems we are missing a dimension. To amend this, let's add a dimension by simply squaring the $x$ coordinate such that a new point becomes $P_1' = (y_1, x_1, x_1^2)$. The resulting system of equations is
@@ -93,7 +92,7 @@ $$
 where we are again interested in solving for the unknown $\mathbf{b}$. Because this system is *determined*, we can arrive at the solution by inverting the matrix $\mathbf{X}$, such that $\mathbf{b} = \mathbf{X}^{-1}\mathbf{y}$, where $\mathbf{X}^{-1}$ is the inverse of $\mathbf{X}$. The resulting "line" is shown in Figure 4 on the left.
  
 <div style= "float: left;">
-<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-5-1.png" title="*Figure 3*. Trying to fit lines with three points (overdetermined)." alt="*Figure 3*. Trying to fit lines with three points (overdetermined)." style="display: block; margin: auto 0 auto auto;" />
+<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-4-1.png" title="Fitting a curve with three points" alt="Fitting a curve with three points" style="display: block; margin: auto 0 auto auto;" />
 </div>
  
 There are two issues with this approach. First, it leads to overfitting, that is, while we explain the data at hand well (in fact, we do so perfectly), it might poorly generalize to new data. For example, this curve is so peculiar (and it would get much more peculiar if we had fitted it to more data in the same way) that it is likely that new points lie far away from it. Second, we haven't really explained anything. In the words of the great R.A. Fisher:
@@ -121,7 +120,7 @@ However, as we saw above, we cannot uniquely solve an underdetermined system of 
 > "Of all the principles which can be proposed for that purpose, I think there is none more general, more exact, and more easy of application, that of which we made use in the preceding researches, and which consists of rendering the sum of squares of the errors a *minimum*. By this means, there is established among the errors a sort of equilibrium which, preventing the extremes from exerting an undue influence, is very well fitted to reveal that state of the system which most nearly approaches the truth. (Legendre, 1805, p. 72-73)
  
 <div style= "float: right; padding: 10px 10px 10px 0px;">
-<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-6-1.png" title="*Figure 3*. Trying to fit lines with three points (overdetermined)." alt="*Figure 3*. Trying to fit lines with three points (overdetermined)." style="display: block; margin: auto 0 auto auto;" />
+<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-5-1.png" title="Fitting the line that minimizes the sum of squared errors." alt="Fitting the line that minimizes the sum of squared errors." style="display: block; margin: auto 0 auto auto;" />
 </div>
  
 There is only one line that minimizes the sum of squared errors. Thus, by adding this constraint we can uniquely solve the underdetermined system; see the Figure on the right. The development of least squares was a watershed moment in mathematical statistics --- Stephen Stigler likens its importance to the development of calculus in mathematics (Stigler, 1986, p. 11).
@@ -163,7 +162,7 @@ where $\sum_{i=1}^n y_i x_i$ is the (scaled by $n$) covariance between x and y, 
 Another way to think about this problem is *geometrically*. This requires some linear algebra, and so we better write the system of equations in matrix form. For ease of exposure, we again mean-center the data. First, note that the errors in matrix form yield
  
 <div style= "float: left; padding: 10px 10px 10px 0px;">
-<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-7-1.png" title="*Figure 3*. Trying to fit lines with three points (overdetermined)." alt="*Figure 3*. Trying to fit lines with three points (overdetermined)." style="display: block; margin: auto 0 auto auto;" />
+<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-6-1.png" title="Figure illustrating the geometric insight." alt="Figure illustrating the geometric insight." style="display: block; margin: auto 0 auto auto;" />
 </div>
  
 $$
@@ -235,7 +234,7 @@ where $\sigma^2$ is the variance[^8]; see the Figure below for three examples. T
 > "Many years ago I called the Laplace–Gaussian curve the normal curve, which name, while it avoids an international question of priority, has the disadvantage of leading people to believe that all other distributions of frequency are in one sense or another 'abnormal'." (Pearson, 1920, p. 25)
  
 <!-- <div style= "float: left; padding: 10px 10px 10px 0px;"> -->
-<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-8-1.png" title="*Figure 2*. Illustrates the difference between the Laplace and the Gauss distribution." alt="*Figure 2*. Illustrates the difference between the Laplace and the Gauss distribution." style="display: block; margin: auto;" />
+<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-7-1.png" title="Shows three Normal distributions with different variance." alt="Shows three Normal distributions with different variance." style="display: block; margin: auto;" />
 <!-- </div> -->
  
 Using the Gaussian distribution, the maximization problem becomes
@@ -266,9 +265,6 @@ The theorem basically says that if you have a sequence of independent and identi
 <!-- \sqrt{n} \left(\frac{\bar{X}_n - \mu}{\sigma}\right) \rightarrow \mathcal{N}(0, 1)  -->
 <!-- $$ -->
  
-
- 
- 
 Laplace realized that, if one takes the errors in the least squares problem to be themselves aggregates (i.e., means) of small influences, then they will be normally distributed. This provides an elegant justification for the least squares solution.
  
 To illustrate, assume that a particular error $\epsilon_i$ is in fact the average of $m = 500$ small irregularities that are independent and identically distributed; for instance, assume these influences follow a uniform distributions. Let's say we have $n = 200$ observations, thus 200 individual errors. The R code and Figure below illustrate that the error distribution will tend to be Gaussian.
@@ -296,7 +292,7 @@ se <- sqrt(20^2 / 12 ) / sqrt(m)
 lines(x, dnorm(x, mean = 0, sd = se))
 {% endhighlight %}
 
-<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-10-1.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" style="display: block; margin: auto;" />
+<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-8-1.png" title="Illustrates the Central Limit Theorem." alt="Illustrates the Central Limit Theorem." style="display: block; margin: auto;" />
  
 I don't know about you, but I think this is really cool. We started out with small irregularities that are uniformly distributed. Then we took an average of a bulk ($m = 500$) of those which constitute an error $\epsilon_i$; thus, the error itself is an aggregate. Now, by some fundamental fact about how our world works, the distribution of these errors (here, $n = 200$) can be well approximated by a Gaussian distribution. I can see why, as Galton conjectures, the Greeks would have deified such a law, if only they had known of it.
  
@@ -333,7 +329,7 @@ b_1
 $$
  
 <div style= "float: left; padding: 10px 10px 10px 0px;">
-<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-11-1.png" title="*Figure 2*. Illustrates that linear regression assumes that the conditional distribution of the response y given the features x is a Gaussian distribution with mean given by $\mathbf{x}^T\mathbf{b}$ and error variance $\sigma^2$. Thus, the smaller the error variance, the better our predictions." alt="*Figure 2*. Illustrates that linear regression assumes that the conditional distribution of the response y given the features x is a Gaussian distribution with mean given by $\mathbf{x}^T\mathbf{b}$ and error variance $\sigma^2$. Thus, the smaller the error variance, the better our predictions." style="display: block; margin: auto;" />
+<img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-9-1.png" title="Illustrates that linear regression assumes that the conditional distribution of the response y given the features x is a Gaussian distribution." alt="Illustrates that linear regression assumes that the conditional distribution of the response y given the features x is a Gaussian distribution." style="display: block; margin: auto;" />
 </div>
  
  

@@ -712,6 +712,10 @@ $$
 
 - Fisher, R. A. (1922). On the mathematical foundations of theoretical statistics. *Phil. Trans. R. Soc. Lond. A*, *222(594-604)*, 309-368. [[Link](https://royalsocietypublishing.org/doi/abs/10.1098/rsta.1922.0009)]
 
+- Galton, F. (1889). *Natural Inheritance*. London, UK: Richard Clay and Sons. [[Link](http://galton.org/books/natural-inheritance/pdf/galton-nat-inh-1up-clean.pdf)]
+
+- Pearson, K. (1920). Notes on the history of correlation. *Biometrika*, *13(1)*, 25-45. [[Link](https://www.jstor.org/stable/2331722?seq=1#metadata_info_tab_contents)]
+
 - Stahl, S. (2006). The evolution of the normal distribution. *Mathematics magazine*, *79(2)*, 96-113. [[Link](https://www.tandfonline.com/doi/abs/10.1080/0025570X.2006.11953386?journalCode=umma20)]
 
 - Stigler, S. M. (1980). Stigler's Law of Eponymy. *Transactions of the New York Academy of Sciences*, *39(1 Series II)*, 147-157. [[Link](https://nyaspubs.onlinelibrary.wiley.com/doi/abs/10.1111/j.2164-0947.1980.tb02775.x)]

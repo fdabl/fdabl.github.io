@@ -1,0 +1,8 @@
+_site
+Gemfile.lock
+.sass-cache
+.jekyll-metadata
+.DS_Store
+.Rproj.user
+blogpost-plans.txt
+in-progress

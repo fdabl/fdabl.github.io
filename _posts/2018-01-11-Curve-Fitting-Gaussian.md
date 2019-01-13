@@ -28,7 +28,7 @@ $$
 <div style= "float: left; padding: 10px 10px 10px 0px;">
 <img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-1-1.png" title="Fitting a line with only one point (underdetermined)." alt="Fitting a line with only one point (underdetermined)." style="display: block; margin: auto auto auto 0;" />
 </div>
-an equation with two unknowns. We call this system of equations *underdetermined* because we cannot uniquely solve for $b_0$ and $b_1$, but will have a number of solutions all for which $b_1 = 2 - b_0$; see Figure 1 on the left. However, if we add another point $P_2 = (3, 1)$, the resulting system of equations becomes
+an equation with two unknowns. We call this system of equations *underdetermined* because we cannot uniquely solve for $b_0$ and $b_1$, but we will have a number of solutions all for which $b_1 = 2 - b_0$; see Figure 1 on the left. However, if we add another point $P_2 = (3, 1)$, the resulting system of equations becomes
  
 $$
 \begin{aligned}
@@ -56,7 +56,7 @@ $$
 <img src="/assets/img/2018-01-11-Curve-Fitting-Gaussian.Rmd/unnamed-chunk-3-1.png" title="Fitting lines with three points (overdetermined)." alt="Fitting lines with three points (overdetermined)." style="display: block; margin: auto 0 auto auto;" />
 </div>
  
-which is *overdetermined* --- we cannot fit a line that passes through all three of these points. We can only fit three *separate* lines, given by two out of three of the equations; see Figure 3. But which of these lines, if any, is the "best" line?
+which is *overdetermined* --- we cannot fit a line that passes through all three of these points. We can, for example, fit three *separate* lines, given by two out of three of the equations; see Figure 3. But which of these lines, if any, is the "best" line?
  
  
 ## (Over)Fitting a curve
@@ -351,7 +351,6 @@ which is visualized in the Figure on the left. Intuitively, the smaller the erro
  
 ## Conclusion
 In this blog post, we have discussed the mother of all curve fitting problems --- fitting a straight line to data points --- in great detail. On this journey, we have met the method of least squares, a pillar of statistical thinking. We have seen how Gauss arrived at "his" distribution, and how Laplace gave it a beautiful justification in terms of the central limit theorem. With this, it was only a small step towards linear regression, one of the most important tools in statistics and machine learning.
- 
  
 ---
 *I would like to thank Don van den Bergh and Jonas Haslbeck for helpful comments on this blogpost.*

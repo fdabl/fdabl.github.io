@@ -75,7 +75,7 @@ points(P1[1], P1[2], pch = 20)
 #   ptheme
 ```
 </div>
-an equation with two unknowns. We call this system of equations *underdetermined* because we cannot uniquely solve for $b_0$ and $b_1$, but will have a number of solutions all for which $b_1 = 2 - b_0$; see Figure 1 on the left. However, if we add another point $P_2 = (3, 1)$, the resulting system of equations becomes
+an equation with two unknowns. We call this system of equations *underdetermined* because we cannot uniquely solve for $b_0$ and $b_1$, but we will have a number of solutions all for which $b_1 = 2 - b_0$; see Figure 1 on the left. However, if we add another point $P_2 = (3, 1)$, the resulting system of equations becomes
 
 $$
 \begin{aligned}
@@ -144,7 +144,7 @@ points(P3[1], P3[2], pch = 20)
 ```
 </div>
 
-which is *overdetermined* --- we cannot fit a line that passes through all three of these points. We can only fit three *separate* lines, given by two out of three of the equations; see Figure 3. But which of these lines, if any, is the "best" line?
+which is *overdetermined* --- we cannot fit a line that passes through all three of these points. We can, for example, fit three *separate* lines, given by two out of three of the equations; see Figure 3. But which of these lines, if any, is the "best" line?
 
 
 ## (Over)Fitting a curve

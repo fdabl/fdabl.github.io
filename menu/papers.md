@@ -4,7 +4,7 @@ title: ''
 ---
 
 ## Submitted / under review
-**Dablander, F.<sup>&#8902;</sup>**, Ryan, O.<sup>**&#8902;**</sup>, & Haslbeck, J.M.B.<sup>**&#8902;**</sup>. (submitted). Choosing between AR(1) and VAR(1) in Typical Psychological Applications. [[Link](https://psyarxiv.com/qgewy/)]
+**Dablander, F.<sup>&#8902;</sup>**, Ryan, O.<sup>**&#8902;**</sup>, & Haslbeck, J.M.B.<sup>**&#8902;**</sup> (submitted). Choosing between AR(1) and VAR(1) in Typical Psychological Applications. [[Link](https://psyarxiv.com/qgewy/)]
 
 **Dablander, F.**, & Hinne, M. (under review). Centrality measures as a proxy for causal influence? A cautionary tale. [[Link](https://psyarxiv.com/nue4z/)]
 

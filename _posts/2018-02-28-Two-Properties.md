@@ -213,6 +213,7 @@ X_3
 \rho_{12}\sigma_1\sigma_2 & \sigma_2^2 &  \\
 \rho_{13}\sigma_1\sigma_3 & \rho_{23}\sigma_2\sigma_3 & \sigma_3^2 \\
 \end{pmatrix}
+\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 0\end{pmatrix}
 \right) \\[1em]
 \begin{pmatrix}
 X_1 \\

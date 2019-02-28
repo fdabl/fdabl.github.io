@@ -78,7 +78,7 @@ which has mean $\rho \frac{\sigma_1}{\sigma_2} x_2$ and variance $\sigma_1^2 (1 
 Let's illustrate the difference between marginalization and conditioning on two simple examples. First, assume that the correlation is very high with $\rho = 0.8$, and that $\sigma_1^2 = \sigma_2^2 = 1$. Then, observing for example $X_2 = 2$, our belief about $X_1$ changes such that its mean gets shifted to the observed $x_2$ value, i.e. $\mu_1 = 0.8 \cdot 2 = 1.6$ (indicated by the dotted line in the Figure below). The variance of $x_1$ gets substantially reduced, from $1$ to $(1 - 0.8^2) = 0.36$. This is what the left part in the Figure below illustrates. If, on the other hand, $\rho = 0$ such that $X_1$ and $X_2$ are not related, then observing $X_2 = 2$ changes neither the mean of $X_1$ (it stays at zero), nor its variance (it stays at 1); see the right part of the Figure below. Note that the marginal and conditional densities are multiplied with a constant to make them better visible.
  
  
-<img src="/assets/img/2018-02-28-Two-Properties.Rmd/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" /><img src="/assets/img/2018-02-28-Two-Properties.Rmd/unnamed-chunk-2-2.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
+<img src="/assets/img/2018-02-28-Two-Properties.Rmd/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
  
 To explore the relation between joint, marginal, and conditional Gaussian distributions, you can play around with a Shiny app following [this](https://fdabl.shinyapps.io/two-properties/) link. In the remainder of the blog post, we will prove that the two distributions given above are in fact the marginal and conditional distributions in the two-dimensional case. We will also generalize these results to $p$-dimensional Gaussian distributions.
  
@@ -380,7 +380,7 @@ $$
 \end{aligned}
 $$
  
-so that
+and therefore
  
 $$
 \begin{aligned}

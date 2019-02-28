@@ -207,14 +207,6 @@ gridExtra::grid.arrange(
   plot_all(1, 1, 0, 2, limits = c(-3, 3), densmult = 2.5),
   ncol = 2
 )
-
-# plot for twitter
-gridExtra::grid.arrange(
-  plot_all(1, 1, .8, 2, limits = c(-3, 3), densmult = 2.5) +
-    theme(text = element_text(size = 12)),
-  plot_all(1, 1, 0, 2, limits = c(-3, 3), densmult = 2.5) +
-    theme(text = element_text(size = 12)), ncol = 2
-)
 ```
 
 To explore the relation between joint, marginal, and conditional Gaussian distributions, you can play around with a Shiny app following [this](https://fdabl.shinyapps.io/two-properties/) link. In the remainder of the blog post, we will prove that the two distributions given above are in fact the marginal and conditional distributions in the two-dimensional case. We will also generalize these results to $p$-dimensional Gaussian distributions.
@@ -517,7 +509,7 @@ $$
 \end{aligned}
 $$
 
-so that
+and therefore
 
 $$
 \begin{aligned}

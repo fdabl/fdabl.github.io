@@ -557,4 +557,4 @@ To show that an arbitrary dimensional Gaussian distribution is closed under cond
 [^2]: You might enjoy training your intuitions about correlations on [http://guessthecorrelation.com/](http://guessthecorrelation.com/).
 [^3]: See also Dennis Lindley's paper [*The philosophy of statistics*](https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/1467-9884.00238).
 [^4]: This follows from the Gaussian integral $\int_{-\infty}^{\infty} e^{-x^2} = \sqrt{\pi}$, see [here](https://en.wikipedia.org/wiki/Gaussian_integral). For more on why $\pi$ and $e$ feature in the Gaussian density, see [this](https://math.stackexchange.com/questions/28558/what-do-pi-and-e-stand-for-in-the-normal-distribution-formula).
-[^5]: The land of the Gaussians is vast: its inhabitants --- all Gaussian distributions --- are also closed under multiplication and convolution, too. This might make for a future blog post.
+[^5]: The land of the Gaussians is vast: its inhabitants --- all Gaussian distributions --- are also closed under multiplication and convolution. This might make for a future blog post.

@@ -1,0 +1,10 @@
+name: two-properties
+title:
+username:
+account: fdabl
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 742999
+bundleId: 1905898
+url: https://fdabl.shinyapps.io/two-properties/
+when: 1551350730.48664

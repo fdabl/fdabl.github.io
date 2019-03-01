@@ -403,7 +403,7 @@ Done! The conditional distribution has a mean of $\rho \frac{\sigma_1}{\sigma_2}
 
 
 ## $p$-dimensional case
-We need a little bit more notation for the crazy ride we're about to embark on. Let $\mathbf{x} = (x_1, \ldots, x_n)^T$ be a $n$-dimensional vector and $\mathbf{y} = (y_1, \ldots, y_m)^T$ a $m$-dimensional vector which both are jointly Gaussian distributed with covariance matrix $\Sigma \in \mathbb{R}^{(n + m) \times (n + m)}$. Note that we can write $\Sigma$ as a block matrix, i.e.,
+We need a little bit more notation for the crazy ride we're about to embark on. Let $\mathbf{x} = (x_1, \ldots, x_n)^T$ be an $n$-dimensional vector and $\mathbf{y} = (y_1, \ldots, y_m)^T$ an $m$-dimensional vector which both are jointly Gaussian distributed with covariance matrix $\Sigma \in \mathbb{R}^{(n + m) \times (n + m)}$. Note that we can write $\Sigma$ as a block matrix, i.e.,
 
 $$
 \Sigma = \begin{pmatrix}
@@ -546,7 +546,7 @@ Thus, if $(\mathbf{x}, \mathbf{y})$ are jointly normally distributed, then incor
 # Conclusion
 In this blog post, we have seen that the Gaussian distribution has two important properties: it is closed under (a) *marginalization* and (b) *conditioning*. For the bivariate case, an accompanying [Shiny app](https://fdabl.shinyapps.io/two-properties/) hopefully helped to build some intuition about the difference between these two operations.
 
-For the general $p$-dimensional case, we noted that a random variable *per definition* follows a (multivariate) Gaussian distribution if and only if any linear combination of its components follows a Gaussian distribution. This made it obvious that the Gaussian distribution is closed under marginalization --- we simply ignore the components we want to marginalize over in the linear combination.
+For the general $p$-dimensional case, we noted that a random variable *per definition* follows a (multivariate) Gaussian distribution if and only if every linear combination of its components follows a Gaussian distribution. This made it obvious that the Gaussian distribution is closed under marginalization --- we simply ignore the components we want to marginalize over in the linear combination.
 
 To show that an arbitrary dimensional Gaussian distribution is closed under conditioning, we had to rely on a mathematical trick called ''completing the square'', as well as certain properties of matrices few mortals can remember. In conclusion, I think we should celebrate the fact that frequent operations such as marginalizing and conditioning do not expel us from the wonderful land of the Gaussians.[^5]
 

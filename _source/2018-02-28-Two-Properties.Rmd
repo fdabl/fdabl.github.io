@@ -19,7 +19,7 @@ This blog post has two parts. First, I will introduce the joint, marginal, and c
 
 
 # The Land of the Gaussians
-In the linear regression case discussed [previously](https://fdabl.github.io/statistics/Curve-Fitting-Gaussian.html), we have modeled each individual data point $y_i$ as coming from *conditional univariate* Gaussian distribution with mean $\mu = x_i^Tb$ and variance $\sigma^2$. In this blog post, we introduce the random variables $X_1$ and $X_2$ and assume that both are *jointly* normally distributed; we are going from $p = 1$ to $p = 2$ dimensions. The probability density function changes accordingly --- it becomes a function mapping from two to one dimension, i.e., $f: \mathbb{R}^2 \rightarrow \mathbb{R}^+$.
+In the linear regression case discussed [previously](https://fdabl.github.io/statistics/Curve-Fitting-Gaussian.html), we have modeled each individual data point $y_i$ as coming from a *univariate conditional* Gaussian distribution with mean $\mu = x_i^Tb$ and variance $\sigma^2$. In this blog post, we introduce the random variables $X_1$ and $X_2$ and assume that both are *jointly* normally distributed; we are going from $p = 1$ to $p = 2$ dimensions. The probability density function changes accordingly --- it becomes a function mapping from two to one dimension, i.e., $f: \mathbb{R}^2 \rightarrow \mathbb{R}^+$.
 
 To simplify notation, let $\mathbf{x} = (x_1, x_2)^T$ and $\mathbf{\mu} = (\mu_1, \mu_2)^T$ be two 2-dimensional vectors denoting one observation and the population means, respectively. For simplicity, we set the population means to zero, i.e. $\mathbf{\mu} = (0, 0)$. In one dimension, we had just one parameter for the variance $\sigma^2$; in two dimensions, this becomes a symmetric $2 \times 2$ covariance matrix
 

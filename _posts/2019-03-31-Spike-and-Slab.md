@@ -1195,7 +1195,7 @@ Especially with a large number of predictors, we might be wary of the assumption
 If you have stayed with me until the bitter end, congratulations! We have covered a lot in this blog post. In particular, we have tackled the problem of variable selection using a Bayesian approach which allowed us to quantify and incorporate uncertainty about parameters as well as models. We have focused on linear regression with spike-and-slab priors and derived a Gibbs sampler for the single and multiple predictor case. Applying this to simulated and real data, we have seen how this leads to model-averaged parameter estimates, as well as uncertainty estimates about whether or not to include a particular predictor variable. Lastly, we have discussed the nuances of assigning priors to models. If you want to read up on any of these topics, I encourage you to check out the references below. Otherwise, see you next month!
  
 ---
-I would like to thank Don van den Bergh, Max Hinne, and Maarten Marsman for discussions about the Gibbs sampler, and Sophia Crüwell for comments on this blog post.
+*I would like to thank Don van den Bergh, Max Hinne, and Maarten Marsman for discussions about the Gibbs sampler, and Sophia Crüwell for comments on this blog post.*
  
 ---
 ## References

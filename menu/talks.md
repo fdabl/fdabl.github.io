@@ -11,3 +11,6 @@ Node Centrality Measures are a poor substitute for Causal Inference. European Ca
 
 ## Workshops
 From 2014 to 2018, I was fortunate enough to give workshops on Bayesian inference in several countries. The most comprehensive version of this workshop can be found [here](https://github.com/fdabl/Intro-Stats).
+
+
+[R-Bloggers](https://www.r-bloggers.com/)

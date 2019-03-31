@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "In Review: Ten Great Ideas About Chance"
-date: 2018-01-11 16:30:00 +0100
+date: 2019-01-11 16:30:00 +0100
 categories: statistics
 published: true
 author: Fabian Dablander

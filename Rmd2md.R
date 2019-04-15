@@ -23,7 +23,7 @@ rmd2md <- function( path_site = getwd(),
                     recursive=FALSE) {
 
   require(knitr, quietly=FALSE, warn.conflicts=FALSE)
-
+  
   #andy change to avoid path problems when running without sh on windows
   files <- list.files(path=file.path(path_site,dir_rmd), pattern=in_ext, ignore.case=TRUE, recursive=recursive)
   show(files)

@@ -145,9 +145,9 @@ cov(samples)
 
 
 {% highlight text %}
-##        [,1]   [,2]
-## [1,] 1.0179 0.5092
-## [2,] 0.5092 0.9950
+##           [,1]      [,2]
+## [1,] 1.0178545 0.5091747
+## [2,] 0.5091747 0.9949518
 {% endhighlight %}
  
 <img src="/assets/img/2019-03-31-Spike-and-Slab.Rmd/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />
@@ -691,13 +691,13 @@ head(samples)
 
 
 {% highlight text %}
-##      pi   beta sigma2    tau2  theta
-## [1,]  1 0.2906 0.6598 0.90972 0.7348
-## [2,]  1 0.1211 0.8227 0.19380 0.8148
-## [3,]  1 0.2483 0.8256 0.21308 0.9399
-## [4,]  1 0.2698 0.8924 1.27512 0.2272
-## [5,]  1 0.2569 0.8575 9.26546 0.3319
-## [6,]  1 0.3302 0.7589 0.05924 0.8466
+##      pi      beta    sigma2       tau2     theta
+## [1,]  1 0.2906086 0.6597533 0.90971999 0.7347514
+## [2,]  1 0.1211445 0.8227258 0.19379877 0.8147812
+## [3,]  1 0.2482826 0.8256208 0.21308479 0.9398529
+## [4,]  1 0.2698416 0.8924097 1.27511931 0.2272394
+## [5,]  1 0.2569462 0.8575250 9.26546148 0.3319193
+## [6,]  1 0.3302473 0.7589350 0.05923922 0.8465538
 {% endhighlight %}
  
  
@@ -725,8 +725,8 @@ apply(samples, 2, mean)
 
 
 {% highlight text %}
-##      pi    beta  sigma2    tau2   theta 
-##  0.8420  0.2293  0.9457 18.3779  0.6181
+##         pi       beta     sigma2       tau2      theta 
+##  0.8420000  0.2292838  0.9456540 18.3779151  0.6181061
 {% endhighlight %}
  
 From this, we can also compute the posterior inclusion odds, which is $\frac{0.84}{1 - 0.84} = 5.30$. This means that $\mathcal{M}_1$ is about 5 times more likely than $\mathcal{M}_0$. In the short primer on Bayesian inference above, we have noted that computing posterior inclusion probabilities requires assigning a prior distribution to models. This brings with it some subtleties, and we will sketch the issue of assigning priors to models at the end of this blog post. In the next section, we generalize our spike-and-slab Gibbs sampling procedure to $p > 1$ variables.
@@ -1059,27 +1059,68 @@ res_table <- cbind(
   post_means[grepl('beta', names(post_means))],
   post_means[grepl('pi', names(post_means))]
 )
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in cbind(post_means[grepl("beta", names(post_means))], post_means[grepl("pi", : object 'post_means' not found
+{% endhighlight %}
+
+
+
+{% highlight r %}
 rownames(res_table) <- colnames(Xz)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in rownames(res_table) <- colnames(Xz): object 'res_table' not found
+{% endhighlight %}
+
+
+
+{% highlight r %}
 colnames(res_table) <- c('Post. Mean', 'Post. Inclusion')
- 
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in colnames(res_table) <- c("Post. Mean", "Post. Inclusion"): object 'res_table' not found
+{% endhighlight %}
+
+
+
+{% highlight r %}
 round(res_table, 3)
 {% endhighlight %}
 
 
 
 {% highlight text %}
-##            Post. Mean Post. Inclusion
-## complaints      0.598           0.997
-## privileges     -0.013           0.340
-## learning        0.213           0.699
-## raises          0.061           0.437
-## critical        0.007           0.285
-## advance        -0.081           0.431
+## Error in eval(expr, envir, enclos): object 'res_table' not found
 {% endhighlight %}
  
 We can also visualize these results:
  
-<img src="/assets/img/2019-03-31-Spike-and-Slab.Rmd/unnamed-chunk-15-1.png" title="plot of chunk unnamed-chunk-15" alt="plot of chunk unnamed-chunk-15" style="display: block; margin: auto;" />
+
+{% highlight text %}
+## Error in gather(betas, predictor, value): could not find function "gather"
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in group_by(dbetas, predictor): object 'dbetas' not found
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in ggplot(dbetas, aes(x = value)): object 'dbetas' not found
+{% endhighlight %}
  
 We are certain to include only the predictor variable *complaints*. There remains large uncertainty as to whether the other variables are associated, or not associated, with the outcome.
  
@@ -1170,7 +1211,7 @@ dbetabin(2, c(0, 1, 2))
 
 
 {% highlight text %}
-## [1] 0.3333 0.3333 0.3333
+## [1] 0.3333333 0.3333333 0.3333333
 {% endhighlight %}
  
 Conversely, this implies a non-uniform prior over models. In particular, this prior setup assigns more mass on extremely sparse or extremely dense models. To see this, note again that there is only ${2 \choose 0} = {2 \choose 2} = 1$ way to get a model that includes zero or both predictors, while there are two ${2 \choose 1} = 2$ ways to get a model that includes one predictor. Thus, models that are of size one (i.e., either include $\beta_1$ or $\beta_2$) get assigned only *half* as much probability mass than models that include zero or both predictors; for a visual illustration, see the figure below.

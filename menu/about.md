@@ -3,8 +3,13 @@ layout: page
 title: 
 ---
 
+<div style='float: right; padding-left: 10px' >
+  <img src='../assets/img/profile.jpg' width="200" height="300" alt="Fabian Dablander" />
+</div>
+
 <!-- <img src="../assets/img/logo.png" width="150" align="left" style="padding: 0px 5px 0px 0px;"> -->
 I began my academic journey in Graz, Austria, where I studied Psychology and Philosophy. Dissatisfied with both, I looked for a more formal way to study the human mind and behaviour and ended up in Tübingen, Germany, pursuing a Masters degree in Cognitive Science.
+
 
 For my thesis, I stepped out the ivory tower academia can sometimes be and worked with a car company on evaluating artificial driver models in their traffic simulation. While that was fun, academia is fun too, and so I started a PhD at the Department of Psychological Methods, University of Amsterdam, in December 2017. Broadly speaking, I am working on topics related to Bayesian inference and testing, graphical models, causality, and time-series analysis.
 

@@ -275,7 +275,7 @@ plot_path <- function(y, n, reg, title, ylab = '') {
   path <- estimate_path(y, n, reg)
   
   plot(path, ylim = c(0, 1), type = 'l', lty = 1,
-       ylab = ylab, xlab = TeX('$\\lambda$'), las = 1, main = title, lwd = 3,
+       ylab = ylab, xlab = TeX('$\\lambda$'), main = title, lwd = 3,
        cex.lab = 1.5, cex.main = 1.5, col = 'skyblue', axes = FALSE)
   
   lines(c(0, 10), c(y/n, y/n), lty = 2)
@@ -314,8 +314,8 @@ plot_pen_llh <- function(y, n, lambdas, reg = 1, ylab = 'Penalized Likelihood', 
           lwd = 3, cex.lab = 1.5, cex.main = 1.5, col = 'skyblue')
   }
   
-  axis(1, at = seq(0, 1, .2))
   axis(2, las = 1)
+  axis(1, at = seq(0, 1, .2))
   
   info <- sapply(lambdas, function(l) TeX(sprintf('$\\lambda = %.2f$', l)))
   legend('topleft', legend = info, lty = seq(nl), cex = 1,

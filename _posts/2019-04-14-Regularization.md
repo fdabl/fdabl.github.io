@@ -206,7 +206,8 @@ You can play around with the code below to get an intuition for how different va
 {% highlight r %}
 library('latex2exp')
  
-plot_pen_likelihood <- function(y, n, lambdas, reg = 1, ylab = 'Penalized Likelihood', title = '') {
+plot_pen_llh <- function(y, n, lambdas, reg = 1,
+                         ylab = 'Penalized Likelihood', title = '') {
   
   nl <- length(lambdas)
   theta <- seq(.001, .999, .001)
@@ -215,8 +216,8 @@ plot_pen_likelihood <- function(y, n, lambdas, reg = 1, ylab = 'Penalized Likeli
   normalize <- function(x) (x - min(x)) / (max(x) - min(x))
   
   for (i in seq(nl)) {
-    log_like <- get_penalized_likelihood(y, n, theta, lambdas[i], reg = reg)
-    likelihood[i, ] <- normalize(exp(log_like))
+    log_likelihood <- get_penalized_likelihood(y, n, theta, lambdas[i], reg)
+    likelihood[i, ] <- normalize(exp(log_likelihood))
   }
   
   plot(theta, likelihood[1, ], xlim = c(0, 1), type = 'l', ylab = ylab, lty = 1,
@@ -232,12 +233,13 @@ plot_pen_likelihood <- function(y, n, lambdas, reg = 1, ylab = 'Penalized Likeli
   axis(2, las = 1)
   
   info <- sapply(lambdas, function(l) TeX(sprintf('$\\lambda = %.2f$', l)))
-  legend('topleft', legend = info, lty = 1:5, cex = 1, box.lty = 0, col = 'skyblue', lwd = 2)
+  legend('topleft', legend = info, lty = seq(nl), cex = 1,
+         box.lty = 0, col = 'skyblue', lwd = 2)
 }
  
 lambdas <- c(0, 2, 4, 6, 8)
-plot_pen_likelihood(3, 3, lambdas, reg = 1, title = TeX('$L_1$ Penalized Likelihood'))
-plot_pen_likelihood(3, 3, lambdas, reg = 2, title = TeX('$L_2$ Penalized Likelihood'))
+plot_pen_llh(3, 3, lambdas, reg = 1, title = TeX('$L_1$ Penalized Likelihood'))
+plot_pen_llh(3, 3, lambdas, reg = 2, title = TeX('$L_2$ Penalized Likelihood'))
 {% endhighlight %}
  
 In practice, one would reparameterize this model as a logistic regression, and use cross-validation to estimate the best value for $\lambda$; see the *Post Scriptum* for a sketch of this approach.

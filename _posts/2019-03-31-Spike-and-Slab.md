@@ -5,6 +5,8 @@ date: 2019-03-31 14:00:00 +0100
 categories: R
 status: publish
 published: true
+# status: development
+# published: false
 ---
  
 "Which variables are important?" is a key question in science and statistics. In this blog post, I focus on linear models and discuss a Bayesian solution to this problem using *spike-and-slab priors* and the *Gibbs sampler*, a computational method to sample from a joint distribution using only conditional distributions.
@@ -1055,72 +1057,33 @@ samples <- ss_regressm(
   a = 1, b = 1, s = 1/2, nr_cores = 4, nr_samples = 4000
 )
  
+post_means <- apply(samples, 2, mean)
+ 
 res_table <- cbind(
   post_means[grepl('beta', names(post_means))],
   post_means[grepl('pi', names(post_means))]
 )
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in cbind(post_means[grepl("beta", names(post_means))], post_means[grepl("pi", : object 'post_means' not found
-{% endhighlight %}
-
-
-
-{% highlight r %}
 rownames(res_table) <- colnames(Xz)
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in rownames(res_table) <- colnames(Xz): object 'res_table' not found
-{% endhighlight %}
-
-
-
-{% highlight r %}
 colnames(res_table) <- c('Post. Mean', 'Post. Inclusion')
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in colnames(res_table) <- c("Post. Mean", "Post. Inclusion"): object 'res_table' not found
-{% endhighlight %}
-
-
-
-{% highlight r %}
+ 
 round(res_table, 3)
 {% endhighlight %}
 
 
 
 {% highlight text %}
-## Error in eval(expr, envir, enclos): object 'res_table' not found
+##            Post. Mean Post. Inclusion
+## complaints      0.601           0.997
+## privileges     -0.013           0.322
+## learning        0.215           0.692
+## raises          0.057           0.420
+## critical        0.007           0.279
+## advance        -0.080           0.419
 {% endhighlight %}
  
 We can also visualize these results:
  
-
-{% highlight text %}
-## Error in gather(betas, predictor, value): could not find function "gather"
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in group_by(dbetas, predictor): object 'dbetas' not found
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in ggplot(dbetas, aes(x = value)): object 'dbetas' not found
-{% endhighlight %}
+<img src="/assets/img/2019-03-31-Spike-and-Slab.Rmd/unnamed-chunk-15-1.png" title="plot of chunk unnamed-chunk-15" alt="plot of chunk unnamed-chunk-15" style="display: block; margin: auto;" />
  
 We are certain to include only the predictor variable *complaints*. There remains large uncertainty as to whether the other variables are associated, or not associated, with the outcome.
  

@@ -3,10 +3,10 @@ layout: post
 title: "Variable selection using Gibbs sampling"
 date: 2019-03-31 14:00:00 +0100
 categories: R
-# status: process
-# published: true
-status: development
-published: false
+status: process
+published: true
+# status: development
+# published: false
 ---
 
 "Which variables are important?" is a key question in science and statistics. In this blog post, I focus on linear models and discuss a Bayesian solution to this problem using *spike-and-slab priors* and the *Gibbs sampler*, a computational method to sample from a joint distribution using only conditional distributions.
@@ -1103,6 +1103,8 @@ samples <- ss_regressm(
   a = 1, b = 1, s = 1/2, nr_cores = 4, nr_samples = 4000
 )
 
+post_means <- apply(samples, 2, mean)
+
 res_table <- cbind(
   post_means[grepl('beta', names(post_means))],
   post_means[grepl('pi', names(post_means))]
@@ -1117,6 +1119,7 @@ We can also visualize these results:
 
 ```{r, echo = FALSE, fig.width = 12, fig.height = 8, fig.align = 'center', message = FALSE, warning = FALSE}
 library('dplyr')
+library('tidyr')
 
 betas <- data.frame(samples[, grepl('beta', colnames(samples))])
 colnames(betas) <- colnames(Xz)

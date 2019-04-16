@@ -4,7 +4,7 @@ title:
 ---
 
 <div style='float: right; padding-left: 10px' >
-  <img src='../assets/img/profile.jpg' width="200" height="300" alt="Fabian Dablander" />
+  <img src='../assets/img/profile.jpg' width="200" height="300" />
 </div>
 
 <!-- <img src="../assets/img/logo.png" width="150" align="left" style="padding: 0px 5px 0px 0px;"> -->

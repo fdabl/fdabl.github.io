@@ -8,9 +8,11 @@ title: ''
 
 **Dablander, F.<sup>&#8902;</sup>**, Ryan, O.<sup>**&#8902;**</sup>, & Haslbeck, J.M.B.<sup>**&#8902;**</sup> (under review). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. [[Link](https://psyarxiv.com/qgewy/)]
 
-**Dablander, F.**, & Hinne, M. (under review). Node Centrality Measures are a poor substitute for Causal Inference. [[Link](https://psyarxiv.com/nue4z/)]
-
 Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (under review). The Support Interval. [[Link](https://psyarxiv.com/zwnxb/)]
+
+
+## 2019
+**Dablander, F.**, & Hinne, M. (2019). Node centrality measures are a poor substitute for causal inference.  *Scientific Reports, 9*, 6846. [[Link](https://www.nature.com/articles/s41598-019-43033-9)]
 
 
 ## 2018

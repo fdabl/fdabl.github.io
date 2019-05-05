@@ -915,7 +915,11 @@ such that
 
 $$
 \begin{aligned}
-p(\pi_j = 1 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta) &= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n \left(z_i - \beta_j x_i\right)^2 -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \enspace ,
+p(\pi_j = 1 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta) &= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n \left(z_i - \beta_j x_i\right)^2 -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
+&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[\sum_{i=1}^n z_i^2 - 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
+&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n z_i^2\right)\int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[- 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
+&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma_e^2} \mathbf{z}^T\mathbf{z} \right) \, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[- 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
+&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma_e^2} \left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right)^T\left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right) \right) \, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[- 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \enspace ,
 \end{aligned}
 $$
 
@@ -923,7 +927,7 @@ which is a very similar integration problem as in the univariable case. The same
 
 $$
 \begin{aligned}
-p(\pi_j = 1 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta) &= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i z_i\right)^2}{2\sigma_e^2\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)} \right) \left(2\pi\frac{\sigma_e^2}{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}\right)^{\frac{1}{2}} \enspace .
+p(\pi_j = 1 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta) &= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma_e^2} \left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right)^T\left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right) \right) \, \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i z_i\right)^2}{2\sigma_e^2\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)} \right) \left(2\pi\frac{\sigma_e^2}{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}\right)^{\frac{1}{2}} \enspace .
 \end{aligned}
 $$
 

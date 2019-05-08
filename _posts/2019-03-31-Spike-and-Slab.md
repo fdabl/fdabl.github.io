@@ -798,7 +798,7 @@ Thus, we draw all $\beta_i$'s from:
  
 $$
 \beta \mid \mathbf{y}, \pi, \tau^2, \sigma_e^2 \sim 
-\mathcal{N}\left(\left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma_e^2} + \mathbf{I}\frac{1}{\sigma_y^2\tau^2}\right)^{-1}\mathbf{X}^T\mathbf{y}\frac{1}{\sigma_e^2}, \left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma_e^2} + \mathbf{I}\frac{1}{\sigma_y^2\tau^2}\right)\right) \enspace ,
+\mathcal{N}\left(\left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma_e^2} + \mathbf{I}\frac{1}{\sigma_y^2\tau^2}\right)^{-1}\mathbf{X}^T\mathbf{y}\frac{1}{\sigma_e^2}, \left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma_e^2} + \mathbf{I}\frac{1}{\sigma_y^2\tau^2}\right)^{-1}\right) \enspace ,
 $$
  
 where we then set the $\beta_i$'s to zero for which $\pi_i = 0$.
@@ -863,7 +863,7 @@ p(\pi_j = 1 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta) &
 &= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[\sum_{i=1}^n z_i^2 - 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
 &= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n z_i^2\right)\int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[- 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
 &= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma_e^2} \mathbf{z}^T\mathbf{z} \right) \, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[- 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
-&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma_e^2} \left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right)^T\left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right) \right) \, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[- 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
+&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma_e^2} \left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right)^T\left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right) \right) \, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[- 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \enspace ,
 \end{aligned}
 $$
  
@@ -1077,12 +1077,12 @@ round(res_table, 3)
 
 {% highlight text %}
 ##            Post. Mean Post. Inclusion
-## complaints      0.606           0.998
-## privileges     -0.012           0.313
-## learning        0.212           0.687
-## raises          0.055           0.414
-## critical        0.006           0.262
-## advance        -0.079           0.417
+## complaints      0.602           0.998
+## privileges     -0.012           0.326
+## learning        0.215           0.699
+## raises          0.058           0.427
+## critical        0.007           0.282
+## advance        -0.082           0.431
 {% endhighlight %}
  
 We can also visualize these results:

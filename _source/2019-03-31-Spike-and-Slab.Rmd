@@ -854,7 +854,7 @@ Thus, we draw all $\beta_i$'s from:
 
 $$
 \beta \mid \mathbf{y}, \pi, \tau^2, \sigma_e^2 \sim 
-\mathcal{N}\left(\left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma_e^2} + \mathbf{I}\frac{1}{\sigma_y^2\tau^2}\right)^{-1}\mathbf{X}^T\mathbf{y}\frac{1}{\sigma_e^2}, \left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma_e^2} + \mathbf{I}\frac{1}{\sigma_y^2\tau^2}\right)\right) \enspace ,
+\mathcal{N}\left(\left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma_e^2} + \mathbf{I}\frac{1}{\sigma_y^2\tau^2}\right)^{-1}\mathbf{X}^T\mathbf{y}\frac{1}{\sigma_e^2}, \left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma_e^2} + \mathbf{I}\frac{1}{\sigma_y^2\tau^2}\right)^{-1}\right) \enspace ,
 $$
 
 where we then set the $\beta_i$'s to zero for which $\pi_i = 0$.

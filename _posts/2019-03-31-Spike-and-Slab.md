@@ -1077,12 +1077,12 @@ round(res_table, 3)
 
 {% highlight text %}
 ##            Post. Mean Post. Inclusion
-## complaints      0.602           0.998
-## privileges     -0.012           0.326
-## learning        0.215           0.699
-## raises          0.058           0.427
-## critical        0.007           0.282
-## advance        -0.082           0.431
+## complaints      0.604           0.997
+## privileges     -0.010           0.319
+## learning        0.211           0.686
+## raises          0.057           0.420
+## critical        0.007           0.279
+## advance        -0.079           0.418
 {% endhighlight %}
  
 We can also visualize these results:

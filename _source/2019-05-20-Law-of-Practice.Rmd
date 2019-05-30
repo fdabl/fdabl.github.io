@@ -217,7 +217,7 @@ $$
 Observe that this requires integrating over the *posterior distribution* of $\theta$ given all but one data point; this is in contrast to the marginal likelihood perspective, which requires integration with respect to the *prior distribution*. From this perspective, one can similarly compute model weights $w_k$
 
 $$
-w_k = \frac{\text{exp}\left(\widehat{\text{elpd}}^{\mathcal{M}_k}_{\text{loo}}\right)}{\sum_{i=k}^K \text{exp}\left(\widehat{\text{elpd}}^{\mathcal{M}_k}_{\text{loo}}\right)} \enspace ,
+w_k = \frac{\text{exp}\left(\widehat{\text{elpd}}^{\mathcal{M}_k}_{\text{loo}}\right)}{\sum_{i=1}^K \text{exp}\left(\widehat{\text{elpd}}^{\mathcal{M}_i}_{\text{loo}}\right)} \enspace ,
 $$
 
 where $\widehat{\text{elpd}}_{\text{loo}}^{\mathcal{M}_k}$ is the loo estimate for the expected log predictive density for model $\mathcal{M}_k$. For prediction, one averages across models using these *Pseudo Bayesian model-averaging* weights (Yao et al., 2018, p. 92).

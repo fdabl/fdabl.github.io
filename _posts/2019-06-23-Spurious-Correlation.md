@@ -9,7 +9,7 @@ published: true
 # published: false
 ---
  
-The number of storks and the number of human babies delivered are positively correlated (Matthews, 2000). This is a classic example of a spurious correlation which most certainly has a causal explanation: a third variable, say economic development, is most likely to cause both an increase in storks and an increase in the number of human babies, hence the correlation.[^1] In this blog post, I discuss a more subtle case of spurious correlation, one that is not of causal but of statistical nature: *completely independent processes can be correlated substantially*.
+The number of storks and the number of human babies delivered are positively correlated (Matthews, 2000). This is a classic example of a spurious correlation which has a causal explanation: a third variable, say economic development, is likely to cause both an increase in storks and an increase in the number of human babies, hence the correlation.[^1] In this blog post, I discuss a more subtle case of spurious correlation, one that is not of causal but of statistical nature: *completely independent processes can be correlated substantially*.
  
 ## AR(1) processes and random walks
 Moods, stockmarkets, the weather: everything changes, everything is in flux. The simplest model to describe change is an auto-regressive (AR) process of order one. Let $Y_t$ be a random variable where $t = [1, \ldots T]$ indexes discrete time. We write an AR(1) process as:

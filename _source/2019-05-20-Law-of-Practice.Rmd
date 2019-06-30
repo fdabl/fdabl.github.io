@@ -3,10 +3,10 @@ layout: post
 title: "Modeling the Law of Practice in Stan"
 date: 2019-05-30 11:00:00 +0100
 categories: R
-status: process
-published: true
-# status: development
-# published: false
+# status: process
+# published: true
+status: development
+published: false
 ---
 
 <link rel='stylesheet' href='../highlight/styles/default.css'>

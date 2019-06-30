@@ -3,10 +3,10 @@ layout: post
 title: "Two perspectives on regularization"
 date: 2019-04-15 13:00:00 +0100
 categories: R
-status: process
-published: true
-# status: development
-# published: false
+# status: process
+# published: true
+status: development
+published: false
 ---
 
 Regularization is the process of adding information to an estimation problem so as to avoid extreme estimates. Put differently, it safeguards against foolishness. Both Bayesian and frequentist methods can incorporate prior information which leads to regularized estimates, but they do so in different ways. In this blog post, I illustrate these two different perspectives on regularization on the simplest example possible --- estimating the bias of a coin.

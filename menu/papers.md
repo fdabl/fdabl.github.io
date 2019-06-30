@@ -14,13 +14,13 @@ Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (under review). 
 ## 2019
 **Dablander, F.**, & Hinne, M. (2019). Node centrality measures are a poor substitute for causal inference.  *Scientific Reports, 9*, 6846. [[Link](https://www.nature.com/articles/s41598-019-43033-9)]
 
+Edelsbrunner, P. A., & **Dablander, F.** (2019). The Psychometric Modeling of Scientific Reasoning: a Review and Recommendations for Future Avenues. *Educational Psychology Review, 31(1)*, 1-34. [[Link](https://link.springer.com/article/10.1007/s10648-018-9455-5)]
+
 
 ## 2018
 **Dablander, F.**, van den Bergh, D., & Wagenmakers, E. J. (2018). Another Paradox? A Comment on Lindley (1997). *PsyArXiv* [[Link](https://psyarxiv.com/gzj5t/)]
 
 **Dablander, F.** (2018). In Review: Ten Great Ideas About Chance. *Significance*. [[Link]({{ site.url }}/statistics/Ten-Great-Ideas.html)]
-
-Edelsbrunner, P. A., & **Dablander, F.** (2018). The Psychometric Modeling of Scientific Reasoning: a Review and Recommendations for Future Avenues. *Educational Psychology Review*, 1-34. [[Link](https://link.springer.com/article/10.1007/s10648-018-9455-5)]
 
 Etz, A., Gronau, Q. F., **Dablander, F.**, Edelsbrunner, P. A., & Baribault, B. (2018). How to become a Bayesian in eight easy steps: An annotated reading list. *Psychonomic Bulletin & Review, 25(1)*, 219-234. [[Link](https://link.springer.com/article/10.3758/s13423-017-1317-5)]
 

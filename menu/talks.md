@@ -11,7 +11,9 @@ Centrality measures as a proxy for causal influence? A cautionary tale. Invited 
 Validating Driver Profiles in the Mercedes-Benz driving simulation. Invited Talk for the Behavioral Studies Colloquium, Zürich, Switzerland, May 2018. [[Link]({{ site.url }}/assets/talks/Daimler-Talk-Zurich.html)]
 
 ## Posters
-Node Centrality Measures are a poor substitute for Causal Inference. European Causal Inference Meeting, Bremen, Germany, March 2019. [[Link]({{ site.url }}/assets/posters/EuroCIM-Poster.pdf)]
+Default Bayes Factor for Testing the (In)equality of Several Population Variances. O'Bayes, Warwick, United Kingdom, June 2019. [[Link]({{ site.url }}/assets/posters/OBayes-Poster-2019.pdf)]
+
+Node Centrality Measures are a poor substitute for Causal Inference. European Causal Inference Meeting, Bremen, Germany, March 2019. [[Link]({{ site.url }}/assets/posters/EuroCIM-Poster-2019.pdf)]
 
 ## Workshops
 From 2014 to 2018, I was fortunate enough to give workshops on Bayesian inference in several countries. The most comprehensive version of this workshop can be found [here](https://github.com/fdabl/Intro-Stats).

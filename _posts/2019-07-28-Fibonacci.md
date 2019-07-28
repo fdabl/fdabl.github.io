@@ -272,7 +272,7 @@ $$
 We are not done yet, however. Note that $D$ is the matrix of the linear map $T$ with respect to the basis that consists of both eigenvectors $v_1$ and $v_2$, *not* with respect to the standard basis. We have changed our coordinate system --- our map --- as indicated by the Figure below; the black coloured vectors are the standard basis vectors while the vectors coloured in red are our new basis vectors.
  
 <!-- <div style = "float: left; padding: 10px 10px 10px 0px;"> -->
-![](/assets/img/2019-07-28-Fibonacci.Rmd/change-of-basis.png)
+![](/assets/img/change-of-basis.png)
 
 <!-- </div> -->
  
@@ -320,9 +320,9 @@ solve(E) %*% S %*% a
 
 
 {% highlight text %}
-##         [,1]
-## [1,] -0.1422
-## [2,] -0.8578
+##            [,1]
+## [1,] -0.1422291
+## [2,] -0.8577709
 {% endhighlight %}
  
 This means we have the representation:
@@ -360,9 +360,9 @@ D^10 %*% solve(E) %*% c(0, 1)
 
 
 {% highlight text %}
-##           [,1]
-## [1,] 55.003636
-## [2,] -0.003636
+##              [,1]
+## [1,] 55.003636123
+## [2,] -0.003636123
 {% endhighlight %}
  
 Ha! This didn't quite work, did it? We got the answer for $F_{10}$ roughly when rounding, but $F_{11}$ is completely off. What did we miss? Well, this is in fact the correct answer --- it is just in the wrong basis! We have to convert this from the eigenbasis to the standard basis. To do this, observe that:

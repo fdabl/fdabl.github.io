@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Linear algebra and the Fibonacci sequence"
+title: "The Fibonacci sequence and linear algebra"
 date: 2019-07-28 14:30:00 +0100
 categories: R
 status: publish

@@ -272,7 +272,13 @@ $$
 We are not done yet, however. Note that $D$ is the matrix of the linear map $T$ with respect to the basis that consists of both eigenvectors $v_1$ and $v_2$, *not* with respect to the standard basis. We have changed our coordinate system --- our map --- as indicated by the Figure below; the black coloured vectors are the standard basis vectors while the vectors coloured in red are our new basis vectors.
  
 <!-- <div style = "float: left; padding: 10px 10px 10px 0px;"> -->
-![](/assets/img/change-of-basis.png)
+<!-- ![](/assets/img/change-of-basis.png) -->
+ 
+<div style="text-align:center;">
+  <img src="../assets/img/change-of-basis.png" align="center" style="padding-top: 10px; padding-bottom: 10px;" />
+</div>
+ 
+ 
 
 <!-- </div> -->
  

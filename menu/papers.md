@@ -16,7 +16,7 @@ Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (under review). 
 
 Jakob, L., Garcia-Garzon, E., Jarke, H., & **Dablander, F.** (2019). The Science Behind the Magic? The Relation of the Harry Potter "Sorting Hat Quiz" to Personality and Human Values. *Collabra: Psychology, 5*(1), 31. [[Link](https://www.collabra.org/article/10.1525/collabra.240/)]
 
-Edelsbrunner, P. A., & **Dablander, F.** (2019). The Psychometric Modeling of Scientific Reasoning: a Review and Recommendations for Future Avenues. *Educational Psychology Review, 31(1)*, 1-34. [[Link](https://link.springer.com/article/10.1007/s10648-018-9455-5)]
+Edelsbrunner, P. A., & **Dablander, F.** (2019). The Psychometric Modeling of Scientific Reasoning: A Review and Recommendations for Future Avenues. *Educational Psychology Review, 31(1)*, 1-34. [[Link](https://link.springer.com/article/10.1007/s10648-018-9455-5)]
 
 
 ## 2018

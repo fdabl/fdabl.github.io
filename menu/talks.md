@@ -6,7 +6,7 @@ title: ''
 ## Talks
 Bayesian Vector Autoregression for Structure and Parameter Learning. Talk at Psychoco 2019, Prague, Czech Republic, February 2019. [[Link]({{ site.url }}/assets/talks/BayesVAR-Psychoco2019.html)]
 
-Centrality measures as a proxy for causal influence? A cautionary tale. Invited Talk for the Network Analysis course, Amsterdam, The Netherlands, December 2018. [[Link]({{ site.url }}/assets/talks/Centrality-Causality.html)]
+Centrality measures as a proxy for causal influence? A cautionary tale. Invited Talk for the Network Analysis course, Amsterdam, The Netherlands, December 2018. [[Link]({{ site.url }}/assets/talks/centrality-causality.html)]
 
 Validating Driver Profiles in the Mercedes-Benz driving simulation. Invited Talk for the Behavioral Studies Colloquium, Zürich, Switzerland, May 2018. [[Link]({{ site.url }}/assets/talks/Daimler-Talk-Zurich.html)]
 

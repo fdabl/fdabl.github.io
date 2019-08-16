@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Modeling the Law of Practice in Stan"
+# title: "Modeling the Law of Practice in Stan"
+title: "Bayesian modeling using Stan: A case study"
 date: 2019-05-30 11:00:00 +0100
 categories: R
 status: publish

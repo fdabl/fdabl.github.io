@@ -10,7 +10,7 @@ title: Home
   </h1>
   {% if post.image %}
   <div class="thumbnail-container">
-    <a href="{{ site.github.url | replace: 'http://', '//' }}{{ post.url }}"><img src="{{ site.github.url }}/assets/img/{{ post.image }}"></a>
+    <a href="{{ site.github.url | replace: 'http://', '//' }}{{ post.url }}"><img src="{{ site.github.url | replace: 'http://', '//' }}/assets/img/{{ post.image }}"></a>
   </div>
   {% endif %}
   <p>

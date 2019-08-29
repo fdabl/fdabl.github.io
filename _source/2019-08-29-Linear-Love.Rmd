@@ -365,11 +365,11 @@ An eigenvector of a matrix is a vector that is only stretched by the matrix by a
 $$
 \begin{aligned}
 A\mathbf{v} &= \lambda \mathbf{v} \\[.5em]
-(A\mathbf{v} - I\lambda) \mathbf{v} &= 0 \enspace ,
+(A - I\lambda) \mathbf{v} &= 0 \enspace ,
 \end{aligned}
 $$
 
-which is true when the determinant of $(A\mathbf{v} - I\lambda)$ is zero, that is, $\left\vert A\mathbf{v} - I\lambda\right\vert = 0$. We write:
+which is true when the determinant of $(A - I\lambda)$ is zero, that is, $\left\vert A - I\lambda\right\vert = 0$. We write:
 
 $$
 \begin{aligned}

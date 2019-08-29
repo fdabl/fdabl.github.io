@@ -225,11 +225,11 @@ An eigenvector of a matrix is a vector that is only stretched by the matrix by a
 $$
 \begin{aligned}
 A\mathbf{v} &= \lambda \mathbf{v} \\[.5em]
-(A\mathbf{v} - I\lambda) \mathbf{v} &= 0 \enspace ,
+(A - I\lambda) \mathbf{v} &= 0 \enspace ,
 \end{aligned}
 $$
  
-which is true when the determinant of $(A\mathbf{v} - I\lambda)$ is zero, that is, $\left\vert A\mathbf{v} - I\lambda\right\vert = 0$. We write:
+which is true when the determinant of $(A - I\lambda)$ is zero, that is, $\left\vert A - I\lambda\right\vert = 0$. We write:
  
 $$
 \begin{aligned}
@@ -486,6 +486,11 @@ shows what both Romeo and Juliet reinforce each other's feeings ($b = 0.50$ and 
  
 The figure on the left below shows that indifference is the result of the relationship govenered by $A_1$, regardless of the starting point. Nodes generally have a slow and a fast eigendirection; the larger the eigenvalue, the stronger the pull in the direction of the corresponding eigenvector. For the stable node on the left, the fast eigendirection is clearly given by the negative eigenvector --- all trajectories are strongly pulled in its direction; only gradually are they pulled in the other eigendirection until they end up at the origin.
  
+
+{% highlight text %}
+## Error in arrows(-E[1, 1], -E[2, 1], E[1, 1], E[2, 1], length = 0, lty = 2, : object 'E' not found
+{% endhighlight %}
+
 <img src="/assets/img/2019-08-29-Linear-Love.Rmd/unnamed-chunk-12-1.png" title="plot of chunk unnamed-chunk-12" alt="plot of chunk unnamed-chunk-12" style="display: block; margin: auto;" />
  
 The figure on the right shows the relationship governed by $A_2$, which yields a more tumultuous love affair. In particular, Romeo and Juliet always have opposite feelings toward each other that also grow exponentially: Romeo becomes madder and madder in love with Juliet while Juliet becomes more and more hateful towards him, or the reverse --- it doesn't matter how loud one of them calls the other, there will be no positive response. The fast eigendirection is now given by the positive eigenvector; all trajectories initially go up (or down) a bit, before they get pulled heavily in the eigenvector's direction, moving almost parallel to it.
@@ -823,7 +828,47 @@ which we can implement straightforwardly in R.
 
 {% highlight r %}
 library('expm')
- 
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Loading required package: Matrix
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## 
+## Attaching package: 'Matrix'
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following object is masked from 'package:spam':
+## 
+##     det
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## 
+## Attaching package: 'expm'
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## The following object is masked from 'package:Matrix':
+## 
+##     expm
+{% endhighlight %}
+
+
+
+{% highlight r %}
 solve_linear2 <- function(A, inits = c(1, 1), tmax = 20, n = 1000) {
   
   # create time steps

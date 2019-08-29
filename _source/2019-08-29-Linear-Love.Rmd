@@ -626,7 +626,6 @@ plot_eigen <- function(E, ...) {
 }
 
 plot_vector_field(A2, title = 'A Repelling Node')
-plot_eigen(E %*% solve(E) * 4)
 plot_eigenvectors(A2)
 # add_line(A2, c(0, -.2))
 # add_line(A2, -c(0, -.2))

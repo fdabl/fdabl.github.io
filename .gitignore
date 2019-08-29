@@ -4,6 +4,8 @@ Gemfile.lock
 .jekyll-metadata
 .DS_Store
 .Rproj.user
+certificate
+fabiandablander.com.*
 blogpost-plans.txt
 in-progress
 simulations

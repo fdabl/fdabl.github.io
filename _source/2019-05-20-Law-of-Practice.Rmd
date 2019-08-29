@@ -4,10 +4,10 @@ layout: post
 title: "Bayesian modeling using Stan: A case study"
 date: 2019-05-30 11:00:00 +0100
 categories: R
-status: process
-published: true
-# status: development
-# published: false
+# status: process
+# published: true
+status: development
+published: false
 ---
 
 <link rel='stylesheet' href='../highlight/styles/default.css'>
@@ -156,14 +156,6 @@ On the left, the model makes predictions *before* seeing any data by means of it
 
 One key practical distinction between these two perspectives is how predictions are generated. On the left, predictions are generated from the prior. On the right, the prior first gets updated to the posterior using the observed data, and it is through the posterior that predictions are made. In the next two sections, we make this difference more precise.[^3]
 
-<!-- To contrast these two perspectives, let's study an example that, if you have read some of my previous blog posts (for example, [this](http://127.0.0.1:4000/r/Regularization.html) one), you will be thoroughly familiar with: coin flips. Assume we observe $y = 5$ heads out of $n = 10$ coin flips. We wish to compare the following two models -->
-
-<!-- $$ -->
-<!-- \begin{aligned} -->
-<!-- \mathcal{M}_0&: \theta = 0.50 \\[1em] -->
-<!-- \mathcal{M}_1&: \theta \sim \text{Beta}(1, 1) -->
-<!-- \end{aligned} -->
-<!-- $$ -->
 
 ## Prior prediction: Marginal likelihoods
 From this perspective, we weight the model's prediction of the observed data given a particular parameter setting by the prior. This is accomplished by integrating the likelihood with respect to the prior, which gives the so-called *marginal likelihood* of a model $\mathcal{M}$:

@@ -3,10 +3,10 @@ layout: post
 title: "The Fibonacci sequence and linear algebra"
 date: 2019-07-28 14:30:00 +0100
 categories: R
-status: process
-published: true
-# status: development
-# published: false
+# status: process
+# published: true
+status: development
+published: false
 ---
 
 Leonardo Bonacci, better known as Fibonacci, has influenced our lives profoundly. At the beginning of the $13^{th}$ century, he introduced the Hindu-Arabic numeral system to Europe. Instead of the Roman numbers, where **I** stands for one, **V** for five, **X** for ten, and so on, the Hindu-Arabic numeral system uses position to index magnitude. This leads to much shorter expressions for large numbers.[^1]

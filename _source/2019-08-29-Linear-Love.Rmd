@@ -1066,7 +1066,7 @@ $$
 
 which we can implement straightforwardly in R.
 
-```{r}
+```{r, warning = FALSE, message = FALSE}
 library('expm')
 
 solve_linear2 <- function(A, inits = c(1, 1), tmax = 20, n = 1000) {

@@ -828,47 +828,7 @@ which we can implement straightforwardly in R.
 
 {% highlight r %}
 library('expm')
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Loading required package: Matrix
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-## Attaching package: 'Matrix'
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following object is masked from 'package:spam':
-## 
-##     det
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-## Attaching package: 'expm'
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## The following object is masked from 'package:Matrix':
-## 
-##     expm
-{% endhighlight %}
-
-
-
-{% highlight r %}
+ 
 solve_linear2 <- function(A, inits = c(1, 1), tmax = 20, n = 1000) {
   
   # create time steps

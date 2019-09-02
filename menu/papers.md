@@ -4,14 +4,14 @@ title: ''
 ---
 
 ## Submitted / under review
-**Dablander, F.**, Epskamp, S., & Haslbeck, J.M.B. (under review). Studying Statistics Anxiety Requires Sound Statistics: A Comment on Siew, McCartney, and Vitevitch (2019). [[Link](https://psyarxiv.com/pfnys)]
-
 **Dablander, F.<sup>&#8902;</sup>**, Ryan, O.<sup>**&#8902;**</sup>, & Haslbeck, J.M.B.<sup>**&#8902;**</sup> (under review). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. [[Link](https://psyarxiv.com/qgewy/)]
 
 Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (under review). The Support Interval. [[Link](https://psyarxiv.com/zwnxb/)]
 
 
 ## 2019
+**Dablander, F.**, Epskamp, S., & Haslbeck, J.M.B. (2019). Studying Statistics Anxiety Requires Sound Statistics: A Comment on Siew, McCartney, and Vitevitch (2019). *Scholarship of Teaching and Learning in Psychology*. [[Link](https://psyarxiv.com/pfnys)]
+
 **Dablander, F.**, & Hinne, M. (2019). Node centrality measures are a poor substitute for causal inference.  *Scientific Reports, 9*, 6846. [[Link](https://www.nature.com/articles/s41598-019-43033-9)]
 
 Jakob, L., Garcia-Garzon, E., Jarke, H., & **Dablander, F.** (2019). The Science Behind the Magic? The Relation of the Harry Potter "Sorting Hat Quiz" to Personality and Human Values. *Collabra: Psychology, 5*(1), 31. [[Link](https://www.collabra.org/article/10.1525/collabra.240/)]

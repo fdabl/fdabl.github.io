@@ -4,8 +4,6 @@ title: ''
 ---
 
 ## Talks
-Bayesian Statistics: A Conceptual and Practical Introduction. Talk at the Complex Systems Summer School, Santa Fe, New Mexico, June 2019. [[Link]({{ site.url }}/assets/talks/Bayes-Tutorial-Santa-Fe.html)]
-
 Bayesian Vector Autoregression for Structure and Parameter Learning. Talk at Psychoco, Prague, Czech Republic, February 2019. [[Link]({{ site.url }}/assets/talks/BayesVAR-Psychoco2019.html)]
 
 Centrality measures as a proxy for causal influence? A cautionary tale. Invited Talk for the Network Analysis course, Amsterdam, The Netherlands, December 2018. [[Link]({{ site.url }}/assets/talks/centrality-causality.html)]
@@ -18,6 +16,8 @@ Default Bayes Factor for Testing the (In)equality of Several Population Variance
 Node Centrality Measures are a poor substitute for Causal Inference. European Causal Inference Meeting, Bremen, Germany, March 2019. [[Link]({{ site.url }}/assets/posters/EuroCIM-Poster-2019.pdf)]
 
 ## Workshops
+Bayesian Statistics: A Conceptual and Practical Introduction. Workshop at the Complex Systems Summer School, Santa Fe, New Mexico, June 2019. [[Link]({{ site.url }}/assets/talks/Bayes-Tutorial-Santa-Fe.html)]
+
 From 2014 to 2018, I was fortunate enough to give workshops on Bayesian inference in several countries. The most comprehensive version of this workshop can be found [here](https://github.com/fdabl/Intro-Stats).
 
 [R-Bloggers](https://www.r-bloggers.com/)

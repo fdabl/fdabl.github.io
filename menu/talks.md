@@ -4,7 +4,9 @@ title: ''
 ---
 
 ## Talks
-Bayesian Vector Autoregression for Structure and Parameter Learning. Talk at Psychoco 2019, Prague, Czech Republic, February 2019. [[Link]({{ site.url }}/assets/talks/BayesVAR-Psychoco2019.html)]
+Bayesian Statistics: A Conceptual and Practical Introduction. Talk at the Complex Systems Summer School, Santa Fe, New Mexico, June 2019. [[Link]({{ site.url }}/assets/talks/Bayes-Tutorial-Santa-Fe.html)]
+
+Bayesian Vector Autoregression for Structure and Parameter Learning. Talk at Psychoco, Prague, Czech Republic, February 2019. [[Link]({{ site.url }}/assets/talks/BayesVAR-Psychoco2019.html)]
 
 Centrality measures as a proxy for causal influence? A cautionary tale. Invited Talk for the Network Analysis course, Amsterdam, The Netherlands, December 2018. [[Link]({{ site.url }}/assets/talks/centrality-causality.html)]
 

@@ -3,10 +3,10 @@ layout: post
 title: "Love affairs and linear differential equations"
 date: 2019-08-29 12:00:00 +0100
 categories: R
-status: process
-published: true
-# status: development
-# published: false
+# status: process
+# published: true
+status: development
+published: false
 ---
 
 Differential equations are a powerful tool for modeling how systems change over time, but they can be a little hard to get into. Love, on the other hand, is humanity's perennial topic; some even claim it is all you need. In this blog post --- inspired by Strogatz (1988, 2015) --- I will introduce linear differential equations as a means to study the types of love affairs two people might find themselves in.

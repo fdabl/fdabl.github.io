@@ -606,7 +606,7 @@ fit
 ## sigma 0.99 0.09 0.82 0.92 0.99 1.05  1.18
 ## lp__  0.00 0.00 0.00 0.00 0.00 0.00  0.00
 ## 
-## Approximate samples were drawn using VB(meanfield) at Wed Oct 30 13:20:01 2019.
+## Approximate samples were drawn using VB(meanfield) at Thu Oct 31 17:33:34 2019.
 {% endhighlight %}
 
 
@@ -615,7 +615,9 @@ fit
 ## We recommend genuine 'sampling' from the posterior distribution for final inferences!
 {% endhighlight %}
  
-Their recommendation is prudent. If you run the code with different seeds, you can get quite different results. For example, the posterior mean of $\beta$ can range from $0.12$ to $0.45$, and the posterior standard deviation can be as low as $0.03$; in all these settings, Stan indicates that the ELBO has converged, but it seems that it has converged to a different local optimum for each run. (For seed = 3, Stan gives completely nonsensical results). Stan warns that the algorithm is experimental and may be unstable, and it is probably wise to not use it in production.
+Their recommendation is prudent. If you run the code with different seeds, you can get quite different results. For example, the posterior mean of $\beta$ can range from $0.12$ to $0.45$, and the posterior standard deviation can be as low as $0.03$; in all these settings, Stan indicates that the ELBO has converged, but it seems that it has converged to a different local optimum for each run. (For seed = 3, Stan gives completely nonsensical results). Stan warns that the algorithm is experimental and may be unstable, and it is probably wise to not use it in production. 
+ 
+*Update*: As Ben Goodrich points out in the comments, there is some cool work on providing diagnostics for variational inference; see [this](https://statmodeling.stat.columbia.edu/2018/06/27/yes-work-evaluating-variational-inference/) blog post and the paper by Yao, Vehtari, Simpson, & Gelman ([2018](https://arxiv.org/abs/1802.02538)) as well as the paper by Huggins, Kasprzak, Campbell, & Broderik ([2019](https://arxiv.org/abs/1910.04102)).
  
 Although the posterior distribution for $\beta$ and $\sigma^2$ is available in closed-form (see the *Post Scriptum*), we check our results against exact inference using Markov chain Monte carlo by visual inspection.
  
@@ -626,6 +628,11 @@ fit <- sampling(model, data = stan_dat, iter = 8000, refresh = FALSE, seed = 1)
  
 The Figure below overlays our closed-form results to the histogram of posterior samples obtained using Stan.
  
+
+{% highlight text %}
+## Error in dnorm(beta, mc$beta_mu, mc$beta_sd[length(mc$beta_sd)]): Non-numeric argument to mathematical function
+{% endhighlight %}
+
 <img src="/assets/img/2019-10-30-Variational-Inference.Rmd/unnamed-chunk-10-1.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" style="display: block; margin: auto;" />
  
  
@@ -666,8 +673,10 @@ Note that the marginal posterior distribution for $\beta$ is actually a Student-
  
 ## References
 - Blei, D. M., Kucukelbir, A., & McAuliffe, J. D. ([2017](https://www.tandfonline.com/doi/full/10.1080/01621459.2017.1285773)). Variational inference: A review for statisticians. *Journal of the American Statistical Association, 112*(518), 859-877.
+- Huggins, J. H., Kasprzak, M., Campbell, T., & Broderick, T. ([2019](https://arxiv.org/abs/1910.04102)). Practical Posterior Error Bounds from Variational Objectives. *arXiv preprint* arXiv:1910.04102.
 - Kucukelbir, A., Ranganath, R., Gelman, A., & Blei, D. ([2015](http://papers.nips.cc/paper/5758-automatic-variational-inference-in-stan)). Automatic variational inference in Stan. In *Advances in Neural Information Processing Systems* (pp. 568-576).
 - Kucukelbir, A., Tran, D., Ranganath, R., Gelman, A., & Blei, D. M. ([2017](http://www.jmlr.org/papers/volume18/16-107/16-107.pdf)). Automatic differentiation variational inference. *The Journal of Machine Learning Research, 18*(1), 430-474.
+- Yao, Y., Vehtari, A., Simpson, D., & Gelman, A. ([2018](https://arxiv.org/abs/1802.02538)). Yes, but did it work?: Evaluating variational inference. *arXiv preprint* arXiv:1802.02538.
  
 ---
 ## Footnotes

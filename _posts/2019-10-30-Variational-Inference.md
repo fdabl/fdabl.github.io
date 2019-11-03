@@ -606,7 +606,7 @@ fit
 ## sigma 0.99 0.09 0.82 0.92 0.99 1.05  1.18
 ## lp__  0.00 0.00 0.00 0.00 0.00 0.00  0.00
 ## 
-## Approximate samples were drawn using VB(meanfield) at Thu Oct 31 17:33:34 2019.
+## Approximate samples were drawn using VB(meanfield) at Mon Nov  4 00:03:20 2019.
 {% endhighlight %}
 
 
@@ -628,11 +628,6 @@ fit <- sampling(model, data = stan_dat, iter = 8000, refresh = FALSE, seed = 1)
  
 The Figure below overlays our closed-form results to the histogram of posterior samples obtained using Stan.
  
-
-{% highlight text %}
-## Error in dnorm(beta, mc$beta_mu, mc$beta_sd[length(mc$beta_sd)]): Non-numeric argument to mathematical function
-{% endhighlight %}
-
 <img src="/assets/img/2019-10-30-Variational-Inference.Rmd/unnamed-chunk-10-1.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" style="display: block; margin: auto;" />
  
  

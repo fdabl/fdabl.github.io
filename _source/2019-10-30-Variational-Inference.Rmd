@@ -618,6 +618,7 @@ The Figure below overlays our closed-form results to the histogram of posterior 
 
 ```{r, echo = FALSE, fig.width = 14, fig.height = 6, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 posterior <- extract(fit)
+beta <- seq(-.2, .8, .001)
 
 par(mfrow = c(1, 2))
 hist(

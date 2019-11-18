@@ -116,7 +116,7 @@ $$
 p(\theta \mid y) = \frac{1}{\text{B}(a', b')} \theta^{a' - 1} (1 - \theta)^{b' - 1} \enspace ,
 $$
  
-where $a' = a + y$ and $b' = b + y - n$. Under this conjugate setup, the parameters of the prior can be understood as prior data; for example, if we choose prior parameters $a = b = 1$, then we assume that we have seen one heads and one tails prior to data collection. The figure below shows two examples of such Bayesian updating processes.
+where $a' = a + y$ and $b' = b + n - y$. Under this conjugate setup, the parameters of the prior can be understood as prior data; for example, if we choose prior parameters $a = b = 1$, then we assume that we have seen one heads and one tails prior to data collection. The figure below shows two examples of such Bayesian updating processes.
  
 <img src="/assets/img/2019-04-14-Regularization.Rmd/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />
  

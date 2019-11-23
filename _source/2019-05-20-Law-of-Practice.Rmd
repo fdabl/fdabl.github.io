@@ -47,7 +47,7 @@ $$
 $$
 
 
-```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi = 400}
 library('bbmle')
 
 # simulate data
@@ -297,7 +297,7 @@ generated quantities {
 
 From a marginal likelihood perspective, the prior is an integral part of the model; this means we have to think very carefully about it. There are several principles that can guide us (see also Lee & Vanpaemel, 2018), but one that is particularly helpful here is to look at the prior predictive distribution. Do draws from the prior predictive distribution look like what we had in mind? Below, I have visualized the mean, the standard deviation around the mean, and several draws from it for (a) flat priors on the positive real line, and (b) informed priors that I chose based on reading Evans et al. (2018). In the Stan code, you can specify flat priors by commenting out the priors we have specified in the model block.
 
-```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 library('rstan')
 
 n <- length(ns)
@@ -348,7 +348,7 @@ plot_pred(ypred2, title = 'Prior Predictions: Informed priors')
 
 The Figure on the left shows that flat priors make terrible predictions. The mean of the prior predictive distribution is a constant function at zero, which is not at all what we had in mind when writing down the power law model. Even worse, flat priors allow for negative reaction time, something that is clearly impossible! In contrast, the Figure on the right seems reasonable. Below I have visualized the informed priors.
 
-```{r, echo = FALSE, fig.width = 14, fig.height = 9, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 14, fig.height = 9, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 library('latex2exp')
 
 alpha <- seq(0, 10, .001)
@@ -437,7 +437,7 @@ fit_ee <- sampling(
 
 But before we do so, let's visualize the posterior predictions of both models for each simulated data set, respectively.
 
-```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 ypred_pp <- rstan::extract(fit_pp)[['ypred']]
 ypred_ep <- rstan::extract(fit_ep)[['ypred']]
 
@@ -488,7 +488,7 @@ We find that there are is one very bad Pareto $k$ value. What does this mean? Th
 
 The two figures below visualize the $k$ values for each data point. We see that loo has troubles predicting the first data point for both the exponential and power law model.
 
-```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 par(mfrow = c(1, 2))
 plot(loo_ep, main = 'PSIS Diagnostic: Exponential')
 plot(loo_pp, main = 'PSIS Diagnostic: Power Law')
@@ -551,7 +551,7 @@ dat <- c(
 )
 ```
 
-```{r, echo = FALSE, fig.width = 9, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 9, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 sim_power_plat <- function(N, alpha, beta, r, tau = 8, t0 = 0, sdlog = 1) {
   t0 + (alpha + beta * (tau + 1) / (tau + N^r)) * rlnorm(length(N), 0, sdlog)
 }
@@ -600,7 +600,8 @@ parameters {
 
 model {
   real mu;
-  target += cauchy_lpdf(tau | 0, 1);
+  // Renormalize Cauchy prior due to truncation to get correct marginal likelihood
+  target += cauchy_lpdf(tau | 0, 1) - cauchy_lccdf(0 | 0, 1);
   target += lognormal_lpdf(alpha | 0, .5);
   target += lognormal_lpdf(beta | 1, .5);
   target += gamma_lpdf(r | 1, 3);
@@ -630,7 +631,7 @@ generated quantities {
 
 We have put a half-Cauchy prior on $\tau$. This is because the Cauchy distribution has very fat tails, compared to for example the Normal or the Laplace distribution; see Figure below. This is desired, because we need large $\tau$ values to accommodate plateaus.
 
-```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 library('RColorBrewer')
 cols <- brewer.pal(3, 'Set1')
 
@@ -657,7 +658,7 @@ legend('topright', legend = c('Cauchy', 'Normal', 'Laplace'), col = cols, bty = 
 
 The figure below compares the prior predictive distributions of the exponential to the *delayed exponential* model. As we can see, the additional $\tau$ parameter creates larger uncertainty in the predictions, with the some individual draws looking completely different from each other. [Drawing samples from a Cauchy](https://betanalpha.github.io/assets/case_studies/fitting_the_cauchy.html), whose mean and variance are [undefined](https://en.wikipedia.org/wiki/Cauchy_distribution#Explanation_of_undefined_moments), is tricky. 
 
-```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 comp_exp_delayed <- readRDS('stan-compiled/compiled-delayed-exponential-model.RDS')
 
 fit_ee <- sampling(
@@ -713,9 +714,9 @@ This is also reflected in an extreme difference in stacking weights, which compl
 stacking_weights(fit_ee_plateau, fit_ee)
 ```
 
-Earlier, when comparing the exponential and power model on data generated from an exponential model, we found a Bayes factor in favour of the exponential model of about 1000, while the difference in loo was only about 1.5 standard errors. Here, we now find a Bayes factor in favour of the delayed exponential model of only about 150, while loo finds a difference of about three standard errors. This contrast becomes is illuminated by visualizing the posterior predictive distribution, see below.
+Earlier, when comparing the exponential and power model on data generated from an exponential model, we found a Bayes factor in favour of the exponential model of about 1000, while the difference in loo was only about 1.5 standard errors. Here, we now find a Bayes factor in favour of the delayed exponential model of only about 300, while loo finds a difference of about three standard errors. This contrast becomes is illuminated by visualizing the posterior predictive distribution, see below.
 
-```{r, echo = FALSE, fig.width = 8, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 8, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 ypred_ee <- rstan::extract(fit_ee, 'ypred')$ypred
 ypred_ee_plateau <- rstan::extract(fit_ee_plateau, 'ypred')$ypred
 
@@ -751,7 +752,7 @@ $$
 The figure below visualizes various lognormal distribution with different parameters $\mu$ and $\sigma^2$. The figure on the left shows how a change in $\sigma^2$ affects the distribution, while keeping $\mu = 1$. You can see that the "peak" of the distribution changes, indicating that the parameter $\mu$ is not independent of $\sigma^2$. In fact, while the mean and variance of a normal distribution are given by $\mu$ and $\sigma^2$, respectively, this is not so for a lognormal distribution. It seems difficult to compute the first two moments of the Lognormal distributions directly (you can try if you want!). However, there is a neat trick to compute *all* its moments basically instantaneously.
 
 
-```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 cols <- brewer.pal(3, 'Set1')
 z <- seq(0, 10, .01)
 
@@ -891,7 +892,8 @@ parameters {
 
 model {
   real mu;
-  target += cauchy_lpdf(tau | 0, 1);
+  // Renormalize Cauchy prior due to truncation to get correct marginal likelihood
+  target += cauchy_lpdf(tau | 0, 1) - cauchy_lccdf(0 | 0, 1);
   target += lognormal_lpdf(delta | log(0.50), .5);
   target += lognormal_lpdf(alpha | log(0.50), .5);
   target += lognormal_lpdf(beta | 1, .5);
@@ -926,7 +928,7 @@ generated quantities {
 
 Visualizing the prior predictive distribution bares only limited insight into how these two models differ:
 
-```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 comp_exp_delayed_log <- readRDS('stan-compiled/compiled-delayed-lognormal-exponential-model.RDS')
 
 fit_ee3 <- sampling(
@@ -972,7 +974,7 @@ stacking_weights(fit_ee_plateau_lognormal, fit_ee_plateau)
 
 The contrast between the Bayes factor and loo can again be illuminated by looking at the posterior predictive distribution for the respective models; see below. The lognormal model can account for decrease in variance with increased practice. Still, the predictions of both models are rather similar, so that there is little to distinguish them using loo.
 
-```{r, echo = FALSE, fig.width = 8, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 8, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 ypred_ee_plateau <- rstan::extract(fit_ee_plateau, 'ypred')$ypred
 ypred_ee_plateau_lognormal <- rstan::extract(fit_ee_plateau_lognormal, 'ypred')$ypred
 

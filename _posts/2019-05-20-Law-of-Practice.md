@@ -61,14 +61,6 @@ On the left, the model makes predictions *before* seeing any data by means of it
  
 One key practical distinction between these two perspectives is how predictions are generated. On the left, predictions are generated from the prior. On the right, the prior first gets updated to the posterior using the observed data, and it is through the posterior that predictions are made. In the next two sections, we make this difference more precise.[^3]
  
-<!-- To contrast these two perspectives, let's study an example that, if you have read some of my previous blog posts (for example, [this](http://127.0.0.1:4000/r/Regularization.html) one), you will be thoroughly familiar with: coin flips. Assume we observe $y = 5$ heads out of $n = 10$ coin flips. We wish to compare the following two models -->
- 
-<!-- $$ -->
-<!-- \begin{aligned} -->
-<!-- \mathcal{M}_0&: \theta = 0.50 \\[1em] -->
-<!-- \mathcal{M}_1&: \theta \sim \text{Beta}(1, 1) -->
-<!-- \end{aligned} -->
-<!-- $$ -->
  
 ## Prior prediction: Marginal likelihoods
 From this perspective, we weight the model's prediction of the observed data given a particular parameter setting by the prior. This is accomplished by integrating the likelihood with respect to the prior, which gives the so-called *marginal likelihood* of a model $\mathcal{M}$:
@@ -510,7 +502,8 @@ parameters {
  
 model {
   real mu;
-  target += cauchy_lpdf(tau | 0, 1);
+  // Renormalize Cauchy prior due to truncation to get correct marginal likelihood
+  target += cauchy_lpdf(tau | 0, 1) - cauchy_lccdf(0 | 0, 1);
   target += lognormal_lpdf(alpha | 0, .5);
   target += lognormal_lpdf(beta | 1, .5);
   target += gamma_lpdf(r | 1, 3);
@@ -572,7 +565,7 @@ bayes_factor(
 
 
 {% highlight text %}
-## Estimated Bayes factor in favor of x1 over x2: 152.06430
+## Estimated Bayes factor in favor of x1 over x2: 304.35681
 {% endhighlight %}
  
 This is a large Bayes factor. However, loo seems to favour the delayed exponential model much more, by about three standard errors:
@@ -607,7 +600,7 @@ stacking_weights(fit_ee_plateau, fit_ee)
 ## 2 0.000
 {% endhighlight %}
  
-Earlier, when comparing the exponential and power model on data generated from an exponential model, we found a Bayes factor in favour of the exponential model of about 1000, while the difference in loo was only about 1.5 standard errors. Here, we now find a Bayes factor in favour of the delayed exponential model of only about 150, while loo finds a difference of about three standard errors. This contrast becomes is illuminated by visualizing the posterior predictive distribution, see below.
+Earlier, when comparing the exponential and power model on data generated from an exponential model, we found a Bayes factor in favour of the exponential model of about 1000, while the difference in loo was only about 1.5 standard errors. Here, we now find a Bayes factor in favour of the delayed exponential model of only about 300, while loo finds a difference of about three standard errors. This contrast becomes is illuminated by visualizing the posterior predictive distribution, see below.
  
 <img src="/assets/img/2019-05-20-Law-of-Practice.Rmd/unnamed-chunk-24-1.png" title="plot of chunk unnamed-chunk-24" alt="plot of chunk unnamed-chunk-24" style="display: block; margin: auto;" />
  
@@ -731,7 +724,8 @@ parameters {
  
 model {
   real mu;
-  target += cauchy_lpdf(tau | 0, 1);
+  // Renormalize Cauchy prior due to truncation to get correct marginal likelihood
+  target += cauchy_lpdf(tau | 0, 1) - cauchy_lccdf(0 | 0, 1);
   target += lognormal_lpdf(delta | log(0.50), .5);
   target += lognormal_lpdf(alpha | log(0.50), .5);
   target += lognormal_lpdf(beta | 1, .5);
@@ -788,7 +782,7 @@ bayes_factor(
 
 
 {% highlight text %}
-## Estimated Bayes factor in favor of x1 over x2: 200.86885
+## Estimated Bayes factor in favor of x1 over x2: 198.49106
 {% endhighlight %}
  
 In contrast, loo shows barely any evidence: we would *not* choose the lognormal model, but we remain undecided. (The warning is because we have one $k \in [0.5, 0.7]$.)
@@ -801,15 +795,9 @@ loo_compare(loo(fit_ee_plateau_lognormal), loo(fit_ee_plateau))
 
 
 {% highlight text %}
-## Warning: Some Pareto k diagnostic values are slightly high. See help('pareto-k-diagnostic') for details.
-{% endhighlight %}
-
-
-
-{% highlight text %}
 ##        elpd_diff se_diff
 ## model1  0.0       0.0   
-## model2 -4.9       3.3
+## model2 -5.1       3.3
 {% endhighlight %}
  
 Using stacking, the weights result in a factor of about 24 in favour of the lognormal model:
@@ -822,17 +810,11 @@ stacking_weights(fit_ee_plateau_lognormal, fit_ee_plateau)
 
 
 {% highlight text %}
-## Warning: Some Pareto k diagnostic values are slightly high. See help('pareto-k-diagnostic') for details.
-{% endhighlight %}
-
-
-
-{% highlight text %}
 ## Method: stacking
 ## ------
 ##   weight
-## 1 0.961 
-## 2 0.039
+## 1 0.983 
+## 2 0.017
 {% endhighlight %}
  
 The contrast between the Bayes factor and loo can again be illuminated by looking at the posterior predictive distribution for the respective models; see below. The lognormal model can account for decrease in variance with increased practice. Still, the predictions of both models are rather similar, so that there is little to distinguish them using loo.

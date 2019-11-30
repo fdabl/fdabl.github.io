@@ -272,7 +272,7 @@ where $\epsilon_X, \epsilon_Y \stackrel{\text{iid}}{\sim} \mathcal{N}(0, 1)$ and
 The assumption of Gaussian errors induces a multivariate Gaussian distribution on $(X, Y, Z)$ whose independence structure is visualized in the leftmost DAG below. The middle DAG shows an intervention on $Z$, while the rightmost DAG shows an intervention on $X$. Recall that, as discussed above, intervening on a variable cuts all incoming arrows.
  
 <center>
-  <img src="../assets/img/prediction-vs-intervention.png" align="center" style="margin-right: 10px;" width="700" height="400"/>
+  <img src="../assets/img/Prediction-vs-Intervention.png" align="center" style="margin-right: 10px;" width="700" height="400"/>
 </center>
  
 At the first level of the causal hierarchy --- association --- we might ask ourselves: does $X$ or $Z$ predict $Y$ better? To illustrate the answer for our example, we simulate $n = 1000$ observations from the Structural Causal model:

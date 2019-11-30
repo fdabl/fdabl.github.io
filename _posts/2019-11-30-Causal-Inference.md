@@ -7,7 +7,7 @@ status: publish
 published: true
 ---
  
-Causal inference goes beyond prediction by modeling the outcome of interventions. In this blog post, I provide an introduction to the graphical approach to causal inference in the tradition of Sewell Wright, Judea Pearl, and others.
+Causal inference goes beyond prediction by modeling the outcome of interventions and formalizing counterfactual reasoning. In this blog post, I provide an introduction to the graphical approach to causal inference in the tradition of Sewell Wright, Judea Pearl, and others.
  
 We first rehash the common adage that correlation is not causation. We then move on to climb what Pearl calls the "ladder of causal inference", from association (*seeing*) to intervention (*doing*) to counterfactuals (*imagining*). We will discover how directed acyclic graphs describe conditional (in)dependencies; how the *do*-calculus describes interventions; and how Structural Causal Models allow us to imagine what could have been. This blog post is by no means exhaustive, but should give you a first appreciation of the concepts that surround causal inference; references to further readings are provided below. Let's dive in![^1]
  

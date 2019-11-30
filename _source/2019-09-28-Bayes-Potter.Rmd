@@ -3,8 +3,10 @@ layout: post
 title: "Harry Potter and the Power of Bayesian Constrained Inference"
 date: 2019-09-28 09:00:00 +0100
 categories: R
-status: process
-published: true
+# status: process
+# published: true
+status: development
+published: false
 ---
 
 If you are reading this, you are probably a Ravenclaw. Or a Hufflepuff. Certainly not a Slytherin ... but maybe a Gryffindor?

@@ -615,7 +615,7 @@ In this blog post, we have touched on several key concepts of causal inference. 
 
 Moving up to the second level --- intervention --- we have seen how the *do*-operator models populations under interventions. This helped us define *confounding* --- the bane of observational data analysis --- as occuring when $p(Y \mid X = x) \neq p(Y \mid do(X = x))$. This comes with the important observation that entering all variables into a regression in order to "control" for them is misguided; rather, we need to carefully think about the underlying causal relations lest we want to introduce bias by for example conditioning on a collider. The *backdoor criterion* provided us with a graphical way to assess whether an effect is confounded or not.
 
-DAGs are completely model-agnostic, and we have seen how Structural Causal Models (SCMs) provide the building block from which observational and interventional distributions follow. SCMs further imply counterfactual statements, which sit at the top of the causal hierarchy. With this, they allow us to move beyond the *do*-operator and average causal effects to estimate what would have happened if things had turned out differently, even though they did not.
+Finally, we have seen that Structural Causal Models (SCMs) provide the building block from which observational and interventional distributions follow. SCMs further imply counterfactual statements, which sit at the top of the causal hierarchy. These allow us to move beyond the *do*-operator and average causal effects: they enable us to answer questions about what would have been if things had been different.
 
 ---
 *I would like to thank [Oisín Ryan](https://ryanoisin.github.io/) and [Sophia Crüwell](https://cruwell.com/) for very helpful comments on this blog.*

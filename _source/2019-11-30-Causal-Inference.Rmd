@@ -112,7 +112,7 @@ ggplot(nobel, aes(x = Chocolate, y = Laureates10_million, label = Country)) +
 
 Now, except for [people in the chocolate business](https://www.confectionerynews.com/Article/2012/10/11/Chocolate-creates-Nobel-prize-winners-says-study), it would be quite a stretch to suggest that increasing chocolate consumption would increase the number Nobel Laureates. Correlation does not imply causation because it does not constrain the possible causal relations enough. Hans Reichenbach (1956) formulated the *common cause principle* which speaks to this fact:
 
-> If two random variables $X$ and $Y$ are statistically dependent ($X \perp Y$), then either (a) $X$ causes $Y$, (b) $Y$ causes $X$, or (c) there exists a third variable $Z$ that causes both $X$ and $Y$. Further, $X$ and $Y$ become independent given $Z$, i.e., $X \perp Y \mid Z$.
+> If two random variables $X$ and $Y$ are statistically dependent ($X \not \perp Y$), then either (a) $X$ causes $Y$, (b) $Y$ causes $X$, or (c) there exists a third variable $Z$ that causes both $X$ and $Y$. Further, $X$ and $Y$ become independent given $Z$, i.e., $X \perp Y \mid Z$.
 
 An in principle straightforward way to break this uncertainty is to conduct an experiment: we could, for example, force the citizens of Austria to consume more chocolate, and study whether this increases the number of Nobel laureates in the following years. Such experiments are clearly unfeasible, but even in less extreme settings it is frequently unethical, impractical, or impossible --- think of smoking and lung cancer --- to study an association experimentally.
 
@@ -537,7 +537,7 @@ R &:= \mu + \beta T + \epsilon \enspace ,
 \end{aligned}
 $$
 
-where $\mu$ is an intercept, $\epsilon_T \sim \text{Bern}(0.50)$ indicates random assignment to either receive the treatment ($T = 1$) or not receive it ($T = 0$), and $\epsilon \stackrel{\text{iid}}{\sim} \mathcal{N}(0, \sigma)$. The SCM tells us that the direct causal effect of the treatment on how quickly patients recover from the common cold is $\beta$. This causal effect is obscured by individual error terms for each patient $\epsilon = (\epsilon_1, \epsilon_2, \ldots, \epsilon_N)$, which is are aggregates term for all the things left unmodelled (see [this](https://fabiandablander.com/r/Curve-Fitting-Gaussian.html) blog post for some history). In particular, $\epsilon_k$ summarizes all the things that have an effect on the speed of recovery for patient $k$.
+where $\mu$ is an intercept, $\epsilon_T \sim \text{Bern}(0.50)$ indicates random assignment to either receive the treatment ($T = 1$) or not receive it ($T = 0$), and $\epsilon \stackrel{\text{iid}}{\sim} \mathcal{N}(0, \sigma)$. The SCM tells us that the direct causal effect of the treatment on how quickly patients recover from the common cold is $\beta$. This causal effect is obscured by individual error terms for each patient $\epsilon = (\epsilon_1, \epsilon_2, \ldots, \epsilon_N)$, which are aggregate terms for all the things left unmodelled (see [this](https://fabiandablander.com/r/Curve-Fitting-Gaussian.html) blog post for some history). In particular, $\epsilon_k$ summarizes all the things that have an effect on the speed of recovery for patient $k$.
 
 Once we have collected the data, suppose we find that $\mu = 7$, $\beta = -2$, and $\sigma = 2$. This does speak for grandma's treatment, since it shortens the recovery time by 2 days on average:
 

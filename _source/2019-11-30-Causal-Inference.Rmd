@@ -348,7 +348,7 @@ kable_styling(tab, full_width = FALSE)
 
 We observe that more men as well as more women recover when taking the drug (93% and 73%) compared to when not taking the drug (87% and 69%). And yet, when taken together, *fewer* patients who took the drug recovered (78%) compared to patients who did not take the drug (83%). This is puzzling --- should a doctor prescribe the drug or not?
 
-To answer this question, we need to compute the causal effect that taking the drug has on the probability of recovery. As a first step, we draw the causal DAG. Suppose we know that women are more likely to take the drug, that being a woman has an effect on recovery more generally, and that the drug has an effect on recovery. Moreover, we know that the *treatment cannot cause sex*. This is a trivial yet crucial observation --- it is impossible to express this in purely statistical language. Causal DAGs provide us with a tool to make such an assumption explicit; the graph below makes explicit that sex ($S$) is a common cause of both drug taking ($D$) and recovery ($R$). We denote $S = 1$ as being female, $D = 1$ as having chosen the drug, and $R = 1$ as having recovered. The left DAG is observational, while the right DAG indicates the intervention $do(D = d)$, where $d$ denotes taking the drug ($d = 0$) or not taking the drug ($d = 1$).
+To answer this question, we need to compute the causal effect that taking the drug has on the probability of recovery. As a first step, we draw the causal DAG. Suppose we know that women are more likely to take the drug, that being a woman has an effect on recovery more generally, and that the drug has an effect on recovery. Moreover, we know that the *treatment cannot cause sex*. This is a trivial yet crucial observation --- it is impossible to express this in purely statistical language. Causal DAGs provide us with a tool to make such an assumption explicit; the graph below makes explicit that sex ($S$) is a common cause of both drug taking ($D$) and recovery ($R$). We denote $S = 1$ as being female, $D = 1$ as having chosen the drug, and $R = 1$ as having recovered. The left DAG is observational while the right DAG indicates the intervention $do(D = d)$, that is, forcing every patient to either take the drug ($d = 1$) or to not take the drug ($d = 0$).
 
 <center>
   <img src="../assets/img/Simpsons-DAG-I.png" align="center" style="margin-right: 10px;" width="600" height="300"/>
@@ -413,7 +413,7 @@ In this section, we discuss Structural Causal Models (SCM) as the fundamental bu
 $$
 \begin{aligned}
 X &:= \epsilon_X \\[.5em]
-Y &:= f(X, \epsilon_X) \enspace .
+Y &:= f(X, \epsilon_Y) \enspace .
 \end{aligned}
 $$
 

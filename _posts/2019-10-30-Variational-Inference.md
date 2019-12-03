@@ -5,6 +5,8 @@ date: 2019-10-30 13:00:00 +0100
 categories: R
 status: publish
 published: true
+# status: development
+# published: false
 ---
  
 <link rel='stylesheet' href='../highlight/styles/default.css'>
@@ -576,7 +578,7 @@ We use Stan's black-box variational inference scheme:
 library('rstan')
  
 # save the above model to a file and compile it
-# model <- stan_model(file = 'regression.stan')
+model <- stan_model(file = 'stan-compiled/variational-regression.stan')
  
 stan_dat <- list('n' = nrow(dat), 'x' = dat$x, 'y' = dat$y, 'tau' = 0.50)
 fit <- vb(
@@ -586,9 +588,6 @@ fit <- vb(
 {% endhighlight %}
  
 
-{% highlight text %}
-## Error in vb(model, data = stan_dat, output_samples = 20000, adapt_iter = 10000, : object 'model' not found
-{% endhighlight %}
  
 This gives similar estimates as ours:
  
@@ -600,7 +599,22 @@ fit
 
 
 {% highlight text %}
-## Error in eval(expr, envir, enclos): object 'fit' not found
+## Inference for Stan model: variational-regression.
+## 1 chains, each with iter=20000; warmup=0; thin=1; 
+## post-warmup draws per chain=20000, total post-warmup draws=20000.
+## 
+##       mean   sd 2.5%  25%  50%  75% 97.5%
+## b     0.28 0.13 0.02 0.19 0.28 0.37  0.54
+## sigma 0.99 0.09 0.82 0.92 0.99 1.05  1.18
+## lp__  0.00 0.00 0.00 0.00 0.00 0.00  0.00
+## 
+## Approximate samples were drawn using VB(meanfield) at Tue Dec  3 13:45:57 2019.
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## We recommend genuine 'sampling' from the posterior distribution for final inferences!
 {% endhighlight %}
  
 Their recommendation is prudent. If you run the code with different seeds, you can get quite different results. For example, the posterior mean of $\beta$ can range from $0.12$ to $0.45$, and the posterior standard deviation can be as low as $0.03$; in all these settings, Stan indicates that the ELBO has converged, but it seems that it has converged to a different local optimum for each run. (For seed = 3, Stan gives completely nonsensical results). Stan warns that the algorithm is experimental and may be unstable, and it is probably wise to not use it in production. 
@@ -613,67 +627,10 @@ Although the posterior distribution for $\beta$ and $\sigma^2$ is available in c
 {% highlight r %}
 fit <- sampling(model, data = stan_dat, iter = 8000, refresh = FALSE, seed = 1)
 {% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in sampling(model, data = stan_dat, iter = 8000, refresh = FALSE, : object 'model' not found
-{% endhighlight %}
  
 The Figure below overlays our closed-form results to the histogram of posterior samples obtained using Stan.
  
-
-{% highlight text %}
-## Error in extract(fit): object 'fit' not found
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in hist(posterior$b, col = "skyblue", main = expression("Posterior of " ~ : object 'posterior' not found
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in axis(1, at = seq(-0.3, 0.9, 0.2)): plot.new has not been called yet
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in axis(2, las = 2): plot.new has not been called yet
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in plot.xy(xy.coords(x, y), type = type, ...): plot.new has not been called yet
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in hist(posterior$sigma^2, col = "skyblue", main = expression("Posterior of " ~ : object 'posterior' not found
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in axis(1, at = seq(0.4, 1.6, 0.2)): plot.new has not been called yet
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in axis(2, las = 2): plot.new has not been called yet
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## Error in plot.xy(xy.coords(x, y), type = type, ...): plot.new has not been called yet
-{% endhighlight %}
+<img src="/assets/img/2019-10-30-Variational-Inference.Rmd/unnamed-chunk-10-1.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" style="display: block; margin: auto;" />
  
  
 Note that the posterior variance of $\beta$ is slightly *overestimated* when using our variational scheme. This is in contrast to the fact that variational inference generally *underestimates* variances. Note also that Bayesian inference using Markov chain Monte Carlo is very fast on this simple problem. However, the comparative advantage of variational inference becomes clear by increasing the sample size: for sample sizes as large as $n = 100000$, our variational inference scheme takes less then a tenth of a second!

@@ -5,6 +5,8 @@ date: 2019-10-30 13:00:00 +0100
 categories: R
 status: process
 published: true
+# status: development
+# published: false
 ---
 
 <link rel='stylesheet' href='../highlight/styles/default.css'>
@@ -574,11 +576,11 @@ model {
 
 We use Stan's black-box variational inference scheme:
 
-```{r, eval = FALSE}
+```{r, eval = TRUE}
 library('rstan')
 
 # save the above model to a file and compile it
-# model <- stan_model(file = 'regression.stan')
+model <- stan_model(file = 'stan-compiled/variational-regression.stan')
 
 stan_dat <- list('n' = nrow(dat), 'x' = dat$x, 'y' = dat$y, 'tau' = 0.50)
 fit <- vb(

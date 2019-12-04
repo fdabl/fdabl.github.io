@@ -3,10 +3,10 @@ layout: post
 title: "A brief primer on Variational Inference"
 date: 2019-10-30 13:00:00 +0100
 categories: R
-status: process
-published: true
-# status: development
-# published: false
+# status: process
+# published: true
+status: development
+published: false
 ---
 
 <link rel='stylesheet' href='../highlight/styles/default.css'>

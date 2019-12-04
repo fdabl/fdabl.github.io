@@ -3,10 +3,10 @@ layout: post
 title: "An introduction to Causal inference"
 date: 2019-11-30 13:00:00 +0100
 categories: R
-# status: process
-# published: true
-status: development
-published: false
+status: process
+published: true
+# status: development
+# published: false
 ---
 
 Causal inference goes beyond prediction by modeling the outcome of interventions and formalizing counterfactual reasoning. In this blog post, I provide an introduction to the graphical approach to causal inference in the tradition of Sewell Wright, Judea Pearl, and others.
@@ -526,7 +526,7 @@ To which he answers:
 
 > "There is no means of testing which decision is better, because there is no basis for comparison. We live everything as it comes, without warning, like an actor going on cold. And what can life be worth if the first rehearsal for life is life itself?"
 
-Kundera is describing, as Holland (1986, p. 947) put it, the "fundamental problem of causal inference", namely that we only ever observe one realization. If Tomáš chooses to stay with Tereza, then he cannot not choose to stay with Tereza. He cannot go back in time and revert his decision, living instead "everything as it comes, without warning". This does not mean, however, that Tomáš cannot assess afterwards whether his choice has been wise. In contrast, humans constantly evaluate mutually exclusive options, only one of which ever comes true; that is, humans reason *counterfactually*.
+Kundera is describing, as Holland (1986, p. 947) put it, the "fundamental problem of causal inference", namely that we only ever observe one realization. If Tomáš chooses to stay with Tereza, then he cannot not choose to stay with Tereza. He cannot go back in time and revert his decision, living instead "everything as it comes, without warning". This does not mean, however, that Tomáš cannot assess afterwards whether his choice has been wise. As a matter of fact, humans constantly evaluate mutually exclusive options, only one of which ever comes true; that is, humans reason *counterfactually*.
 
 To do this formally requires strong assumptions. The *do*-operator, introduced above, is too weak to model counterfactuals. This is because it operates on distributions that are defined on populations, not on individuals. We can define an average causal effect using the *do*-operator, but --- unsurprisingly --- it only ever refers to averages. Structural Causal Models allow counterfactual reasoning on the level of the individual. To see this, we use a simple example.
 

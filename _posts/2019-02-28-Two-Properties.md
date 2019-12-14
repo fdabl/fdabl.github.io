@@ -3,10 +3,10 @@ layout: post
 title: "Two properties of the Gaussian distribution"
 date: 2019-02-28 11:30:00 +0100
 categories: statistics
-# status: development
-# published: false
 status: publish
 published: true
+# status: development
+# published: false
 ---
  
 <!-- In a previous blog post, we looked talked about the method of least squares, a development in statistics Stigler deems as important as calculus for mathematics. -->

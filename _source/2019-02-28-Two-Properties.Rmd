@@ -56,7 +56,7 @@ $$
 The figure below plots the *contour lines* of nine different bivariate normal distributions with mean zero, correlations $\rho \in [0, -0.3, 0.7]$, and standard deviations $\sigma_1, \sigma_2 \in [1, 2]$.
 
 
-```{r, echo = FALSE, fig.width = 12, fig.height = 10, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 12, fig.height = 10, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 library('ggpubr')
 library('ggplot2')
 library('mvtnorm')
@@ -93,14 +93,19 @@ plot_mvnorm <- function(sd1, sd2, rho, x2 = 0) {
     geom_contour() +
     coord_fixed(xlim = c(-4, 4), ylim = c(-4, 4)) +
     ggtitle(TeX(title)) +
-    scale_x_continuous(breaks = scales::pretty_breaks(n = 8)) +
-    scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) +
+    # scale_x_continuous(breaks = scales::pretty_breaks(n = 8)) +
+    # scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) +
+    scale_x_continuous(breaks = seq(-4, 4, 2)) +
+    scale_y_continuous(breaks = seq(-4, 4, 2)) +
+    geom_segment(aes(x = -4, xend = 4, y = -Inf,yend = -Inf)) +
+    geom_segment(aes(y = -4, yend = 4, x = -Inf,xend = -Inf)) +
     theme(
       panel.grid.major = element_blank(),
       panel.grid.minor = element_blank(),
       panel.background = element_blank(),
       panel.border = element_blank(), 
-      axis.line = element_line(colour = 'black'),
+      # axis.line = element_line(colour = 'black'),
+      axis.line = element_blank(),
       plot.title = element_text(hjust = .5, size = 16),
       text = element_text(size = 16)
     ) +
@@ -150,7 +155,7 @@ which has mean $\rho \frac{\sigma_1}{\sigma_2} x_2$ and variance $\sigma_1^2 (1 
 Let's illustrate the difference between marginalization and conditioning on two simple examples. First, assume that the correlation is very high with $\rho = 0.8$, and that $\sigma_1^2 = \sigma_2^2 = 1$. Then, observing for example $X_2 = 2$, our belief about $X_1$ changes such that its mean gets shifted to the observed $x_2$ value, i.e. $\mu_1 = 0.8 \cdot 2 = 1.6$ (indicated by the dotted line in the Figure below). The variance of $x_1$ gets substantially reduced, from $1$ to $(1 - 0.8^2) = 0.36$. This is what the left part in the Figure below illustrates. If, on the other hand, $\rho = 0$ such that $X_1$ and $X_2$ are not related, then observing $X_2 = 2$ changes neither the mean of $X_1$ (it stays at zero), nor its variance (it stays at 1); see the right part of the Figure below. Note that the marginal and conditional densities are multiplied with a constant to make them better visible.
 
 
-```{r, echo = FALSE, fig.width = 10, fig.height = 6, fig.align = 'center'}
+```{r, echo = FALSE, fig.width = 12, fig.height = 6, fig.align = 'center', dpi=400}
 library('ggplot2')
 library('mvtnorm')
 
@@ -178,13 +183,19 @@ plot_all <- function(sd1, sd2, rho, x2val, limits = c(-10, 10), densmult = 5) {
     # geom_vline(xintercept = cond_mean, linetype = 'dotted') +
     stat_function(fun = function(x) densmult * dnorm(x, cond_mean, cond_sd), size = 1.0, aes(color = '3')) +
     stat_function(fun = function(x) densmult * dnorm(x, 0, sd1), aes(color = '2')) +
-    scale_x_continuous(breaks = scales::pretty_breaks(n = 8)) +
-    scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + theme(
+    # scale_x_continuous(breaks = scales::pretty_breaks(n = 8)) +
+    # scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + 
+    scale_x_continuous(breaks = seq(-3, 3, 1)) +
+    scale_y_continuous(breaks = seq(-3, 3, 1)) +
+    geom_segment(aes(x = -3, xend = 3, y = -Inf,yend = -Inf)) +
+    geom_segment(aes(y = -3, yend = 3, x = -Inf,xend = -Inf)) +
+    theme(
       panel.grid.major = element_blank(),
       panel.grid.minor = element_blank(),
       panel.background = element_blank(),
       panel.border = element_blank(), 
-      axis.line = element_line(colour = 'black'),
+      # axis.line = element_line(colour = 'black'),
+      axis.line = element_blank(),
       legend.position = 'top',
       legend.key = element_blank()
       # legend.position = c(.9, .9)

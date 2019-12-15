@@ -78,7 +78,7 @@ $$
 We therefore conclude that the data are more likely for a coin that has bias $\theta_1 = 1$ than for a coin that has bias $\theta_2 = 0.5$. But is it the *most* likely value? To compare all possible values for $\theta$ visually, we plot the likelihood as a function of $\theta$ below. The left figure shows that, indeed, $\theta = 1$ maximizes the likelihood for the data. The right figure shows the likelihood function for $y = 15$ heads out of $n = 20$ coin flips. Note that, in contrast to probabilities, which need to sum to one, likelihoods do not have a natural scale.
  
  
-<img src="/assets/img/2019-04-14-Regularization.Rmd/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
+<img src="/assets/img/2019-04-14-Regularization.Rmd/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" style="display: block; margin: auto;" />
  
 Do these two examples allow us to derive a general principle for how to estimate the bias of a coin? Let $\hat{\theta}$ denote an estimate of the population parameter $\theta$. The two figures above suggests that $\hat{\theta} = \frac{y}{n}$ is the maximum likelihood estimate for an arbitrary data set $d = (y, n)$ ... and it is! To arrive at this mathematically, we can find the maximum of this likelihood function by taking the derivative with respect to $\theta$, and setting it to zero (see also a [previous](https://fdabl.github.io/r/Curve-Fitting-Gaussian.html) post). In other words, we solve for the value of $\theta$ for which the derivative does not change; and since the Binomial likelihood is unimodal, this maximum will be unique. Note the value for $\theta$ at which the likelihood function has its maximum does not change when we take logs, but because the mathematics is greatly simplified, we do so:
  
@@ -106,7 +106,7 @@ $$
  
 As we will see below, this prior allows easy Bayesian updating while being sufficiently flexible in incorporating prior information. The figure below shows different Beta distributions, formalizing our prior belief about values of $\theta$.
  
-<img src="/assets/img/2019-04-14-Regularization.Rmd/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
+<img src="/assets/img/2019-04-14-Regularization.Rmd/unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" style="display: block; margin: auto;" />
  
 The figure in the top left corner assigns uniform prior plausibility to all values of $\theta$; the figures to its right incorporate a slight bias towards the extreme values $\theta = 1$ and $\theta = 0$. With increasing $a$ and $b,$ the prior becomes more biased towards $\theta = 0.5$; with decreasing $a$ and $b$, the prior becomes biased against $\theta = 0.5$.
  
@@ -118,7 +118,7 @@ $$
  
 where $a' = a + y$ and $b' = b + n - y$. Under this conjugate setup, the parameters of the prior can be understood as prior data; for example, if we choose prior parameters $a = b = 1$, then we assume that we have seen one heads and one tails prior to data collection. The figure below shows two examples of such Bayesian updating processes.
  
-<img src="/assets/img/2019-04-14-Regularization.Rmd/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />
+<img src="/assets/img/2019-04-14-Regularization.Rmd/unnamed-chunk-6-1.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" style="display: block; margin: auto;" />
  
 In both cases, we observe $y = 3$ heads out of $n = 3$ coin flips. On the left, we assign $\theta$ a uniform prior. The resulting posterior distribution is proportional to the likelihood (which we have rescaled to fit nicely in the graph) and thus does not appear as a separate line. After we have seen the data, we can compute the posterior mode as our estimate for the most likely value of $\theta$. Observe that the posterior mode is equivalent to the maximum likelihood estimate:
  
@@ -194,11 +194,11 @@ estimate_path <- function(y, n, reg = 1) {
  
 Sticking with the observations of three heads ($y = 3$) out of three throws ($n = 3$), the figure below plots best fitting values for $\theta$ given a range of values for $\lambda$. Observe that the $\mathcal{L}_1$-norm penalty shrinks it more quicker and abruptly to $\theta = 0.5$ at $\lambda = 6$, while the $\mathcal{L}_2$-norm penalty gradually (and rather slowly) shrinks the parameter to $\theta = 0.5$ with increasing $\lambda$. Why is this so?
  
-<img src="/assets/img/2019-04-14-Regularization.Rmd/unnamed-chunk-6-1.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" style="display: block; margin: auto;" />
+<img src="/assets/img/2019-04-14-Regularization.Rmd/unnamed-chunk-9-1.png" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" style="display: block; margin: auto;" />
  
 First, note that because $\theta \in [0, 1]$ the squared distance will always be smaller than the absolute distance, which explains the slower shrinkage. Second, the fact that the $\mathcal{L}_1$-norm penalty can shrink *exactly* to $\theta = 0.5$ is due to the discontinuity of the absolute value function. The figures below provides some intuition. In particular, the figure on the left shows the $\mathcal{L}_1$-norm penalized likelihood function for a select number of $\lambda$'s. We see that for $\lambda < 3$, the value $\theta = 1$ performs best. With $\lambda \in [3, 6]$, values of $\theta \in [0.5, 1]$ become more likely than the extreme estimate $\theta = 1$. For $\lambda \geq 6$, the 'no bias' value $\theta = 0.5$ maximizes the penalized likelihood. Due to the discontinuity in the penalty, the shrinkage is exact. The $\mathcal{L}_2$-norm penalty, on the other hand, shrinks less strongly, and never exactly to $\theta = 0.5$, except of course for $\lambda \rightarrow \infty$. We can see this in the right figure below, where the penalized likelihood function is merely shifted to the left with increasing $\lambda$; this is in contrast to the $\mathcal{L}_1$-norm penalized likelihood on the left, for which the value $\theta = 0.5$ at the discontinuity takes a special place.
  
-<img src="/assets/img/2019-04-14-Regularization.Rmd/unnamed-chunk-7-1.png" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" style="display: block; margin: auto;" />
+<img src="/assets/img/2019-04-14-Regularization.Rmd/unnamed-chunk-10-1.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" style="display: block; margin: auto;" />
  
 You can play around with the code below to get an intuition for how different values of $\lambda$ influence the penalized likelihood function.
  

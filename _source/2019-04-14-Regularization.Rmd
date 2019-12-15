@@ -131,7 +131,7 @@ $$
 As we will see below, this prior allows easy Bayesian updating while being sufficiently flexible in incorporating prior information. The figure below shows different Beta distributions, formalizing our prior belief about values of $\theta$.
 
 ```{r, echo = FALSE, fig.width = 10, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
-plot_beta <- function(a, b, ylab = 'Density', title = NULL) {
+plot_beta <- function(a, b, ylim, yticks, ylab = 'Density', title = NULL) {
   
   if (is.null(title)) {
     title <- TeX(sprintf("$a = %d,  b = %d$", a, b))
@@ -140,21 +140,21 @@ plot_beta <- function(a, b, ylab = 'Density', title = NULL) {
   x <- seq(.000, 1, .001)
   dens <- dbeta(x, a, b)
   plot(x, dens, xlim = c(0, 1), type = 'l', ylab = ylab, lty = 1,
-       xlab = TeX('$\\theta$'), las = 1, main = title, lwd = 3,
+       xlab = TeX('$\\theta$'), las = 1, main = title, lwd = 3, ylim = ylim,
        cex.lab = 1.5, cex.main = 1.5, col = 'skyblue', axes = FALSE
   )
   
   axis(1, at = seq(0, 1, .2)) #adds custom x axis
-  axis(2, las = 1) # custom y axis
+  axis(2, las = 1, at = yticks) # custom y axis
 }
 
 par(mfrow = c(2, 3))
-plot_beta(1, 1)
-plot_beta(2, 1, ylab = '')
-plot_beta(1, 2, ylab = '')
-plot_beta(2, 2)
-plot_beta(10, 10, ylab = '')
-plot_beta(0.8, 0.8, ylab = '', title = TeX(sprintf("$a = %.1f,  b = %.1f$", .8, .8)))
+plot_beta(1, 1, ylim = c(0, 2), yticks = seq(0, 2, .5))
+plot_beta(2, 1, ylim = c(0, 2), yticks = seq(0, 2, .5))
+plot_beta(1, 2, ylim = c(0, 2), yticks = seq(0, 2, .5))
+plot_beta(2, 2, ylim = c(0, 2), yticks = seq(0, 2, .5))
+plot_beta(10, 10, ylim = c(0, 4), yticks = seq(0, 4, 1))
+plot_beta(0.5, 0.5, title = TeX(sprintf("$a = %.1f,  b = %.1f$", .5, .5)), ylim = c(0, 4), yticks = seq(0, 4, 1))
 ```
 
 The figure in the top left corner assigns uniform prior plausibility to all values of $\theta$; the figures to its right incorporate a slight bias towards the extreme values $\theta = 1$ and $\theta = 0$. With increasing $a$ and $b,$ the prior becomes more biased towards $\theta = 0.5$; with decreasing $a$ and $b$, the prior becomes biased against $\theta = 0.5$.

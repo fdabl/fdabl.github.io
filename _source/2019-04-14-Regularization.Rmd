@@ -78,7 +78,7 @@ $$
 We therefore conclude that the data are more likely for a coin that has bias $\theta_1 = 1$ than for a coin that has bias $\theta_2 = 0.5$. But is it the *most* likely value? To compare all possible values for $\theta$ visually, we plot the likelihood as a function of $\theta$ below. The left figure shows that, indeed, $\theta = 1$ maximizes the likelihood for the data. The right figure shows the likelihood function for $y = 15$ heads out of $n = 20$ coin flips. Note that, in contrast to probabilities, which need to sum to one, likelihoods do not have a natural scale.
 
 
-```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 library('latex2exp')
 
 plot_likelihood <- function(y, n, ylab = 'Likelihood') {
@@ -130,7 +130,7 @@ $$
 
 As we will see below, this prior allows easy Bayesian updating while being sufficiently flexible in incorporating prior information. The figure below shows different Beta distributions, formalizing our prior belief about values of $\theta$.
 
-```{r, echo = FALSE, fig.width = 10, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 10, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 plot_beta <- function(a, b, ylab = 'Density', title = NULL) {
   
   if (is.null(title)) {
@@ -167,7 +167,7 @@ $$
 
 where $a' = a + y$ and $b' = b + n - y$. Under this conjugate setup, the parameters of the prior can be understood as prior data; for example, if we choose prior parameters $a = b = 1$, then we assume that we have seen one heads and one tails prior to data collection. The figure below shows two examples of such Bayesian updating processes.
 
-```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 plot_updating <- function(a = 1, b = 1, k = 0, N = 0, null = NULL, CI = NULL, ymax = 'auto', ylab = 'Density') {
   x <- seq(.001, .999, .001) ## set up for creating the distributions
   y1 <- dbeta(x, a, b) # data for prior curve
@@ -270,7 +270,7 @@ estimate_path <- function(y, n, reg = 1) {
 
 Sticking with the observations of three heads ($y = 3$) out of three throws ($n = 3$), the figure below plots best fitting values for $\theta$ given a range of values for $\lambda$. Observe that the $\mathcal{L}_1$-norm penalty shrinks it more quicker and abruptly to $\theta = 0.5$ at $\lambda = 6$, while the $\mathcal{L}_2$-norm penalty gradually (and rather slowly) shrinks the parameter to $\theta = 0.5$ with increasing $\lambda$. Why is this so?
 
-```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 plot_path <- function(y, n, reg, title, ylab = '') {
   path <- estimate_path(y, n, reg)
   
@@ -291,7 +291,7 @@ plot_path(3, 3, 2, 'L2-Norm Regularization Path')
 
 First, note that because $\theta \in [0, 1]$ the squared distance will always be smaller than the absolute distance, which explains the slower shrinkage. Second, the fact that the $\mathcal{L}_1$-norm penalty can shrink *exactly* to $\theta = 0.5$ is due to the discontinuity of the absolute value function. The figures below provides some intuition. In particular, the figure on the left shows the $\mathcal{L}_1$-norm penalized likelihood function for a select number of $\lambda$'s. We see that for $\lambda < 3$, the value $\theta = 1$ performs best. With $\lambda \in [3, 6]$, values of $\theta \in [0.5, 1]$ become more likely than the extreme estimate $\theta = 1$. For $\lambda \geq 6$, the 'no bias' value $\theta = 0.5$ maximizes the penalized likelihood. Due to the discontinuity in the penalty, the shrinkage is exact. The $\mathcal{L}_2$-norm penalty, on the other hand, shrinks less strongly, and never exactly to $\theta = 0.5$, except of course for $\lambda \rightarrow \infty$. We can see this in the right figure below, where the penalized likelihood function is merely shifted to the left with increasing $\lambda$; this is in contrast to the $\mathcal{L}_1$-norm penalized likelihood on the left, for which the value $\theta = 0.5$ at the discontinuity takes a special place.
 
-```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE}
+```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
 plot_pen_llh <- function(y, n, lambdas, reg = 1, ylab = 'Penalized Likelihood', title = '') {
   
   nl <- length(lambdas)

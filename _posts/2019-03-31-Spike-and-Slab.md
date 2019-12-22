@@ -204,22 +204,22 @@ As we will see in the next section, being able to read conditional independencie
 In a previous blog post, we discussed the (history of the) methods of least squares and [linear regression](https://fdabl.github.io/statistics/Curve-Fitting-Gaussian.html). However, we did not assess whether a particular variable $X$ is actually associated with an outcome $Y$. We can think of this problem as hypothesis testing, variable selection, or structure learning. In particular, we may write the regression model with a single predictor variable as:
  
 $$
-y_i \sim \mathcal{N}(\beta \, x_i , \sigma_e^2) \enspace .
+y_i \sim \mathcal{N}(\beta \, x_i , \sigma^2) \enspace .
 $$
  
 We put the following prior on $\beta$:
  
 $$
-\beta \sim (1 - \pi) \, \delta_0 + \pi \, \mathcal{N}(0, \sigma_y^2 \tau^2) \enspace ,
+\beta \sim (1 - \pi) \, \delta_0 + \pi \, \mathcal{N}(0, \sigma^2 \tau^2) \enspace ,
 $$
  
-where $\pi \in [0, 1]$ is a mixture weight, $\sigma_y^2$ is the variance of $\mathbf{y}$, $\delta_0$ is the [Dirac delta function](https://en.wikipedia.org/wiki/Dirac_delta_function) (the *spike*), and $\tau^2$ is the variance of the *slab*. We multiply $\tau^2$ with $\sigma_y^2$ so that the prior naturally scales with the scale of the outcome. If we would not do this, then our results would depend on the measurement units of $\mathbf{y}$. Instead of fixing $\tau^2$ to a constant, we learn it by specifying
+where $\pi \in [0, 1]$ is a mixture weight, $\sigma^2$ is the error variance, $\delta_0$ is the [Dirac delta function](https://en.wikipedia.org/wiki/Dirac_delta_function) (the *spike*), and $\tau^2$ is the variance of the *slab*. We multiply $\tau^2$ with $\sigma^2$ so that the prior naturally scales with the scale of the outcome. If we would not do this, then our results would depend on the measurement units of $\mathbf{y}$. Instead of fixing $\tau^2$ to a constant, we learn it by specifying
  
 $$
 \tau^2 \sim \text{Inverse-Gamma}(1/2, s^2/2) \enspace ,
 $$
  
-which results in a scale-mixture of Gaussians, that is, a Cauchy distribution with scale $s$. The figure below visualizes the marginal prior on $\beta$ as a discrete mixture ($\pi = 0.5$) of a Dirac delta, a Cauchy with scale $s = 1/2$, and $\sigma_y^2 = 1$.
+which results in a scale-mixture of Gaussians, that is, a Cauchy distribution with scale $s$. The figure below visualizes the marginal prior on $\beta$ as a discrete mixture ($\pi = 0.5$) of a Dirac delta, a Cauchy with scale $s = 1/2$, and $\sigma^2 = 1$.
  
 <img src="/assets/img/2019-03-31-Spike-and-Slab.Rmd/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" style="display: block; margin: auto;" />
  
@@ -230,7 +230,7 @@ $$
 \begin{aligned}
 \pi &\sim \text{Bern}(\theta) \\[0.5em]
 \theta &\sim \text{Beta}(a, b) \\[0.5em]
-\sigma_e^2 &\sim \text{Inverse-Gamma}(\alpha_1, \alpha_2) \enspace ,
+\sigma^2 &\sim \text{Inverse-Gamma}(\alpha_1, \alpha_2) \enspace ,
 \end{aligned}
 $$
  
@@ -241,20 +241,20 @@ where we set $a = b = 1$ and $\alpha_1 = \alpha_2 = 2$. We can visualize the rel
 Using $d$-separation as introduced in the previous section, we note that this larger graph is basically a collection of DAGs (b) and (c). This helps us see that the joint probability distribution factors:
  
 $$
-p(\mathbf{y}, \beta, \pi, \theta, \tau^2, \sigma_e^2) = p(\mathbf{y} \mid \beta, \sigma_e^2) \, p(\sigma_e^2) \, p(\beta \mid  \pi, \tau^2) \, p(\pi \mid \theta) \, p(\theta) \, p(\tau^2) \enspace ,
+p(\mathbf{y}, \beta, \pi, \theta, \tau^2, \sigma^2) = p(\mathbf{y} \mid \beta, \sigma^2) \, p(\sigma^2) \, p(\beta \mid  \pi, \tau^2) \, p(\pi \mid \theta) \, p(\theta) \, p(\tau^2) \enspace ,
 $$
  
-where we have suppressed conditioning on the hyperparameters $a = b = 1$, $\alpha_1 = \alpha_2 = 0.01$, $s = 1/2,$ the predictor variables $X$, and the variance of the outcome $\sigma_y^2$.
+where we have suppressed conditioning on the hyperparameters $a = b = 1$, $\alpha_1 = \alpha_2 = 0.01$, $s = 1/2,$ and the predictor variables $X$.
  
 For the Gibbs sampler, we need the conditional posterior distribution of each parameter given the data and all other parameters. Using the conditional independence structure of the graph, this results in the following conditional distributions:
  
 $$
 \begin{aligned}
-&p(\theta \mid \mathbf{y}, \beta, \pi, \tau^2, \sigma_e^2 ) = p(\theta \mid \pi) \\[0.5em]
-&p(\tau^2 \mid \mathbf{y}, \beta, \pi, \theta, \sigma_e^2) = p(\tau^2 \mid \beta, \pi) \\[0.5em]
-&p(\sigma_e^2 \mid \mathbf{y}, \beta, \pi, \theta, \tau^2) = p(\sigma_e^2 \mid \mathbf{y}, \beta) \\[0.5em]
-&p(\pi \mid \mathbf{y}, \beta, \theta, \tau^2, \sigma_e^2) = p(\pi \mid \beta, \theta, \tau^2) \\[0.5em]
-&p(\beta \mid \mathbf{y}, \pi, \theta, \tau^2, \sigma_e^2) = p(\beta \mid \mathbf{y}, \pi, \tau^2, \sigma_e^2) \enspace .
+&p(\theta \mid \mathbf{y}, \beta, \pi, \tau^2, \sigma^2 ) = p(\theta \mid \pi) \\[0.5em]
+&p(\tau^2 \mid \mathbf{y}, \beta, \pi, \theta, \sigma^2) = p(\tau^2 \mid \beta, \pi) \\[0.5em]
+&p(\sigma^2 \mid \mathbf{y}, \beta, \pi, \theta, \tau^2) = p(\sigma^2 \mid \mathbf{y}, \beta) \\[0.5em]
+&p(\pi \mid \mathbf{y}, \beta, \theta, \tau^2, \sigma^2) = p(\pi \mid \beta, \theta, \tau^2) \\[0.5em]
+&p(\beta \mid \mathbf{y}, \pi, \theta, \tau^2, \sigma^2) = p(\beta \mid \mathbf{y}, \pi, \tau^2, \sigma^2) \enspace .
 \end{aligned}
 $$
  
@@ -297,7 +297,7 @@ To make the notation less cluttered, we will call the normalizing constant in th
 $$
 \begin{aligned}
 p(\tau^2 \mid \beta, \pi = 1) &= \frac{1}{Z} \, p(\beta \mid \tau^2, \pi) \, p(\tau^2) \\[0.5em]
-&= \frac{1}{Z} \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma_y^2\tau^2} \beta^2\right) \frac{\left(\frac{s^2}{2}\right)^{\frac{1}{2}}}{\Gamma\left(\frac{1}{2}\right)} \left(\tau^2\right)^{- \frac{1}{2} - 1} \text{exp}\left(-\frac{\frac{s^2}{2}}{\tau^2}\right) \enspace ,
+&= \frac{1}{Z} \, \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma^2\tau^2} \beta^2\right) \frac{\left(\frac{s^2}{2}\right)^{\frac{1}{2}}}{\Gamma\left(\frac{1}{2}\right)} \left(\tau^2\right)^{- \frac{1}{2} - 1} \text{exp}\left(-\frac{\frac{s^2}{2}}{\tau^2}\right) \enspace ,
 \end{aligned}
 $$
  
@@ -305,15 +305,15 @@ where $\Gamma$ is the [gamma function](https://en.wikipedia.org/wiki/Gamma_funct
  
 $$
 \begin{aligned}
-p(\tau^2 \mid \beta, \pi = 1) &= \frac{1}{Z} \, \left(\tau^2\right)^{-\frac{1}{2} - 1 -\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma_y^2\tau^2} \beta^2 - \frac{\frac{s^2}{2}}{\tau^2} \right) \\[0.5em]
-&= \frac{1}{Z} \, \left(\tau^2\right)^{-\left(\frac{1}{2} + \frac{1}{2}\right) - 1} \text{exp}\left(-\frac{\left(\frac{s^2}{2} + \frac{\beta^2}{2\sigma_y^2}\right)}{\tau^2}\right) \enspace ,
+p(\tau^2 \mid \beta, \pi = 1) &= \frac{1}{Z} \, \left(\tau^2\right)^{-\frac{1}{2} - 1 -\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma^2\tau^2} \beta^2 - \frac{\frac{s^2}{2}}{\tau^2} \right) \\[0.5em]
+&= \frac{1}{Z} \, \left(\tau^2\right)^{-\left(\frac{1}{2} + \frac{1}{2}\right) - 1} \text{exp}\left(-\frac{\left(\frac{s^2}{2} + \frac{\beta^2}{2\sigma^2}\right)}{\tau^2}\right) \enspace ,
 \end{aligned}
 $$
  
 which is a new inverse Gamma distribution:
  
 $$
-\tau^2 \mid \beta , \pi = 1 \sim \text{Inverse-Gamma}\left(\frac{1}{2} + \frac{1}{2}, \frac{s^2}{2} + \frac{\beta^2}{2\sigma_y^2}\right) \enspace .
+\tau^2 \mid \beta , \pi = 1 \sim \text{Inverse-Gamma}\left(\frac{1}{2} + \frac{1}{2}, \frac{s^2}{2} + \frac{\beta^2}{2\sigma^2}\right) \enspace .
 $$
  
 On the other hand, if $\pi = 0$, then $\beta = 0$ and we simply sample from the prior:
@@ -322,46 +322,46 @@ $$
 \tau^2 \mid \beta , \pi = 0 \sim \text{Inverse-Gamma}\left(\frac{1}{2}, \frac{s^2}{2}\right) \enspace .
 $$
  
-Because the derivation is very similar, we look at the conditional posterior $p(\sigma_e^2 \mid y, \beta)$ next.
+Because the derivation is very similar, we look at the conditional posterior $p(\sigma^2 \mid y, \beta)$ next.
  
  
-## Conditional posterior $p(\sigma_e^2 \mid y, \beta)$
+## Conditional posterior $p(\sigma^2 \mid y, \beta)$
 Again writing the normalizing constant as $Z$, we expand:
  
 $$
 \begin{aligned}
-p(\sigma_e^2 \mid \mathbf{y}, \beta) &= \frac{1}{Z} \, p(\mathbf{y} \mid \beta, \sigma_e^2)\, p(\beta) \, p(\sigma_e^2) \\[1em]
-&= \frac{1}{Z} \, \left(2\pi\sigma_e^2\right)^{-n/2} \text{exp} \left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n \left(y_i - bx_i\right)^2 \right) \frac{\alpha_2^{\alpha_1}}{\Gamma(\alpha_1)} \left(\sigma_e^2\right)^{- \alpha_1 - 1} \text{exp} \left(-\frac{\alpha_2}{\sigma_e^2}\right) \enspace ,
+p(\sigma^2 \mid \mathbf{y}, \beta) &= \frac{1}{Z} \, p(\mathbf{y} \mid \beta, \sigma^2)\, p(\beta) \, p(\sigma^2) \\[1em]
+&= \frac{1}{Z} \, \left(2\pi\sigma^2\right)^{-n/2} \text{exp} \left(-\frac{1}{2\sigma^2} \sum_{i=1}^n \left(y_i - \beta x_i\right)^2 \right) \frac{\alpha_2^{\alpha_1}}{\Gamma(\alpha_1)} \left(\sigma^2\right)^{- \alpha_1 - 1} \text{exp} \left(-\frac{\alpha_2}{\sigma^2}\right) \enspace ,
 \end{aligned}
 $$
  
-which looks very similar to the conditional posterior on $\tau^2$. In fact, using the same tricks as above --- absorbing terms that do not depend on $\sigma_e^2$ into $Z$, and putting terms together --- we write:
+which looks very similar to the conditional posterior on $\tau^2$. In fact, using the same tricks as above --- absorbing terms that do not depend on $\sigma^2$ into $Z$, and putting terms together --- we write:
  
 $$
 \begin{aligned}
-p(\sigma_e^2 \mid \mathbf{y}, \beta) &= \frac{1}{Z} \, \left(\sigma_e^2\right)^{-\frac{n}{2}} \text{exp} \left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n \left(y_i - bx_i\right)^2 \right) \left(\sigma_e^2\right)^{- \alpha_1 - 1} \text{exp} \left(-\frac{\alpha_2}{\sigma_e^2}\right) \\[1em]
-&= \frac{1}{Z} \, \left(\sigma_e^2\right)^{-\left(\alpha_1 + \frac{n}{2}\right) - 1} \text{exp} \left(-\frac{1}{\sigma_e^2} \left[\alpha_2 + \frac{\sum_{i=1}^n(y_i - bx_i)^2}{2}\right]\right) \enspace ,
+p(\sigma^2 \mid \mathbf{y}, \beta) &= \frac{1}{Z} \, \left(\sigma^2\right)^{-\frac{n}{2}} \text{exp} \left(-\frac{1}{2\sigma^2} \sum_{i=1}^n \left(y_i - \beta x_i\right)^2 \right) \left(\sigma^2\right)^{- \alpha_1 - 1} \text{exp} \left(-\frac{\alpha_2}{\sigma^2}\right) \\[1em]
+&= \frac{1}{Z} \, \left(\sigma^2\right)^{-\left(\alpha_1 + \frac{n}{2}\right) - 1} \text{exp} \left(-\frac{1}{\sigma^2} \left[\alpha_2 + \frac{\sum_{i=1}^n(y_i - \beta x_i)^2}{2}\right]\right) \enspace ,
 \end{aligned}
 $$
  
 which is again an inverse Gamma distribution:
  
 $$
-\sigma_e^2 \mid \mathbf{y}, \beta \sim \text{Gamma}\left(\alpha_1 + \frac{n}{2}, \alpha_2 + \frac{\sum_{i=1}^n(y_i - \beta x_i)^2}{2}\right) \enspace .
+\sigma^2 \mid \mathbf{y}, \beta \sim \text{Gamma}\left(\alpha_1 + \frac{n}{2}, \alpha_2 + \frac{\sum_{i=1}^n(y_i - \beta x_i)^2}{2}\right) \enspace .
 $$
  
-Contrasting this derivation with the one above, we note something interesting. Our belief about the variance $\sigma_e^2$ gets updated using the $n$ data points $\mathbf{y}$, whereas our belief about $\tau^2$ gets updated using only $\beta$. "In the Bayesian framework, the difference between data and parameters is fuzzy", McElreath points out (2016, p. 34); or, put even more strongly, Dawid (1979, p.1): "[...] the distinction between data and parameters is largely irrelevant".
+Contrasting this derivation with the one above, we note something interesting. Our belief about the variance $\sigma^2$ gets updated using the $n$ data points $\mathbf{y}$, whereas our belief about $\tau^2$ gets updated using only $\beta$. "In the Bayesian framework, the difference between data and parameters is fuzzy", McElreath points out (2016, p. 34); or, put even more strongly, Dawid (1979, p.1): "[...] the distinction between data and parameters is largely irrelevant".
  
 Because the conditional posterior of $\pi$ is quite tricky, we continue with the conditional posterior of $\beta$.
  
  
-## Conditional posterior $p(\beta \mid y, \pi, \tau^2, \sigma_e^2)$
+## Conditional posterior $p(\beta \mid y, \pi, \tau^2, \sigma^2)$
 The conditional posterior of $\beta$ given $\pi = 0$ is easy: it is the Dirac delta function $\delta_0$, from which samples will always have value 0. The conditional posterior for $\pi = 1$ is a little more complicated to derive, but not by much. We start by writing:
  
 $$
 \begin{aligned}
-p(\beta \mid \mathbf{y}, \pi = 1, \tau^2, \sigma_e^2) &= \frac{p(\mathbf{y} \mid \beta, \pi = 1, \tau^2, \sigma_e^2) \, p(\beta \mid \pi = 1, \tau^2) \, p(\pi = 1) \, p(\tau^2)}{\int p(\mathbf{y} \mid \beta, \pi = 1, \tau^2, \sigma_e^2) \, p(\beta \mid \pi = 1) \, p(\pi = 1) \, p(\tau^2) \, \mathrm{d} \beta} \\[1em]
-&= \frac{p(\mathbf{y} \mid \beta, \pi = 1, \tau^2, \sigma_e^2) \, p(\beta \mid \pi = 1)}{\int p(\mathbf{y} \mid \beta, \pi = 1, \tau^2, \sigma_e^2) \, p(\beta \mid \pi = 1) \, \mathrm{d} \beta} \enspace ,
+p(\beta \mid \mathbf{y}, \pi = 1, \tau^2, \sigma^2) &= \frac{p(\mathbf{y} \mid \beta, \pi = 1, \tau^2, \sigma^2) \, p(\beta \mid \pi = 1, \tau^2) \, p(\pi = 1) \, p(\tau^2)}{\int p(\mathbf{y} \mid \beta, \pi = 1, \tau^2, \sigma^2) \, p(\beta \mid \pi = 1) \, p(\pi = 1) \, p(\tau^2) \, \mathrm{d} \beta} \\[1em]
+&= \frac{p(\mathbf{y} \mid \beta, \pi = 1, \tau^2, \sigma^2) \, p(\beta \mid \pi = 1)}{\int p(\mathbf{y} \mid \beta, \pi = 1, \tau^2, \sigma^2) \, p(\beta \mid \pi = 1) \, \mathrm{d} \beta} \enspace ,
 \end{aligned}
 $$
  
@@ -369,7 +369,7 @@ where we again write the normalizing constant as $Z$. Expanding, we get:
  
 $$
 \begin{aligned}
-p(\beta \mid \mathbf{y}, \pi = 1, \tau^2, \sigma_e^2) &= \frac{1}{Z} \, \left(2\pi\sigma_e^2\right)^{-n/2} \text{exp} \left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n \left(y_i - \beta x_i\right)^2 \right) \left(2\pi\sigma_y^2\tau^2\right)^{-1/2} \text{exp} \left(-\frac{1}{2\sigma_y^2\tau^2} \beta^2 \right) \enspace .
+p(\beta \mid \mathbf{y}, \pi = 1, \tau^2, \sigma^2) &= \frac{1}{Z} \, \left(2\pi\sigma^2\right)^{-n/2} \text{exp} \left(-\frac{1}{2\sigma^2} \sum_{i=1}^n \left(y_i - \beta x_i\right)^2 \right) \left(2\pi\sigma^2\tau^2\right)^{-1/2} \text{exp} \left(-\frac{1}{2\sigma^2\tau^2} \beta^2 \right) \enspace .
 \end{aligned}
 $$
  
@@ -377,10 +377,10 @@ We can again absorb terms that do not depend on $\beta$ into $Z$. We proceed:
  
 $$
 \begin{aligned}
-p(\beta \mid \mathbf{y}, \pi = 1, \tau^2, \sigma_e^2) &= \frac{1}{Z} \, \text{exp} \left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n \left(y_i - \beta x_i\right)^2 \right) \text{exp} \left(-\frac{1}{2\sigma_y^2\tau^2} \beta^2 \right) \\[0.5em]
-&= \frac{1}{Z} \, \text{exp} \left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n \left(y_i - \beta x_i\right)^2 -\frac{1}{2\sigma_y^2\tau^2} \beta^2 \right) \\[0.5em]
-&= \frac{1}{Z} \, \text{exp} \left(-\frac{1}{2\sigma_e^2} \left[\sum_{i=1}^n \left(y_i - \beta x_i\right)^2 +\frac{2\sigma_e^2}{2\sigma_y^2\tau^2} b^2 \right]\right) \\[0.5em]
-&= \frac{1}{Z} \, \text{exp} \left(-\frac{1}{2\sigma_e^2} \left[\sum_{i=1}^n y_i^2 - 2\beta\sum_{i=1}^n y_i x_i + \beta^2 \sum_{i=1}^n x_i^2 +\frac{\sigma_e^2}{\sigma_y^2\tau^2} \beta^2 \right]\right) \enspace .
+p(\beta \mid \mathbf{y}, \pi = 1, \tau^2, \sigma^2) &= \frac{1}{Z} \, \text{exp} \left(-\frac{1}{2\sigma^2} \sum_{i=1}^n \left(y_i - \beta x_i\right)^2 \right) \text{exp} \left(-\frac{1}{2\sigma^2\tau^2} \beta^2 \right) \\[0.5em]
+&= \frac{1}{Z} \, \text{exp} \left(-\frac{1}{2\sigma^2} \sum_{i=1}^n \left(y_i - \beta x_i\right)^2 -\frac{1}{2\sigma^2\tau^2} \beta^2 \right) \\[0.5em]
+&= \frac{1}{Z} \, \text{exp} \left(-\frac{1}{2\sigma^2} \left[\sum_{i=1}^n \left(y_i - \beta x_i\right)^2 +\frac{1}{\tau^2} \beta^2 \right]\right) \\[0.5em]
+&= \frac{1}{Z} \, \text{exp} \left(-\frac{1}{2\sigma^2} \left[\sum_{i=1}^n y_i^2 - 2\beta\sum_{i=1}^n y_i x_i + \beta^2 \sum_{i=1}^n x_i^2 +\frac{1}{\tau^2} \beta^2 \right]\right) \enspace .
 \end{aligned}
 $$
  
@@ -388,8 +388,8 @@ We can further absorb the $\sum_{i=1}^n y_i^2$ term into $Z$ and put the $\beta^
  
 $$
 \begin{aligned}
-p(\beta \mid \mathbf{y}, \pi = 1, \tau^2, \sigma_e^2) &= \frac{1}{Z} \, \text{exp} \left(-\frac{1}{2\sigma_e^2} \left[\beta^2\left(\sum_{i=1}^n x_i^2 +\frac{\sigma_e^2}{\sigma_y^2\tau^2}\right) - 2\beta\sum_{i=1}^n y_i x_i\right]\right) \\[0.5em]
-&= \frac{1}{Z} \, \text{exp} \left(-\frac{\left(\sum_{i=1}^n x_i^2 +\frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}{2\sigma_e^2} \left[\beta^2 - \frac{2\beta\sum_{i=1}^n y_i x_i}{\left(\sum_{i=1}^n x_i^2 +\frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}\right]\right) \enspace .
+p(\beta \mid \mathbf{y}, \pi = 1, \tau^2, \sigma^2) &= \frac{1}{Z} \, \text{exp} \left(-\frac{1}{2\sigma^2} \left[\beta^2\left(\sum_{i=1}^n x_i^2 +\frac{1}{\tau^2}\right) - 2\beta\sum_{i=1}^n y_i x_i\right]\right) \\[0.5em]
+&= \frac{1}{Z} \, \text{exp} \left(-\frac{\left(\sum_{i=1}^n x_i^2 +\frac{1}{\tau^2}\right)}{2\sigma^2} \left[\beta^2 - \frac{2\beta\sum_{i=1}^n y_i x_i}{\left(\sum_{i=1}^n x_i^2 +\frac{1}{\tau^2}\right)}\right]\right) \enspace .
 \end{aligned}
 $$
  
@@ -397,8 +397,8 @@ If you have followed my previous blog post (see [here](https://fdabl.github.io/s
  
 $$
 \begin{aligned}
-p(\beta \mid \mathbf{y}, \pi = 1, \tau^2, \sigma_e^2) &= \frac{1}{Z} \, \text{exp} \left(-\frac{\left(\sum_{i=1}^n x_i^2 +\frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}{2\sigma_e^2} \left[\left(\beta - \frac{\sum_{i=1}^n y_i x_i}{\left(\sum_{i=1}^n x_i^2 +\frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}\right)^2 - \left(\frac{\sum_{i=1}^n y_i x_i}{\left(\sum_{i=1}^n x_i^2 +\frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}\right)^2\right]\right) \\[0.5em]
-&= \frac{1}{Z} \, \text{exp} \left(-\frac{\left(\sum_{i=1}^n x_i^2 +\frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}{2\sigma_e^2} \left(\beta - \frac{\sum_{i=1}^n y_i x_i}{\left(\sum_{i=1}^n x_i^2 +\frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}\right)^2\right)
+p(\beta \mid \mathbf{y}, \pi = 1, \tau^2, \sigma^2) &= \frac{1}{Z} \, \text{exp} \left(-\frac{\left(\sum_{i=1}^n x_i^2 +\frac{1}{\tau^2}\right)}{2\sigma^2} \left[\left(\beta - \frac{\sum_{i=1}^n y_i x_i}{\left(\sum_{i=1}^n x_i^2 +\frac{1}{\tau^2}\right)}\right)^2 - \left(\frac{\sum_{i=1}^n y_i x_i}{\left(\sum_{i=1}^n x_i^2 +\frac{1}{\tau^2}\right)}\right)^2\right]\right) \\[0.5em]
+&= \frac{1}{Z} \, \text{exp} \left(-\frac{\left(\sum_{i=1}^n x_i^2 +\frac{1}{\tau^2}\right)}{2\sigma^2} \left(\beta - \frac{\sum_{i=1}^n y_i x_i}{\left(\sum_{i=1}^n x_i^2 +\frac{1}{\tau^2}\right)}\right)^2\right)
 \enspace ,
 \end{aligned}
 $$
@@ -406,9 +406,9 @@ $$
 where have absorbed the last term into the normalizing constant $Z$ because it does not depend on $\beta$. Note that this is the *kernel* of a Gaussian distribution, which completes our ordeal --- which we both enjoy, admit it! --- resulting in:
  
 $$
-\beta \mid \mathbf{y}, \pi, \tau^2, \sigma_e^2 \sim \begin{cases}
+\beta \mid \mathbf{y}, \pi, \tau^2, \sigma^2 \sim \begin{cases}
 \delta_0 & \hspace{1em} \text{if} \hspace{1em} \pi = 0 \\
-\mathcal{N}\left(\frac{\sum_{i=1}^n y_i x_i}{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2} \right)}, \frac{\sigma_e^2}{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2} \right)}\right) & \hspace{1em} \text{if} \hspace{1em} \pi = 1
+\mathcal{N}\left(\frac{\sum_{i=1}^n y_i x_i}{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2} \right)}, \frac{\sigma^2}{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2} \right)}\right) & \hspace{1em} \text{if} \hspace{1em} \pi = 1
 \end{cases}
 $$
  
@@ -438,7 +438,7 @@ We start with $\pi = 1$:
 $$
 \begin{aligned}
 p(\pi = 1 \mid \beta, \tau^2, \theta) &= \frac{1}{Z} \, p(\beta \mid \pi = 1, \tau^2, \theta) \, \, p(\pi = 1 \mid \theta) \\[1em]
-&= \frac{1}{Z} \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \text{exp} \left(-\frac{1}{2\sigma_y^2\tau^2} \beta^2\right)\theta \enspace ,
+&= \frac{1}{Z} \, \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \text{exp} \left(-\frac{1}{2\sigma^2\tau^2} \beta^2\right)\theta \enspace ,
 \end{aligned}
 $$
  
@@ -454,7 +454,7 @@ $$
 which looks peculiar. To see how this bites us, we note that:
  
 $$
-\pi \mid \beta, \tau^2, \theta \sim \text{Bern}\left(\frac{\left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \text{exp} \left(-\frac{1}{2\sigma_y^2\tau^2} \beta^2\right)\theta}{\left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \text{exp} \left(-\frac{1}{2\sigma_y^2\tau^2} \beta^2\right)\theta + \delta_0 \, (1 - \theta)}\right) \enspace .
+\pi \mid \beta, \tau^2, \theta \sim \text{Bern}\left(\frac{\left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \text{exp} \left(-\frac{1}{2\sigma^2\tau^2} \beta^2\right)\theta}{\left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \text{exp} \left(-\frac{1}{2\sigma^2\tau^2} \beta^2\right)\theta + \delta_0 \, (1 - \theta)}\right) \enspace .
 $$
  
 The issue with this is as follows. Remember that, in the Gibbs sampler, we sample from this conditional posterior using previous samples of $\beta$, $\tau^2$, and $\theta$ --- call them $\beta^{\small{\star}}$, $\tau^{2\small{\star}}$, and $\theta^{\small{\star}}$, respectively. The previous value $\beta^{\small{\star}}$ depends on the previous sample for $\pi$, denoted $\pi^{\small{\star}}$, such that if $\pi^{\small{\star}} = 0$ then $\beta^{\small{\star}} = 0$. If this happens in the sampling process --- and it will --- then we have to evaluate $\delta_0\left(\beta^{\small{\star}}\right)$ which puts infinite mass on $\beta^{\small{\star}} = 0$. This means that the ratio above will become zero, resulting in a new draw for $\pi$ that is $\pi^{\small{\star}} = 0$. However, this in turn means that the new value for $\beta$ will be $\beta^{\small{\star}} = 0$, and the whole spiel repeats. The Gibbs sampler thus gets forever stuck in the region $\beta = 0$, which means that the Markov chain will not converge to the joint posterior distribution.
@@ -462,10 +462,10 @@ The issue with this is as follows. Remember that, in the Gibbs sampler, we sampl
 Before we go back to the drawing board, one might suggest that we could simply set $\delta_0 = 1$, and then carry out the computation needed to draw from the conditional posterior of $\pi$. It runs into the following issue, however. Let $\xi$ be the chance parameter which governs the Bernoulli from which we draw $\pi$. With $\delta_0 = 1$, we have:
  
 $$
-\xi =  \frac{\left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \text{exp} \left(-\frac{1}{2\sigma_y^2\tau^2} \beta^2\right)\theta}{\left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \text{exp} \left(-\frac{1}{2\sigma_y^2\tau^2} \beta^2\right)\theta + (1 - \theta)} \enspace .
+\xi =  \frac{\left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \text{exp} \left(-\frac{1}{2\sigma^2\tau^2} \beta^2\right)\theta}{\left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \text{exp} \left(-\frac{1}{2\sigma^2\tau^2} \beta^2\right)\theta + (1 - \theta)} \enspace .
 $$
  
-Now let us assume the previous draw of $\beta$ was $\beta^{\small{\star}} = 0$. For simplicity, let $\theta = \frac{1}{2}$ and $\sigma_y^2 = 1$. This leads to:
+Now let us assume the previous draw of $\beta$ was $\beta^{\small{\star}} = 0$. For simplicity, let $\theta = \frac{1}{2}$ and $\sigma^2 = 1$. This leads to:
  
 $$
 \begin{aligned}
@@ -483,13 +483,13 @@ In sum, we have tried two things to work with the Dirac delta function: (a) take
  
  
 ## Conditional posterior $p(\pi \mid \beta, \theta, \tau^2)$: Second attempt
-In mathematics, it sometimes helps to write things down in a more complicated manner. In our case, we can do so by conditioning on $\mathbf{y}$ and $\sigma_e^2$, even though $\pi$ is independent of them given $\beta$. This might help because we get another likelihood term with which we can play with. We again start with $\pi = 1$, yielding:
+In mathematics, it sometimes helps to write things down in a more complicated manner. In our case, we can do so by conditioning on $\mathbf{y}$ and $\sigma^2$, even though $\pi$ is independent of them given $\beta$. This might help because we get another likelihood term with which we can play with. We again start with $\pi = 1$, yielding:
  
 $$
 \begin{aligned}
-p(\pi = 1 \mid \mathbf{y}, \sigma_e^2, \beta, \tau^2, \theta)
-&= \frac{1}{Z} \, p(\mathbf{y} \mid \sigma_e^2, \pi = 1, \tau^2, \theta, \beta) \, \, p(\beta \mid \tau^2, \pi = 1, \theta) \, p(\pi = 1 \mid \theta) \\[1em]
-&= \frac{1}{Z} \,\left(2\pi\sigma_e^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma_y^2\tau^2} \beta^2 \right) \theta \enspace .
+p(\pi = 1 \mid \mathbf{y}, \sigma^2, \beta, \tau^2, \theta)
+&= \frac{1}{Z} \, p(\mathbf{y} \mid \sigma^2, \pi = 1, \tau^2, \theta, \beta) \, \, p(\beta \mid \tau^2, \pi = 1, \theta) \, p(\pi = 1 \mid \theta) \\[1em]
+&= \frac{1}{Z} \,\left(2\pi\sigma^2\right)^{-\frac{n}{2}} \text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma^2\tau^2} \beta^2 \right) \theta \enspace .
 \end{aligned}
 $$
  
@@ -497,19 +497,19 @@ The case where $\pi = 0$ yields:
  
 $$
 \begin{aligned}
-p(\pi = 0 \mid \mathbf{y}, \sigma_e^2, \beta, \tau^2, \theta)
-&= \frac{1}{Z} \, p(\mathbf{y} \mid \sigma_e^2, \pi = 0, \tau^2, \theta, \beta) \, \, p(\beta \mid \tau^2, \pi = 0, \theta) \, p(\pi = 0 \mid \theta) \\[1em]
-&= \frac{1}{Z} \,\left(2\pi\sigma_e^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n y_i^2 \right) \delta_0 (1 - \theta) \enspace .
+p(\pi = 0 \mid \mathbf{y}, \sigma^2, \beta, \tau^2, \theta)
+&= \frac{1}{Z} \, p(\mathbf{y} \mid \sigma^2, \pi = 0, \tau^2, \theta, \beta) \, \, p(\beta \mid \tau^2, \pi = 0, \theta) \, p(\pi = 0 \mid \theta) \\[1em]
+&= \frac{1}{Z} \,\left(2\pi\sigma^2\right)^{-\frac{n}{2}} \text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n y_i^2 \right) \delta_0 (1 - \theta) \enspace .
 \end{aligned}
 $$
  
 Argh! It did not work. Observe that again $\pi$ would be drawn from a Bernoulli, but with a more complicated chance parameter $\xi$ than above:
  
 $$
-\pi \mid \mathbf{y}, \sigma_e^2, \beta, \tau^2, \theta \sim \text{Bern}\left(\frac{\text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma_y^2\tau^2} \beta^2 \right) \theta}{\text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma_y^2\tau^2} \beta^2 \right) \theta + \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n y_i^2 \right) \delta_0 (1 - \theta)}\right) \enspace ,
+\pi \mid \mathbf{y}, \sigma^2, \beta, \tau^2, \theta \sim \text{Bern}\left(\frac{\text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma^2\tau^2} \beta^2 \right) \theta}{\text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma^2\tau^2} \beta^2 \right) \theta + \text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n y_i^2 \right) \delta_0 (1 - \theta)}\right) \enspace ,
 $$
  
-where the $\left(2\pi\sigma_e^2\right)^{-\frac{n}{2}}$ term cancels. Still, the denominator features the unholy Dirac delta function $\delta_0$ --- the bane of our existence --- and we run into the same issue as above.
+where the $\left(2\pi\sigma^2\right)^{-\frac{n}{2}}$ term cancels. Still, the denominator features the unholy Dirac delta function $\delta_0$ --- the bane of our existence --- and we run into the same issue as above.
  
 Exhausted, we ask: should we not try to use a continuous spike instead of the discontinuous Dirac delta? No --- let us not give up just yet! I was a bit surprised, however, by how difficult it was to find literature that talked about how to handle the Dirac spike. For example, in a review of Bayesian variable selection methods, O'Hara & Sillanpää (2009) mention the continuous but not the discontinuous spike-and-slab setting. I eventually did find a useful reference (Geweke, 1996) through the paper by George & McCulloch (1997). Motivated by the fact that this problem is indeed *not impossible to solve*, let's get back to the drawing board!
  
@@ -517,8 +517,8 @@ Exhausted, we ask: should we not try to use a continuous spike instead of the di
  
 <!-- $$ -->
 <!-- \begin{aligned} -->
-<!-- p(\pi \mid y, \sigma_e^2, \beta, \tau^2, \theta) &= \frac{\left(2\pi\sigma_e^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\tau^2} \beta^2 \right) \theta}{\left(2\pi\sigma_e^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\tau^2} \beta^2 \right) \theta + \left(2\pi\sigma_e^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n y_i^2 \right) \delta_0 (1 - \theta)} \\[1em] -->
-<!-- &=\frac{\text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\tau^2} \beta^2 \right) \theta}{\text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\tau^2} \beta^2 \right) \theta + \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n y_i^2 \right) \delta_0 (1 - \theta)} \enspace . -->
+<!-- p(\pi \mid y, \sigma^2, \beta, \tau^2, \theta) &= \frac{\left(2\pi\sigma^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\tau^2} \beta^2 \right) \theta}{\left(2\pi\sigma^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\tau^2} \beta^2 \right) \theta + \left(2\pi\sigma^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n y_i^2 \right) \delta_0 (1 - \theta)} \\[1em] -->
+<!-- &=\frac{\text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\tau^2} \beta^2 \right) \theta}{\text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\tau^2} \beta^2 \right) \theta + \text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n y_i^2 \right) \delta_0 (1 - \theta)} \enspace . -->
 <!-- \end{aligned} -->
 <!-- $$ -->
  
@@ -527,21 +527,23 @@ You may be surprised to hear that the thing that impedes Bayesian inference most
  
 $$
 \begin{aligned}
-p(\pi = 0 \mid \mathbf{y}, \sigma_e^2, \tau^2, \theta) &= \frac{1}{Z} \, p(\mathbf{y} \mid \pi = 0, \sigma_e^2, \tau^2, \theta) \, p(\pi = 1 \mid \theta) \, p(\theta) \, p(\sigma_e^2) \, p(\tau^2) \\[1em]
-&= \frac{1}{Z} \, p(\mathbf{y} \mid \pi = 0, \sigma_e^2, \tau^2, \theta) \, p(\pi = 1 \mid \theta) \\[1em]
-&= \frac{1}{Z} \left(2\pi\sigma_e^2\right)^{-\frac{n}{2}} \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n y_i^2 \right) (1 - \theta)\enspace ,
+p(\pi = 0 \mid \mathbf{y}, \sigma^2, \tau^2, \theta) &= \frac{1}{Z} \, \int p(\mathbf{y}, \beta, \mid \pi = 0, \sigma^2, \tau^2, \theta) \, p(\pi = 0 \mid \theta) \, p(\theta) \, p(\sigma^2) \, p(\tau^2) \, \mathrm{d} \beta \\[1em]
+&= \frac{1}{Z} \, \int p(\mathbf{y} \mid \pi = 0, \sigma^2, \tau^2, \theta) \, p(\beta \mid \pi = 0, \sigma^2, \tau^2, \theta) \, p(\pi = 0 \mid \theta) \, p(\theta) \, p(\sigma^2) \, p(\tau^2) \, \mathrm{d} \beta \\[1em]
+&= \frac{1}{Z} \, p(\mathbf{y} \mid \pi = 0, \sigma^2, \tau^2, \theta) \, p(\pi = 0 \mid \theta) \, p(\theta) \, p(\sigma^2) \, p(\tau^2) \\[1em]
+&= \frac{1}{Z} \, p(\mathbf{y} \mid \pi = 0, \sigma^2, \tau^2, \theta) \, p(\pi = 0 \mid \theta) \\[1em]
+&= \frac{1}{Z} \left(2\pi\sigma^2\right)^{-\frac{n}{2}} \text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n y_i^2 \right) (1 - \theta)\enspace ,
 \end{aligned}
 $$
  
-where because $p(\theta)$, $p(\sigma_e^2)$, and $p(\tau^2)$ feature both in the case where $\pi = 0$ and $\pi = 1$, they can be absorbed into $Z$. For $\pi = 1$, the integration bit is a tick more involved. Using the *sum* and *product* rules of probability, we write:
+where because $p(\theta)$, $p(\sigma^2)$, and $p(\tau^2)$ feature both in the case where $\pi = 0$ and $\pi = 1$, they can be absorbed into $Z$. The integral is easy to solve since for $\pi = 0$ all values $\beta \neq 0$ receive zero density. For $\pi = 1$, the integration bit is a tick more involved. Using the *sum* and *product* rules of probability, we write:
  
  
 $$
 \begin{aligned}
-p(\pi = 1 \mid \mathbf{y}, \sigma_e^2, \tau^2, \theta) &= 
-\frac{1}{Z} \, \int p(\mathbf{y}, \beta \mid \pi = 1, \sigma_e^2, \tau^2, \theta) \, p(\pi = 1 \mid \theta) \, \mathrm{d}\beta \\
-&= \frac{1}{Z} \, \int p(\mathbf{y} \mid \pi = 1, \sigma_e^2, \tau^2, \theta) \, p(\beta \mid \pi = 1, \sigma_e^2, \tau^2, \theta) \, p(\pi = 1 \mid \theta) \, \mathrm{d}\beta \\
-&= \frac{1}{Z} \, \int \left(2\pi\sigma_e^2\right)^{-\frac{n}{2}} \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma_y^2\tau^2} \beta^2 \right) \theta \, \mathrm{d}\beta \enspace .
+p(\pi = 1 \mid \mathbf{y}, \sigma^2, \tau^2, \theta) &= 
+\frac{1}{Z} \, \int p(\mathbf{y}, \beta \mid \pi = 1, \sigma^2, \tau^2, \theta) \, p(\pi = 1 \mid \theta) \, \mathrm{d}\beta \\
+&= \frac{1}{Z} \, \int p(\mathbf{y} \mid \pi = 1, \sigma^2, \tau^2, \theta) \, p(\beta \mid \pi = 1, \sigma^2, \tau^2, \theta) \, p(\pi = 1 \mid \theta) \, \mathrm{d}\beta \\
+&= \frac{1}{Z} \, \int \left(2\pi\sigma^2\right)^{-\frac{n}{2}} \text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n (y_i - \beta x_i)^2 \right) \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma^2\tau^2} \beta^2 \right) \theta \, \mathrm{d}\beta \enspace .
 \end{aligned}
 $$
  
@@ -549,9 +551,9 @@ This integrand very much looks like the expression we had for the conditional po
  
 $$
 \begin{aligned}
-p(\pi = 1 \mid \mathbf{y}, \sigma_e^2, \tau^2, \theta) &=
-\frac{1}{Z} \left(2\pi\sigma_e^2\right)^{-\frac{n}{2}} \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \theta \, \int  \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[\sum_{i=1}^n y_i^2  - 2 \beta \sum_{i=1}^n x_i y_i + \beta^2 \sum_{i=1}^n x_i^2 \right] \right)  \text{exp}\left(-\frac{1}{2\sigma_y^2\tau^2} \beta^2 \right) \, \mathrm{d}\beta \\[1em]
-&= \frac{1}{Z} \left(2\pi\sigma_e^2\right)^{-\frac{n}{2}} \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \theta \, \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n y_i^2 \right) \, \int  \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[-2 \beta \sum_{i=1}^n x_i y_i + \beta^2 \sum_{i=1}^n x_i^2 \right] \right)  \text{exp}\left(-\frac{1}{2\sigma_y^2\tau^2} \beta^2 \right) \, \mathrm{d}\beta \enspace ,
+p(\pi = 1 \mid \mathbf{y}, \sigma^2, \tau^2, \theta) &=
+\frac{1}{Z} \left(2\pi\sigma^2\right)^{-\frac{n}{2}} \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \theta \, \int  \text{exp}\left(-\frac{1}{2\sigma^2} \left[\sum_{i=1}^n y_i^2  - 2 \beta \sum_{i=1}^n x_i y_i + \beta^2 \sum_{i=1}^n x_i^2 \right] \right)  \text{exp}\left(-\frac{1}{2\sigma^2\tau^2} \beta^2 \right) \, \mathrm{d}\beta \\[1em]
+&= \frac{1}{Z} \left(2\pi\sigma^2\right)^{-\frac{n}{2}} \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \theta \, \text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n y_i^2 \right) \, \int  \text{exp}\left(-\frac{1}{2\sigma^2} \left[-2 \beta \sum_{i=1}^n x_i y_i + \beta^2 \sum_{i=1}^n x_i^2 \right] \right)  \text{exp}\left(-\frac{1}{2\sigma^2\tau^2} \beta^2 \right) \, \mathrm{d}\beta \enspace ,
 \end{aligned}
 $$
  
@@ -559,10 +561,10 @@ where we now only focus on the integrand, call it $A$, because the margins of th
  
 $$
 \begin{aligned}
-A &= \int \text{exp}\left(-\frac{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}{2\sigma_e^2} \left[\left(\beta - \frac{\sum_{i=1}^n x_i y_i}{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}\right)^2 - \frac{\left(\sum_{i=1}^n x_i y_i\right)^2}{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)^2} \right] \right) \, \mathrm{d}\beta \\[1em]
-&= \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}{2\sigma_e^2}  \frac{\left(\sum_{i=1}^n x_i y_i\right)^2}{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)^2} \right) \int \text{exp}\left(-\frac{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}{2\sigma_e^2} \left(\beta - \frac{\sum_{i=1}^n x_i y_i}{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}\right)^2 \right) \, \mathrm{d}\beta \\[1em]
-&= \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i y_i\right)^2}{2\sigma_e^2\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)} \right) \int \text{exp}\left(-\frac{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}{2\sigma_e^2} \left(\beta - \frac{\sum_{i=1}^n x_i y_i}{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}\right)^2 \right) \, \mathrm{d}\beta \\[1em]
-&= \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i y_i\right)^2}{2\sigma_e^2\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)} \right) \left(2\pi\frac{\sigma_e^2}{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}\right)^{\frac{1}{2}} \enspace ,
+A &= \int \text{exp}\left(-\frac{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)}{2\sigma^2} \left[\left(\beta - \frac{\sum_{i=1}^n x_i y_i}{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)}\right)^2 - \frac{\left(\sum_{i=1}^n x_i y_i\right)^2}{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)^2} \right] \right) \, \mathrm{d}\beta \\[1em]
+&= \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)}{2\sigma^2}  \frac{\left(\sum_{i=1}^n x_i y_i\right)^2}{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)^2} \right) \int \text{exp}\left(-\frac{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)}{2\sigma^2} \left(\beta - \frac{\sum_{i=1}^n x_i y_i}{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)}\right)^2 \right) \, \mathrm{d}\beta \\[1em]
+&= \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i y_i\right)^2}{2\sigma^2\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)} \right) \int \text{exp}\left(-\frac{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)}{2\sigma^2} \left(\beta - \frac{\sum_{i=1}^n x_i y_i}{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)}\right)^2 \right) \, \mathrm{d}\beta \\[1em]
+&= \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i y_i\right)^2}{2\sigma^2\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)} \right) \left(2\pi\frac{\sigma^2}{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)}\right)^{\frac{1}{2}} \enspace ,
 \end{aligned}
 $$
  
@@ -571,8 +573,8 @@ where the second term of the last line is the normalizing constant of the condit
  
 $$
 \begin{aligned}
-1 - \xi &= \frac{\frac{1}{Z} \left(2\pi\sigma_e^2\right)^{-\frac{n}{2}} \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n y_i^2 \right) (1 - \theta)}{\frac{1}{Z} \left(2\pi\sigma_e^2\right)^{-\frac{n}{2}} \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \theta \, \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n y_i^2 \right) \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i y_i\right)^2}{2\sigma_e^2\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)} \right) \left(2\pi\frac{\sigma_e^2}{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}\right)^{\frac{1}{2}} + \frac{1}{Z} \left(2\pi\sigma_e^2\right)^{-\frac{n}{2}} \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n y_i^2 \right) (1 - \theta)} \\[1em]
-&= \frac{(1 - \theta)}{\left(\sigma_y^2\tau^2\right)^{-\frac{1}{2}}  \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i y_i\right)^2}{2\sigma_e^2\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)} \right) \left(\frac{\sigma_e^2}{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}\right)^{\frac{1}{2}} \theta + (1 - \theta)} \enspace .
+1 - \xi &= \frac{\frac{1}{Z} \left(2\pi\sigma^2\right)^{-\frac{n}{2}} \text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n y_i^2 \right) (1 - \theta)}{\frac{1}{Z} \left(2\pi\sigma^2\right)^{-\frac{n}{2}} \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \theta \, \text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n y_i^2 \right) \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i y_i\right)^2}{2\sigma^2\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)} \right) \left(2\pi\frac{\sigma^2}{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)}\right)^{\frac{1}{2}} + \frac{1}{Z} \left(2\pi\sigma^2\right)^{-\frac{n}{2}} \text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n y_i^2 \right) (1 - \theta)} \\[1em]
+&= \frac{(1 - \theta)}{\left(\sigma^2\tau^2\right)^{-\frac{1}{2}}  \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i y_i\right)^2}{2\sigma^2\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)} \right) \left(\frac{\sigma^2}{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)}\right)^{\frac{1}{2}} \theta + (1 - \theta)} \enspace .
 \end{aligned}
 $$
  
@@ -616,7 +618,6 @@ ss_regress_univ <- function(
   
   # compute these quantities only once
   n <- length(y)
-  var_y <- var(y)
   sum_xy <- sum(x*y)
   sum_x2 <- sum(x^2)
   
@@ -640,21 +641,21 @@ ss_regress_univ <- function(
     sigma2_new <- 1 / rgamma(1, a1 + n/2, a2 + sum((y - x*beta_prev)^2) / 2)
     
     # sample tau2 from an Inverse Gamma
-    tau2_new <- 1 / rgamma(1, 1/2 + 1/2 * pi_prev, s^2/2 + beta_prev^2 / (2*var_y))
+    tau2_new <- 1 / rgamma(1, 1/2 + 1/2 * pi_prev, s^2/2 + beta_prev^2 / (2*sigma2_new))
     
     # store this as a variable since it gets computed very often
-    var_comb <- sum_x2 + sigma2_new/(tau2_new*var_y)
+    cond_var <- sum_x2 + 1/tau2_new
     
     # sample beta from a Gaussian
-    beta_mu <- sum_xy / var_comb
-    beta_var <- sigma2_new / var_comb
+    beta_mu <- sum_xy / cond_var
+    beta_var <- sigma2_new / cond_var
     beta_new <- rnorm(1, beta_mu, sqrt(beta_var))
     
     # compute chance parameter of the conditional posterior of pi (Bernoulli)
     l0 <- log(1 - theta_new)
     l1 <- (
-      log(theta_new) - .5 * log(tau2_new*var_y) +
-      sum_xy^2 / (2*sigma2_new*var_comb) + .5 * log(beta_var) 
+      log(theta_new) - .5 * log(tau2_new*sigma2_new) +
+      sum_xy^2 / (2*sigma2_new*cond_var) + .5 * log(beta_var) 
     )
     
     # sample pi from a Bernoulli
@@ -674,17 +675,17 @@ Here, we simply simulate some data to see whether we can recover the coefficient
  
 
 {% highlight r %}
-gen_dat <- function(n = 100, b = 0, sigma2e = 1, seed = 1) {
+gen_dat <- function(n = 100, b = 0, sigma2 = 1, seed = 1) {
   set.seed(seed)
   
   p <- length(b)
   X <- replicate(p, rnorm(n))
-  y <- X %*% t(b) + rnorm(n, 0, sqrt(sigma2e))
+  y <- X %*% t(b) + rnorm(n, 0, sqrt(sigma2))
   
   list('y' = y, 'X' = X)
 }
  
-dat <- gen_dat(n = 100, b = 0.3, sigma2e = 1)
+dat <- gen_dat(n = 100, b = 0.3, sigma2 = 1)
 samples <- ss_regress_univ(dat$y, dat$X)
  
 head(samples)
@@ -693,13 +694,13 @@ head(samples)
 
 
 {% highlight text %}
-##      pi      beta    sigma2       tau2     theta
-## [1,]  1 0.2906086 0.6597533 0.90971999 0.7347514
-## [2,]  1 0.1211445 0.8227258 0.19379877 0.8147812
-## [3,]  1 0.2482826 0.8256208 0.21308479 0.9398529
-## [4,]  1 0.2698416 0.8924097 1.27511931 0.2272394
-## [5,]  1 0.2569462 0.8575250 9.26546148 0.3319193
-## [6,]  1 0.3302473 0.7589350 0.05923922 0.8465538
+##      pi      beta    sigma2      tau2     theta
+## [1,]  1 0.2897541 0.6597378 1.0269505 0.7347514
+## [2,]  1 0.1196894 0.8227304 0.2034551 0.8147812
+## [3,]  1 0.2460135 0.8259825 0.2151075 0.9398529
+## [4,]  1 0.2696221 0.8925779 1.2976426 0.2272394
+## [5,]  0 0.0000000 0.8575331 9.5860470 0.3319193
+## [6,]  0 0.0000000 0.8163272 0.5801438 0.1534462
 {% endhighlight %}
  
  
@@ -728,7 +729,7 @@ apply(samples, 2, mean)
 
 {% highlight text %}
 ##         pi       beta     sigma2       tau2      theta 
-##  0.8420000  0.2292838  0.9456540 18.3779151  0.6181061
+##  0.8443333  0.2296029  0.9443623 18.1514240  0.6169603
 {% endhighlight %}
  
 From this, we can also compute the posterior inclusion odds, which is $\frac{0.84}{1 - 0.84} = 5.30$. This means that $\mathcal{M}_1$ is about 5 times more likely than $\mathcal{M}_0$. In the short primer on Bayesian inference above, we have noted that computing posterior inclusion probabilities requires assigning a prior distribution to models. This brings with it some subtleties, and we will sketch the issue of assigning priors to models at the end of this blog post. In the next section, we generalize our spike-and-slab Gibbs sampling procedure to $p > 1$ variables.
@@ -742,7 +743,7 @@ In the case of multiple predictors, the Gibbs sampling procedure changes slightl
  
 $$
 \begin{aligned}
-\beta_i &\sim (1 - \pi_i) \, \delta_0 + \pi_i \, \mathcal{N}(0, \sigma_y^2 \tau^2) \\[0.5em]
+\beta_i &\sim (1 - \pi_i) \, \delta_0 + \pi_i \, \mathcal{N}(0, \sigma^2 \tau^2) \\[0.5em]
 \pi_i &\sim \text{Bern}(\theta) \\[0.5em]
 \theta &\sim \text{Beta}(a, b) \\[0.5em]
 \tau^2 &\sim \text{Inverse-Gamma}(\alpha_1, \alpha_2) \enspace ,
@@ -768,37 +769,37 @@ Note that while before the posterior mean of $\theta$ was bounded between $1/3$ 
 We again have two cases for $\tau^2$, but they are slightly different compared to the univariable case. We sample from the prior if *all* $\pi_i$'s are zero. Let $\pi = (\pi_1, \ldots, \pi_p)$ be the vector of mixture weights, and let $\mathbf{0}$ be a vector of zeros of length $p$, then:
  
 $$
-\tau^2 \mid \beta , \pi \sim \text{Inverse-Gamma}\left(\frac{1}{2} + \frac{\sum_{i=1}^p \pi_i}{2}, \frac{s^2}{2} + \frac{\beta^T\beta}{2\sigma_y^2}\right) \enspace .
+\tau^2 \mid \beta , \pi \sim \text{Inverse-Gamma}\left(\frac{1}{2} + \frac{\sum_{i=1}^p \pi_i}{2}, \frac{s^2}{2} + \frac{\beta^T\beta}{2\sigma^2}\right) \enspace .
 $$
  
 Note that $\beta_i = 0$ if $\pi_i = 0$, and that we thus sample from the prior if all $\pi_i$'s are zero.
  
  
-### Conditional posterior $p(\sigma_e^2 \mid y, \beta)$
-The conditional posterior on $\sigma_e^2$ changes only slightly:
+### Conditional posterior $p(\sigma^2 \mid y, \beta)$
+The conditional posterior on $\sigma^2$ changes only slightly:
  
 $$
-\sigma_e^2 \mid \mathbf{y}, \beta \sim \text{Gamma}\left(\alpha_1 + \frac{n}{2}, \alpha_2 + \frac{(\mathbf{y} - \mathbf{X}\beta)^T (\mathbf{y} - \mathbf{X}\beta)}{2}\right) \enspace .
+\sigma^2 \mid \mathbf{y}, \beta \sim \text{Gamma}\left(\alpha_1 + \frac{n}{2}, \alpha_2 + \frac{(\mathbf{y} - \mathbf{X}\beta)^T (\mathbf{y} - \mathbf{X}\beta)}{2}\right) \enspace .
 $$
  
-### Conditional posterior $p(\beta \mid y, \pi, \tau^2, \sigma_e^2)$
+### Conditional posterior $p(\beta \mid y, \pi, \tau^2, \sigma^2)$
 We could write the prior over all $\beta_i$'s as a multivariate Gaussian with a diagonal covariance matrix. With a Gaussian likelihood, this prior is conjugate, such that the conditional posterior on the regression weights $\beta$ is a multivariate Gaussian distribution. We sketch the derivation as it may be interesting in itself. The idea is to write:
  
 $$
 \begin{aligned}
-p(\beta \mid \mathbf{y}, \pi, \tau^2, \sigma_e^2) &= \frac{1}{Z} \text{exp}\left(-\frac{1}{2\sigma_e^2} \left(\mathbf{y} - \mathbf{X}\beta\right)^T\left(\mathbf{y} - \mathbf{X}\beta\right) \right) \text{exp}\left(-\frac{1}{2\sigma_y^2\tau^2} \beta^T\beta\right) \\[.5em]
-&= \frac{1}{Z} \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[\mathbf{y}^T\mathbf{y} - 2\beta^T\mathbf{X}^T\mathbf{y} + \beta^T\mathbf{X}^T\mathbf{X}\beta\right] -\frac{1}{2\sigma_y^2\tau^2} \beta^T\beta\right) \\[.5em]
-&= \frac{1}{Z} \text{exp}\left(-\frac{1}{2} \left[- 2\beta^T\mathbf{X}^T\mathbf{y}\frac{1}{\sigma_e^2} + \beta^T\mathbf{X}^T\mathbf{X}\frac{1}{\sigma_e^2}\beta + \frac{1}{\sigma_y^2\tau^2} \beta^T\beta\right]\right) \\[.5em]
-&= \frac{1}{Z} \text{exp}\left(-\frac{1}{2} \left[\beta^T\left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma_e^2} + \mathbf{I}\frac{1}{\sigma_y^2\tau^2}\right) \beta - 2\beta^T\mathbf{X}^T\mathbf{y}\frac{1}{\sigma_e^2}\right]\right) \\[.5em]
-&= \frac{1}{Z} \text{exp}\left(-\frac{1}{2} \left(\beta - \left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma_e^2} + \mathbf{I}\frac{1}{\sigma_y^2\tau^2}\right)^{-1}\mathbf{X}^T\mathbf{y}\frac{1}{\sigma_e^2}\right)^T \left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma_e^2} + \mathbf{I}\frac{1}{\sigma_y^2\tau^2}\right)\left(\beta - \left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma_e^2} + \mathbf{I}\frac{1}{\sigma_y^2\tau^2}\right)^{-1}\mathbf{X}^T\mathbf{y}\frac{1}{\sigma_e^2}\right)\right) \enspace .
+p(\beta \mid \mathbf{y}, \pi, \tau^2, \sigma^2) &= \frac{1}{Z} \text{exp}\left(-\frac{1}{2\sigma^2} \left(\mathbf{y} - \mathbf{X}\beta\right)^T\left(\mathbf{y} - \mathbf{X}\beta\right) \right) \text{exp}\left(-\frac{1}{2\sigma^2\tau^2} \beta^T\beta\right) \\[.5em]
+&= \frac{1}{Z} \text{exp}\left(-\frac{1}{2\sigma^2} \left[\mathbf{y}^T\mathbf{y} - 2\beta^T\mathbf{X}^T\mathbf{y} + \beta^T\mathbf{X}^T\mathbf{X}\beta\right] -\frac{1}{2\sigma^2\tau^2} \beta^T\beta\right) \\[.5em]
+&= \frac{1}{Z} \text{exp}\left(-\frac{1}{2} \left[- 2\beta^T\mathbf{X}^T\mathbf{y}\frac{1}{\sigma^2} + \beta^T\mathbf{X}^T\mathbf{X}\frac{1}{\sigma^2}\beta + \frac{1}{\sigma^2\tau^2} \beta^T\beta\right]\right) \\[.5em]
+&= \frac{1}{Z} \text{exp}\left(-\frac{1}{2} \left[\beta^T\left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma^2} + \mathbf{I}\frac{1}{\sigma^2\tau^2}\right) \beta - 2\beta^T\mathbf{X}^T\mathbf{y}\frac{1}{\sigma^2}\right]\right) \\[.5em]
+&= \frac{1}{Z} \text{exp}\left(-\frac{1}{2} \left(\beta - \left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma^2} + \mathbf{I}\frac{1}{\sigma^2\tau^2}\right)^{-1}\mathbf{X}^T\mathbf{y}\frac{1}{\sigma^2}\right)^T \left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma^2} + \mathbf{I}\frac{1}{\sigma^2\tau^2}\right)\left(\beta - \left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma^2} + \mathbf{I}\frac{1}{\sigma^2\tau^2}\right)^{-1}\mathbf{X}^T\mathbf{y}\frac{1}{\sigma^2}\right)\right) \enspace .
 \end{aligned}
 $$
  
 Thus, we draw all $\beta_i$'s from:
  
 $$
-\beta \mid \mathbf{y}, \pi, \tau^2, \sigma_e^2 \sim 
-\mathcal{N}\left(\left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma_e^2} + \mathbf{I}\frac{1}{\sigma_y^2\tau^2}\right)^{-1}\mathbf{X}^T\mathbf{y}\frac{1}{\sigma_e^2}, \left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma_e^2} + \mathbf{I}\frac{1}{\sigma_y^2\tau^2}\right)^{-1}\right) \enspace ,
+\beta \mid \mathbf{y}, \pi, \tau^2, \sigma^2 \sim 
+\mathcal{N}\left(\left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma^2} + \mathbf{I}\frac{1}{\sigma^2\tau^2}\right)^{-1}\mathbf{X}^T\mathbf{y}\frac{1}{\sigma^2}, \left(\mathbf{X}^T\mathbf{X}\frac{1}{\sigma^2} + \mathbf{I}\frac{1}{\sigma^2\tau^2}\right)^{-1}\right) \enspace ,
 $$
  
 where we then set the $\beta_i$'s to zero for which $\pi_i = 0$.
@@ -809,7 +810,7 @@ Because the the individual $\pi_i$'s are conditionally independent given $\theta
  
  
 $$
-\xi_j = \frac{p(\pi_j = 1 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta)}{p(\pi_j = 0 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta) + p(\pi_j = 1 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta)} \enspace .
+\xi_j = \frac{p(\pi_j = 1 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma^2, \tau^2, \theta)}{p(\pi_j = 0 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma^2, \tau^2, \theta) + p(\pi_j = 1 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma^2, \tau^2, \theta)} \enspace .
 $$
  
 We then draw $\pi_j$ from a Bernoulli with chance parameter $\xi_j$; we repeat this procedure for all $j = [1, \ldots, p]$ predictors. We start with the $\pi_j = 0$ case for which $\beta_j = 0$. We write:
@@ -817,11 +818,11 @@ We then draw $\pi_j$ from a Bernoulli with chance parameter $\xi_j$; we repeat t
  
 $$
 \begin{aligned}
-p(\pi_j = 0 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta) &= \frac{1}{Z} \, p(\mathbf{y} \mid \pi_j = 0, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta) \, p(\beta_{-j} \mid \pi_{-j}, \sigma_e^2, \tau^2, \theta) \, p(\pi \mid \theta) \, p(\theta) \, p(\tau^2) \, p(\sigma_e^2) \\[.5em]
-&= \frac{1}{Z} \, p(\mathbf{y} \mid \pi_j = 0, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta) \, p(\pi \mid \theta) \\[.5em]
-&= \frac{1}{Z} \, \left(2\pi\sigma_e^2\right)^{-\frac{n}{2}} \text{exp}\left(-\frac{1}{2\sigma_e^2} \left(\mathbf{y} - \mathbf{X}_{-j}\beta_{-j}\right)^T\left(\mathbf{y} - \mathbf{X}_{-j}\beta_{-j}\right)
+p(\pi_j = 0 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma^2, \tau^2, \theta) &= \frac{1}{Z} \, p(\mathbf{y} \mid \pi_j = 0, \pi_{-j}, \beta_{-j}, \sigma^2, \tau^2, \theta) \, p(\beta_{-j} \mid \pi_{-j}, \sigma^2, \tau^2, \theta) \, p(\pi \mid \theta) \, p(\theta) \, p(\tau^2) \, p(\sigma^2) \\[.5em]
+&= \frac{1}{Z} \, p(\mathbf{y} \mid \pi_j = 0, \pi_{-j}, \beta_{-j}, \sigma^2, \tau^2, \theta) \, p(\pi \mid \theta) \\[.5em]
+&= \frac{1}{Z} \, \left(2\pi\sigma^2\right)^{-\frac{n}{2}} \text{exp}\left(-\frac{1}{2\sigma^2} \left(\mathbf{y} - \mathbf{X}_{-j}\beta_{-j}\right)^T\left(\mathbf{y} - \mathbf{X}_{-j}\beta_{-j}\right)
 \right) \sum_{i=1}^p \theta^{\pi_i}(1 - \theta)^{1 - \pi_i} \\[.5em]
-&= \frac{1}{Z} \, \text{exp}\left(-\frac{1}{2\sigma_e^2} \left(\mathbf{y} - \mathbf{X}_{-j}\beta_{-j}\right)^T\left(\mathbf{y} - \mathbf{X}_{-j}\beta_{-j}\right)
+&= \frac{1}{Z} \, \text{exp}\left(-\frac{1}{2\sigma^2} \left(\mathbf{y} - \mathbf{X}_{-j}\beta_{-j}\right)^T\left(\mathbf{y} - \mathbf{X}_{-j}\beta_{-j}\right)
 \right) (1 - \theta) \enspace ,
 \end{aligned}
 $$
@@ -832,12 +833,12 @@ The expression for $\pi_j = 1$ requires integrating over $\beta_j$. We start wit
  
 $$
 \begin{aligned}
-p(\pi_j = 1 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta) &= \frac{1}{Z} \,p(\mathbf{y} \mid \pi_j = 1, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta) \, p(\pi \mid \theta) \\[.5em]
-&= \frac{1}{Z} \, \int p(\mathbf{y}, \beta_j \mid \pi_j = 1, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta) \, p(\pi \mid \theta) \, \mathrm{d}\beta_j \\[.5em]
-&= \frac{1}{Z} \, p(\pi \mid \theta) \, \int p(\mathbf{y} \mid \pi_j = 1, \pi_{-j}, \beta_{-j}, \beta_j, \sigma_e^2, \tau^2, \theta) \, p(\beta_j \mid \pi_j, \tau^2) \mathrm{d}\beta_j \\[.5em]
-&= \frac{1}{Z} \, p(\pi \mid \theta) \, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left(\mathbf{y} - \mathbf{X}\beta\right)^T\left(\mathbf{y} - \mathbf{X}\beta\right) \right) \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
-&= \frac{1}{Z} \, \sum_{i=1}^p \theta^{\pi_i}(1 - \theta)^{1 - \pi_i} \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}}\, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left(\mathbf{y} - \mathbf{X}\beta\right)^T\left(\mathbf{y} - \mathbf{X}\beta\right) -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
-&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}}\, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left(\mathbf{y} - \mathbf{X}\beta\right)^T\left(\mathbf{y} - \mathbf{X}\beta\right) -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \enspace .
+p(\pi_j = 1 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma^2, \tau^2, \theta) &= \frac{1}{Z} \,p(\mathbf{y} \mid \pi_j = 1, \pi_{-j}, \beta_{-j}, \sigma^2, \tau^2, \theta) \, p(\pi \mid \theta) \\[.5em]
+&= \frac{1}{Z} \, \int p(\mathbf{y}, \beta_j \mid \pi_j = 1, \pi_{-j}, \beta_{-j}, \sigma^2, \tau^2, \theta) \, p(\pi \mid \theta) \, \mathrm{d}\beta_j \\[.5em]
+&= \frac{1}{Z} \, p(\pi \mid \theta) \, \int p(\mathbf{y} \mid \pi_j = 1, \pi_{-j}, \beta_{-j}, \beta_j, \sigma^2, \tau^2, \theta) \, p(\beta_j \mid \pi_j, \tau^2) \mathrm{d}\beta_j \\[.5em]
+&= \frac{1}{Z} \, p(\pi \mid \theta) \, \int \text{exp}\left(-\frac{1}{2\sigma^2} \left(\mathbf{y} - \mathbf{X}\beta\right)^T\left(\mathbf{y} - \mathbf{X}\beta\right) \right) \, \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(-\frac{1}{2\sigma^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
+&= \frac{1}{Z} \, \sum_{i=1}^p \theta^{\pi_i}(1 - \theta)^{1 - \pi_i} \, \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}}\, \int \text{exp}\left(-\frac{1}{2\sigma^2} \left(\mathbf{y} - \mathbf{X}\beta\right)^T\left(\mathbf{y} - \mathbf{X}\beta\right) -\frac{1}{2\sigma^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
+&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}}\, \int \text{exp}\left(-\frac{1}{2\sigma^2} \left(\mathbf{y} - \mathbf{X}\beta\right)^T\left(\mathbf{y} - \mathbf{X}\beta\right) -\frac{1}{2\sigma^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \enspace .
 \end{aligned}
 $$
  
@@ -859,11 +860,11 @@ such that
  
 $$
 \begin{aligned}
-p(\pi_j = 1 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta) &= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n \left(z_i - \beta_j x_i\right)^2 -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
-&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[\sum_{i=1}^n z_i^2 - 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
-&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma_e^2} \sum_{i=1}^n z_i^2\right)\int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[- 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
-&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma_e^2} \mathbf{z}^T\mathbf{z} \right) \, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[- 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
-&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma_e^2} \left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right)^T\left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right) \right) \, \int \text{exp}\left(-\frac{1}{2\sigma_e^2} \left[- 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma_y^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \enspace ,
+p(\pi_j = 1 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma^2, \tau^2, \theta) &= \frac{1}{Z} \, \theta \, \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \, \int \text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n \left(z_i - \beta_j x_i\right)^2 -\frac{1}{2\sigma^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
+&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \, \int \text{exp}\left(-\frac{1}{2\sigma^2} \left[\sum_{i=1}^n z_i^2 - 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
+&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma^2} \sum_{i=1}^n z_i^2\right)\int \text{exp}\left(-\frac{1}{2\sigma^2} \left[- 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
+&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma^2} \mathbf{z}^T\mathbf{z} \right) \, \int \text{exp}\left(-\frac{1}{2\sigma^2} \left[- 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \\[.5em]
+&= \frac{1}{Z} \, \theta \, \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma^2} \left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right)^T\left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right) \right) \, \int \text{exp}\left(-\frac{1}{2\sigma^2} \left[- 2 \beta_j \sum_{i=1}^n z_i x_i + \beta_j^2 \sum_{i=1}^n x_i^2 \right] -\frac{1}{2\sigma^2\tau^2} \beta_j^2\right) \, \mathrm{d}\beta_j \enspace ,
 \end{aligned}
 $$
  
@@ -871,14 +872,14 @@ which is a very similar integration problem as in the univariable case. The same
  
 $$
 \begin{aligned}
-p(\pi_j = 1 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma_e^2, \tau^2, \theta) &= \frac{1}{Z} \, \theta \, \left(2\pi\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma_e^2} \left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right)^T\left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right) \right) \, \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i z_i\right)^2}{2\sigma_e^2\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)} \right) \left(2\pi\frac{\sigma_e^2}{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}\right)^{\frac{1}{2}} \enspace .
+p(\pi_j = 1 \mid \mathbf{y}, \pi_{-j}, \beta_{-j}, \sigma^2, \tau^2, \theta) &= \frac{1}{Z} \, \theta \, \left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}} \, \text{exp}\left(-\frac{1}{2\sigma^2} \left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right)^T\left(\mathbf{y} - \mathbf{X}_{-j} \beta_{-j}\right) \right) \, \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i z_i\right)^2}{2\sigma^2\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)} \right) \left(2\pi\frac{\sigma^2}{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)}\right)^{\frac{1}{2}} \enspace .
 \end{aligned}
 $$
  
 The conditional posterior of $\pi_j = 0$ is therefore a Bernoulli distribution with (1 minus) chance parameter:
  
 $$
-1 - \xi_j = \frac{(1 - \theta)}{\left(\sigma_y^2\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i z_i\right)^2}{2\sigma_e^2\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)} \right) \left(\frac{\sigma_e^2}{\left(\sum_{i=1}^n x_i^2 + \frac{\sigma_e^2}{\sigma_y^2\tau^2}\right)}\right)^{\frac{1}{2}} \theta + (1 - \theta)} \enspace ,
+1 - \xi_j = \frac{(1 - \theta)}{\left(\sigma^2\tau^2\right)^{-\frac{1}{2}} \text{exp}\left(\frac{\left(\sum_{i=1}^n x_i z_i\right)^2}{2\sigma^2\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)} \right) \left(\frac{\sigma^2}{\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)}\right)^{\frac{1}{2}} \theta + (1 - \theta)} \enspace ,
 $$
  
 where $z_j$ changes depending which $\beta_j$ we currently sample.
@@ -914,7 +915,7 @@ ss_regress <- function(
   colnames(res) <- c(
     paste0('pi', seq(p)),
     paste0('beta', seq(p)),
-    'sigma2e', 'tau2', 'theta'
+    'sigma2', 'tau2', 'theta'
   )
   
   # take the MLE estimate as the values for the first sample
@@ -924,7 +925,6 @@ ss_regress <- function(
   # compute only once
   XtX <- t(X) %*% X
   Xty <- t(X) %*% y
-  var_y <- as.numeric(var(y))
   
   # we start running the Gibbs sampler
   for (i in seq(2, nr_samples)) {
@@ -932,7 +932,7 @@ ss_regress <- function(
     # first, get all the values of the previous time point
     pi_prev <- res[i-1, seq(p)]
     beta_prev <- res[i-1, seq(p + 1, 2*p)]
-    sigma2e_prev <- res[i-1, ncol(res) - 2]
+    sigma2_prev <- res[i-1, ncol(res) - 2]
     tau2_prev <- res[i-1, ncol(res) - 1]
     theta_prev <- res[i-1, ncol(res)]
     
@@ -944,17 +944,17 @@ ss_regress <- function(
     
     # sample sigma2e from an Inverse-Gamma
     err <- y - X %*% beta_prev
-    sigma2e_new <- 1 / rgamma(1, a1 + n/2, a2 + t(err) %*% err / 2)
+    sigma2_new <- 1 / rgamma(1, a1 + n/2, a2 + t(err) %*% err / 2)
     
     # sample tau2 from an Inverse Gamma
     tau2_new <- 1 / rgamma(
       1, 1/2 + 1/2 * sum(pi_prev),
-      s^2/2 + t(beta_prev) %*% beta_prev / (2*var_y)
+      s^2/2 + t(beta_prev) %*% beta_prev / (2*sigma2_new)
     )
     
     # sample beta from multivariate Gaussian
-    beta_cov <- qr.solve((1/sigma2e_new) * XtX + diag(1/(tau2_new*var_y), p))
-    beta_mean <- beta_cov %*% Xty * (1/sigma2e_new)
+    beta_cov <- qr.solve((1/sigma2_new) * XtX + diag(1/(tau2_new*sigma2_new), p))
+    beta_mean <- beta_cov %*% Xty * (1/sigma2_new)
     beta_new <- mvtnorm::rmvnorm(1, beta_mean, beta_cov)
     
     # sample each pi_j in random order
@@ -968,13 +968,13 @@ ss_regress <- function(
       # compute the z variables and the conditional variance
       xj <- X[, j]
       z <- y - X %*% bp0
-      cond_var <- (sum(xj^2) + sigma2e_new/(tau2_new*var_y))
+      cond_var <- sum(xj^2) + 1/tau2_new
       
       # compute chance parameter of the conditional posterior of pi_j (Bernoulli)
       l0 <- log(1 - theta_new)
       l1 <- (
-        log(theta_new) - .5 * log(tau2_new*var_y) +
-        sum(xj*z)^2 / (2*sigma2e_new*cond_var) + .5 * log(sigma2e_new / cond_var)
+        log(theta_new) - .5 * log(tau2_new*sigma2_new) +
+        sum(xj*z)^2 / (2*sigma2_new*cond_var) + .5 * log(sigma2_new / cond_var)
       )
       
       # sample pi_j from a Bernoulli
@@ -984,7 +984,7 @@ ss_regress <- function(
     pi_new <- pi_prev
     
     # add new samples
-    res[i, ] <- c(pi_new, beta_new*pi_new, sigma2e_new, tau2_new, theta_new)
+    res[i, ] <- c(pi_new, beta_new*pi_new, sigma2_new, tau2_new, theta_new)
   }
   
   # remove the first nr_burnin number of samples
@@ -1077,12 +1077,12 @@ round(res_table, 3)
 
 {% highlight text %}
 ##            Post. Mean Post. Inclusion
-## complaints      0.601           0.998
-## privileges     -0.011           0.319
-## learning        0.211           0.692
-## raises          0.058           0.425
-## critical        0.007           0.286
-## advance        -0.079           0.418
+## complaints      0.581           0.998
+## privileges     -0.009           0.383
+## learning        0.222           0.746
+## raises          0.069           0.492
+## critical        0.008           0.340
+## advance        -0.089           0.486
 {% endhighlight %}
  
 We can also visualize these results:
@@ -1099,7 +1099,7 @@ We are certain to include only the predictor variable *complaints*. There remain
 As an aside, there are also other options than specifying independent priors over the $\beta$'s, which is what we have done in our setup. The most popular prior specification is based on Zellner's (1986) $g$-prior:
  
 $$
-\beta  \mid g \sim \mathcal{N}\left(0, g \, \sigma_y^2 \left(\mathbf{X}^T\mathbf{X}\right)^{-1}\right) \enspace ,
+\beta  \mid g \sim \mathcal{N}\left(0, g \, \sigma^2 \left(\mathbf{X}^T\mathbf{X}\right)^{-1}\right) \enspace ,
 $$
  
 where $g = \tau^2$ in our terminology and which does not have a diagonal covariance matrix but one that is scaled by $\left(\mathbf{X}^T\mathbf{X}\right)^{-1}$. Liang et al. (2008) propose various ways to deal with $g$. One of them, as discussed in this blog post, is to assign $g$ an inverse Gamma distribution which leads to a (multivariate) marginal Cauchy distribution on $\beta$. Som, Hans, & MacEachern (2016) point out an interesting problem that may arise when using, as we have done in this blog post, a single global $g$ or $\tau^2$ parameter. Li & Clyde (2018) unify various approaches in a general framework that extends to generalized linear models.[^8] In the next section, I briefly sketch some subtleties in assigning a prior to models.
@@ -1200,7 +1200,7 @@ Especially with a large number of predictors, we might be wary of the assumption
 <!-- [data-example](https://cran.r-project.org/web/packages/BAS/vignettes/BAS-vignette.html) -->
  
 # Conclusion
-If you have stayed with me until the bitter end, awesome! We have covered a lot in this blog post. In particular, we have tackled the problem of variable selection using a Bayesian approach which allowed us to quantify and incorporate uncertainty about parameters as well as models. We have focused on linear regression with spike-and-slab priors and derived a Gibbs sampler for the single and multiple predictor case. Applying this to simulated and real data, we have seen how this leads to model-averaged parameter estimates, as well as uncertainty estimates about whether or not to include a particular predictor variable. Lastly, we have discussed the nuances of assigning priors to models. If you want to read up on any of these topics, I encourage you to check out the references below. Otherwise, hope to see you next month!
+If you have stayed with me until the bitter end, awesome! We have covered a lot in this blog post. In particular, we have tackled the problem of variable selection using a Bayesian approach which allowed us to quantify and incorporate uncertainty about parameters as well as models. We have focused on linear regression with spike-and-slab priors and derived a Gibbs sampler for the single and multiple predictor case. Applying this to simulated and real data, we have seen how this leads to model-averaged parameter estimates, as well as uncertainty estimates about whether or not to include a particular predictor variable. Lastly, we have discussed the nuances of assigning priors to models. If you want to read up on any of these topics, I encourage you to check out the references below.
  
 ---
 *I would like to thank Don van den Bergh, Max Hinne, and Maarten Marsman for discussions about the Gibbs sampler, and Sophia Crüwell for comments on this blog post.*

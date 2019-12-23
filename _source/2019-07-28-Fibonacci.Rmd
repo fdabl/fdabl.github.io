@@ -90,7 +90,7 @@ The first 30 Fibonacci numbers are: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 2
 
 This is a rapid increase, as made apparent by the left Figure below. The Figure on the right shows that there is structure in how the sequence grows.
 
-```{r, echo = FALSE, fig.align = 'center', fig.width = 12, fig.height = 6}
+```{r, echo = FALSE, fig.align = 'center', fig.width = 12, fig.height = 6, dpi=400}
 num <- fib_seq(30)
 
 par(mfrow = c(1, 2))
@@ -100,7 +100,7 @@ plot(
   main = 'Rapid Increase in Value'
 )
 axis(1)
-axis(2)
+axis(2, las = 2)
 
 plot(
   log(num), axes = FALSE, pch = 20, col = 'black',
@@ -109,7 +109,7 @@ plot(
 )
 
 axis(1)
-axis(2)
+axis(2, las = 2)
 ```
 
 We will return to the structure in growth at the end of the blog post. First, we need to derive a closed-form expression of the $n^{th}$ Fibonacci number. In the next section, we take a step towards that by realizing that diagonal matrices make for easier computations.
@@ -296,7 +296,7 @@ We are not done yet, however. Note that $D$ is the matrix of the linear map $T$ 
 </div>
 
 
-```{r, fig.cap = '', echo = FALSE, eval = FALSE, fig.width = 10, fig.height = 6}
+```{r, fig.cap = '', echo = FALSE, eval = FALSE, fig.width = 10, fig.height = 6, dpi=400}
 library('latex2exp')
 # I had to hardcode the path because there is some issue with size otherwise
 

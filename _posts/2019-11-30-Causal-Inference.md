@@ -17,7 +17,7 @@ We first rehash the common adage that correlation is not causation. We then move
 # Correlation and Causation
 Messerli (2012) published a paper entitled "Chocolate Consumption, Cognitive Function, and Nobel Laureates" in *The New England Journal of Medicine* showing a strong positive relationship between chocolate consumption and the number of Nobel Laureates. I have found an even stronger relationship using updated data[^2], as visualized in the figure below.
  
-<img src="/assets/img/2019-11-30-Causal-Inference.Rmd/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" />
+<img src="/assets/img/2019-11-30-Causal-Inference.Rmd/unnamed-chunk-25-1.png" title="plot of chunk unnamed-chunk-25" alt="plot of chunk unnamed-chunk-25" style="display: block; margin: auto;" />
  
  
 <!-- <center> -->
@@ -47,7 +47,7 @@ Pearl (2019a) introduces a causal hierarchy with three levels --- association, i
 # Seeing
 Association is on the most basic level; it makes us see that two or more things are somehow related. Importantly, we need to distinguish between *marginal* associations and *conditional* associations. The latter are the key building block of causal inference. The figure below illustrates these two concepts. 
  
-<img src="/assets/img/2019-11-30-Causal-Inference.Rmd/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
+<img src="/assets/img/2019-11-30-Causal-Inference.Rmd/unnamed-chunk-26-1.png" title="plot of chunk unnamed-chunk-26" alt="plot of chunk unnamed-chunk-26" style="display: block; margin: auto;" />
  
  
 If we look at the whole, aggregated data on the left we see that the continuous variables $X$ and $Y$ are positively correlated: an increase in values for $X$ co-occurs with an increase in values for $Y$. This relation describes the *marginal* association of $X$ and $Y$ because we do not care whether $Z = 0$ or $Z = 1$. On the other hand, if we condition on the binary variable $Z$, we find that there is no relation: $X \perp Y \mid Z$. (For more on marginal and conditional associations in the case of Gaussian distributions, see [this](https://fabiandablander.com/statistics/Two-Properties.html) blog post). In the next section, we discuss a powerful tool that allows us to visualize such dependencies.
@@ -64,7 +64,7 @@ While it is natural to interpret the arrows causally, we do not do so here. For 
  
 The figure above also shows a fourth DAG, which encodes a different set of conditional (in)dependence relations between $X$, $Y$, and $Z$. The figure below illustrates this: looking at the aggregated data we do not find a relation between $X$ and $Y$ --- they are *marginally independent* --- but we do find one when looking at the disaggregated data --- $X$ and $Y$ are *conditionally dependent* given $Z$.
  
-<img src="/assets/img/2019-11-30-Causal-Inference.Rmd/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />
+<img src="/assets/img/2019-11-30-Causal-Inference.Rmd/unnamed-chunk-27-1.png" title="plot of chunk unnamed-chunk-27" alt="plot of chunk unnamed-chunk-27" style="display: block; margin: auto;" />
  
 A real-world example might help build intuition: Looking at people who are single and who are in a relationship as a separate group, being attractive ($X$) and being intelligent ($Y$) are two independent traits. This is what we see in the left panel in the figure above. Let's make the reasonable assumption that both being attractive and being intelligent are positively related with being in a relationship. What does this imply? First, it implies that, on average, single people are less attractive and less intelligent (see red data points). Second, and perhaps counter-intuitively, it implies that in the population of single people (and people in a relationship, respectively), being attractive and being intelligent are *negatively correlated*. After all, if the handsome person you met at the bar were also intelligent, then he would most likely be in a relationship!
  
@@ -291,7 +291,7 @@ z <- y + rnorm(n, 0, 0.1)
  
 The figure below shows that $Y$ has a much stronger association with $Z$ than with $X$; this is because the standard deviation of the error $\epsilon_X$ is only a tenth of the standard deviation of the error $\epsilon_Z$. For prediction, therefore, $Z$ is the more relevant variable.
  
-<img src="/assets/img/2019-11-30-Causal-Inference.Rmd/unnamed-chunk-6-1.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" style="display: block; margin: auto;" />
+<img src="/assets/img/2019-11-30-Causal-Inference.Rmd/unnamed-chunk-30-1.png" title="plot of chunk unnamed-chunk-30" alt="plot of chunk unnamed-chunk-30" style="display: block; margin: auto;" />
  
 But does $Z$ actually have a causal effect on $Y$? This is a question about intervention, which is squarely located at the second level of the causal hierarchy. With the knowledge of the underlying Structural Causal Model, we can easily simulate interventions in R and visualize their outcomes:
  
@@ -331,7 +331,7 @@ hist(
 )
 {% endhighlight %}
 
-<img src="/assets/img/2019-11-30-Causal-Inference.Rmd/unnamed-chunk-7-1.png" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" style="display: block; margin: auto;" />
+<img src="/assets/img/2019-11-30-Causal-Inference.Rmd/unnamed-chunk-31-1.png" title="plot of chunk unnamed-chunk-31" alt="plot of chunk unnamed-chunk-31" style="display: block; margin: auto;" />
  
 The leftmost histogram below shows the marginal distribution of $Y$ when no intervention takes place. The histogram in the middle shows the marginal distribution of $Y$ in the manipulated DAG where we set $Z = 2$. Observe that, as indicated by the causal graph, $Z$ does not have a causal effect on $Y$ such that $p(Y \mid do(Z = 2)) = p(Y)$. The histogram on the right shows the marginal distribution of $Y$ in the manipulated DAG where we set $X = 2$.
  

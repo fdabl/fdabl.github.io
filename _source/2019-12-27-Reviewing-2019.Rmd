@@ -9,7 +9,7 @@ status: development
 published: false
 ---
 
-Writing blog posts has been one of the most rewarding experiences for me over the last year. Some posts turned out quite long, others I could keep more concise. Irrespective of length, however, I have succeeded in keeping the promise to myself of publishing one post every month, and you can infer the occassional frenzy that ensued from the distribution of the dates the posts appeared on --- nine of them saw the light within the last three days of a month.
+Writing blog posts has been one of the most rewarding experiences for me over the last year. Some posts turned out quite long, others I could keep more concise. Irrespective of length, however, I have managed to publish one post every month, and you can infer the occassional frenzy that ensued from the distribution of the dates the posts appeared on --- nine of them saw the light within the last three days of a month.
 
 Some births were easier than others, yet every post evokes distinct memories: of perusing history books in the library and the Saturday sun; of writing down Gaussian integrals in overcrowded trains; of solving differential equations while singing; of hunting down typos before hurrying to parties. So to end this very productive year of blogging, below I provide a teaser of each previous post, summarizing one or two key takeaways. Let's go!
 

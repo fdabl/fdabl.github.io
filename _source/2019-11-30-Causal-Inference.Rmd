@@ -3,10 +3,10 @@ layout: post
 title: "An introduction to Causal inference"
 date: 2019-11-30 13:00:00 +0100
 categories: R
-status: process
-published: true
-# status: development
-# published: false
+# status: process
+# published: true
+status: development
+published: false
 ---
 
 Causal inference goes beyond prediction by modeling the outcome of interventions and formalizing counterfactual reasoning. In this blog post, I provide an introduction to the graphical approach to causal inference in the tradition of Sewell Wright, Judea Pearl, and others.
@@ -182,9 +182,9 @@ library('RColorBrewer')
 set.seed(1)
 
 n <- 500
-S <- cbind(c(1, -.5), c(-.5, 1))
 cols <- brewer.pal(3, 'Set1')
 
+S <- cbind(c(1, -.5), c(-.5, 1))
 d1 <- rmvnorm(n, c(4, 4), S)
 d2 <- rmvnorm(n, c(5.5, 5.5), S)
 d <- rbind(d1, d2)

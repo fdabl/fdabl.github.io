@@ -3,10 +3,10 @@ layout: post
 title: "Variable selection using Gibbs sampling"
 date: 2019-03-31 14:00:00 +0100
 categories: R
-status: process
-published: true
-# status: development
-# published: false
+# status: process
+# published: true
+status: development
+published: false
 ---
 
 "Which variables are important?" is a key question in science and statistics. In this blog post, I focus on linear models and discuss a Bayesian solution to this problem using *spike-and-slab priors* and the *Gibbs sampler*, a computational method to sample from a joint distribution using only conditional distributions.

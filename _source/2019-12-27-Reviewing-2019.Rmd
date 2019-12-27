@@ -1,0 +1,843 @@
+---
+layout: post
+title: "Reviewing one year of blogging"
+date: 2019-12-27 13:00:00 +0100
+categories: R
+# status: process
+# published: true
+status: development
+published: false
+---
+
+Writing blog posts has been one of the most rewarding experiences for me over the last year. Some posts turned out quite long, others I could keep more concise. Irrespective of length, however, I have succeeded in keeping the promise to myself of publishing one post every month, and you can infer the occassional frenzy that ensued from the distribution of the dates the posts appeared on --- nine of them saw the light within the last three days of a month.
+
+Some births were easier than others, yet every post evokes distinct memories: of perusing history books in the library and the Saturday sun; of writing down Gaussian integrals in overcrowded trains; of solving differential equations while singing; of hunting down typos before hurrying to parties. So to end this very productive year of blogging, below I provide a teaser of each previous post, summarizing one or two key takeaways. Let's go!
+
+<!-- I started this blog last January, aiming to publish one blog post per month. It has been an extremely rewarding experience: every post allowed me to dive into a topic in a playful manner, and I was anew excited every month, wondering what I would write about. Some posts turned out quite lengthy, others were more concise. Far be it for me to suppose you have read every one of them, so to end this very productive year of blogging, this post provides a teaser of each previous post, summarizing one or two key take-aways. I hope you enjoy the show! -->
+
+<!-- Blogging is great. In this post, I review what has happened since the inception of this blog in January. I will briefly summarize each blog post, and stress what I think are some key ideas. I will do so in reverse chronological order, starting with the most recent post. -->
+
+
+# An introduction to Causal inference
+Causal inference goes beyond prediction by modeling the outcome of interventions and formalizing counterfactual reasoning. It dethrones randomized control trials as the only tool to license causal statements, describing the conditions under which this feat is possible even in observational data.
+
+One key takeaway is to think about causal inference in a hierarchy. Association is at the most basic level, merely allowing us to say that two variables are somehow related. Moving upwards, the *do*-operator allows us to model interventions, answering questions such as "what would happen if we force every patient to take the drug"? Directed Acyclic Graphs (DAGs), as visualized in the figure below, allow us to visualize associations and causal relations.
+
+<center>
+  <img src="../assets/img/Seeing-vs-Doing-II.png" align="center" style="padding: 00px 00px 00px 00px;" width="750" height="500"/>
+</center>
+
+On the third and final level we find counterfactual statements. These follow from so-called *Structural Causal Models* --- the building block of this approach to causal inference. Counterfactuals allow us to answer questions such as "would the patient have recovered had she been given the drug, even though she has not received the drug and did not recover"? Needless to say, this requires strong assumptions; yet if we want to endow machines with human-level reasoning or formalize concepts such as fairness, we need to make such strong assumptions.
+
+One key practical take a way from this blog post is the definition of confounding: an effect is confounded if $p(Y \mid X) \neq p(Y \mid do(X = x))$. This means that blindly entering all variables into a regression to "control" for them is misguided; instead, one should carefuly think about the underlying causal relations between variables so as to not induce spurious associations. You can read the full blog post [here](https://fabiandablander.com/r/Causal-Inference.html).
+
+
+# A brief primer on Variational Inference
+Bayesian inference using Markov chain Monte Carlo can be notoriously slow. The key idea behind variational inference is to recast Bayesian inference as an optimization problem. In particular, we try to find a distribution $q^\star(\mathbf{z})$ that best approximates the posterior distribution $p(\mathbf{z} \mid \mathbf{x})$ in terms of the Kullback-Leibler divergence:
+
+$$
+q^\star(\mathbf{z}) = \underbrace{\text{argmin}}_{q(\mathbf{z}) \in \mathrm{Q}} \text{ KL}\left(q(\mathbf{z}) \, \lvert\lvert \, p(\mathbf{z} \mid \mathbf{x}) \right) \enspace .
+$$
+
+
+```{r, echo = FALSE, fig.width = 14, fig.height = 6, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
+library('rstan')
+library('MCMCpack')
+
+#' Computes the ELBO for the linear regression example
+#' 
+#' @param y univariate outcome variable
+#' @param x univariate predictor variable
+#' @param beta_mu mean of the variational density for \beta
+#' @param beta_sd standard deviation of the variational density for \beta
+#' @param nu parameter of the variational density for \sigma^2
+#' @param nr_samples number of samples for the Monte carlo integration
+#' @returns ELBO
+compute_elbo <- function(y, x, beta_mu, beta_sd, nu, tau2, nr_samples = 1e4) {
+  n <- length(y)
+  sum_y2 <- sum(y^2)
+  sum_x2 <- sum(x^2)
+  sum_yx <- sum(x*y)
+  
+  # Takes a function and computes its expectation with respect to q(\beta)
+  E_q_beta <- function(fn) {
+    integrate(function(beta) {
+      dnorm(beta, beta_mu, beta_sd) * fn(beta)
+    }, -Inf, Inf)$value
+  }
+  
+  # Takes a function and computes its expectation with respect to q(\sigma^2)
+  E_q_sigma2 <- function(fn) {
+    integrate(function(sigma) {
+      dinvgamma(sigma^2, (n + 1)/2, nu) * fn(sigma)
+    }, 0, Inf)$value
+  }
+  
+  
+  # Compute expectations of log p(\sigma^2)
+  E_log_p_sigma2 <- E_q_sigma2(function(sigma) log(1/sigma^2))
+  
+  # Compute expectations of log p(\beta \mid \sigma^2)
+  E_log_p_beta <- (
+    log(tau2 / beta_sd^2) * E_q_sigma2(function(sigma) log(sigma^2)) +
+    (beta_sd^2 + tau2) / (tau2) * E_q_sigma2(function(sigma) 1/sigma^2)
+  )
+  
+  # Compute expectations of the log variational densities q(\beta)
+  E_log_q_beta <- E_q_beta(function(beta) dnorm(beta, beta_mu, beta_sd, log = TRUE))
+  # E_log_q_sigma2 <- E_q_sigma2(function(x) log(dinvgamma(x, (n + 1)/2, nu))) # fails
+  
+  # Compute expectations of the log variational densities q(\sigma^2)
+  sigma2 <- rinvgamma(nr_samples, (n + 1)/2, nu)
+  E_log_q_sigma2 <- mean(log(dinvgamma(sigma2, (n + 1)/2, nu)))
+  
+  
+  # Compute the expected log likelihood
+  E_log_y_b <- sum_y2 - 2*sum_yx*beta_mu + (beta_sd^2 + beta_mu^2)*sum_x2
+  E_log_y_sigma2 <- E_q_sigma2(function(sigma) log(sigma^2) * 1/sigma^2)
+  E_log_y <- n/4 * log(2*pi) * E_log_y_b * E_log_y_sigma2
+  
+  
+  # Compute and return the ELBO
+  ELBO <- E_log_y + E_log_p_beta + E_log_p_sigma2 - E_log_q_beta - E_log_q_sigma2
+  ELBO
+}
+
+#' Implements CAVI for the linear regression example
+#' 
+#' @param y univariate outcome variable
+#' @param x univariate predictor variable
+#' @param tau2 prior variance for the standardized effect size
+#' @returns parameters for the variational densities and ELBO
+lmcavi <- function(y, x, tau2, nr_samples = 1e5, epsilon = 1e-2) {
+  n <- length(y)
+  sum_y2 <- sum(y^2)
+  sum_x2 <- sum(x^2)
+  sum_yx <- sum(x*y)
+  
+  # is not being updated through variational inference!
+  beta_mu <- sum_yx / (sum_x2 + 1/tau2)
+  
+  res <- list()
+  res[['nu']] <- 5
+  res[['beta_mu']] <- beta_mu
+  res[['beta_sd']] <- 1
+  res[['ELBO']] <- 0
+  
+  j <- 1
+  has_converged <- function(x, y) abs(x - y) < epsilon
+  ELBO <- compute_elbo(y, x, beta_mu, 1, 5, tau2, nr_samples = nr_samples)
+  
+  # while the ELBO has not converged
+  while (!has_converged(res[['ELBO']][j], ELBO)) {
+    
+    nu_prev <- res[['nu']][j]
+    beta_sd_prev <- res[['beta_sd']][j]
+    
+    # used in the update of beta_sd and nu
+    E_qA <- sum_y2 - 2*sum_yx*beta_mu + (beta_sd_prev^2 + beta_mu^2)*(sum_x2 + 1/tau2)
+    
+    # update the variational parameters for sigma2 and beta
+    nu <- 1/2 * E_qA
+    beta_sd <- sqrt(((n + 1) / E_qA) / (sum_x2 + 1/tau2))
+    
+    # update results object
+    res[['nu']] <- c(res[['nu']], nu)
+    res[['beta_sd']] <- c(res[['beta_sd']], beta_sd)
+    res[['ELBO']] <- c(res[['ELBO']], ELBO)
+    
+    # compute new ELBO
+    j <- j + 1
+    ELBO <- compute_elbo(y, x, beta_mu, beta_sd, nu, tau2, nr_samples = nr_samples)
+  }
+  
+  res
+}
+
+
+gen_dat <- function(n, beta, sigma) {
+  x <- rnorm(n)
+  y <- 0 + beta*x + rnorm(n, 0, sigma)
+  data.frame(x = x, y = y)
+}
+
+set.seed(1)
+dat <- gen_dat(100, 0.30, 1)
+
+mc <- lmcavi(dat$y, dat$x, tau2 = 0.50^2)
+
+# save the above model to a file and compile it
+model <- stan_model(file = 'stan-compiled/variational-regression.stan')
+
+stan_dat <- list('n' = nrow(dat), 'x' = dat$x, 'y' = dat$y, 'tau' = 0.50)
+fit <- rstan::vb(
+  model, data = stan_dat, output_samples = 20000, adapt_iter = 10000,
+  init = list('b' = 0.30, 'sigma' = 1), refresh = FALSE, seed = 1
+)
+
+fit <- rstan::sampling(model, data = stan_dat, iter = 8000, refresh = FALSE, seed = 1)
+
+posterior <- rstan::extract(fit)
+beta <- seq(-.2, .8, .001)
+
+par(mfrow = c(1, 2))
+hist(
+  posterior$b, col = 'skyblue', 
+  main = expression('Posterior of ' ~ beta), xlab = expression(beta),
+  xlim = c(-.3, .9), ylim = c(0, 4), breaks = 50, prob = TRUE, axes = FALSE,
+  cex.main = 2, cex.lab = 1.5, cex.axis = 2
+)
+axis(1, at = seq(-.3, .9, .2))
+axis(2, las = 2)
+lines(beta, dnorm(beta, mc$beta_mu, mc$beta_sd[length(mc$beta_sd)]), lwd = 3)
+
+hist(
+  posterior$sigma^2, col = 'skyblue', 
+  main = expression('Posterior of ' ~ sigma^2), xlab = expression(sigma^2),
+  xlim = c(0.4, 1.6), ylim = c(0, 4), breaks = 50, prob = TRUE, axes = FALSE,
+  cex.main = 2, cex.lab = 1.5, cex.axis = 2
+)
+axis(1, at = seq(.4, 1.6, .2))
+axis(2, las = 2)
+
+sigma2 <- seq(0.4, 1.5, .001)
+lines(sigma2, dinvgamma(sigma2, (100 + 1)/2, mc$nu[length(mc$nu)]), lwd = 3)
+```
+
+In this blog post, I explain how a particular form of variational inference --- *coordinate ascent mean-field variational inference* --- leads to fast computations. Specifically, I walk you through deriving the variational inference scheme for a simple linear regression example. One key takeaway from this post is that Bayesians can use optimization to speed up computation. However, variational inference requires problem-specific, often tedious calculations. Black-box variational inference schemes can alleviate this issue, but Stan's implementation --- *automatic differentiation variational inference* --- seems to work poorly, as detailed in the post (see also Ben Goodrich's comment). You can read the full blog post [here](https://fabiandablander.com/r/Variational-Inference.html).
+
+
+# Harry Potter and the Power of Bayesian Constrained Inference
+Are you a Gryffindor, Slytherin, Hufflepuff, or Ravenclaw? In this blog post, I explain a *prior predictive* perspective on model selection by having Harry, Ron, and Hermione --- three subjective Bayesians --- engage in a small prediction contest. There are two key takeaways. First, the prior does not completely constrain a model's prediction, as these are being made by combining the prior with the likelihood. For example, even though Ron has a point prior on $\theta = 0.50$ in the figure below, his prediction is not that $y = 5$ always; instead, he predicts a distribution that is centered around $y = 5$. Similarly, while Hermione believes that $\theta > 0.50$, she puts probability mass on values $y < 5$.
+
+
+```{r, echo = FALSE, fig.width = 10, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
+library('latex2exp')
+
+x <- seq(.000, 1, .001)
+par(mfrow = c(2, 3))
+
+plot(
+  0, 0, xlim = c(0, 1), type = 'l', ylab = 'Density', lty = 1,
+  xlab = TeX('$\\theta$'), las = 1, main = 'Ron\'s Prior', lwd = 3, ylim = c(0, 2.5),
+  cex.lab = 1.5, cex.main = 1.5, col = 'skyblue', axes = FALSE
+)
+
+arrows(0.5, 0, .5, 2, col = 'skyblue', lwd = 3)
+axis(1, at = seq(0, 1, .2)) #adds custom x axis
+axis(2, las = 1) # custom y axis
+
+plot(
+  x, dbeta(x, 1, 1), xlim = c(0, 1), type = 'l', ylab = 'Density', lty = 1,
+  xlab = TeX('$\\theta$'), las = 1, main = 'Harry\'s Prior', lwd = 3, ylim = c(0, 2.5),
+  cex.lab = 1.5, cex.main = 1.5, col = 'skyblue', axes = FALSE
+)
+  
+axis(1, at = seq(0, 1, .2)) #adds custom x axis
+axis(2, las = 1) # custom y axis
+
+plot(
+  x, dunif(x, .5, 1), xlim = c(0, 1), type = 'l', ylab = 'Density', lty = 1,
+  xlab = TeX('$\\theta$'), las = 1, main = 'Hermione\'s Prior', lwd = 3, ylim = c(0, 2.5),
+  cex.lab = 1.5, cex.main = 1.5, col = 'skyblue', axes = FALSE
+)
+
+axis(1, at = seq(0, 1, .2)) #adds custom x axis
+axis(2, las = 1) # custom y axis
+
+Ron <- function(y, n = 10) {
+  choose(n, y) * 0.50^n
+}
+
+Harry <- function(y, n = 10) {
+  choose(n, y) * beta(y + 1, n - y + 1)
+}
+
+Hermione <- function(y, n = 10) {
+  int <- integrate(function(theta) theta^y * (1 - theta)^(n - y), 0.50, 1)
+  2 * choose(n, y) * int$value
+}
+
+y <- seq(0, 10)
+
+barplot(
+  Ron(y), ylab = 'Probability Mass',
+  xlab = 'y', las = 1, main = 'Ron\'s Predictions',
+  cex.lab = 1.5, cex.main = 1.5, col = 'skyblue', width = .75,
+  names.arg = as.character(seq(0, 10, 1)), ylim = c(0, .3)
+)
+
+# axis(2, las = 1) # custom y axis
+
+barplot(
+  Harry(y), ylab = 'Probability Mass',
+  xlab = 'y', las = 1, main = 'Harry\'s Predictions',
+  cex.lab = 1.5, cex.main = 1.5, col = 'skyblue', width = .75,
+  names.arg = as.character(seq(0, 10, 1)), ylim = c(0, .3)
+)
+
+barplot(
+  sapply(y, Hermione), ylab = 'Probability Mass',
+  xlab = 'y', las = 1, main = 'Hermione\'s Predictions',
+  cex.lab = 1.5, cex.main = 1.5, col = 'skyblue', width = .75,
+  names.arg = as.character(seq(0, 10, 1)), ylim = c(0, .3)
+)
+```
+
+The second takeaway is computational. In particular, one can compute the Bayes factor of the *unconstrained* model ($\mathcal{M}_1$) --- in which the parameter $\theta$ is free to vary --- against a *constrained* model ($\mathcal{M}_r$) --- in which $\theta$ is order-constrained (e.g., $\theta > 0.50$) --- as:
+
+$$
+\text{BF}_{r1} = \frac{p(\theta \in [0.50, 1] \mid y, \mathcal{M}_1)}{p(\theta \in [0.50, 1] \mid \mathcal{M}_1)} \enspace .
+$$
+
+In words, this Bayes factor is given by the ratio of the posterior probability of $\theta$ being in line with the restriction compared to the prior probability of $\theta$ being in line with the restriction. You can read the full blog post [here](https://fabiandablander.com/r/Bayes-Potter.html).
+
+
+# Love affairs and linear differential equations 
+<blockquote>
+When you can fall for chains of silver, you can fall for chains of gold <br>
+You can fall for pretty strangers and the promises they hold <br>
+You promised me everything, you promised me thick and thin, yeah <br>
+Now you just say "Oh, Romeo, yeah, you know I used to have a scene with him"
+</blockquote>
+
+Differential equations are the sine qua non of modeling how systems change. This blog post provides an introduction to *linear* differential equations, which admit closed-form solutions, and analyzes the stability of fixed points.
+
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.align = 'center', fig.width = 15, fig.height = 8, dpi=400}
+library('fields')
+
+solve_linear <- function(A, inits = c(1, 1), tmax = 20, n = 500) {
+  
+  # compute eigenvectors and eigenvalues
+  eig <- eigen(A)
+  E <- eig$vectors
+  lambdas <- eig$values
+  
+  # solve for the initial conditon
+  C <- solve(E) %*% inits
+  
+  # create time steps
+  ts <- seq(0, tmax, length.out = n)
+  x <- matrix(0, nrow = n, ncol = ncol(A))
+  
+  for (i in seq(n)) {
+    t <- ts[i]
+    x[i, ] <- E %*% (C * exp(lambdas * t))
+  }
+  
+  # Re drops the imaginary part ... more on that later!
+  Re(x)
+}
+
+plot_vector_field <- function(A, title = '', ...) {
+  x <- seq(-4, 4, .50)
+  y <- seq(-4, 4, .50)
+  
+  RJ <- as.matrix(expand.grid(x, y))
+  dRJ <- t(A %*% t(RJ))
+  
+  plot(
+    x, y, type = 'n', axes = FALSE, xlab = '', ylab = '', main = title, cex.main = 1.5, ...
+  )
+  
+  arrow.plot(
+    RJ, dRJ,
+    arrow.ex = .075, length = .05, lwd = 1.5, col = 'gray82', xpd = TRUE
+  )
+  
+  text(3.9, -.2, 'R', cex = 1.25, font = 2)
+  text(-.2, 3.9, 'J', cex = 1.25, font = 2)
+  lines(c(-4, 4), c(0, 0), lwd = 1)
+  lines(c(0, 0), c(4, -4), lwd = 1)
+}
+
+library('RColorBrewer')
+
+cols <- brewer.pal(3, 'Set1')
+par(mfrow = c(1, 2))
+
+S <- cbind(c(-.2, 1), c(-1, 0))
+plot_vector_field(S, title = 'The Stable Spiral of Love', cex.main = 1.5, lwd = 2)
+
+n <- 1000
+tmax <- 50
+u <- solve_linear(S, c(2, 2), tmax = tmax, n = n)
+
+lines(u, col = 'red', lwd = 2)
+points(0, 0, pch = 20, cex = 2)
+
+plot(
+  seq(0, tmax, length.out = n), u[, 1], type = 'l',
+  lwd = 2, col = cols[2], axes = FALSE, xlab = 'Time', ylab = 'Feelings',
+  main = 'Dampened Oscillation', ylim = c(-3, 3), cex.main = 1.5, cex.lab = 1.5, cex.axis = 1.5,
+)
+lines(seq(0, tmax, length.out = n), u[, 2], type = 'l', lwd = 2, col = cols[1])
+
+legend(
+  'topright', col = cols,
+  legend = c('Juliet', 'Romeo'), cex = 1.5, lwd = 2,
+  box.lty = 0, bty = 'n'
+)
+axis(1)
+axis(2, las = 1)
+```
+
+The key takeaways are that the natural basis of analysis is the basis spanned by the eigenvectors, and that the stability of fixed points depends directly on the eigenvalues. A system with imaginary eigenvalues can exhibit oscillating behaviour, as shown in the figure above.
+
+I think I rarely had more fun writing than when writing this blog post. Inspired by Strogatz (1988), it playfully introduces linear differential equations by classifying the types of relationships Romeo and Juliet might find themselves in. While writing it, I also listened to a lot of Dire Straits, Bob Dylan, Daft Punk, and others, whose lyrics decorate the post's section. You can read the full blog post [here](https://fabiandablander.com/r/Linear-Love.html).
+
+
+# The Fibonacci sequence and linear algebra
+1, 1, 2, 3, 5, 8, 13, 21, ... The Fibonacci sequence might well be the most widely known mathematical sequence. In this blog post, I discuss how Leonardo Bonacci derived it as a solution to a puzzle about procreating rabbits, and how linear algebra can help us find a closed-form expression of the $n^{\text{th}}$ Fibonacci number.
+
+<div style="text-align:center;">
+  <img src="../assets/img/Fibonacci-Rabbits.png" align="center" style="padding-top: 10px; padding-bottom: 10px;" width="620" height="720" />
+</div>
+
+The key insight is to realize that the $n^{\text{th}}$ Fibonacci number can be computed by repeatedly performing matrix multiplications. If one *diagonalizes* this matrix, changing basis to --- again! --- the eigenbasis, then the repeated application of this matrix can be expressed as a scalar power, yielding a closed-form expression of the $n^{\text{th}}$ Fibonacci number. That's a mouthful; you can read the blog post which explains things much better [here](https://fabiandablander.com/r/Fibonacci.html).
+
+
+# Spurious correlations and random walks
+I was at the Santa Fe Complex Systems Summer School --- the experience of a lifetime --- when Anton Pichler and Andrea Bacilieri, two economists, told me that two independent random walks can be correlated substantially. I was quite shocked, to be honest. This blog post investigates this issue, concluding that regressing one random walk onto another is *nonsensical*, that is, leads to an inconsistent parameter estimate.
+
+```{r, message = FALSE, warning = FALSE, fig.align = 'center', fig.width = 12, fig.height = 6, echo = FALSE, dpi=400}
+library('dplyr')
+
+set.seed(1)
+
+simulate_ar <- function(n, phi, sigma = .1) {
+  y <- rep(0, n)
+  
+  for (t in seq(2, n)) {
+    y[t] <- phi*y[t-1] + rnorm(1, 0, sigma)
+  }
+  
+  y
+}
+
+n <- 200
+times <- 100
+phis <- seq(0, 1, .02)
+comb <- expand.grid(times = seq(times), n = n, phis)
+ncomb <- nrow(comb)
+
+res <- matrix(NA, nrow = ncomb, ncol = 6)
+colnames(res) <- c('ix', 'n', 'phi', 'cor', 'tstat', 'pval')
+
+for (i in seq(ncomb)) {
+  ix <- comb[i, 1]
+  n <- comb[i, 2]
+  phi <- comb[i, 3]
+  
+  test <- cor.test(simulate_ar(n, phi = phi), simulate_ar(n, phi = phi))
+  res[i, ] <- c(ix, n, phi, test$estimate, test$statistic, test$p.value)
+}
+
+dat <- data.frame(res) %>% 
+  group_by(phi) %>% 
+  summarize(
+    avg_abs_corr = mean(abs(cor)),
+    avg_abs_tstat = mean(abs(tstat)),
+    percent_sig = mean(pval < .05)
+  )
+
+par(mfrow = c(1, 2))
+
+plot(
+  dat$phi, dat$avg_abs_corr, pch = 20, axes = FALSE, ylim = c(0, .4),
+  main = expression(paste(bold('Spurious Correlations increase with '), phi)),
+  xlab = expression(phi), ylab = '(Spurious) Correlation',
+  cex.lab = 1.4, cex.axis = 1.4, cex.main = 1.4
+)
+axis(1, at = seq(0, 1, .1))
+axis(2, las = 1)
+
+plot(
+  dat$phi, dat$percent_sig, pch = 20, axes = FALSE, ylim = c(0, 1),
+  main = expression(paste(bold('False Positives increase with '), phi)),
+  xlab = expression(phi), ylab = '% False Positive', 
+  cex.lab = 1.4, cex.axis = 1.4, cex.main = 1.4
+)
+abline(h = 0.05, lty = 'dotted')
+axis(1, at = seq(0, 1, .1))
+axis(2, las = 1)
+```
+
+As the figure above shows, such spurious correlation also occurs for independent AR(1) processes with increasing autocorrelation $\phi$, even though the resulting estimate is consistent. The key takeaway is therefore to be careful when correlating time-series. You can read the full blog post [here](https://fabiandablander.com/r/Spurious-Correlation.html).
+
+
+# Bayesian modeling using Stan: A case study
+Model selection is a difficult problem. In Bayesian inference, we may distinguish between two approaches to model selection: a *(prior) predictive* perspective based on marginal likelihoods, and a *(posterior) predictive* perspective based on leave-one-out cross-validation.
+
+<img src="../assets/img/prediction-perspectives.png" align="center" style="padding: 10px 10px 10px 10px;"/>
+
+A prior predictive perspective --- illustrated in the left part of the figure above --- evaluates models based on their predictions about the data actually observed. These predictions are made by combining likelihood and prior. In contrast, a posterior predictive perspective --- illustrated in the right panel of the figure above --- evaluates models based on their predictions about data that we have not observed. These predictions cannot be directly computed, but can be approximated by combining likelihood and posterior in a leave-one-out cross-validation scheme. They key takeaway of this blog post is to appreciate this distinction, noting that not all Bayesians agree on how to select among models.
+
+The post illustrates these two perspectives with a case study: does the relation between practice and reaction time follow a power law or an exponential function? You can read the full blog post [here](https://fabiandablander.com/r/Law-of-Practice.html).
+
+
+# Two perspectives on regularization
+Regularization is the process of adding information to an estimation problem so as to avoid extreme estimates. This blog post explores regularization both from a Bayesian and from a classical perspective, using the simplest example possible: estimating the bias of a coin.
+
+```{r, echo = FALSE, fig.width = 14, fig.height = 7, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
+plot_updating <- function(a = 1, b = 1, k = 0, N = 0, null = NULL, CI = NULL, ymax = 'auto', ylab = 'Density') {
+  x <- seq(.001, .999, .001) ## set up for creating the distributions
+  y1 <- dbeta(x, a, b) # data for prior curve
+  y3 <- dbeta(x, a + k, b + N - k) # data for posterior curve
+  y2 <- dbeta(x, 1 + k, 1 + N - k) # data for likelihood curve, plotted as the posterior from a beta(1,1)
+  y.max <- ifelse(is.numeric(ymax), ymax, 1.25 * max(y1, y2, y3, 1.6))
+  title <- paste0('Beta(', a, ', ', b, ')', ' to Beta(', a + k, ', ', b + N - k, ')')
+  
+  plot(x, y1, xlim = c(0, 1), ylim = c(0, y.max), type = 'l', ylab = ylab, lty = 2,
+       xlab = TeX('$\\theta$'), las = 1, main = title, lwd = 3,
+       cex.lab = 1.5, cex.main = 1.5, col = 'skyblue', axes = FALSE)
+  
+  axis(1, at = seq(0, 1, .2)) #adds custom x axis
+  axis(2, las = 1) # custom y axis
+  
+  # if there is new data, plot likelihood and posterior
+  lines(x, y2, type = 'l', col = 'darkorange', lwd = 2, lty = 3)
+  lines(x, y3, type = 'l', col = 'darkorchid1', lwd = 5)
+  legend('topleft', c('Prior', 'Posterior', 'Likelihood'),
+         col = c('skyblue', 'darkorchid1', 'darkorange'), 
+         lty = c(2, 1, 3), lwd = c(3, 5, 2), bty = 'n',
+         y.intersp = 1, x.intersp = .4, seg.len =.7)
+}
+
+par(mfrow = c(1, 2))
+
+plot_updating(a = 1, b = 1, k = 3, N = 3)
+plot_updating(a = 2, b = 2, k = 3, N = 3, ylab = '')
+```
+
+The key takeaway is the observation that Bayesians have a natural tool for regularization at their disposal: the prior. In contrast to the left panel in the figure above, which shows a flat prior, the right panel illustrates that using a weakly informative prior that peaks at $\theta = 0.50$ shifts the resulting posterior distribution towards that value. In classical statistics, one usually uses penalized maximum likelihood approaches --- think lasso and ridge regression --- to achieve regularization. You can read the full blog post [here](https://fabiandablander.com/r/Regularization.html).
+
+
+# Variable selection using Gibbs sampling
+"Which variables are important?" is a key question in science and statistics. In this blog post, I focus on linear models and discuss a Bayesian solution to this problem using spike-and-slab priors and the Gibbs sampler, a computational method to sample from a joint distribution using only conditional distributions.
+
+```{r, echo = FALSE, fig.width = 12, fig.height = 8, fig.align = 'center', message = FALSE, warning = FALSE, dpi=400}
+library('dplyr')
+library('tidyr')
+library('doParallel')
+registerDoParallel(cores = 4)
+
+#' Spike-and-Slab Regression using Gibbs Sampling for p > 1 predictors
+#'
+#' @param y: vector of responses
+#' @param X: matrix of predictor values
+#' @param nr_samples: indicates number of samples drawn
+#' @param a1: parameter a1 of Gamma prior on variance sigma2e
+#' @param a2: parameter a2 of Gamma prior on variance sigma2e
+#' @param theta: parameter of prior over mixture weight
+#' @param burnin: number of samples we discard ('burnin samples')
+#'
+#' @returns matrix of posterior samples from parameters pi, beta, tau2, sigma2e, theta
+ss_regress <- function(
+  y, X, a1 = .01, a2 = .01, theta = .5,
+  a = 1, b = 1, s = 1/2, nr_samples = 6000, nr_burnin = round(nr_samples / 4, 2)
+  ) {
+  
+  p <- ncol(X)
+  n <- nrow(X)
+  
+  # res is where we store the posterior samples
+  res <- matrix(NA, nrow = nr_samples, ncol = 2*p + 1 + 1 + 1)
+  
+  colnames(res) <- c(
+    paste0('pi', seq(p)),
+    paste0('beta', seq(p)),
+    'sigma2', 'tau2', 'theta'
+  )
+  
+  # take the MLE estimate as the values for the first sample
+  m <- lm(y ~ X - 1)
+  res[1, ] <- c(rep(0, p), coef(m), var(predict(m) - y), 1, .5)
+  
+  # compute only once
+  XtX <- t(X) %*% X
+  Xty <- t(X) %*% y
+  
+  # we start running the Gibbs sampler
+  for (i in seq(2, nr_samples)) {
+    
+    # first, get all the values of the previous time point
+    pi_prev <- res[i-1, seq(p)]
+    beta_prev <- res[i-1, seq(p + 1, 2*p)]
+    sigma2_prev <- res[i-1, ncol(res) - 2]
+    tau2_prev <- res[i-1, ncol(res) - 1]
+    theta_prev <- res[i-1, ncol(res)]
+    
+    ## Start sampling from the conditional posterior distributions
+    ##############################################################
+    
+    # sample theta from a Beta
+    theta_new <- rbeta(1, a + sum(pi_prev), b + sum(1 - pi_prev))
+    
+    # sample sigma2e from an Inverse-Gamma
+    err <- y - X %*% beta_prev
+    sigma2_new <- 1 / rgamma(1, a1 + n/2, a2 + t(err) %*% err / 2)
+    
+    # sample tau2 from an Inverse Gamma
+    tau2_new <- 1 / rgamma(
+      1, 1/2 + 1/2 * sum(pi_prev),
+      s^2/2 + t(beta_prev) %*% beta_prev / (2*sigma2_new)
+    )
+    
+    # sample beta from multivariate Gaussian
+    beta_cov <- qr.solve((1/sigma2_new) * XtX + diag(1/(tau2_new*sigma2_new), p))
+    beta_mean <- beta_cov %*% Xty * (1/sigma2_new)
+    beta_new <- mvtnorm::rmvnorm(1, beta_mean, beta_cov)
+    
+    # sample each pi_j in random order
+    for (j in sample(seq(p))) {
+      
+      # get the betas for which beta_j is zero
+      pi0 <- pi_prev
+      pi0[j] <- 0
+      bp0 <- t(beta_new * pi0)
+      
+      # compute the z variables and the conditional variance
+      xj <- X[, j]
+      z <- y - X %*% bp0
+      cond_var <- sum(xj^2) + 1/tau2_new
+      
+      # compute chance parameter of the conditional posterior of pi_j (Bernoulli)
+      l0 <- log(1 - theta_new)
+      l1 <- (
+        log(theta_new) - .5 * log(tau2_new*sigma2_new) +
+        sum(xj*z)^2 / (2*sigma2_new*cond_var) + .5 * log(sigma2_new / cond_var)
+      )
+      
+      # sample pi_j from a Bernoulli
+      pi_prev[j] <- rbinom(1, 1, exp(l1) / (exp(l1) + exp(l0)))
+    }
+    
+    pi_new <- pi_prev
+    
+    # add new samples
+    res[i, ] <- c(pi_new, beta_new*pi_new, sigma2_new, tau2_new, theta_new)
+  }
+  
+  # remove the first nr_burnin number of samples
+  res[-seq(nr_burnin), ]
+}
+
+#' Calls the ss_regress function in parallel
+#' 
+#' @params same as ss_regress
+#' @params nr_cores: numeric, number of cores to run ss_regress in parallel
+#' @returns a list with nr_cores entries which are posterior samples
+ss_regressm <- function(
+  y, X, a1 = .01, a2 = .01, theta = .5,
+  a = 1, b = 1, s = 1/2, nr_samples = 6000,
+  nr_burnin = round(nr_samples / 4, 2), nr_cores = 4
+  ) {
+  
+  samples <- foreach(i = seq(nr_cores), .combine = rbind) %dopar% {
+    ss_regress(
+      y = y, X = X, a1 = a1, a2 = a2, theta = theta,
+      a = a, b = b, s = s, nr_samples = nr_samples,
+      nr_burnin = nr_burnin
+    )
+  }
+  
+  samples
+}
+std <- function(x) (x - mean(x)) / sd(x)
+
+attitude_z <- apply(attitude, 2, std)
+yz <- attitude_z[, 1]
+Xz <- attitude_z[, -1]
+
+samples <- ss_regressm(
+  y = yz, X = Xz, a1 = .01, a2 = .01,
+  a = 1, b = 1, s = 1/2, nr_cores = 4, nr_samples = 4000
+)
+
+post_means <- apply(samples, 2, mean)
+
+res_table <- cbind(
+  post_means[grepl('beta', names(post_means))],
+  post_means[grepl('pi', names(post_means))]
+)
+rownames(res_table) <- colnames(Xz)
+colnames(res_table) <- c('Post. Mean', 'Post. Inclusion')
+
+# round(res_table, 3)
+
+betas <- data.frame(samples[, grepl('beta', colnames(samples))])
+colnames(betas) <- colnames(Xz)
+
+dbetas <- gather(betas, predictor, value) %>% 
+  mutate(
+    predictor = factor(predictor)
+  )
+
+dbetas_means <- group_by(dbetas, predictor) %>%
+  summarize(value = mean(value)) %>% 
+  mutate(
+    y_value = 0,
+    yend_value = 6000
+  )
+
+ggplot(dbetas, aes(x = value)) +
+  geom_histogram(bins = 40, colour = 'black', fill = 'grey76') +
+  geom_vline(
+    data = dbetas_means,
+    aes(xintercept = value),
+    linetype = 'dashed', col = 'black'
+  ) +
+  scale_x_continuous(breaks = scales::pretty_breaks(n = 6)) +
+  facet_wrap(~ predictor, scale = 'free_y') +
+  ylab('Frequency') +
+  ggtitle(TeX('Model-averaged Posterior Distributions')) +
+  xlab(expression(beta)) +
+  theme(
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.background = element_blank(),
+    panel.border = element_blank(), 
+    axis.line = element_line(colour = 'black'),
+    plot.title = element_text(hjust = .5, size = 22),
+    strip.background = element_blank(),
+    legend.key = element_blank(),
+    text = element_text(size = 20)
+  )
+```
+
+Parameter estimation is almost always conditional on a specific model. One key takeaway from this blog post is that there is uncertainty associated with the model itself. The approach outlined in the post accounts for this uncertainty by using spike-and-slab priors, yielding posterior distributions not only for parameters but also for models. To incorporate this model uncertainty into parameter estimation, one can average across models; the figure above shows the *model-averaged* posterior distribution for six variables discussed in the post. You can read the full blog post [here](https://fabiandablander.com/r/Spike-and-Slab.html).
+
+
+# Two properties of the Gaussian distribution
+The Gaussian distribution is special for a number of reasons. In this blog post, I focus on two such reasons, namely the fact that it is closed under marginalization and conditioning. This means that if you start out with a *p*-dimensional Gaussian distribution, and you either *marginalize over* or *condition on* one of its components, the resulting distribution will again be Gaussian.
+
+```{r, echo = FALSE, fig.width = 12, fig.height = 6, fig.align = 'center', dpi=400}
+library('ggplot2')
+library('mvtnorm')
+
+plot_all <- function(sd1, sd2, rho, x2val, limits = c(-10, 10), densmult = 5) {
+  S <- rbind(
+    c(sd1^2, sd1*sd2*rho),
+    c(sd1*sd2*rho, sd2^2)
+  )
+  
+  x1 <- seq(limits[1], limits[2], length.out = 100)
+  x2 <- x1
+  grid <- expand.grid(x1 = x1, x2 = x2)
+  
+  d <- data.frame(grid, prob = dmvnorm(expand.grid(x1, x2), mean = c(0, 0), S))
+  
+  cond_mean <- rho*sd1/sd2 * x2val
+  cond_sd <- sd1 * (1 - rho^2)
+  
+  densx1 <- densmult * dnorm(d$x1, cond_mean, cond_sd)
+  
+  p <- ggplot(d, aes(x = x1, y = x2, z = prob)) +
+    geom_contour(aes(color = '1')) +
+    coord_fixed(xlim = limits, ylim = limits) +
+    geom_segment(aes(x = cond_mean, xend = cond_mean, y = -10, yend = max(densx1)), linetype = 'dotted', color = 'grey60') +
+    # geom_vline(xintercept = cond_mean, linetype = 'dotted') +
+    stat_function(fun = function(x) densmult * dnorm(x, cond_mean, cond_sd), size = 1.0, aes(color = '3')) +
+    stat_function(fun = function(x) densmult * dnorm(x, 0, sd1), aes(color = '2')) +
+    # scale_x_continuous(breaks = scales::pretty_breaks(n = 8)) +
+    # scale_y_continuous(breaks = scales::pretty_breaks(n = 8)) + 
+    scale_x_continuous(breaks = seq(-3, 3, 1)) +
+    scale_y_continuous(breaks = seq(-3, 3, 1)) +
+    geom_segment(aes(x = -3, xend = 3, y = -Inf,yend = -Inf)) +
+    geom_segment(aes(y = -3, yend = 3, x = -Inf,xend = -Inf)) +
+    theme(
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank(),
+      panel.background = element_blank(),
+      panel.border = element_blank(), 
+      # axis.line = element_line(colour = 'black'),
+      axis.line = element_blank(),
+      legend.position = 'top',
+      legend.key = element_blank()
+      # legend.position = c(.9, .9)
+    ) +
+    scale_colour_manual(
+      name = '',
+      labels = c('Joint', 'Marginal', 'Conditional'),
+      values = c('blue', 'black', 'purple')
+    ) +
+    ylab(TeX('$$X_2$$')) +
+    xlab(TeX('$$X_1$$')) +
+    theme(text = element_text(size = 18))
+  
+  p
+}
+
+# plot_all(1, 1, .8, 2, limits = c(-3, 3), densmult = 2.5)
+gridExtra::grid.arrange(
+  plot_all(1, 1, .8, 2, limits = c(-3, 3), densmult = 2.5),
+  plot_all(1, 1, 0, 2, limits = c(-3, 3), densmult = 2.5),
+  ncol = 2
+)
+```
+
+
+The figure above illustrates the difference between marginalization and conditioning in the two-dimensional case. The left panel shows a bivariate Gaussian distribution with a high correlation $\rho = 0.80$ (blue contour lines). Conditioning means incorporating information, and observing that $X_2 = 2$ shifts the distribution of $X_1$ towards this value (purple line). If we do not observe $X_2$, we can incorporate our uncertainty about its likely values by marginalizing it out. This results in a Gaussian distribution that is centered on zero (black line). The right panel shows that conditioning on $X_2 = 2$ does not change the distribution of $X_1$ in the case of no correlation $\rho = 0$. You can read the full blog post [here](https://fabiandablander.com/statistics/Two-Properties.html).
+
+
+# Curve fitting and the Gaussian distribution
+In this blog post, we take a look at the mother of all curve fitting problems --- fitting a straight line to a number of points. The figure below shows that one point in the Euclidean plane is insufficient to define a line (left), two points constrain it perfectly (middle), and three is too much (right). In science we usually deal with more than two data points which are corrupted by noise. How do we fit a line to such noisy observations?
+
+```{r, echo = FALSE, fig.width = 11, fig.height = 4, fig.align = 'right', dpi = 400}
+par(mfrow = c(1, 3))
+fit <- function(x, b0 = 2.5, b1 = -.5) b0 + b1*x
+P1 <- c(1, fit(1))
+P2 <- c(3, fit(3))
+P3 <- c(2, 2)
+dat <- data.frame(y = c(P1[2], P2[2], P3[2]), x = c(P1[1], P2[1], P3[1]))
+m <- lm(y ~ x, dat)
+lim <- c(0, 4)
+
+plot(1, type = "n", xlim = lim, ylim = lim,
+     bty = "n", xlab = "x", ylab = "y", main = 'Underdetermined', yaxt = 'n'
+)
+axis(2, las = 2)
+
+b0 <- function(b1) 2 - b1
+
+abline(a = b0(-.5), b = -.5, col = 'skyblue')
+abline(a = b0(0), b = 0, col = 'skyblue')
+abline(a = b0(1), b = 1, col = 'skyblue')
+points(P1[1], P1[2], pch = 20)
+
+plot(1, type = "n", xlim = lim, ylim = lim,
+     bty = "n", xlab = "x", ylab = "y", main = 'Determined', yaxt = 'n'
+)
+axis(2, las = 2)
+
+abline(a = b0(-.5), b = -.5, col = 'skyblue')
+points(P1[1], P1[2], pch = 20)
+points(P2[1], P2[2], pch = 20)
+
+plot(1, type = "n", xlim = lim, ylim = lim,
+     bty = "n", xlab = "x", ylab = "y", main = 'Overdetermined', yaxt = 'n'
+)
+
+axis(2, las = 2)
+
+abline(a = 2, b = 0, col = 'skyblue')
+abline(a = 4, b = -1, col = 'skyblue')
+abline(a = 2.5, b = -.5, col = 'skyblue')
+
+points(P1[1], P1[2], pch = 20)
+points(P2[1], P2[2], pch = 20)
+points(P3[1], P3[2], pch = 20)
+```
+
+The methods of least squares provides an answer. In addition to an explanation of least squares, a key takeaway of this post is an understanding for the historical context in which least squares arose. Statistics is fascinating in part because of its rich history. On our journey through time we meet Legendre, Gauss, Laplace, and Galton. The latter describes the central limit theorem --- one of the most stunning theorems in statistics --- in beautifully poetic words:
+
+> "I know of scarcely anything so apt to impress the imagination as the wonderful form of cosmic order expressed by the "Law of Frequency of Error". The law would have been personified by the Greeks and deified, if they had known of it. It reigns with serenity and in complete self-effacement, amidst the wildest confusion. The huger the mob, and the greater the apparent anarchy, the more perfect is its sway. It is the supreme law of Unreason. Whenever a large sample of chaotic elements are taken in hand and marshalled in the order of their magnitude, an unsuspected and most beautiful form of regularity proves to have been latent all along." (Galton, 1889, p. 66)
+
+You can read the full blog post [here](https://fabiandablander.com/r/Curve-Fitting-Gaussian.html).
+
+I hope that you enjoyed reading some of these posts at least a quarter as much as I enjoyed writing them. I am committed to making 2020 a successful year of blogging, too. However, I will most likely decrease the output frequency by half, aiming to publish one post every two months. It is a truth universally acknowledged that a person in want of a PhD must be in possession of publications, and so I will have to shift my focus accordingly (at least a little bit). At the same time, I also want to further increase my involvement in the "data for the social good" scene. Life certainly is one complicated optimization problem. I wish you all the best for the new year!
+
+---
+*I would like to thank Don van den Bergh, Sophia Crüwell, Jonas Haslbeck, Oisín Ryan, Lea Jakob, Quentin Gronau, Nathan Evans, Andrea Bacilieri, and Anton Pichler for helpful comments on (some of) these blog posts.*

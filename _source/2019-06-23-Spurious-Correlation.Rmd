@@ -45,7 +45,7 @@ rw3 <- simulate_ar(n, phi = 1)
 ar <- simulate_ar(n, phi = 0.5)
 ```
  
-```{r, echo = FALSE, fig.align = 'center', fig.width = 9, fig.height = 7, message = FALSE}
+```{r, echo = FALSE, fig.align = 'center', fig.width = 9, fig.height = 7, message = FALSE, dpi=400}
 library('latex2exp')
 library('RColorBrewer')
 
@@ -142,7 +142,7 @@ $$
 
 where we assume that $\epsilon_i \sim \mathcal{N}(0, \sigma^2)$ (see also a [previous](https://fdabl.github.io/r/Curve-Fitting-Gaussian.html) blog post). This is evidently violated when performing linear regression on two random walks, as demonstrated by the residual plot below.
 
-```{r, echo = FALSE, fig.align = 'center', fig.width = 9, fig.height = 7}
+```{r, echo = FALSE, fig.align = 'center', fig.width = 9, fig.height = 7, dpi=400}
 m <- lm(rw1 ~ rw2)
 
 plot(
@@ -223,7 +223,7 @@ res_rw <- bootstrap_limit(ns,  1, .1)
 
 The Figure below illustrates how things go wrong when regressing one independent random walk onto the other. In contrast to the estimate for the AR(1) regression, the estimate $\hat{\beta}_1$ does not decrease in the case of a random walk regression. Instead, it stays roughly within $[-0.75, 0.75]$ across all $n$. This shines further light on the initial simulation results that the average correlation stays roughly the same. Moreover, in contrast AR(1) regression for which the distribution of the test statistic does not change, the distribution of the test statistic for the random walk regression seems to diverge. This explains why we the proportion of false positives increases with $n$.
 
-```{r, echo = FALSE, fig.align = 'center', fig.width = 12, fig.height = 10}
+```{r, echo = FALSE, fig.align = 'center', fig.width = 12, fig.height = 10, dpi=400}
 plot_simres <- function(res, ns, title, ylim, tstat = FALSE) {
   n <- seq(first(table(res$n)))
   
@@ -418,7 +418,7 @@ dat <- data.frame(res) %>%
 
 The Figure below shows that the issue of spurious correlation gets progressively worse as the AR(1) process approaches a random walk (i.e., $\phi = 1$). While this is true, the regression estimate remains consistent.
 
-```{r, fig.align = 'center', fig.width = 12, fig.height = 6, echo = FALSE}
+```{r, fig.align = 'center', fig.width = 12, fig.height = 6, echo = FALSE, dpi=400}
 par(mfrow = c(1, 2))
 
 plot(

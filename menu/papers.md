@@ -4,6 +4,8 @@ title: ''
 ---
 
 ## Submitted / under review
+**Dablander, F.** (submitted). An Introduction to Causal Inference. [[Link](https://psyarxiv.com/b3fkw)]
+
 **Dablander, F.<sup>&#8902;</sup>**, Ryan, O.<sup>**&#8902;**</sup>, & Haslbeck, J.M.B.<sup>**&#8902;**</sup> (under revision). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. [[Link](https://psyarxiv.com/qgewy/)]
 
 Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (accepted). The Support Interval. *Erkenntnis*. [[Link](https://psyarxiv.com/zwnxb/)]

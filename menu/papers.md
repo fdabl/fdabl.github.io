@@ -4,14 +4,14 @@ title: ''
 ---
 
 ## Submitted / under review
-**Dablander, F.** (submitted). An Introduction to Causal Inference. [[Link](https://psyarxiv.com/b3fkw)]
-
 **Dablander, F.<sup>&#8902;</sup>**, Ryan, O.<sup>**&#8902;**</sup>, & Haslbeck, J.M.B.<sup>**&#8902;**</sup> (under revision). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. [[Link](https://psyarxiv.com/qgewy/)]
 
-Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (accepted). The Support Interval. *Erkenntnis*. [[Link](https://psyarxiv.com/zwnxb/)]
+## 2020
+**Dablander, F.** (2020). An Introduction to Causal Inference. [[Link](https://psyarxiv.com/b3fkw)]
+
+Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (2020). The Support Interval. *Erkenntnis*. [[Link](https://link.springer.com/article/10.1007%2Fs10670-019-00209-z)]
 
 ## 2019
-
 **Dablander, F.**, Epskamp, S., & Haslbeck, J.M.B. (2019). Studying Statistics Anxiety Requires Sound Statistics: A Comment on Siew, McCartney, and Vitevitch (2019). *Scholarship of Teaching and Learning in Psychology*. [[Link](https://psyarxiv.com/pfnys)]
 
 **Dablander, F.**, & Hinne, M. (2019). Node centrality measures are a poor substitute for causal inference.  *Scientific Reports, 9*, 6846. [[Link](https://www.nature.com/articles/s41598-019-43033-9)]

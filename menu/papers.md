@@ -4,7 +4,7 @@ title: ''
 ---
 
 ## Submitted / under review
-**Dablander, F.<sup>&#8902;</sup>**, Ryan, O.<sup>**&#8902;**</sup>, & Haslbeck, J.M.B.<sup>**&#8902;**</sup> (under revision). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. [[Link](https://psyarxiv.com/qgewy/)]
+**Dablander, F.<sup>&#8902;</sup>**, Ryan, O.<sup>**&#8902;**</sup>, & Haslbeck, J.M.B.<sup>**&#8902;**</sup> (submitted). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. [[Link](https://psyarxiv.com/qgewy/)]
 
 ## 2020
 **Dablander, F.** (2020). An Introduction to Causal Inference. [[Link](https://psyarxiv.com/b3fkw)]

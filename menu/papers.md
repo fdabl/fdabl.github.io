@@ -4,21 +4,24 @@ title: ''
 ---
 
 ## Submitted / under review
-**Dablander, F.<sup>&#8902;</sup>**, Ryan, O.<sup>**&#8902;**</sup>, & Haslbeck, J.M.B.<sup>**&#8902;**</sup> (submitted). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. [[Link](https://psyarxiv.com/qgewy/)]
+**Dablander, F.** (submitted). An Introduction to Causal Inference. [[Link](https://psyarxiv.com/b3fkw)]
+
+**Dablander, F.<sup>&#8902;</sup>**, Ryan, O.<sup>**&#8902;**</sup>, & Haslbeck, J.M.B.<sup>**&#8902;**</sup> (under review). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. [[Link](https://psyarxiv.com/qgewy/)]
 
 ## 2020
-**Dablander, F.** (2020). An Introduction to Causal Inference. [[Link](https://psyarxiv.com/b3fkw)]
-
 Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (2020). The Support Interval. *Erkenntnis*. [[Link](https://link.springer.com/article/10.1007%2Fs10670-019-00209-z)]
 
-## 2019
-**Dablander, F.**, Epskamp, S., & Haslbeck, J.M.B. (2019). Studying Statistics Anxiety Requires Sound Statistics: A Comment on Siew, McCartney, and Vitevitch (2019). *Scholarship of Teaching and Learning in Psychology*. [[Link](https://psyarxiv.com/pfnys)]
 
+## 2019
 **Dablander, F.**, & Hinne, M. (2019). Node centrality measures are a poor substitute for causal inference.  *Scientific Reports, 9*, 6846. [[Link](https://www.nature.com/articles/s41598-019-43033-9)]
+
+**Dablander, F.**, Epskamp, S., & Haslbeck, J.M.B. (2019). Studying Statistics Anxiety Requires Sound Statistics: A Comment on Siew, McCartney, and Vitevitch (2019). *Scholarship of Teaching and Learning in Psychology*. [[Link](https://psyarxiv.com/pfnys)]
 
 Jakob, L., Garcia-Garzon, E., Jarke, H., & **Dablander, F.** (2019). The Science Behind the Magic? The Relation of the Harry Potter "Sorting Hat Quiz" to Personality and Human Values. *Collabra: Psychology, 5*(1), 31. [[Link](https://www.collabra.org/article/10.1525/collabra.240/)]
 
 Edelsbrunner, P. A., & **Dablander, F.** (2019). The Psychometric Modeling of Scientific Reasoning: A Review and Recommendations for Future Avenues. *Educational Psychology Review, 31(1)*, 1-34. [[Link](https://link.springer.com/article/10.1007/s10648-018-9455-5)]
+
+Marsman, M., Waldorp, L., **Dablander, F.**, & Wagenmakers, E. J. (2019). Bayesian estimation of explained variance in ANOVA designs. *Statistica Neerlandica, 73*(3), 351-372. [[Link](https://onlinelibrary.wiley.com/doi/full/10.1111/stan.12173)]
 
 
 ## 2018

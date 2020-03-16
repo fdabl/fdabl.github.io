@@ -6,7 +6,7 @@ title: ''
 ## Talks
 Anticipating Critical Transitions using Early Warning Signals: Theoretical and Practical Considerations. Invited Talk at the Psychological Methods Kolloquium, Berlin, Germany, December 2019.
 
-Default Bayes Factor for Testing the (In)equality of Population Variances. Talk at FMGE2019, Kiel, Germany, September 2019.
+Default Bayes Factor for Testing the (In)equality of Population Variances. Talk at FMGE2019, Kiel, Germany, September 2019. [[Link]({{ site.url }}/assets/talks/Bayes-Variances.html)]
 
 Bayesian Vector Autoregression for Structure and Parameter Learning. Talk at Psychoco, Prague, Czech Republic, February 2019. [[Link]({{ site.url }}/assets/talks/BayesVAR-Psychoco2019.html)]
 

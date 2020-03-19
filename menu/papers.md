@@ -10,6 +10,8 @@ title: ''
 
 **Dablander, F.**<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & Haslbeck, J.M.B.<sup><small>&#11089;</small></sup> (under review). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. [[Link](https://psyarxiv.com/qgewy/)]
 
+Brown, J., Murray, D., Furlong, K., Coco, E., **Dablander, F.** (submitted). A Breeding Pool of Ideas: Analyzing Interdisciplinary Collaborations at the Complex Systems Summer School. [[Link](https://osf.io/preprints/socarxiv/e3z4v)]
+
 ## 2020
 Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (2020). The Support Interval. *Erkenntnis*. [[Link](https://link.springer.com/article/10.1007%2Fs10670-019-00209-z)]
 

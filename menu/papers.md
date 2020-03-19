@@ -4,7 +4,7 @@ title: ''
 ---
 
 ## Submitted / under review
-**Dablander, F.** (submitted). An Introduction to Causal Inference. [[Link](https://psyarxiv.com/b3fkw)]
+**Dablander, F.** (under review). An Introduction to Causal Inference. [[Link](https://psyarxiv.com/b3fkw)]
 
 **Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Ly, A., Wagenmakers, E.-J. (submitted). Default Bayes factors for Testing the (In)equality of Several Population Variances. [[Link](https://arxiv.org/abs/2003.06278)][[R package](https://github.com/fdabl/bfvartest)]
 

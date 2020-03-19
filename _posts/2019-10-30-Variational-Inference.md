@@ -268,7 +268,7 @@ To recap, instead of assuming a parametric form for the variational densities, w
  
  
 ## Removing expectations
-Now that we know the parametric form of both variational densities, we can expand the terms that involve an expectation. In particular, for the variational density $q^\star(\sigma^2)$ we write:
+Now that we know the parametric form of both variational densities, we can expand the terms that involve an expectation. In particular, to remove the expectation in the variational density for $\sigma^2$, we write:
  
 $$
 \begin{aligned}
@@ -291,11 +291,14 @@ $$
 \mathbb{E}_{q(\beta)}\left[A\right] = \sum_{i=1}^n y_i^2- 2 \sum_{i=1}^n y_i x_i \, \mu_{\beta} + \left(\sigma^2_{\beta} + \mu_{\beta}^2\right)\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right) \enspace .
 $$
  
-For the expectation which features in the variational distribution for $\beta$, things are slightly less elaborate, although the result also looks unwieldy. Note that since $\sigma^2$ follows an inverse Gamma distribution, $1 / \sigma^2$ follows a Gamma distribution which has mean:
+For the expectation which features in the variational distribution for $\beta$, things are slightly less elaborate, although the result also looks unwieldy. We write:
  
 $$
 \begin{aligned}
-\mathbb{E}_{q(\sigma^2)}\left[\frac{1}{\sigma^2}\right] &= \frac{n + 1}{2} \left(\frac{1}{2}\mathbb{E}_{q(\beta)}\left[A \right]\right)^{-1} \\[.5em]
+\mathbb{E}_{q(\sigma^2)}\left[\frac{1}{\sigma^2}\right] &= \int \frac{1}{\sigma^2}\frac{\nu^{\frac{n + 1}{2}}}{\Gamma\left(\frac{n + 1}{2}\right)}\left(\sigma^2\right)^{-\frac{n + 1}{2} - 1} \text{exp}\left(-\frac{1}{\sigma^2} \nu\right) \mathrm{d}\sigma^2\\[0.50em]
+&= \frac{\nu^{\frac{n + 1}{2}}}{\Gamma\left(\frac{n + 1}{2}\right)} \int \left(\sigma^2\right)^{-\left(\frac{n + 1}{2} + 1\right) - 1} \text{exp}\left(-\frac{1}{\sigma^2} \nu\right) \mathrm{d}\sigma^2 \\[0.50em] 
+&= \frac{\nu^{\frac{n + 1}{2}}}{\Gamma\left(\frac{n + 1}{2}\right)} \frac{\Gamma\left(\frac{n + 1}{2} + 1\right)}{\nu^{\frac{n + 1}{2} + 1}} \\[0.50em]
+&= \frac{n + 1}{2} \left(\frac{1}{2}\mathbb{E}_{q(\beta)}\left[A \right]\right)^{-1} \\[.5em]
 &= \frac{n + 1}{2} \left(\frac{1}{2}\left(\sum_{i=1}^n y_i^2- 2 \sum_{i=1}^n y_i x_i \, \mu_{\beta} + \left(\sigma^2_{\beta} + \mu_{\beta}^2\right)\left(\sum_{i=1}^n x_i^2 + \frac{1}{\tau^2}\right)\right)\right)^{-1} \enspace .
 \end{aligned}
 $$
@@ -321,8 +324,8 @@ $$
 &= \mathbb{E}_{q(\sigma^2)}\left[\mathbb{E}_{q(\beta)}\left[\text{log } \frac{\left(2\pi\sigma^2\tau^2\right)^{-\frac{1}{2}}\text{exp}\left(-\frac{1}{2\sigma^2\tau^2} \beta^2\right)}{\left(2\pi\sigma^2_\beta\right)^{-\frac{1}{2}}\text{exp}\left(-\frac{1}{2\sigma^2_\beta} (\beta - \mu_\beta)^2\right)}\right] + \text{log } \frac{p(\sigma^2)}{q(\sigma^2)}\right] \\[.5em]
 &= \mathbb{E}_{q(\sigma^2)}\left[\mathbb{E}_{q(\beta)}\left[\text{log } \frac{\sigma^2\tau^2}{\sigma^2_\beta} + \frac{\frac{1}{\sigma^2\tau^2} \beta^2}{\frac{1}{\sigma^2_\beta} (\beta - \mu_\beta)^2}\right] + \text{log } \frac{p(\sigma^2)}{q(\sigma^2)}\right] \\[.5em]
 &= \mathbb{E}_{q(\sigma^2)}\left[\text{log}\frac{\sigma^2\tau^2}{\sigma^2_\beta} + \frac{\sigma^2_\beta + \mu_\beta^2}{\sigma^2\tau^2}\right] + \mathbb{E}_{q(\sigma^2)}\left[\text{log } \frac{p(\sigma^2)}{q(\sigma^2)}\right] \\[.5em]
-&= \text{log}\frac{\tau^2}{\sigma^2_\beta}\mathbb{E}_{q(\sigma^2)}\left[\text{log }\sigma^2\right] + \frac{\sigma^2_\beta + \mu_\beta^2}{\tau^2}\mathbb{E}_{q(\sigma^2)}\left[\frac{1}{\sigma^2}\right] + \mathbb{E}_{q(\sigma^2)}\left[\text{log } \frac{p(\sigma^2)}{q(\sigma^2)}\right] \\[.5em]
-&= \text{log}\frac{\tau^2}{\sigma^2_\beta}\mathbb{E}_{q(\sigma^2)}\left[\text{log }\sigma^2\right] + \frac{\sigma^2_\beta + \mu_\beta^2}{\tau^2}\mathbb{E}_{q(\sigma^2)}\left[\frac{1}{\sigma^2}\right] + \mathbb{E}_{q(\sigma^2)}\left[\text{log } p(\sigma^2)\right] - \mathbb{E}_{q(\sigma^2)}\left[\text{log } q(\sigma^2)\right]\enspace .
+&= \text{log}\frac{\tau^2}{\sigma^2_\beta} + \mathbb{E}_{q(\sigma^2)}\left[\text{log }\sigma^2\right] + \frac{\sigma^2_\beta + \mu_\beta^2}{\tau^2}\mathbb{E}_{q(\sigma^2)}\left[\frac{1}{\sigma^2}\right] + \mathbb{E}_{q(\sigma^2)}\left[\text{log } \frac{p(\sigma^2)}{q(\sigma^2)}\right] \\[.5em]
+&= \text{log}\frac{\tau^2}{\sigma^2_\beta} + \mathbb{E}_{q(\sigma^2)}\left[\text{log }\sigma^2\right] + \frac{\sigma^2_\beta + \mu_\beta^2}{\tau^2}\mathbb{E}_{q(\sigma^2)}\left[\frac{1}{\sigma^2}\right] + \mathbb{E}_{q(\sigma^2)}\left[\text{log } p(\sigma^2)\right] - \mathbb{E}_{q(\sigma^2)}\left[\text{log } q(\sigma^2)\right]\enspace .
 \end{aligned}
 $$
  
@@ -538,8 +541,7 @@ mc
 ## [1] 1.00000000 0.08205605 0.11368572 0.11336132 0.11336517 0.11336512
 ## 
 ## $ELBO
-## [1]       0.0000 -297980.0495     493.4807    -281.4578    -265.1289
-## [6]    -265.3197
+## [1]       0.0000 -297980.0495     493.4807    -281.4578    -265.1289    -265.3197
 {% endhighlight %}
  
 From the output, we see that the ELBO and the variational parameters have converged. In the next section, we compare these results to results obtained with Stan.
@@ -608,7 +610,7 @@ fit
 ## sigma 0.99 0.09 0.82 0.92 0.99 1.05  1.18
 ## lp__  0.00 0.00 0.00 0.00 0.00 0.00  0.00
 ## 
-## Approximate samples were drawn using VB(meanfield) at Tue Dec  3 13:45:57 2019.
+## Approximate samples were drawn using VB(meanfield) at Thu Mar 19 10:45:28 2020.
 {% endhighlight %}
 
 

@@ -11,7 +11,7 @@ published: true
  
 
  
-Last summer, I wrote about [love affairs and linear differential equations](https://fabiandablander.com/r/Linear-Love.html). While the topic is cheerful, linear differential equations are severely limited in the types of behaviour they can model. In this blog post, which I spent writing in self-quarantine to prevent further spread of SARS-CoV-2 --- take that, cheerfulness --- I introduce nonlinear differential equations as a means to model infectious diseases. In particular, we will discuss the simple SIR and SIRS models, the building blocks for many of the more complicated models used in epidemiology.
+Last summer, I wrote about [love affairs and linear differential equations](https://fabiandablander.com/r/Linear-Love.html). While the topic is cheerful, linear differential equations are severely limited in the types of behaviour they can model. In this blog post, which I spent writing in self-quarantine to prevent further spread of SARS-CoV-2 --- take that, cheerfulness --- I introduce nonlinear differential equations as a means to model infectious diseases. In particular, we will discuss the simple SIR and SIRS models, the building blocks of many of the more complicated models used in epidemiology.
  
 Before doing so, however, I discuss some of the basic tools of nonlinear dynamics applied to the logistic equation as a model for population growth. If you are already familiar with this, you can skip ahead. If you have had no prior experience with differential equations, I suggest you first check out my [earlier post](https://fabiandablander.com/r/Linear-Love.html) on the topic.
  
@@ -717,7 +717,7 @@ The left panel shows that as long as $\gamma / \beta < 1$, which implies that $\
  
 Similarly, the right panel shows how the fixed points $S^{\star}$ change as a function of $\gamma / \beta$. Since the infection spreads for $\beta > \gamma$, the fixed point $S^{\star} = 1$ is unstable, as the proportion of susceptible people must decrease since they become infected. For outbreaks that become increasingly mild as $\gamma / \beta \rightarrow 1$, the stable proportion of susceptible people increases, reaching $S^{\star} = 1$ when at last $\gamma = \beta$.
  
-In summary, we have seen how the SIRS extends the SIR model by allowing reinfections. This resulted in possibility of more interesting fixed points, which included a non-zero proportion of infected people. In the SIRS model, then, a disease can become established in the population. In contrast to the SIR model, we have also seen that the SIRS model allows for bifuractions, going from two fixed points in times of outbreaks ($\beta > \gamma$) to one fixed point in times of no outbreaks ($\gamma > \beta$).
+In summary, we have seen how the SIRS extends the SIR model by allowing reinfections. This resulted in possibility of more interesting fixed points, which included a non-zero proportion of infected people. In the SIRS model, then, a disease can become established in the population. In contrast to the SIR model, we have also seen that the SIRS model allows for bifuractions, going from two fixed points in times of outbreaks ($\beta > \gamma$) to one fixed point in times of no outbreaks ($\beta < \gamma$).
  
 <!-- model allows for outbreaks whenever the rate of infection is higher than the rate of recovery, $R_0 > \beta / \gamma$. If this occurs, then we have a growing proportion of infected people when $S > \gamma / \beta$. As illustratd by the vector field, the proportion of susceptible people $S$ decreases over time. At some point, therefore, we have that $S < \gamma / \beta$, resulting in a decrease in the proportion of infected people until finally $I = 0$. Observe that, in the SIR model, infections always die out. In the next section, we extend the SIR model to allow for diseases to become established in the population. -->
  
@@ -733,7 +733,7 @@ The SIR and the SIRS models discussed here are without a doubt crude approximati
  
 ---
  
-I would like to thank [Adam Finnemann](https://twitter.com/AnToniPichler), [Anton Pichler](https://twitter.com/AnToniPichler), and  [Oísin Ryan](https://twitter.com/AnToniPichler) for very helpful comments on this blog post.
+I would like to thank [Adam Finnemann](https://twitter.com/theBonferroni), [Anton Pichler](https://twitter.com/AnToniPichler), and  [Oísin Ryan](https://twitter.com/Oisin_Ryan_) for very helpful comments on this blog post.
  
 ---
  

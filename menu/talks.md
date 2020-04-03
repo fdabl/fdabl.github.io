@@ -4,7 +4,7 @@ title: ''
 ---
 
 ## Talks
-Epidemics, Networks, and Interventions. Talk at the Network Lab Meeting, Amsterdam, 3<sup>rd</sup> of April, 2019. [[Link]({{ site.url }}/assets/talks/Epidemics-Networks-Interventions.pdf)]
+Epidemics, Networks, and Interventions. Talk at the Network Lab Meeting, Amsterdam, 3<sup>rd</sup> of April, 2019. [[Link]({{ site.url }}/assets/talks/Epidemics-Talk.pdf)]
 
 Anticipating Critical Transitions using Early Warning Signals: Theoretical and Practical Considerations. Invited Talk at the Psychological Methods Kolloquium, Berlin, Germany, December 2019.
 

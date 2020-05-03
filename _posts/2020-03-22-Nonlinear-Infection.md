@@ -267,7 +267,9 @@ Before we analyze this model mathematically, let's implement Euler's method and 
 
 {% highlight r %}
 solve_SIR <- function(S0, I0, beta = 1, gamma = 1, delta_t = 0.01, times = 8000) {
-  res <- matrix(NA, nrow = times, ncol = 4, dimnames = list(NULL, c('S', 'I', 'R', 'Time')))
+  res <- matrix(
+    NA, nrow = times, ncol = 4, dimnames = list(NULL, c('S', 'I', 'R', 'Time'))
+  )
   res[1, ] <- c(S0, I0, 1 - S0 - I0, delta_t)
   
   dS <- function(S, I) -beta * I * S
@@ -307,7 +309,7 @@ plot_SIR <- function(res, main = '') {
 }
 {% endhighlight %}
  
-The figure below shows trajectories for a fixed recovery rate of $\gamma = 1/8$ and an increasing rate of infection $\beta$ for the initial condition $S_0 = 0.95$, $I_0 = 0.05$, and $R_0 = 0$.
+The figure below shows trajectories for a fixed recovery rate of $\gamma = 1/8$ and an increasing rate of infection $\beta$ for the initial condition $S_0 = 0.95$, $I_0 = 0.05$, and $R_0 = 0$. We take a time step $\Delta t = 1$ to denote one day. (Unfortunately, epidemics take much longer in real life.)
  
 <img src="/assets/img/2020-03-22-Nonlinear-Infection.Rmd/unnamed-chunk-6-1.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" style="display: block; margin: auto;" />
  
@@ -317,7 +319,7 @@ How do things change when we change the recovery rate $\gamma$? The figure below
  
 <img src="/assets/img/2020-03-22-Nonlinear-Infection.Rmd/unnamed-chunk-7-1.png" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" style="display: block; margin: auto;" />
  
-We again observe no outbreak in the left panel, and outbreaks of increasing severity in both the middle and the right panel. In contrast to the results for $\gamma = 1/8$, the outbreak is more severe, as we would expect since the recovery rate with $\gamma = 1/12$ is now lower. In fact, whether an outbreak occurs or not and how severe it will be depends not on $\beta$ and $\gamma$ alone, but on their ratio. This ratio is known as $R_0 = \beta / \gamma$, pronounced "R-naught". (Note the unfortunate choice of well-established terminology in this context, as $R_0$ also denotes the initial proportion of recovered people; it should be clear from the context which one is meant, however.) We can think of $R_0$ as the average number of people an infected person will infect before she gets better. If $R_0 > 1$, an outbreak occurs. In the next section, we look for the fixed points of this system and assess their stability.
+We again observe no outbreak in the left panel, and outbreaks of increasing severity in both the middle and the right panel. In contrast to the results for $\gamma = 1/8$, the outbreak is more severe, as we would expect since the recovery rate with $\gamma = 1/12$ is now lower. In fact, whether an outbreak occurs or not and how severe it will be depends not on $\beta$ and $\gamma$ alone, but on their ratio. This ratio is known as $R_0 = \beta / \gamma$, pronounced "R-naught". (Note the unfortunate choice of well-established terminology in this context, as $R_0$ also denotes the initial proportion of recovered people; it should be clear from the context which one is meant, however.) We can think of $R_0$ as the average number of people an infected person will infect before she gets better (assuming a population that is fully susceptible). If $R_0 > 1$, an outbreak occurs. In the next section, we look for the fixed points of this system and assess their stability.
  
  
 ## Analyzing Fixed Points
@@ -522,7 +524,9 @@ since $R(t) = 1 - S(t) - I(t)$. We adjust our implementation of Euler's method:
 solve_SIRS <- function(
   S0, I0, beta = 1, gamma = 1, mu = 1, delta_t = 0.01, times = 1000
 ) {
-  res <- matrix(NA, nrow = times, ncol = 4, dimnames = list(NULL, c('S', 'I', 'R', 'Time')))
+  res <- matrix(
+    NA, nrow = times, ncol = 4, dimnames = list(NULL, c('S', 'I', 'R', 'Time'))
+  )
   res[1, ] <- c(S0, I0, 1 - S0 - I0, delta_t)
   
   dS <- function(S, I, R) -beta * I * S + mu * R

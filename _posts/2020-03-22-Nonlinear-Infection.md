@@ -267,8 +267,8 @@ Before we analyze this model mathematically, let's implement Euler's method and 
 
 {% highlight r %}
 solve_SIR <- function(S0, I0, beta = 1, gamma = 1, delta_t = 0.01, times = 8000) {
-  res <- matrix(NA, nrow = times, ncol = 3, dimnames = list(NULL, c('S', 'I', 'R')))
-  res[1, ] <- c(S0, I0, 1 - S0 - I0)
+  res <- matrix(NA, nrow = times, ncol = 4, dimnames = list(NULL, c('S', 'I', 'R', 'Time')))
+  res[1, ] <- c(S0, I0, 1 - S0 - I0, delta_t)
   
   dS <- function(S, I) -beta * I * S
   dI <- function(S, I)  beta * I * S - gamma * I
@@ -279,6 +279,7 @@ solve_SIR <- function(S0, I0, beta = 1, gamma = 1, delta_t = 0.01, times = 8000)
     
     res[i, 1] <- res[i-1, 1] + delta_t * dS(S, I)
     res[i, 2] <- res[i-1, 2] + delta_t * dI(S, I)
+    res[i, 4] <- delta_t * i
   }
   
   res[, 3] <- 1 - res[, 1] - res[, 2]
@@ -288,17 +289,19 @@ solve_SIR <- function(S0, I0, beta = 1, gamma = 1, delta_t = 0.01, times = 8000)
  
 plot_SIR <- function(res, main = '') {
   cols <- brewer.pal(3, 'Set1')
+  time <- res[, 4]
+  
   matplot(
-    res, type = 'l', col = cols, axes = FALSE, lty = 1, lwd = 2,
-    ylab = 'Subpopulations(t)', xlab = 'Time t', xlim = c(0, 4000),
+    time, res[, 1:3], type = 'l', col = cols, axes = FALSE, lty = 1, lwd = 2,
+    ylab = 'Subpopulations', xlab = 'Days', xlim = c(0, tail(time, 1)),
     ylim = c(0, 1), main = main, cex.main = 1.75, cex.lab = 1.5,
-    font.main = 1, xaxs = 'i', yaxs = 'i'
+    xaxs = 'i', yaxs = 'i'
   )
   
   axis(1, cex.axis = 1.25)
   axis(2, las = 2, cex.axis = 1.25)
   legend(
-    3000, 0.65, col = cols, legend = c('S', 'I', 'R'),
+    30, 0.65, col = cols, legend = c('S', 'I', 'R'),
     lty = 1, lwd = 2, bty = 'n', cex = 1.5
   )
 }
@@ -519,8 +522,8 @@ since $R(t) = 1 - S(t) - I(t)$. We adjust our implementation of Euler's method:
 solve_SIRS <- function(
   S0, I0, beta = 1, gamma = 1, mu = 1, delta_t = 0.01, times = 1000
 ) {
-  res <- matrix(NA, nrow = times, ncol = 3, dimnames = list(NULL, c('S', 'I', 'R')))
-  res[1, ] <- c(S0, I0, 1 - S0 - I0)
+  res <- matrix(NA, nrow = times, ncol = 4, dimnames = list(NULL, c('S', 'I', 'R', 'Time')))
+  res[1, ] <- c(S0, I0, 1 - S0 - I0, delta_t)
   
   dS <- function(S, I, R) -beta * I * S + mu * R
   dI <- function(S, I, R)  beta * I * S - gamma * I
@@ -533,6 +536,7 @@ solve_SIRS <- function(
     res[i, 1] <- res[i-1, 1] + delta_t * dS(S, I, R)
     res[i, 2] <- res[i-1, 2] + delta_t * dI(S, I, R)
     res[i, 3] <- 1 - res[i, 1] - res[i, 2]
+    res[i, 4] <- i * delta_t
   }
   
   res
@@ -541,17 +545,19 @@ solve_SIRS <- function(
  
 plot_SIRS <- function(res, main = '') {
   cols <- brewer.pal(3, 'Set1')
+  time <- res[, 4]
+  
   matplot(
-    res, type = 'l', col = cols, axes = FALSE, lty = 1, lwd = 2,
-    ylab = 'Subpopulations(t)', xlab = 'Time t', ylim = c(0, 1),
-    main = main, cex.main = 1.75, cex.lab = 1.25, font.main = 1,
-    xlim = c(0, 4000), font.main = 1, xaxs = 'i', yaxs = 'i'
+    time, res[, 1:3], type = 'l', col = cols, axes = FALSE, lty = 1, lwd = 2,
+    ylab = 'Subpopulations', xlab = 'Days', ylim = c(0, 1),
+    main = main, cex.main = 1.75, cex.lab = 1.25,
+    font.main = 1, xaxs = 'i', yaxs = 'i', xlim = c(0, tail(time, 1))
   )
   
   axis(1, cex.axis = 1.5)
   axis(2, las = 2, cex.axis = 1.5)
   legend(
-    3000, 0.95, col = cols, legend = c('S', 'I', 'R'),
+    30, 0.95, col = cols, legend = c('S', 'I', 'R'),
     lty = 1, lwd = 2, bty = 'n', cex = 1.5
   )
 }

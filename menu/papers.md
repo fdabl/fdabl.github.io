@@ -6,13 +6,13 @@ title: ''
 ## Submitted / under review
 **Dablander, F.** (submitted). An Introduction to Causal Inference. [[Link](https://psyarxiv.com/b3fkw)]
 
-**Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Ly, A., Wagenmakers, E.-J. (under review). Default Bayes factors for Testing the (In)equality of Several Population Variances. [[Link](https://arxiv.org/abs/2003.06278)][[R package](https://github.com/fdabl/bfvartest)]
+**Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Ly, A., & Wagenmakers, E.-J. (under review). Default Bayes factors for Testing the (In)equality of Several Population Variances. [[Link](https://arxiv.org/abs/2003.06278)][[R package](https://github.com/fdabl/bfvartest)]
 
 Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (submitted). The Sum of All Fears: Comparing Networks Based on Symptom Sum-Scores. [[Link](https://psyarxiv.com/3nxu9)]
 
 **Dablander, F.**<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & Haslbeck, J.M.B.<sup><small>&#11089;</small></sup> (under review). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. [[Link](https://psyarxiv.com/qgewy/)]
 
-Brown, J., Murray, D., Furlong, K., Coco, E., **Dablander, F.** (under review). A Breeding Pool of Ideas: Analyzing Interdisciplinary Collaborations at the Complex Systems Summer School. [[Link](https://osf.io/preprints/socarxiv/e3z4v)]
+Brown, J., Murray, D., Furlong, K., Coco, E., & **Dablander, F.** (under review). A Breeding Pool of Ideas: Analyzing Interdisciplinary Collaborations at the Complex Systems Summer School. [[Link](https://osf.io/preprints/socarxiv/e3z4v)]
 
 ## 2020
 Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (2020). The Support Interval. *Erkenntnis*. [[Link](https://link.springer.com/article/10.1007%2Fs10670-019-00209-z)]

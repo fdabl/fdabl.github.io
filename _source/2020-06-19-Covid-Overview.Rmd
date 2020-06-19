@@ -1,0 +1,71 @@
+---
+layout: post
+title: "Visualising the COVID-19 Pandemic"
+date: 2020-06-19 09:30:00 +0100
+categories: R
+status: process
+published: true
+# status: development
+# published: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, fig.align = 'center', fig.width = 8, fig.height = 6)
+```
+
+*This blog post first appeared on the [Science versus Corona blog](https://scienceversuscorona.com/visualising-the-covid-19-pandemic/). It introduces [this Shiny app](https://scienceversuscorona.shinyapps.io/covid-overview/).*
+
+The novel coronavirus has a firm grip on nearly all countries across the world, and there is large heterogeneity in how countries have responded to the threat.
+
+Some countries, such as [Brazil](https://www.theguardian.com/world/2020/jun/05/brazil-coronavirus-covid-19-virus-doctor) and the [United States](https://www.theguardian.com/us-news/2020/mar/28/trump-coronavirus-politics-us-health-disaster), have fared exceptionally poorly. Other countries, such as [South Korea](https://www.theatlantic.com/ideas/archive/2020/05/whats-south-koreas-secret/611215/) and [Germany](https://www.weforum.org/agenda/2020/05/how-germany-contained-the-coronavirus/), have done exceptionally well. Many countries have faithfully executed lockdown measures, which have had an extraordinary preventive effect in saving lives (e.g., Flaxman et al., [2020](https://www.nature.com/articles/s41586-020-2405-7)). While lockdowns have saved lives, they have had an extremely detrimental effect on rich countries such as the United Kingdom, whose [GDP dropped by 20.4% in April](https://www.bbc.com/news/business-53019360) (see also Pichler et al., [2020](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606984)), and the United States, where [over 40 million people filed for unemployment](https://www.theguardian.com/business/2020/may/28/jobless-america-unemployment-coronavirus-in-figures). Lockdowns have been even [more devastating for developing countries](https://www.economist.com/international/2020/05/23/covid-19-is-undoing-years-of-progress-in-curbing-global-poverty).
+
+It is insightful to study the past course of how the virus swept across the world, and how countries have tried to fight it. But with about 8,100,000 confirmed cases, over 430,000 deaths, and many countries slowly reopening amid an accelerating pandemic, it is even more important to pay close attention now in order to learn from each other. Many excellent overviews comparing confirmed cases, deaths, and measures to curb the spread of the virus taken across countries have been produced by leading newspapers.
+
+
+## Visualising the Pandemic
+The Financial Times has been an [excellent resource](https://www.ft.com/content/a26fbf7e-48f8-11ea-aeb3-955839e06441) of information and visualisation from the start of the pandemic. Their visualisations show, for example, that while at the start the epicenter of the pandemic has been Europe, it has shifted toward Latin America, which now accounts for most deaths. They have also [produced a visualisation](https://ig.ft.com/coronavirus-lockdowns/) of how countries are lifting lockdown measures using the Oxford Stringency Index, produced by the Oxford COVID-19 Government Response Tracker.
+
+The [Oxford COVID-19 Government Response Tracker](https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker) collects information on different policy responses governments across the world have taken. Currently, they are tracking 17 measures taken in over 160 countries. The Oxford Stringency Index is a composite score ranging from 0 to 100 which summarizes a number of measures a country has taken (or not taken). In particular, these measures concern (1) school closures, (2) workplace closures, (3) the cancelling of public events, (4) restrictions on gatherings, (5) the closing of public transport, (6) stay at home requirements, (7) restrictions on internal movement, (8) international travel controls, and (9) public information campaigns. These measures differ in their strength, and whether they are applied generally or are targeted; for details, see Hale et al. ([2020a](https://www.bsg.ox.ac.uk/research/publications/variation-government-responses-covid-19)). The Oxford Response Tracker is updated frequently, and now also has a Government Response Index and a Containment and Health Index (Hale et al., [2020a](https://www.bsg.ox.ac.uk/research/publications/variation-government-responses-covid-19)).
+
+The New York Times also has started producing [beautiful visualisations](https://www.nytimes.com/interactive/2020/world/coronavirus-maps.html) that summarize how the virus is ravaging different parts of the world. I especially like their world map, which not only shows the daily confirmed cases but also the 14-day smoothed trend. Possibly inspired by [endcoronavirus.org](https://www.endcoronavirus.org/countries), the site also gives an overview of where cases are increasing, roughly staying the same, or decreasing. They also provide a more detailed picture of specific countries, showing for example each state and even county of the [United States](https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html), or the [states of India](https://www.nytimes.com/interactive/2020/world/asia/india-coronavirus-cases.html).
+
+Finally, ourworldindata.org has what I believe are the [most comprehensive COVID-19 visualisations](https://ourworldindata.org/coronavirus).
+
+
+## Another Visualisation
+Inspired by [this Politico piece](https://www.politico.eu/article/europes-coronavirus-lockdown-measures-compared/), [Alexandra Rusu](https://nl.linkedin.com/in/ialmi), [Marcel Schreiner](https://www.sowi.uni-mannheim.de/en/meiser/team/research-staff/marcel-schreiner/), [Aleksandar Tomašević](https://www.atomasevic.com/), and I — joining forces through [Science versus Corona](https://scienceversuscorona.com/) — set out to work on our own visualisation before much of the excellent work by major newspapers was available. You can find it [here](https://scienceversuscorona.shinyapps.io/covid-overview/). We use the wonderful [covid19 R package](https://covid19datahub.io/) as a data source.
+
+Being written in R and Shiny, our app does not approach the beauty that comes with handcrafting JavaScript; yet it shows a few useful things that some of the above visualisations lack. First, it allows you to explore the evolution of individual measures — such as closing schools and international travel controls — countries have taken instead of reporting only a composite stringency index.
+
+Second, our app visualises confirmed cases and confirmed deaths jointly with the stringency index in a single figure. This allows you to explore how they evolve together, and see whether deaths in countries that lift measures quickly rise soon thereafter or not. (You might find that imposing measures causes death, [ha](https://www.tylervigen.com/spurious-correlations)!)
+
+Third, our app includes a table that lists the individual measures countries are taking, and, if they have done so, when they have lifted them. Individual rows are coloured according to how close each country is to the WHO recommendations for rolling back lockdowns (see Hale et al., [2020b](https://www.bsg.ox.ac.uk/research/publications/lockdown-rollback-checklist)). These WHO recommendations concern whether (1) virus transmission is controlled, (2) testing, tracing, and isolation is performed adequately, (3) outbreak risk in high-risk settings is minimized, (4) preventive measures are established in workplaces, (5) risk of exporting and importing cases from high-risk areas is managed, and (6) the public is engaged, understands that this is the ‘new normal’, and understand that they have a key role in preventing an increase in cases (see WHO, [2020](https://apps.who.int/iris/handle/10665/331773)). Data concerning (4) and (5) are not in the Oxford database; we instead use the approach outlined in Hale et al. ([2020b](https://www.bsg.ox.ac.uk/research/publications/lockdown-rollback-checklist)).
+
+
+## Caveats
+Importantly, there are a number of caveats associated with interpreting the data we show in the app. First, the number of confirmed cases depends strongly on the number of tests a particular country conducts. Without knowing that, it is foolish to put much trust in comparisons of cases across countries. Hasell et al. (2020) provide a data set and a visualisation of [coronavirus testing](https://ourworldindata.org/coronavirus-testing) per country, which is measured in number of tests per confirmed case or by one over that number (the so-called positivity rate). When the number of tests carried out per confirmed case is low, a country does too little testing to adequately monitor the outbreak — the true number of infections is likely much larger.
+
+Another caveat concerns deaths. Confirmed deaths provide a clearer lens into how the pandemic unfolds, as every death in a country has to be reported. This is also why e.g. Flaxman et al. ([2020](https://www.nature.com/articles/s41586-020-2405-7)) model confirmed deaths rather than confirmed cases to assess the effect of interventions. However, using confirmed deaths to compare how successful countries are in dealing with the virus has limitations as well. Since deaths take at least a week or two to materialize, they are a window into the past, not the present; deaths are thus not a real-time indicator to decide whether to impose or lift measures.
+
+There is also large variation in how deaths are reported, both across countries and within time. Some countries only count hospital deaths, for example, thus leading to an underestimate of deaths caused by COVID-19 at home. Or they include only deaths of patients that have tested positively for the virus. Authoritarian regimes might also downplay cases to look better. Moreover, due to delays in reporting, new deaths per day do not necessarily reflect the actual number of deaths that day.
+
+Demographics also play an important rule; some countries are much more densely populated, providing easier transmission routes for the virus. Others, such as countries in Africa, have a much younger population, making a severe disease progression less likely (e.g., Clark et al., [2020](https://bit.ly/3hS3vWy)); with a healthcare system that is much less advanced compared to rich nations, however, Africa may well become the next epicenter of the pandemic (Loembé et al., [2020](https://www.nature.com/articles/s41591-020-0961-x)). All these factors make [international comparisons difficult](https://www.bbc.com/news/52311014).
+
+A different angle on COVID-19’s toll on human life is to calculate excess deaths by subtracting, say, the average number of deaths in the previous five years in a particular time period from the number of deaths during that time period now. Unlike for confirmed deaths, [numbers on excess deaths](https://ourworldindata.org/excess-mortality-covid) are available only for a selected number of (mostly rich) countries, and there is no central data source. [The Economist](https://www.economist.com/graphic-detail/2020/04/16/tracking-covid-19-excess-deaths-across-countries) was one of the first outlets to visualize excess deaths; the [Financial Times](https://www.ft.com/content/a26fbf7e-48f8-11ea-aeb3-955839e06441) and the [New York Times](https://www.nytimes.com/interactive/2020/04/21/world/coronavirus-missing-deaths.html) provide visualisations of excess death, too.
+
+
+## Conclusion
+In this blog post, I have outlined a number of excellent visualisations of the COVID19 pandemic, as well introduced [our own](https://scienceversuscorona.shinyapps.io/covid-overview/). [Alexandra Rusu](https://nl.linkedin.com/in/ialmi), [Marcel Schreiner](https://www.sowi.uni-mannheim.de/en/meiser/team/research-staff/marcel-schreiner/), and [Aleksandar Tomašević](https://www.atomasevic.com/) — with whom it was an absolute pleasure working with on this — and I are planning to develop the visualisation further, including things such as number of tests, excess deaths, new Oxford indices, etc. and we encourage anybody who is interested to contribute! All the code is available on [Github](https://github.com/fdabl/Covid-Overview).
+
+
+---
+
+I want to thank Alexandra Rusu, Marcel Schreiner, and Aleksandar Tomašević for a very enjoyable collaboration.
+
+---
+
+## References
+- Clark, Jit, Warren-Gash et al. ([2020](https://bit.ly/3hS3vWy)). Global, regional, and national estimates of the population at increased risk of severe COVID-19 due to underlying health conditions in 2020: A modelling study. *The Lancet*.
+- Flaxman, Mishra, Gandy et al. ([2020](https://www.nature.com/articles/s41586-020-2405-7)). Estimating the effects of non-pharmaceutical interventions on COVID-19 in Europe. *Nature*, 3164.
+- Loembé, M. M., Tshangela, A., Salyer, S. J., Varma, J. K., Ouma, A. E. O., & Nkengasong, J. N. ([2020](https://www.nature.com/articles/s41591-020-0961-x)). COVID-19 in Africa: the spread and response. *Nature Medicine*, 1-4.
+- Pichler, A., Pangallo, M., del Rio-Chanona, R. M., Lafond, F., & Farmer, J. D. ([2020](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606984)). Production networks and epidemic spreading: How to restart the UK economy?

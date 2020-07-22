@@ -134,7 +134,7 @@ party_risk <- function(n, true_relative_cases = 20.4 * 5) {
  
 The figure below shows the party risk in Amsterdam as a function of the party size $n$.
  
-<img src="/assets/img/2020-07-21-Corona-Party.Rmd/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" style="display: block; margin: auto;" />
+<img src="/assets/img/2020-07-21-Corona-Party.Rmd/risk plot-1.png" title="plot of chunk risk plot" alt="plot of chunk risk plot" style="display: block; margin: auto;" />
  
 The left panel shows how the party risk --- the probability that at least one infectious person is the party --- increases with $n$. In particular, to have near certainty that at least one infectious person shows up requires a very large party. The right panel zooms in on reasonably party sizes. Most parties that are thrown indoors probably do not exceed $100$ attendants, depending on how rich and reckless the host is. Some parties, for example [this one](https://www.eventbrite.nl/e/resonance-1-day-retreat-tickets-112094331162), can attract $150$ people, but usually take place outdoors.[^2]
  
@@ -156,7 +156,7 @@ Between July $8^{\text{th}}$ and July $21^{\text{st}}$, $20.4$ cases per $100,00
  
 The figure below visualizes the probability that at least one party guest has the coronavirus and can spread it as a function of the estimated *true* number of infectious cases per $100,000$ inhabitants and the size of the party.
  
-<img src="/assets/img/2020-07-21-Corona-Party.Rmd/unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" style="display: block; margin: auto;" />
+<img src="/assets/img/2020-07-21-Corona-Party.Rmd/risk plot sensitivity-1.png" title="plot of chunk risk plot sensitivity" alt="plot of chunk risk plot sensitivity" style="display: block; margin: auto;" />
  
 Let's take a moment to unpack this figure. Each coloured line represents a combination of true number of infectious cases and party size that yields the same party risk. For example, attending a party of size $20$ when the true number of infectious cases per $100,000$ inhabitants is $50$ yields a party risk of $1\%$, but so would, roughly, attending a party of size $10$ when the true relative number of infectious cases is $100$. Thus, there is a trade-off between the size of the party and the true number of infectious cases.
  
@@ -362,5 +362,5 @@ lines(c(20.4 * 5, 20.4 * 5), c(0, 300), lty = 2)
  
 ## Footnote
 [^1]: Reported deaths are more reliable than reported cases because deaths must always be reported. This is why, for example, Flaxman et al. ([2020](https://www.nature.com/articles/s41586-020-2405-7)) use deaths to estimate the actual proportion of infections. There are issues with reported deaths, too, however, and I discuss some of them [here](https://scienceversuscorona.com/visualising-the-covid-19-pandemic/).
-[^2]: Curiously, this party allowed a total of $300$ guests when I first drafted this post a few days ago. That would have resulted in a party risk of $26.37\%$. They changed the total to $150$ since, maybe because the organizers actually sat down to do some calculations, similar to as we did in this post? Dominik Eulberg is an [amazing DJ](https://www.youtube.com/watch?v=Vv8p45-3MaI), but $150$ strikes me as too much, still.
+[^2]: Curiously, this party allowed a total of $300$ guests when I first drafted this post a few days ago. That would have resulted in a party risk of $26.37\%$. They changed the total to $150$ since, maybe because the organizers actually sat down to do some calculations, similar to as we did in this post? I am a big fan of [Dominik Eulberg](https://www.youtube.com/watch?v=Vv8p45-3MaI), but $150$ strikes me as too much, still.
 [^3]: Once the pandemic is over, inviting a random sample from the population should definitely become a thing. Bursting bubbles, one party at a time!

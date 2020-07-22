@@ -127,7 +127,7 @@ party_risk <- function(n, true_relative_cases = 20.4 * 5) {
 
 The figure below shows the party risk in Amsterdam as a function of the party size $n$.
 
-```{r risk plots, echo = FALSE, dpi = 400}
+```{r, echo = FALSE, dpi = 400}
 plot_risk <- function(ns, true_relative_cases = 20.4 * 5, ...) {
   plot(
     ns, 1 - prob_virus_free(ns, true_relative_cases = true_relative_cases),
@@ -162,9 +162,9 @@ The left panel shows how the party risk --- the probability that at least one in
 
 The estimate of the party risk based on this simple calculation are somewhat sobering: there is a $2.02\%$, a $4.97\%$, and a $14.19\%$ chance that at least one guest can spread the coronavirus for parties of size $20$, $50$, and $150$, respectively. We have of course made a number of simplifying assumptions to arrive at these estimates, and we will critically discuss them in a later section. We will also talk about the factors that influence the chances of actually getting infected when an infectious guest shows up.
 
-Let me note that RIVM actually has their own estimate of the number of currently infectious cases. At the time of writing, their [dashboard](https://coronadashboard.rijksoverheid.nl/) shows an estimate of $37.5$ infectious cases per $100,000$ inhabitants (see [here](https://fabiandablander.com/assets/img/RIVM-Dashboard-21-July.png) for a screenshot of the dashboard at the time of writing). This number is larger than $20.4$, the number of reported number cases per $100,000$ between July $8^{\text{th}}$ and July $21^{\text{st}}$.
+Let me note that RIVM actually has their own estimate of the number of currently infectious cases. At the time of writing, their [dashboard](https://coronadashboard.rijksoverheid.nl/) shows an estimate of $37.2$ infectious cases per $100,000$ inhabitants (see [here](https://fabiandablander.com/assets/img/RIVM-Dashboard-21-July.png) for a screenshot of the dashboard at the time of writing). This number is larger than $20.4$, the number of reported number cases per $100,000$ between July $8^{\text{th}}$ and July $21^{\text{st}}$.
 
-In the terms of our calculations, their model applies a correction factor of $37.5 / 20.4 = 1.838$. RIVM is therefore slightly more optimistic than I am; for parties of size $20$, $50$, and $150$, their estimates of the probability that at least one guest is infectious --- assuming guests are a random sample from the population --- are $0.75\%$, $1.86\%$, and $5.47\%$, respectively.
+In the terms of our calculations, their model applies a correction factor of $37.2 / 20.4 = 1.824$. RIVM is therefore slightly more optimistic than I am; for parties of size $20$, $50$, and $150$, their estimates of the probability that at least one guest is infectious --- assuming guests are a random sample from the population --- are $0.74\%$, $1.84\%$, and $5.43\%$, respectively.
 
 How does RIVM arrive at their estimate of the number of infectious cases? We currently do not know. [Their weekly report](https://www.rivm.nl/documenten/wekelijkse-update-epidemiologische-situatie-covid-19-in-nederland) (Section 9.1) devotes only two small paragraphs to it, saying that the method is "still under development".
 
@@ -178,7 +178,7 @@ Between July $8^{\text{th}}$ and July $21^{\text{st}}$, $20.4$ cases per $100,00
 
 The figure below visualizes the probability that at least one party guest has the coronavirus and can spread it as a function of the estimated *true* number of infectious cases per $100,000$ inhabitants and the size of the party.
 
-```{r risk plot sensitivity, echo = FALSE, dpi = 400, fig.height = 8}
+```{r, echo = FALSE, dpi = 400, fig.height = 8}
 library('RColorBrewer')
 
 
@@ -280,7 +280,7 @@ Note that, if the $178$ people who tested positive all self-isolate or, worse, e
 
 At the same time, in the Netherlands only those that show symptoms can get tested. Since about a third to a half are asymptomatic or pre-symptomatic in the sense that they spread the virus considerably before symptom onset, the reported number of cases likely gives an undercount of infectious people.
 
-All these complications can be summarized, roughly, in the correction factor, which gives the extent to which we believe that the reported number of cases deviates from the true number of infectious cases. We have first focused on a factor of $5$, but then assessed the robustness of our results in a sensitivity analysis. For example, for a party size of $50$, the chances that at least one guest is infectious is $1.86\%$ for a correction factor of $1.84$ (corresponding to the official RIVM estimate), $4.97\%$ for a factor of $5$, and $18.49\%$ for a factor of $20$. You can play around with these numbers yourself. Observe how they make you feel. Personally, given what we said above about the infection probability for young and adventurous people, I am inclined to err on the side of caution.
+All these complications can be summarized, roughly, in the correction factor, which gives the extent to which we believe that the reported number of cases deviates from the true number of infectious cases. We have first focused on a factor of $5$, but then assessed the robustness of our results in a sensitivity analysis. For example, for a party size of $50$, the chances that at least one guest is infectious is $1.84\%$ for a correction factor of $1.824$ (corresponding to the official RIVM estimate), $4.97\%$ for a factor of $5$, and $18.49\%$ for a factor of $20$. You can play around with these numbers yourself. Observe how they make you feel. Personally, given what we said above about the infection probability for young and adventurous people, I am inclined to err on the side of caution.
 
 
 ## Estimating the probability of infection

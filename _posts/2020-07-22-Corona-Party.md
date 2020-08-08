@@ -11,55 +11,33 @@ published: true
  
 
  
-There is no doubt that, every now and then, one ought to celebrate life. This usually involves people coming together, talking, laughing, dancing, singing, shouting; simply put, it means throwing a party. With temperatures rising, summer offers all the more incentive to organize such a joyous event. Blinded by the light, it is easy to forget that we are, unfortunately, still in a pandemic. But should that really deter us?
+*This blog post was originally published on July $22^{\text{th}}$, but was updated on August $8^{\text{th}}$ to compare the risks of partying in Amsterdam, Barcelona, and London using the most recent coronavirus case numbers.*
  
-<!-- I've been invited to a few celebrations this summer, and I declined them all.  -->
-<!-- Walking around central Amsterdam after sunset, it is easy to notice that not everybody holds back. Are they right and am I wrong? I don't think so; but it is difficult to convince the converted. Surely, they say, it is exceedingly unlikely that this little party of ours results in any virus transmission? -->
+There is no doubt that, every now and then, one ought to celebrate life. This usually involves people coming together, talking, laughing, dancing, singing, shouting; simply put, it means throwing a party. With temperatures rising, summer offers all the more incentive to organize such a joyous event. Blinded by the light, it is easy to forget that we are, unfortunately, still in a pandemic. But should that really deter us?
  
 Walking around central Amsterdam after sunset, it is easy to notice that not everybody holds back. Even if my Dutch was better, it would likely still be difficult to convince groups of twenty-somethings of their potential folly. Surely, they say, it is exceedingly unlikely that this little party of ours results in any virus transmission?
  
 Government retorts by shifting perspective: while the chances of virus spreading at any one party may indeed be small, this does not licence throwing it. Otherwise many parties would mushroom, considerably increasing the chances of virus spread. Indeed, government stresses, this is why such parties remain *illegal*.
  
-<!-- So if you are planning to throw or attend one --- don't. It is a matter of public, not only individual health. -->
- 
-<!-- While any single party might not result in virus spread, policy needs to take into account the aggregate effect of many such parties;  -->
- 
-<!-- Walking through central Amsterdam shortly after sunset, I am under no illusion that such lofty reasoning can convince any twenty-something who already had three pints. -->
- 
-But while *if-everybody-did-what-you-did* type of arguments score high with parents, they usually do no score high with their children. So instead, in this blog post, we ask the question from an individual's perspective: what are the chances of getting the virus after attending this or that party? And what factors make this more or less likely?
- 
-<!-- In a back-of-the-envelope style, I try to estimate the probability of virus transmission at a single party. Once this is done, we will also engage in some decision-making, which not only requires the probabilities but also an assessment of the costs and benefits. -->
+But while *if-everybody-did-what-you-did* type of arguments score high with parents, they usually do no score high with their children. So instead, in this post, we ask the question from an individual's perspective: what are the chances of getting the virus after attending this or that party? And what factors make this more or less likely?
  
 As a disclaimer, I should say that I am not an epidemiologist --- who, by the way, are a [more cautious bunch](https://www.nytimes.com/interactive/2020/06/08/upshot/when-epidemiologists-will-do-everyday-things-coronavirus.html) than I or the majority of my age group --- and so my assessment of the evidence may not agree with expert opinion. With that out of the way, and without further ado, let's dive in.
  
  
- 
 # Risky business?
-To get us started, let's define the *risk of a party* as the probability that somebody who is infected with the novel coronavirus and can spread it attends the gathering. The two major factors influencing this probability are the size of the party, that is, the number of people attending; and the prevalence of infected people in the relevant population. As we will see, the latter quantity is difficult to estimate. The probability of actually getting infected by a person who has the coronavirus depends further on a number of factors; we will discuss those in a later section.
+To get us started, let's define the *risk of a party* as the probability that somebody who is infected with the novel coronavirus and can spread it attends the gathering. The two major factors influencing this probability are the size of the party, that is, the number of people attending the gathering; and the prevalence of infectious people in the relevant population. As we will see, the latter quantity is difficult to estimate. The probability of actually getting infected by a person who has the coronavirus depends further on a number of factors; we will discuss those in a later section.
  
-I will base the following calculations on data from the Netherlands, specifically from Amsterdam. You can exchange these numbers with numbers from your country and city of choice. RIVM --- the Netherland's institute for public health --- reports new cases across regions. Between July $8^{\text{th}}$ and July $21^{\text{st}}$, there have been $20.4$ reported new cases per $100,000$ residents in the [region of Amsterdam](https://www.rivm.nl/en/novel-coronavirus-covid-19/current-information), yielding a total of $178$ cases. In the next section, we discuss the difficulties in estimating the prevalence of infections.
- 
-
- 
-<!-- I will base the following calculations on data from the Netherlands, specifically from Amsterdam. You can exchange these numbers with numbers from your country and city of choice. The Municipal Public Health Services (GGD) report COVID-19 cases across municipalities. RIVM --- the Netherland's institute for public health --- [reports data only every fortnight](https://www.rivm.nl/en/novel-coronavirus-covid-19/current-information), on Tuesdays. From [windfall.ai](http://windfall.ai/covid.html), which uses data from GGD, we find that there have been $120$ new reported cases between July $7^{\text{th}}$ and July $20^{\text{th}}$. -->
- 
-<!-- For purposes of comparisons with other geographical units, it is more convenient to use the reported number of cases per $100,000$ inhabitants. The [municipality of Amsterdam has $872,757$ residents](https://en.wikipedia.org/wiki/List_of_municipalities_of_the_Netherlands) which yields $120 / 872,757 = 0.0001375 \times 100,000 = 13.75$ new reported cases per $100,000$ residents in the last two weeks for Amsterdam. In the next section, we discuss the difficulties in estimating the prevalence of infections. -->
- 
-<!-- The current measures in the Netherlands are that while up to 100 people are allowed indoors, they must keep a 1.5 metres distance (see [here](https://www.amsterdam.nl/en/coronavirus/coronavirus-(covid-19)-amsterdam/)). Night clubs are closed until the 1st of September. -->
+Let's compare the risk of partying across three wonderful European cities: Amsterdam, Barcelona, and London. From July $22^{\text{nd}}$ to August $4^{\text{th}}$, a total of $563$, $3247$, and $1101$ new infections were reported (see [here](https://www.rivm.nl/en/novel-coronavirus-covid-19/current-information), [here](https://dadescovid.cat/diari?drop_es_residencia=2&tipus=regio&id_html=ambit_2&codi=13), [here](https://coronavirus.data.gov.uk/), and the *Post Scriptum*). This results in a relative case count of $64.50$, $56.47$, and $12.26$ per $100,000$ inhabitants, respectively. While these are the numbers of *reported new infected* cases, they are not the numbers of *currently infectious* cases. How do we arrive at those?
  
  
-## Estimating the prevalence of infections
-While $178$ is the *reported* number of new cases, it is not the *true* number of new cases.[^1] How do we arrive at that?
+# Estimating the true number of infectious cases
+Upon infection, it usually takes a while until one can infect others, with [estimates ranging](https://theconversation.com/how-long-are-you-infectious-when-you-have-coronavirus-135295) from $1$ - $3$ days before showing symptoms. The *incubation period* is the time it takes from getting infected to showing symptoms. It lasts about $5$ days on average, with the vast majority of people showing symptoms within $12$ days (Lauer et al., [2020](https://www.acpjournals.org/doi/10.7326/M20-0504)). Yet about a third to a half of people can be infectious without showing any symptoms (Pollán et al. [2020](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31483-5); He et al. [2020](https://www.nature.com/articles/s41591-020-0869-5)). [Estimates suggest](https://theconversation.com/how-long-are-you-infectious-when-you-have-coronavirus-135295) that one is infectious for about $8$ - $10$ days, but it can be longer.
  
-First, note that the number of *new* cases is not the number of *current* cases. We care about the latter. More specifically, we care about the number of currently *infectious* cases. This is different from the number of currently *infected* cases.
+These are complications, but we need to keep it simple. Currently, visitors from outside Europe must show a negative COVID-19 test or need to self-isolate for $14$ days upon arrival in most European countries (see [Austria](https://www.austria.info/en/service-and-facts/coronavirus-information), for an example). Let's take these $14$ days for simplicity, and assume conservatively that this is the time one is infectious upon getting infected. Thus, we simply take the reported number of *new infected* cases in the last two weeks as the reported number of *currently infectious* cases.[^1]
  
-Upon infection, it usually takes a while until one can infect others, with [estimates ranging](https://theconversation.com/how-long-are-you-infectious-when-you-have-coronavirus-135295) from $1$ - $3$ days before showing symptoms. The *incubation period* is the time it takes from getting infected to showing symptoms. It lasts about $5$ days on average, with the vast majority of people showing symptoms within $12$ days (Lauer et al., [2020](https://www.acpjournals.org/doi/10.7326/M20-0504); see also [here](https://www.rivm.nl/en/novel-coronavirus-covid-19/coronavirus-disease-covid-19)). Yet about a third to a half of people can be infectious without showing any symptoms (Pollán et al. [2020](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31483-5); He et al. [2020](https://www.nature.com/articles/s41591-020-0869-5)). [Estimates suggest](https://theconversation.com/how-long-are-you-infectious-when-you-have-coronavirus-135295) that one is infectious for about $8$ - $10$ days, but it can be longer.
+We have dealt with the first complication, but a second one immediately follows: how do we get from the *reported* number of infections to the *true* number of infections? One can estimate the true number of infections using models, or by empirically estimating the seroprevalence in the population, that is, the proportion of people who have developed antibodies.
  
-These are complications, but we need to keep it simple. Currently, visitors from outside Europe must show a negative COVID-19 test or need to self-isolate for $14$ days upon arrival in most European countries (see [Austria](https://www.austria.info/en/service-and-facts/coronavirus-information), for an example). Let's take these $14$ days for simplicity, and assume conservatively that this is the time one is infectious upon getting infected. Thus, we simply take the reported number of *new infected* cases in the last two weeks as the reported number of *currently infectious* cases.
- 
-With that out of the way, a key question remains: how do we get from the *reported* number of infections to the *true* number of infections? One can estimate the true number of infections using models, or by empirically estimating the seroprevalence in the population, that is, the proportion of people who have developed antibodies.
- 
-Using the first approach, Flaxman et al. ([2020](https://www.nature.com/articles/s41586-020-2405-7)) estimate the total percentage of the population that has been infected --- the *attack rate* --- across $11$ European countries as of May $4^{\text{th}}$. The Netherlands was, unfortunately, not included in these estimates. To get some intuition for the calculation, and to see how countries that have fared better or worse compare to the Netherlands, we turn to Germany, Spain, and the UK. For these three countries the estimated true attack rates were $0.85\%$, $5.50\%$, and $5.10\%$, respectively. Given the population of these countries and the cumulative number of reported infections, we can compute the *reported* attack rate. Relating this to the estimate of the *true* attack rate gives us an indication of the extent that the reports undercount the actual infections; the code below calculates this for the three countries.
+Using the first approach, Flaxman et al. ([2020](https://www.nature.com/articles/s41586-020-2405-7)) estimate the total percentage of the population that has been infected --- the *attack rate* --- across $11$ European countries as of May $4^{\text{th}}$. The Netherlands was, unfortunately, not included in these estimates, and so we focus on Spain and the UK. For these countries the estimated true attack rates were $5.50\%$ and $5.10\%$, respectively. Given the population of these countries and the cumulative number of reported infections, we can compute the *reported* attack rate. Relating this to the estimate of the *true* attack rate gives us an indication of the extent that the reports undercount the actual infections; the code below calculates this for the three countries.
  
 
 {% highlight r %}
@@ -84,87 +62,56 @@ get_undercount <- function(country, attack_rate) {
     )
 }
  
-get_undercount(c('Germany', 'Spain', 'United Kingdom'), c(0.85, 5.5, 5.10))
+get_undercount(c('Spain', 'United Kingdom'), c(5.5, 5.10))
 {% endhighlight %}
 
 
 
 {% highlight text %}
-## # A tibble: 3 x 6
+## # A tibble: 2 x 6
 ##   id    population total_cases attack_rate reported_attack_rate undercount_factor
 ##   <chr>      <int>       <int>       <dbl>                <dbl>             <dbl>
-## 1 DEU     82905782      165120        0.85                0.199              4.27
-## 2 ESP     46796540      218011        5.5                 0.466             11.8 
-## 3 GBR     66460344      191843        5.1                 0.289             17.7
+## 1 ESP     46796540      218011         5.5                0.466              11.8
+## 2 GBR     66460344      191843         5.1                0.289              17.7
 {% endhighlight %}
  
-The table above shows that cases were undercounted by a factor of about $4$ in Germany, $12$ in Spain, and $18$ in the UK. The Netherlands undercounted cases by a factor of about $10$ in April (Luc Coffeng, personal communication). The attack rate estimate for Spain is confirmed by a recent seroprevalence study, which finds a similarly low overall proportion of people who have developed antibodies (around $5\%$, with substantial geographical variability) in the period between April $27^{\text{th}}$ and May $11^{\text{th}}$ (Pollán et al. [2020](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31483-5)). In another seroprevalence study, Havers et al. [2020](https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2768834) find that between March $23^{\text{rd}}$ and May $12^{\text{nd}}$, reported cases from several areas in the United States undercounted true infections by a factor between $6$ and $24$.
+The table above shows that cases were undercounted by a factor of about $12$ in Spain and $18$ in the UK. The Netherlands undercounted cases by a factor of about $10$ in April (Luc Coffeng, personal communication). The attack rate estimate for Spain is confirmed by a recent seroprevalence study, which finds a similarly low overall proportion of people who have developed antibodies (around $5\%$, with substantial geographical variability) in the period between April $27^{\text{th}}$ and May $11^{\text{th}}$ (Pollán et al. [2020](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31483-5)). In another seroprevalence study, Havers et al. [2020](https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2768834) find that between March $23^{\text{rd}}$ and May $12^{\text{nd}}$, reported cases from several areas in the United States undercounted true infections by a factor between $6$ and $24$.
  
-Currently, the pandemic is not as severe in Europe as it was back when the above studies were conducted. Most importantly, the testing capacity has been ramped up. For example, while the proportion of positive tests in Germany, Spain, the UK, and the Netherlands were $2.40\%$, $2.60\%$, $7.10\%$, and $9.40\%$ on the $4^{\text{th}}$ of May (the end date used in the Flaxman et al. 2020 study), they are $0.50\%$, $1.40\%$, $0.60\%$, and $0.60\%$ respectively, using most recent data from [here](https://ourworldindata.org/coronavirus-testing) at the time of writing. Thus, these countries are tracking the epidemic much more closely, which in turn implies that the factor by which they undercount the true cases is likely lower than it was previously.
+Currently, the pandemic is not as severe in Europe as it was back when the above studies were conducted. Most importantly, the testing capacity has been ramped up in most countries. For example, while the proportion of positive tests in the Netherlands and the UK were $9.40\%$ and $6.60\%$ on the $4^{\text{th}}$ of May (the end date used in the Flaxman et al. 2020 study), they currently are $1.70\%$ and $0.60\%$, using most recent data from [here](https://ourworldindata.org/coronavirus-testing) at the time of writing. Spain's coronavirus cases peaked roughly two weeks earlier than those of the Netherlands and the UK, and so by May $4^{\text{th}}$ they had a positivity rate of $2.60\%$. By July $30^{\text{th}}$ --- the date the most recent data is available at the time of writing --- their positivity rate has nearly doubled, to $5\%$.
  
-At the same time, [cases are rising again](https://www.rivm.nl/en/news/number-of-covid-19-infections-is-increasing), and RIVM estimates the effective reproductive number to be $R_t = 1.29$. Let's assume therefore that the true number of *infectious* cases is $5$ times higher then the number of reported *infected* cases. This includes asymptomatic carriers or those that are pre-symptomatic but still can spread the virus. We assume the estimated *true* number of infectious cases to therefore be $5 \times 20.4 = 102$ per $100,000$ residents in Amsterdam. We will test how robust our results are against this particular choice later; in the next section, we estimate the risk of a party.
+Thus, while the Netherlands and the UK seem to be tracking the epidemic much more closely, which in turn implies that the factor by which they undercount the true cases is likely lower than it was previously, Spain seems to be actually doing *worse*.
  
-<!-- There are a number of issues with these reported cases. First, nobody with a positive test would actually attend a party. Second, only people [with symptoms](https://www.rivm.nl/en/novel-coronavirus-covid-19/testing-for-covid-19) are able to get tested. However, we know that a large amount --- estimates range from XX to XX --- are asymptomatic (or pre-symptomatic). Third, the tests are not particularly reliable.  -->
+Cases [are rising again](https://ourworldindata.org/coronavirus/country/united-kingdom?country=NLD~ESP~GBR). Let's assume therefore that the true number of *infectious* cases is $5$ times higher then the number of reported *infected* cases. For simplicity, we assume the same factor for all countries, although Spain is likely undercounting the number of true cases by a larger factor than both the Netherlands and the UK. We assume the estimated relative *true* number of *currently infectious* cases to therefore be $5 \times 64.50 = 322.50$, $5 \times 56.47 = 282.35$, and $5 \times 12.26 = 61.29$ per $100,000$ residents in Amsterdam, Barcelona, and London, respectively. This includes asymptomatic carriers or those that are pre-symptomatic but still can spread the virus. We will assess how robust our results are against this particular correction factor later; in the next section, we estimate the risk of a party.
  
  
-## Estimating the risk of a party
+# Estimating the risk of a party
 What are the chances that a person who attends your party has the coronavirus and is infectious? To calculate this, we assume that party guests form an independent random sample from the population. We will discuss the implications of this crude assumption later; but for now, it allows us to estimate the desired probability in a straightforward manner.
  
-We estimated that Amsterdam had $5 \times 20.4 = 102$ true infectious cases per $100,000$ inhabitants. Assuming that the probability of infection is the same for all citizens (more on this later), this results in $102 / 100,000 = 0.00102$, which gives a $0.102\%$ or $1$ in $980$ chance that a *single* party guest has the virus and can spread it.
+Take Amsterdam as an example. There were $64.50$ reported new cases per $100,000$ inhabitants between July $22^{\text{nd}}$ and August $4^{\text{th}}$. As discussed above, we take $5 \times 64.50 = 322.50$ to be the number of *true infectious cases* per $100,000$ inhabitants. Assuming that the probability of infection is the same for all citizens (more on this later), this results in $322.50 / 100,000 = 0.003225$, which gives a $0.3225\%$ or $1$ in $310$ chance that a *single* party guest has the virus and can spread it.
  
 A party with just one guest would be --- *intimate*. So let's invite a few others. What are the chances that *at least one* of them can spread the virus? We compute this by first computing the complement, that is, the probability that *no* party guest is infectious.
  
-The chance that any one person from Amsterdam is not infectious is $1 - 0.00102 = 0.9990$, or $99.90\%$. With our assumption of guests forming an independent random sample from the population, the probability that none of the $n$ guests can spread the virus is $0.9990^n$.
+The chance that any one person from Amsterdam is not infectious is $1 - 0.003225 = 0.996775$, or $99.68\%$. With our assumption of guests forming an independent random sample from the population, the probability that none of the $n$ guests can spread the virus is $0.996775^n$.
  
-The functions below compute the probability that none of the party guests can spread the virus, as well as the probability that *at least one* of the guests is infectious; the latter probability is simply the complement of the former.
- 
-
-{% highlight r %}
-# Probability that no guest is infectious
-prob_virus_free <- function(n, true_relative_cases = 20.4 * 5) {
-  prob_virus <- true_relative_cases / 100000
-  (1 - prob_virus)^n
-}
- 
-# Probability that at least one guest is infectious
-party_risk <- function(n, true_relative_cases = 20.4 * 5) {
-  1 - prob_virus_free(n, true_relative_cases)
-}
-{% endhighlight %}
- 
-The figure below shows the party risk in Amsterdam as a function of the party size $n$.
- 
-<img src="/assets/img/2020-07-22-Corona-Party.Rmd/risk plot-1.png" title="plot of chunk risk plot" alt="plot of chunk risk plot" style="display: block; margin: auto;" />
- 
-The left panel shows how the party risk --- the probability that at least one infectious person is the party --- increases with $n$. In particular, to have near certainty that at least one infectious person shows up requires a very large party. The right panel zooms in on reasonable party sizes. Most parties that are thrown indoors probably do not exceed $100$ attendants, depending on how rich and reckless the host is. Some parties, for example [this one](https://www.eventbrite.nl/e/resonance-1-day-retreat-tickets-112094331162), can attract $150$ people, but usually take place outdoors.[^2]
- 
-The estimates of the party risk based on this simple calculation are somewhat sobering: there is a $2.02\%$, a $4.97\%$, and a $14.19\%$ chance that at least one guest can spread the coronavirus for parties of size $20$, $50$, and $150$, respectively. We have of course made a number of simplifying assumptions to arrive at these estimates, and we will critically discuss them in a later section. We will also talk about the factors that influence the chances of actually getting infected when an infectious guest shows up.
- 
-Let me note that RIVM has their own estimate of the number of currently infectious cases. At the time of writing, their [dashboard](https://coronadashboard.rijksoverheid.nl/) shows an estimate of $37.2$ infectious cases per $100,000$ inhabitants (see [here](https://fabiandablander.com/assets/img/RIVM-Dashboard-21-July.png) for a screenshot of the dashboard at the time of writing). This number is larger than $20.4$, the number of reported number cases per $100,000$ between July $8^{\text{th}}$ and July $21^{\text{st}}$.
- 
-In the terms of our calculations, their model applies a correction factor of $37.2 / 20.4 = 1.824$. RIVM is therefore slightly more optimistic than I am; for parties of size $20$, $50$, and $150$, their estimates of the probability that at least one guest is infectious --- assuming guests form a random sample from the population --- are $0.74\%$, $1.84\%$, and $5.43\%$, respectively.
- 
-How does RIVM arrive at their estimate of the number of infectious cases? We currently do not know. [Their weekly report](https://www.rivm.nl/documenten/wekelijkse-update-epidemiologische-situatie-covid-19-in-nederland) (Section 9.1) devotes only two small paragraphs to it, saying that the method is "still under development".
- 
-In any event, what is important to note is that the estimates change with the correction factor. In the next section, we assess this relationship moree systematically.
- 
- 
-## Sensitivity analysis
-We have assumed that the reported number of infected cases undercounts the true number of infectious cases by a factor of $5$. In particular, we used the reported cases of $20.4$ per $100,000$ and applied a correction factor of $5$. But what if, in a week from now, the reported cases are $30$ per $100,000$? In the following, we visualize the party risk as a function of the estimated *true* infectious cases per $100,000$ inhabitants (see also Lachmann & Fox, [2020](https://sfi-edu.s3.amazonaws.com/sfi-edu/production/uploads/ckeditor/2020/07/07/t-034-lachmann.pdf)).
- 
-Between July $8^{\text{th}}$ and July $21^{\text{st}}$, $20.4$ cases per $100,000$ inhabitants were reported in Amsterdam. A correction factor of $5$ would bolster this to $102$ cases, a correction factor of $10$ to $204$ cases, and so on; thus, one can backcalculate the correction factor from the estimated true number of cases.
- 
-The figure below visualizes the probability that at least one party guest has the coronavirus and can spread it as a function of the estimated *true* number of infectious cases per $100,000$ inhabitants and the size of the party.
+In our simple calculations, the chances of at least one infectious guest showing up depends only on the size of the party and the number of true infectious cases. The figure below visualizes how these two factors interact to give the risk of a party (see Lachmann & Fox, [2020](https://www.santafe.edu/research/projects/transmission-sfi-insights-covid-19), for a similar analysis regarding school reopenings).
  
 <img src="/assets/img/2020-07-22-Corona-Party.Rmd/risk plot sensitivity-1.png" title="plot of chunk risk plot sensitivity" alt="plot of chunk risk plot sensitivity" style="display: block; margin: auto;" />
  
-Let's take a moment to unpack this figure. Each coloured line represents a combination of true number of infectious cases and party size that yields the same party risk. For example, attending a party of size $20$ when the true number of infectious cases per $100,000$ inhabitants is $50$ yields a party risk of $1\%$, but so would, roughly, attending a party of size $10$ when the true relative number of infectious cases is $100$. Thus, there is a trade-off between the size of the party and the true number of infectious cases.
+Let's take a moment to unpack this figure. Each coloured line represents a combination of estimated true number of infectious cases and party size that yields the same party risk. For example, attending a party of size $20$ when the true number of infectious cases per $100,000$ inhabitants is $50$ yields a party risk of about $1\%$, but so would, roughly, attending a party of size $10$ when the true relative number of infectious cases is $100$. Thus, there is a trade-off between the size of the party and the true number of infectious cases.
  
-You can get a quick overview of the risks of parties of different sizes for a fixed number of true infectious cases by checking when the gray solid lines *verticallly* cross the coloured lines. Similarly, you can get a rough understanding for the risks of a party of fixed size for different numbers of true infectious cases by checking when the gray and coloured lines cross *horizontally*. The dotted vertical line in the figure gives our previous estimate of the true number of cases. 
+You can get a quick overview of the risks of parties of different sizes for a fixed number of true infectious cases by checking when the gray solid lines *verticallly* cross the coloured lines. Similarly, you can get a rough understanding for the risks of a party of fixed size for different numbers of true infectious cases by checking when the gray and coloured lines cross *horizontally*. The dotted vertical lines in the figure gives our previous estimate of the true number of infectious cases for London, Barcelona, and Amsterdam.
  
-The figure allows you to estimate the party risk wherever you live; just look up the local number of new cases in the last two weeks and, making the assumptions we have made so far, the plot above gives you the probability that at least one party guest will turn up infectious with the coronavirus. The assumptions we have made are very simplistic, and indeed, if you have a more elaborate way of estimating the number of currently infectious cases, then you can use that number combined with the figure to estimate the party risk.
+What's the risk of partying in those three cities? For gatherings of size $10$, $25$, and $50$, the probability that at least one guest arrives infectious is $0.61\%$, $1.52\%$, and $3.01\%$ for London. For Barcelona, the risks are substantially higher, with $2.79\%$, $6.82\%$, and $13.18\%$. Amsterdam performs worst, with risks of $3.18\%$, $7.76\%$, and $14.91\%$. These numbers are sobering, and I want you to take a moment to let them sink in. We will discuss the assumptions we had to make in order to arrive at them in the next section.[^2]
  
-While we have computed the party risk for a single party, this risk naturally increases when you attend multiple ones. Suppose you have been invited to parties of size $20$, $35$, and $50$ which will take place in the next month. Let's for simplicity assume that all guests are different each time. Let's further assume that the number of infectious cases stays constant over the next month; with a current estimate of $R_t = 1.29$, this seems unlikely. Together, these assumptions allow us to calculate the *total* party risk as the party risk of attending a single party of size $105$, which gives $10.16\%$. It seems that, in this case, fortune does not favour the bold.
+<!-- For now, note that you can see how these numbers change for different correction factors by looking at the figure and observing how the risk changes as you vary the estimated true number of infectious cases. -->
+ 
+
+ 
+Do you happen to live neither in London, Barcelona, nor Amsterdam? Regardless of your area of residence, the figure allows you to estimate the party risk; just look up the local number of new cases in the last two weeks, multiply with a correction factor (we used $5$), and --- making the assumptions we have made so far --- the plot above gives you the probability that at least one party guest will turn up infectious with the coronavirus. The assumptions we have made are very simplistic, and indeed, if you have a more elaborate way of estimating the number of currently infectious cases, then you can use that number combined with the figure to estimate the party risk.
+ 
+While we have computed the party risk for a single party, this risk naturally increases when you attend multiple ones. Suppose you have been invited to parties of size $20$, $35$, and $50$ which will take place in the next month. Let's for simplicity assume that all guests are different each time. Let's further assume that the number of infectious cases stays constant over the next month. Together, these assumptions allow us to calculate the *total* party risk as the party risk of attending a single party of size $20 + 35 + 50 = 105$, which gives a considerable risk of $6.23\%$ for London, and whopping risks of $25.69\%$ and $28.76\%$ for Barcelona and Amsterdam, respectively. It seems that, in this case, fortune does not favour the bold.
+ 
+
  
  
 ## Assumptions
@@ -190,31 +137,27 @@ For parties taking place in summer, it is not unlikely that many guests engaged 
  
  
 ### Estimating true infections
-We have assumed that the number of *new* cases in the last two weeks equals the number of currently *infectious* cases. This is certainly an approximation. Ideally, we would have a geographically explicit model which, at any point in time and space, provides an estimate of the number of infectious cases. To my knowledge, we are currently lacking such a model.
+We have assumed that the *reported* number of *new infected* cases in the last two weeks equals the number of *currently infectious* cases. This is certainly an approximation. Ideally, we would have a geographically explicit model which, at any point in time and space, provides an estimate of the number of infectious cases. To my knowledge, we are currently lacking such a model.
  
-<!-- This strikes me as such an important tool that I am a bit taken a back by the fact that it does not exist. -->
+Note that, if the people who tested positive all self-isolate or, worse, end up in hospital, this clearly curbs virus spread compared to when they would continue to roam around. The former seems more likely. Moreover, these reported cases are likely not independent either, with outbreaks usually being localized. Similar to the fact that party guests know each other, the fact that reported cases cluster would lead us to overestimate the extent of virus spread at a party.
  
-Note that, if the $178$ people who tested positive all self-isolate or, worse, end up in hospital, this clearly curbs virus spread compared to when they would continue to roam around. The former seems more likely. Moreover, these reported cases are likely not independent either, with outbreaks usually being localized. Similar to the fact that party guests know each other, the fact that reported cases cluster would lead us to overestimate the extent of virus spread.
+At the same time, in the Netherlands, for example, only those that show symptoms can get tested. Since about a third to a half are asymptomatic or pre-symptomatic in the sense that they spread the virus considerably before symptom onset, the reported number of cases likely gives an undercount of infectious people.
  
-At the same time, in the Netherlands only those that show symptoms can get tested. Since about a third to a half are asymptomatic or pre-symptomatic in the sense that they spread the virus considerably before symptom onset, the reported number of cases likely gives an undercount of infectious people.
+All these complications can be summarized, roughly, in the correction factor, which gives the extent to which we believe that the reported number of infected cases undercounts the true number of currently infectious cases. We have focused on a factor of $5$, but the figure above allows you to assess the sensitivity of the results to this particular choice.
  
-All these complications can be summarized, roughly, in the correction factor, which gives the extent to which we believe that the reported number of cases deviates from the true number of infectious cases. We have first focused on a factor of $5$, but then assessed the robustness of our results in a sensitivity analysis. For example, for a party size of $50$, the chances that at least one guest is infectious is $1.84\%$ for a correction factor of $1.824$ (corresponding to the official RIVM estimate), $4.97\%$ for a factor of $5$, and $18.49\%$ for a factor of $20$. You can play around with these numbers yourself. Observe how they make you feel. Personally, given what we said above about the infection probability for young and adventurous people, I am inclined to err on the side of caution.
+For a very optimistic factor of $1$ --- this means that we do not undercount the true cases --- a party of size $30$ results in a risk of $0.37\%$ for London, $1.68\%$ for Barcelona, and $1.92\%$ for Amsterdam. A factor of $5$ results in risks of $1.82\%$, $8.13\%$, and $9.24\%$, respectively. A conservative estimate, using a factor of $10$, results in risks of $3.61\%$, $15.62\%$, and $17.64\%$. You can play around with these numbers yourself. Observe how they make you feel. Personally, given what we said above about the infection probability for young and adventurous people, I am inclined to err on the side of caution.
  
+
  
 ## Estimating the probability of infection
 We have the defined the party risk as the probability that at least one party guest has the coronavirus and is infectious. If this person does not spread the virus to other guests, no harm is done.
  
 This is exceedingly unlikely, however. The probability of getting infected is a function of the time one is exposed to the virus, and the amount of virus one is exposed to. [Estimates suggest](https://www.erinbromage.com/post/the-risks-know-them-avoid-them) that about $1,000$ SARS-CoV-2 infectious virus particles suffice for an infection. With breathing, about $20$ viral particles diffuse into the environment per minute; this increases to $200$ for speaking; coughing or sneezing can release $200,000,000$ (!) virus particles. These do not all fall to the ground, but instead can remain suspended in the air and fill the whole room; thus, physical distancing alone might [not be enough indoors](https://www.nytimes.com/2020/07/06/health/coronavirus-airborne-aerosols.html) (the extent of airborne transmission remains debated, however; see for example Klompas, Baker, & Rhee, [2020](https://jamanetwork.com/journals/jama/fullarticle/2768396)). It seems reasonable to assume that, when party guests are crowded in a room for a number of hours, many of them stand a good chance of getting infected if at least one guest is infectious. [Masks would help](https://www.erinbromage.com/post/what-s-the-deal-with-masks), of course; but how would I sip my Negroni, wearing one?
  
-It is different outdoors. A Japanese study found that virus transmission inside was about $19$ times more likely than outside (Nishiura et al. [2020](https://www.medrxiv.org/content/10.1101/2020.02.28.20029272v2)). Analyzing $318$ outbreaks in China between January $4^{\text{th}}$ and February $11^{\text{th}}$, Quian et al. ([2020](https://www.medrxiv.org/content/10.1101/2020.04.04.20053058v1)) found that only a single one occurred outdoors. This suggests that parties outdoors should be much safer than parties indoors. Yet outdoor parties feature elements unlike other outdoor events; for example, there are areas --- such as bars or [public toilets](https://www.nytimes.com/2020/06/24/style/coronavirus-public-bathrooms.html) --- which could become spots for virus transmission. Our simple calculations suggest, with a correction factor of $5$, that the probability that at least one person out of $150$ has the coronavirus is $14.19\%$. While, in contrast to an indoor setting, the infected person is unlikely to infect the majority of the other guests, it seems likely that at least some guests will get the virus.
+It is different outdoors. A Japanese study found that virus transmission inside was about $19$ times more likely than outside (Nishiura et al. [2020](https://www.medrxiv.org/content/10.1101/2020.02.28.20029272v2)). Analyzing $318$ outbreaks in China between January $4^{\text{th}}$ and February $11^{\text{th}}$, Quian et al. ([2020](https://www.medrxiv.org/content/10.1101/2020.04.04.20053058v1)) found that only a single one occurred outdoors. This suggests that parties outdoors should be much safer than parties indoors. Yet outdoor parties feature elements unlike other outdoor events; for example, there are areas --- such as bars or [public toilets](https://www.nytimes.com/2020/06/24/style/coronavirus-public-bathrooms.html) --- which could become spots for virus transmission. They usually attract more people, too. Our simple calculations suggest, with a correction factor of $5$, that the probability that at least one person out of $150$ has the coronavirus is a staggering $38.40\%$ in Amsterdam. While, in contrast to an indoor setting, the infected person is unlikely to infect the majority of the other guests, it seems likely that at least some guests will get the virus.
  
  
-<!-- # Anecdotal Evidence -->
-<!-- - https://time.com/5860572/birthday-party-texas-coronavirus-18-people/ -->
-<!-- - https://www.washingtonpost.com/lifestyle/the-virus-didnt-stop-a-washington-socialite-from-throwing-a-backyard-soiree-then-the-tests-came-back-positive/2020/07/01/841041ba-ba19-11ea-bdaf-a129f921026f_story.html -->
- 
- 
-# Conclusion: To party or not to party?
+# To party or not to party?
 If I do not care whether I get wet or not, I will never carry an umbrella, regardless of the chances of rain. Similarly, my decision to throw (or attend) a party requires not only an estimate of how likely it is that the virus spreads at the gathering; it also requires an assessment of how much I actually care.
  
 As argued above, it is almost certain that the virus spreads to other guests if one guest arrives infectious. Noting that all guests are young, one might be tempted to argue that the cost of virus spread is low. In fact, people who party might even be helping --- *heroically* --- to build [herd immunity](https://fabiandablander.com/r/Covid-Exit.html)!
@@ -240,47 +183,80 @@ I want to thank [Denny Borsboom](https://dennyborsboom.com/) and [Luc Coffeng](h
  
  
 ## Post Scriptum
- 
-The code below reproduces the first figure in the main text.
+### Data
+The code below gives the data used in the main text.
  
 
 {% highlight r %}
-plot_risk <- function(ns, true_relative_cases = 20.4 * 5, ...) {
-  plot(
-    ns, 1 - prob_virus_free(ns, true_relative_cases = true_relative_cases),
-    type = 'l', axes = FALSE,
-    xlab = 'Party size', ylab = 'Probability of at least one infection',
-    xaxs = 'i', yaxs = 'i', ...
-  )
-  axis(1)
-  axis(2, las = 2)
+library('httr')
+library('dplyr')
+ 
+# See https://coronavirus.data.gov.uk/developers-guide
+endpoint <- paste0(
+  'https://api.coronavirus.data.gov.uk/v1/data?',
+  'filters=areaType=region;areaName=London&',
+  'structure={"date":"date","newCases":"newCasesBySpecimenDate"}'
+)
+ 
+response <- GET(url = endpoint, timeout(10))
+ 
+if (response$status_code >= 400) {
+    err_msg <- http_status(response)
+    stop(err_msg)
 }
  
+# Convert response from binary to JSON:
+json_text <- content(response, 'text')
+data <- jsonlite::fromJSON(json_text)$data
  
-par(mfrow = c(1, 2))
-n1 <- 3000
-n2 <- 200
-y2 <- 1 - prob_virus_free(n2)
+# From 22nd July to 4th August
+london_dat <- data %>% 
+  filter(
+    date >= '2020-07-22', date <= '2020-08-04'
+  )
  
-plot_risk(
-  seq(0, n1), lwd = 2, main = 'Party Risk in Amsterdam',
-  xlim = c(0, n1), ylim = c(0, 1), font.main = 1.5
+london_total_cases <- sum(london_dat$newCases)
+london_cases <- (london_total_cases / 8982000) * 100000 # per 100,000 inhabitants
+ 
+ 
+# From https://www.rivm.nl/en/novel-coronavirus-covid-19/current-information
+amsterdam_cases <- 64.5
+amsterdam_total_cases <- 563
+ 
+ 
+# From https://dadescovid.cat/diari?drop_es_residencia=2&tipus=regio&id_html=ambit_2&codi=13
+barcelona_total_cases <- sum(
+  c(203, 251, 61, 81, 302, 327, 277, 277, 352, 71, 99, 313, 306, 327)
 )
-lines(c(n2, n2), c(0, y2), col = 'red', lwd = 2)
-lines(c(0, n2), c(y2, y2), col = 'red', lwd = 2)
+barcelona_cases <- (barcelona_total_cases / 5750000) * 100000
  
-plot_risk(
-  seq(0, n2), lwd = 2, main = 'Party Risk in Amsterdam (Zoomed in)',
-  ylim = c(0, 0.20), xlim = c(0, n2), font.main = 1.5
-)
+c(london_cases, barcelona_cases, amsterdam_cases)
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## [1] 12.25785 56.46957 64.50000
 {% endhighlight %}
  
-The code below reproduces the second figure in the main text.
+ 
+### Figure
+The code below reproduces the figure in the main text.
  
 
 {% highlight r %}
 library('RColorBrewer')
  
+# Probability that no guest is infectious
+prob_virus_free <- function(n, true_relative_cases = 64.50 * 5) {
+  prob_virus <- true_relative_cases / 100000
+  (1 - prob_virus)^n
+}
+ 
+# Probability that at least one guest is infectious
+party_risk <- function(n, true_relative_cases = 64.50 * 5) {
+  1 - prob_virus_free(n, true_relative_cases)
+}
  
 # Calculates the party size that results in 'prob_virus_free'
 # for a given 'true_relative_cases'
@@ -292,53 +268,73 @@ get_party_size <- function(prob_virus_free, true_relative_cases) {
 plot_total_risk <- function(party_sizes, true_relative_cases, ...) {
   
   plot(
-    true_relative_cases, ns, type = 'n', xaxs = 'i',
-    yaxs = 'i', axes = FALSE, ylab = 'Party Size',
-    xlab = 'True Number of Infectious Cases per 100,000 Inhabitants', ...
+    true_relative_cases, ns, type = 'n', xaxs = 'i', yaxs = 'i', axes = FALSE,
+    xlab = 'Estimated True Number of Infectious Cases per 100,000 Inhabitants',
+    ylab = 'Party Size', ...
   )
   
-  ticks <- seq(0, 300, 25)
+  ticks <- seq(0, 500, 50)
+  minor_ticks <- seq(0, 500, 25)
   
   axis(1, at = ticks)
   axis(2, at = ticks, las = 2)
+  rug(x = minor_ticks, ticksize = -0.01, side = 1)
+  rug(x = minor_ticks, ticksize = -0.01, side = 2)
   
-  abline(h = ticks, col = 'gray86')
-  abline(v = ticks, col = 'gray86')
+  abline(h = minor_ticks, col = 'gray86')
+  abline(v = minor_ticks, col = 'gray86')
   
   probs_virus <- seq(0.01, 0.99, 0.01)
   party_sizes <- sapply(1 - probs_virus, get_party_size, true_relative_cases)
   
   cols <- rev(heat.colors(50))
-  cols <- colorRampPalette(cols, bias = 2)(99)[-1]
+  cols <- colorRampPalette(cols, bias = 3)(99)[-1]
   
-  ix <- c(seq(1, 55, 1), seq(60, 95, 5))
-  show_text <- c(seq(1, 10, 1), seq(15, 55, 5))
+  ix <- c(1, seq(5, 75, 5))
+  show_text <- ix
+  diagonal <- data.frame(
+    'x' = seq(0, 500, length.out = 300),
+    'y' = seq(0, 500, length.out = 300) * 3/5
+  )
   
   for (i in ix) {
     y <- party_sizes[, i]
-    lines(true_relative_cases, y, col = cols[i], lwd = 2.5)
+    line <- data.frame('x' = true_relative_cases[-1], 'y' = y[-1])
+    lines(line, col = cols[i], lwd = 2)
     
-    j <- which.min(true_relative_cases[-1] + y[-1])
+    j <- reconPlots::curve_intersect(line, diagonal)
     
     if (i %in% show_text) {
       text(
-        true_relative_cases[j] + 1, y[j] + 1, paste0(probs_virus[i] * 100, '%'),
-        cex = 0.80
+        j$x + 1, j$y + 1, paste0(probs_virus[i] * 100, '%'),
+        cex = 0.95
       )
     }
   }
 }
  
 ns <- seq(0, 300)
-true_relative_cases <- seq(0, 300, length.out = length(ns))
+true_relative_cases <- seq(0, 500, length.out = length(ns))
  
 plot_total_risk(
   ns, true_relative_cases,
   main = 'Probability That at Least One Guest is Infectious',
-  font.main = 1, cex.main = 1.5
+  font.main = 1, cex.main = 1.75, cex.lab = 1.25
 )
  
-lines(c(20.4 * 5, 20.4 * 5), c(0, 300), lty = 2)
+ 
+lwd <- 1.5
+lines(c(amsterdam_cases * 5, amsterdam_cases * 5), c(0, 500), lty = 2)
+arrows(365, 130, 327, 160, length = 0.10, lwd = lwd)
+text(373, 124, 'Amsterdam', cex = 1.25)
+ 
+lines(c(barcelona_cases * 5, barcelona_cases * 5), c(0, 500), lty = 2)
+arrows(253, 70, 279, 107, length = 0.10, lwd = lwd)
+text(247, 63, 'Barcelona', cex = 1.25)
+ 
+lines(c(london_cases * 5, london_cases * 5), c(0, 500), lty = 2)
+arrows(90, 180, 65, 150, length = 0.10, lwd = lwd)
+text(97, 187, 'London', cex = 1.25)
 {% endhighlight %}
  
 ---
@@ -360,7 +356,7 @@ lines(c(20.4 * 5, 20.4 * 5), c(0, 300), lty = 2)
  
 ---
  
-## Footnote
+## Footnotes
 [^1]: Reported deaths are more reliable than reported cases because deaths must always be reported. This is why, for example, Flaxman et al. ([2020](https://www.nature.com/articles/s41586-020-2405-7)) use deaths to estimate the actual proportion of infections. There are issues with reported deaths, too, however, and I discuss some of them [here](https://scienceversuscorona.com/visualising-the-covid-19-pandemic/).
-[^2]: Curiously, this party allowed a total of $300$ guests when I first drafted this post a few days ago. That would have resulted in a party risk of $26.37\%$. They changed the total to $150$ since, maybe because the organizers actually sat down to do some calculations, similar to as we did in this post? Still --- and even though I am a big fan of [Dominik Eulberg](https://www.youtube.com/watch?v=Vv8p45-3MaI) --- $150$ guests strike me as too many.
+[^2]: Let me note that RIVM has their own estimate of the number of currently infectious cases. On August $4^{\text{th}}$, their [dashboard](https://coronadashboard.rijksoverheid.nl/) showed an estimate of $94.30$ infectious cases per $100,000$ inhabitants. This number is larger than $60.40$, the number of reported number cases per $100,000$ in Amsterdam between July $22^{\text{th}}$ and August $4^{\text{th}}$. In the terms of our calculations, their model applies a correction factor of $94.30 / 60.40 = 1.56$. RIVM is therefore slightly more optimistic than I am; for parties of size $10$, $25$, and $50$, their estimates of the probability that at least one guest is infectious --- assuming guests form a random sample from the population --- are $0.94\%$, $2.33\%$, and $4.61\%$, respectively. How does RIVM arrive at their estimate of the number of infectious cases? We currently do not know. [Their weekly report](https://www.rivm.nl/documenten/wekelijkse-update-epidemiologische-situatie-covid-19-in-nederland) (Section 9.1) devotes only two small paragraphs to it, saying that the method is "still under development".
 [^3]: Once the pandemic is over, inviting a random sample from the population should definitely become a thing. Bursting bubbles, one party at a time!

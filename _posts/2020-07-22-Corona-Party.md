@@ -37,7 +37,7 @@ These are complications, but we need to keep it simple. Currently, visitors from
  
 We have dealt with the first complication, but a second one immediately follows: how do we get from the *reported* number of infections to the *true* number of infections? One can estimate the true number of infections using models, or by empirically estimating the seroprevalence in the population, that is, the proportion of people who have developed antibodies.
  
-Using the first approach, Flaxman et al. ([2020](https://www.nature.com/articles/s41586-020-2405-7)) estimate the total percentage of the population that has been infected --- the *attack rate* --- across $11$ European countries as of May $4^{\text{th}}$. The Netherlands was, unfortunately, not included in these estimates, and so we focus on Spain and the UK. For these countries the estimated true attack rates were $5.50\%$ and $5.10\%$, respectively. Given the population of these countries and the cumulative number of reported infections, we can compute the *reported* attack rate. Relating this to the estimate of the *true* attack rate gives us an indication of the extent that the report undercounts the actual infections; the code below calculates this for the three countries.
+Using the first approach, Flaxman et al. ([2020](https://www.nature.com/articles/s41586-020-2405-7)) estimate the total percentage of the population that has been infected --- the *attack rate* --- across $11$ European countries as of May $4^{\text{th}}$. The Netherlands was, unfortunately, not included in these estimates, and so we focus on Spain and the UK. For these countries the estimated true attack rates were $5.50\%$ and $5.10\%$, respectively. Given the population of these countries and the cumulative number of reported infections, we can compute the *reported* attack rate. Relating this to the estimate of the *true* attack rate gives us an indication of the extent that the report undercounts the actual infections; the code below calculates this for Spain and the UK.
  
 
 {% highlight r %}
@@ -70,7 +70,7 @@ get_undercount(c('Spain', 'United Kingdom'), c(5.5, 5.10))
 {% highlight text %}
 ## # A tibble: 2 x 6
 ##   id    population total_cases attack_rate reported_attack_rate undercount_factor
-##   <chr>      <int>       <int>       <dbl>                <dbl>             <dbl>
+##   <chr>      <int>       <dbl>       <dbl>                <dbl>             <dbl>
 ## 1 ESP     46796540      218011         5.5                0.466              11.8
 ## 2 GBR     66460344      191843         5.1                0.289              17.7
 {% endhighlight %}
@@ -96,6 +96,43 @@ The chance that any one person from Amsterdam is not infectious is $1 - 0.003225
 In our simple calculations, the chances of at least one infectious guest showing up depends only on the size of the party and the number of true infectious cases. The figure below visualizes how these two factors interact to give the risk of a party (see Lachmann & Fox, [2020](https://www.santafe.edu/research/projects/transmission-sfi-insights-covid-19), for a similar analysis regarding school reopenings).
  
 
+{% highlight text %}
+## 
+##   Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response
+##   Tracker, Blavatnik School of Government.
+## 
+##   Istituto Nazionale di Statistica, Italia (2018), https://www.istat.it
+## 
+##   Ministero della Salute, Italia (2020), https://github.com
+## 
+##   Centre of Excellence in Economics and Data Science, University of Milano (2020), https://github.com
+## 
+##   Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Working paper, doi: 10.13140/RG.2.2.11649.81763.
+## 
+## To see these entries in BibTeX format, use 'print(<citation>, bibtex=TRUE)', 'toBibtex(.)', or set
+## 'options(citation.bibtex.max=999)'.
+## 
+## To hide the data sources use 'verbose = FALSE'.
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## 
+##   Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response
+##   Tracker, Blavatnik School of Government.
+## 
+##   GADM (2019), https://public.opendatasoft.com
+## 
+##   Robert Koch-Institut (2020), https://npgeo-corona-npgeo-de.hub.arcgis.com
+## 
+##   Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Working paper, doi: 10.13140/RG.2.2.11649.81763.
+## 
+## To see these entries in BibTeX format, use 'print(<citation>, bibtex=TRUE)', 'toBibtex(.)', or set
+## 'options(citation.bibtex.max=999)'.
+## 
+## To hide the data sources use 'verbose = FALSE'.
+{% endhighlight %}
  
 <img src="/assets/img/2020-07-22-Corona-Party.Rmd/risk plot sensitivity-1.png" title="plot of chunk risk plot sensitivity" alt="plot of chunk risk plot sensitivity" style="display: block; margin: auto;" />
  
@@ -115,9 +152,9 @@ Take Rome and Berlin, for example. From July $22^{\text{nd}}$ to August $4^{\tex
 {% highlight text %}
 ##     Rome London Berlin Amsterdam Barcelona
 ## 10  0.24   0.63   0.78      3.18      9.73
-## 25  0.60   1.56   1.93      7.76     22.58
-## 50  1.20   3.09   3.83     14.91     40.07
-## 100 2.38   6.08   7.52     27.60     64.08
+## 25  0.60   1.57   1.93      7.76     22.58
+## 50  1.20   3.12   3.83     14.91     40.07
+## 100 2.38   6.14   7.52     27.60     64.08
 {% endhighlight %}
  
 While we have computed the party risk for a single party, this risk naturally increases when you attend multiple ones. Suppose you have been invited to parties of size $20$, $35$, and $50$ which will take place in the next month. Let's for simplicity assume that all guests are different each time. Let's further assume that the number of infectious cases stays constant over the next month. Together, these assumptions allow us to calculate the *total* party risk as the party risk of attending a single party of size $20 + 35 + 50 = 105$, which gives a considerable risk of $6.37\%$ for London, a whopping $28.76\%$ for Amsterdam, and a crippling $65.87\%$ for Barcelona. It seems that, in this case, fortune does not favour the bold.
@@ -276,7 +313,7 @@ c(rome_cases, london_cases, berlin_cases, amsterdam_cases, barcelona_cases)
 
 
 {% highlight text %}
-## [1]   4.821241  12.536183  15.625435  64.500000 203.722298
+## [1]   4.821241  12.658651  15.625435  64.500000 203.722298
 {% endhighlight %}
  
 ### Figure
@@ -406,9 +443,9 @@ round(tab * 100, 2)
 {% highlight text %}
 ##     Rome London Berlin Amsterdam Barcelona
 ## 10  0.24   0.63   0.78      3.18      9.73
-## 25  0.60   1.56   1.93      7.76     22.58
-## 50  1.20   3.09   3.83     14.91     40.07
-## 100 2.38   6.08   7.52     27.60     64.08
+## 25  0.60   1.57   1.93      7.76     22.58
+## 50  1.20   3.12   3.83     14.91     40.07
+## 100 2.38   6.14   7.52     27.60     64.08
 {% endhighlight %}
  
 ---

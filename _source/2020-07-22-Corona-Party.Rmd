@@ -86,7 +86,7 @@ The chance that any one person from Amsterdam is not infectious is $1 - 0.003225
 
 In our simple calculations, the chances of at least one infectious guest showing up depends only on the size of the party and the number of true infectious cases. The figure below visualizes how these two factors interact to give the risk of a party (see Lachmann & Fox, [2020](https://www.santafe.edu/research/projects/transmission-sfi-insights-covid-19), for a similar analysis regarding school reopenings).
 
-```{r, echo = FALSE, eval = TRUE}
+```{r, echo = FALSE, eval = TRUE, message = FALSE}
 library('httr')
 library('dplyr')
 library('COVID19')
@@ -135,7 +135,7 @@ barcelona_cases <- barcelona_total_cases / 16.20343
 
 # COVID19 has data on Italian provinces
 # See also https://www.nytimes.com/interactive/2020/world/europe/italy-coronavirus-cases.html
-italy_dat <- covid19('Italy', level = 3) %>% 
+italy_dat <- covid19('Italy', level = 3, verbose = FALSE) %>% 
   filter(
     # From 22nd July to 4th August
     date >= '2020-07-21', date <= '2020-08-04'
@@ -148,7 +148,7 @@ rome_cases <- (rome_total_cases / rome_dat$population[1]) * 100000
 
 # COVID19 has data on German states
 # See also https://www.nytimes.com/interactive/2020/world/europe/germany-coronavirus-cases.html
-germany_dat <- covid19('Germany', level = 2) %>% 
+germany_dat <- covid19('Germany', level = 2, verbose = FALSE) %>% 
   filter(
     # From 22nd July to 4th August
     date >= '2020-07-21', date <= '2020-08-04'

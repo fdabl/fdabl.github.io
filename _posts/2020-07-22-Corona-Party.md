@@ -96,43 +96,6 @@ The chance that any one person from Amsterdam is not infectious is $1 - 0.003225
 In our simple calculations, the chances of at least one infectious guest showing up depends only on the size of the party and the number of true infectious cases. The figure below visualizes how these two factors interact to give the risk of a party (see Lachmann & Fox, [2020](https://www.santafe.edu/research/projects/transmission-sfi-insights-covid-19), for a similar analysis regarding school reopenings).
  
 
-{% highlight text %}
-## 
-##   Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response
-##   Tracker, Blavatnik School of Government.
-## 
-##   Istituto Nazionale di Statistica, Italia (2018), https://www.istat.it
-## 
-##   Ministero della Salute, Italia (2020), https://github.com
-## 
-##   Centre of Excellence in Economics and Data Science, University of Milano (2020), https://github.com
-## 
-##   Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Working paper, doi: 10.13140/RG.2.2.11649.81763.
-## 
-## To see these entries in BibTeX format, use 'print(<citation>, bibtex=TRUE)', 'toBibtex(.)', or set
-## 'options(citation.bibtex.max=999)'.
-## 
-## To hide the data sources use 'verbose = FALSE'.
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-##   Hale Thomas, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira (2020). Oxford COVID-19 Government Response
-##   Tracker, Blavatnik School of Government.
-## 
-##   GADM (2019), https://public.opendatasoft.com
-## 
-##   Robert Koch-Institut (2020), https://npgeo-corona-npgeo-de.hub.arcgis.com
-## 
-##   Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Working paper, doi: 10.13140/RG.2.2.11649.81763.
-## 
-## To see these entries in BibTeX format, use 'print(<citation>, bibtex=TRUE)', 'toBibtex(.)', or set
-## 'options(citation.bibtex.max=999)'.
-## 
-## To hide the data sources use 'verbose = FALSE'.
-{% endhighlight %}
  
 <img src="/assets/img/2020-07-22-Corona-Party.Rmd/risk plot sensitivity-1.png" title="plot of chunk risk plot sensitivity" alt="plot of chunk risk plot sensitivity" style="display: block; margin: auto;" />
  

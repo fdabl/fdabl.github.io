@@ -276,7 +276,7 @@ c(rome_cases, london_cases, berlin_cases, amsterdam_cases, barcelona_cases)
 
 
 {% highlight text %}
-## [1]   4.821241  12.658651  15.625435  64.500000 203.722298
+## [1]   4.821241  12.669784  15.625435  64.500000 203.722298
 {% endhighlight %}
  
 ### Figure

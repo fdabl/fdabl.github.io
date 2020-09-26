@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Harry Potter and the Power of Bayesian Constrained Inference"
+title: "Harry Potter and the Power of Bayesian Inference"
 date: 2019-09-28 09:00:00 +0100
 categories: R
 status: publish
 published: true
+# status: development
+# published: false
 ---
  
 If you are reading this, you are probably a Ravenclaw. Or a Hufflepuff. Certainly not a Slytherin ... but maybe a Gryffindor?
@@ -116,7 +118,7 @@ predictions_Hermione
 
 
 {% highlight text %}
-##  [1] 10 10 10  3  7 10  8  9  6  9  9  6  8  9  8 10  6 10  5  7
+##  [1]  6  4 10  4  5  8  8  8 10  9  4  8  4  4  4  9  6  9  6  8
 {% endhighlight %}
  
 Let's visualize Ron's, Harry's, and Hermione's prior predictive distributions to get a better feeling for what they believe are likely coin flip outcomes. First, we implement their prior predictions in R:

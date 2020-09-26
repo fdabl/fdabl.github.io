@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Harry Potter and the Power of Bayesian Constrained Inference"
+title: "Harry Potter and the Power of Bayesian Inference"
 date: 2019-09-28 09:00:00 +0100
 categories: R
 # status: process

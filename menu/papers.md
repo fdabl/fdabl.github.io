@@ -12,13 +12,14 @@ title: ''
 
 Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (submitted). The Sum of All Fears: Comparing Networks Based on Symptom Sum-Scores. [[Link](https://psyarxiv.com/3nxu9)]
 
-**Dablander, F.**<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & Haslbeck, J.M.B.<sup><small>&#11089;</small></sup> (under review). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. [[Link](https://psyarxiv.com/qgewy/)]
 
 Brown, J., Murray, D., Furlong, K., Coco, E., & **Dablander, F.** (under review). A Breeding Pool of Ideas: Analyzing Interdisciplinary Collaborations at the Complex Systems Summer School. [[Link](https://osf.io/preprints/socarxiv/e3z4v)]
 
 Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Van Mieghem, P. (under review). The lighting of the BECONs: A behavioral data science approach to tracking interventions in COVID-19 research. [[Link](https://psyarxiv.com/53ey9)]
 
 ## 2020
+**Dablander, F.**<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & Haslbeck, J.M.B.<sup><small>&#11089;</small></sup> (2020). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. *PLoS One*. [[Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0240730)]
+
 Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (2020). The Support Interval. *Erkenntnis*. [[Link](https://link.springer.com/article/10.1007%2Fs10670-019-00209-z)]
 
 

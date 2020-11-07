@@ -12,7 +12,6 @@ title: ''
 
 Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (submitted). The Sum of All Fears: Comparing Networks Based on Symptom Sum-Scores. [[Link](https://psyarxiv.com/3nxu9)]
 
-
 Brown, J., Murray, D., Furlong, K., Coco, E., & **Dablander, F.** (under review). A Breeding Pool of Ideas: Analyzing Interdisciplinary Collaborations at the Complex Systems Summer School. [[Link](https://osf.io/preprints/socarxiv/e3z4v)]
 
 Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Van Mieghem, P. (under review). The lighting of the BECONs: A behavioral data science approach to tracking interventions in COVID-19 research. [[Link](https://psyarxiv.com/53ey9)]
@@ -21,6 +20,15 @@ Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Va
 **Dablander, F.**<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & Haslbeck, J.M.B.<sup><small>&#11089;</small></sup> (2020). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. *PLoS One*. [[Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0240730)]
 
 Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (2020). The Support Interval. *Erkenntnis*. [[Link](https://link.springer.com/article/10.1007%2Fs10670-019-00209-z)]
+
+van Doorn, J., van den Bergh, D., Bohm, U., **Dablander, F.**, Derks, K., Draws, T., ... & Hinne, M.
+(2020). The JASP guidelines for conducting and reporting a Bayesian analysis. *Psychonomic Bulletin & Review, 1-14*. [[Link]](https://link.springer.com/article/10.3758/s13423-020-01798-5)
+
+Ly, A., Stefan, A., van Doorn, J., **Dablander, F.**, van den Bergh, D., Sarafoglou, A., ... & Boehm, U.
+(2020). The Bayesian Methodology of Sir Harold Jeffreys as a Practical Alternative to the P Value Hypothesis Test. *Computational Brain & Behavior, 3*(2), 153-161. [[Link]](https://link.springer.com/article/10.1007/s42113-019-00070-x)
+
+van den Bergh, D., Van Doorn, J., Marsman, M., Draws, T., Van Kesteren, E. J., Derks, K.,
+**Dablander, F.**, ... & Sarafoglou, A. (2020). A Tutorial on Conducting and Interpreting a Bayesian ANOVA in JASP. *LAnnee psychologique, 120*(1), 73-96. [[Link]](https://www.cairn.info/journal-l-annee-psychologique-2020-1-page-73.htm)
 
 
 ## 2019

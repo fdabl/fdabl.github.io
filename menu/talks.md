@@ -6,7 +6,7 @@ title: ''
 ## Talks
 Anticipating Critical Transitions using Early Warning Signals: Theoretical and Practical Considerations. Talk at the Network Lab Meeting, Amsterdam, The Netherlands, October 2020. [[Slides]({{ site.url }}/assets/talks/Early-Warning.html)] [[Recording](https://www.youtube.com/watch?v=055Ou_aqKUQ)]
 
-Epidemics, Networks, and Interventions. Talk at the Network Lab Meeting, Amsterdam, The Netherlands, April 2019. [[Slides]({{ site.url }}/assets/talks/Epidemics-Talk.pdf)]
+Epidemics, Networks, and Interventions. Talk at the Network Lab Meeting, Amsterdam, The Netherlands, April 2020. [[Slides]({{ site.url }}/assets/talks/Epidemics-Talk.pdf)]
 
 Anticipating Critical Transitions using Early Warning Signals: Theoretical and Practical Considerations. Invited Talk at the Psychological Methods Kolloquium, Berlin, Germany, December 2019.
 

@@ -719,7 +719,7 @@ res2 <- solve_err(
 par(mar = c(5.1, 3, 4.1, 4))
 plot(
   res[, 1], res[, 2], ylim = c(0, 1), type = 'l', axes = FALSE, lwd = 2,
-  xlab = expression('Time ' ~ tau), ylab = '', main = 'Critical transitions', font.main = 1 
+  xlab = expression('Time ' ~ tau), ylab = '', main = 'Critical transitions and hysteresis', font.main = 1 
 )
 lines(res2[, 1], rev(res2[, 2]), col = grDevices::adjustcolor('grey76', alpha = 0.75), lwd = 2)
 axis(1)

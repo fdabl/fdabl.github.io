@@ -4,6 +4,8 @@ title: ''
 ---
 
 ## Talks
+Anticipating Tipping Points in Psychological Systems. Invited Talk at the Cognitive Science Kolloquium, Osnabrück, Germany, January 2021. [[Slides]({{ site.url }}/assets/talks/Tipping-points.html)]
+
 Anticipating Critical Transitions using Early Warning Signals: Theoretical and Practical Considerations. Talk at the Network Lab Meeting, Amsterdam, The Netherlands, October 2020. [[Slides]({{ site.url }}/assets/talks/Early-Warning.html)] [[Recording](https://www.youtube.com/watch?v=055Ou_aqKUQ)]
 
 Epidemics, Networks, and Interventions. Talk at the Network Lab Meeting, Amsterdam, The Netherlands, April 2020. [[Slides]({{ site.url }}/assets/talks/Epidemics-Talk.pdf)]

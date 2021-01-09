@@ -30,7 +30,7 @@ Node Centrality Measures are a poor substitute for Causal Inference. European Ca
 ## Workshops
 Bayesian Statistics: A Conceptual and Practical Introduction. Workshop at the Complex Systems Summer School, Santa Fe, New Mexico, June 2019. [[Slides]({{ site.url }}/assets/talks/Bayes-Tutorial-Santa-Fe.html)]
 
-Causal Inference: An Introductory Workshop. Invited Workshop at the University of Amsterdam, November 2019. [[Slides]({{ site.url }}/assets/talks/Causal-Lecture.html)]
+Causal Inference: An Introductory Workshop. Invited Workshop at the University of Amsterdam, November 2019.
 
 If you are interested in having me give a workshop on Bayesian statistics or Causal inference, do not hesitate to contact me!
 

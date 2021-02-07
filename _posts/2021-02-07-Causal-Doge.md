@@ -66,7 +66,7 @@ Cool, cool. Dogecoin rose substantially after this avalance of tweets. But again
  
 <img src="/assets/img/2021-02-07-Causal-Doge.Rmd/unnamed-chunk-6-1.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" style="display: block; margin: auto;" />
  
-The average causal effect estimate is a price increase of 23%, with a 95% credible interval between 19% and 28%. There is little delay between the first tweet and the price rise, and Redditors rallying around Dogecoin is not as big of a concern as it was previously. But the counterfactual predictions seem somewhat less convincing than before, reflecting the rather poor correlation between Dogecoin and Bitcoin pre-tweet. The method naturally acounts for uncertainty (for details, see Brodersen et al., [2015](https://projecteuclid.org/euclid.aoas/1430226092)).
+The average causal effect estimate is a price increase of 23%, with a 95% credible interval between 19% and 28% (but note again that this is sensitive to the extent of the post-tweet time period we consider). There is little delay between the first tweet and the price rise, and Redditors rallying around Dogecoin is not as big of a concern as it was previously. But the counterfactual predictions seem somewhat less convincing than before, reflecting the rather poor correlation between Dogecoin and Bitcoin pre-tweet. The method naturally acounts for uncertainty (for details, see Brodersen et al., [2015](https://projecteuclid.org/euclid.aoas/1430226092)).
  
  
 ## Conclusion

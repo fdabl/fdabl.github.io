@@ -79,6 +79,11 @@ The analysis further assumes that Bitcoin prices are not influenced by Musk's tw
 The analysis also assumes that there is no third variable that caused Musk to tweet and Dogecoin to rise, but that strikes me as a reasonable assumption. The guy has 45 million followers, and while I would not trust the precise causal effect estimates we arrived at in this blog post, it seems pretty plausible that he could influence the price of Dogecoin by mere key strokes; which I don't think, by the way, is a good thing.
  
 --- 
+ 
+*I would like to thank [Andrea Bacilieri](https://twitter.com/abacilieri) for very helpful comments on this blog post.
+ 
+--- 
+ 
 ## Post Scriptum
 The code below gets the relevant data sets from [Tiingo](https://www.tiingo.com/) using the *riingo* R package. This requires an API key, but you can download the data from [here](https://fabiandablander.com/assets/data/tesla-data.csv) (for the Tesla re-analysis) and [here](https://fabiandablander.com/assets/data/doge-data-1.csv) and [here](https://fabiandablander.com/assets/data/doge-data-2.csv) (for the two Dogecoin analyses) in case you do not want to create an account.
  

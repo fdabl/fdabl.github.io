@@ -126,7 +126,6 @@ plot(fit, 'original') +
   xlab('Time') +
   ylab('Price ($)') +
   ggtitle('Tweeting about Tesla') +
-  xlim(c(times[1], times[length(times)])) +
   theme(
     axis.text = element_text(size = text_size),
     axis.title = element_text(size = axis_size),
@@ -174,7 +173,10 @@ get_data <- function(start_date, end_date) {
 }
  
 # dat <- get_data(start_date = '2021-01-27', end_date = '2021-01-30')
-dat <- read.csv('https://fabiandablander.com/assets/data/doge-data-1.csv')
+dat <- read.csv('http://fabiandablander.com/assets/data/doge-data-1.csv') %>% 
+  mutate(
+    date = as.POSIXct(date, tz = 'UTC')
+  )
 {% endhighlight %}
  
 The analysis code for the causal effect of the first tweet is shown below.
@@ -183,12 +185,12 @@ The analysis code for the causal effect of the first tweet is shown below.
 {% highlight r %}
 tweets <- as.POSIXct(
   c(
-  '2021-01-29 00:47:00 UTC',
+  '2021-01-28 22:47:00 UTC',
   '2021-02-04 07:29:00 UTC',
   '2021-02-04 08:15:00 UTC',
   '2021-02-04 07:57:00 UTC',
   '2021-02-04 08:27:00 UTC'
-  )
+  ), tz = 'UTC'
 )
  
 fit_model <- function(datsel, tweet_time) {
@@ -228,12 +230,10 @@ The analysis code for the causal effect of the later avalanche of tweets is show
  
 
 {% highlight r %}
-library('httr')
-library('dplyr')
-library('jsonlite')
-library('lubridate')
- 
-dat2 <- read.csv('https://fabiandablander.com/assets/data/doge-data-2.csv')
+dat2 <- read.csv('https://fabiandablander.com/assets/data/doge-data-2.csv') %>% 
+  mutate(
+    date = as.POSIXct(date, tz = 'UTC')
+  )
  
 # Select subset of data for analysis
 start_analysis2 <- as.POSIXct('2021-02-03 12:00:00 UTC', tz = 'UTC')

@@ -13,7 +13,7 @@ published: true
  
 <!-- Two weeks ago I made a couple of hundred bucks in the Dogecoin mania. It was strangely exhilarating to follow, in real-time, how a pump-and-dump scheme evolves. I feel bad because (a) I could have made more, and (b) it's a zero-sum game --- somebody lost money, potentially somebody who needs it more than me. (Just kidding. If you're "investing" in Dogecoin, all bets are off.) -->
  
-If you think of Dogecoin --- the cryptocurrency based on a meme --- you can't help but also think of Elon Musk. That guy loves the doge, and every time he tweets about it, the price goes up. While we all know that [correlation is not causation](https://fabiandablander.com/r/Causal-Inference.html), can we still quantify the causal effect of Elon's past tweets on the price of Dogecoin? That's the question this very serious blog post sets out to answer.
+If you think of Dogecoin --- the cryptocurrency based on a meme --- you can't help but also think of Elon Musk. That guy loves the doge, and every time he tweets about it, the price goes up. While we all know that [correlation is not causation](https://fabiandablander.com/r/Causal-Inference.html), we might still be able to quantify the causal effect of Elon Musk's tweets on the price of Dogecoin. Sounds adventurous? That's because it is! So buckle up before scrolling down.
  
  
 ## Tanking Tesla

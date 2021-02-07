@@ -266,7 +266,7 @@ One could probably come up with a better control by combining several different 
 
 The analysis further assumes that Bitcoin prices are not influenced by Musk's tweets. If they were influenced by them --- say they cause a rise in Bitcoin prices --- then the causal effect on Dogecoin would be downward biased. It seems likely that Musk's tweets, if they were to influence Dogecoin, would also influence Bitcoin (e.g., simply by drawing attention to cryptocurrencies), and so if one were really interested in an unbiased --- or rather, *less biased* --- estimate, one would have to think harder.
 
-Elon Musk has 46 million Twitter followers, and while I would not trust the precise causal effect estimates we arrived at in this blog post, it seems pretty plausible to me that he could influence the price of Dogecoin by mere key strokes. I don't think, by the way, that this is a good thing.
+Elon Musk has 46 million Twitter followers, and while I would not trust the precise causal effect estimates we arrived at in this blog post, it seems pretty plausible to me that he could influence the price of Dogecoin by mere key strokes. I don't think, however, that this is a good thing.
 
 --- 
 

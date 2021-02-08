@@ -23,7 +23,7 @@ Elon Musk is notorious for being able to swing markets. In a [great blog post](h
  
 The vertical dashed line indicates the timing of Elon's tweet, which was around 15:11 UTC, which is 16:11 CET (central European winter time) and 17:11 CEST (central European summer time). The black line gives Tesla's stock price. The blue dashed line gives the model's prediction of Tesla's stock price using the S&P500 as a control (see Brodersen, [2015](https://projecteuclid.org/euclid.aoas/1430226092), for details on the model). We see that, prior to the tweet, the predictions align well with Tesla's actual stock price. The time zone throughout the remainder of this blog post, by the way, is CET.
  
-Using the S&P500, Alex predicted what Tesla's share price would have been had Elon not tweeted. The difference between that prediction and the actual trajectory of Tesla's stock price is an estimate of the causal effect. This assumes that Elon's tweet was the only significant event influencing Tesla's stock price at the time; that it did not influence the S&P500 itself (Tesla was not in the S&P500 back then); that the relationship between Tesla and the S&P500 holds after the post-tweet period; and that there is no hidden variable that caused both Elon to tweet and Tesla to tank. (And, of course, that [counterfactuals make sense](https://twitter.com/fdabl/status/1110944752571158528).)
+Using the S&P500, Alex predicted what Tesla's share price would have been had Elon not tweeted. The difference between that prediction and the actual trajectory of Tesla's stock price is an estimate of the causal effect. This assumes that there were no other events besides Elon's tweet that influenced Tesla's stock price but did not influence the S&SP500 at the time; that the tweet did not influence the S&P500 itself (Tesla was not in the S&P500 back then); that the relationship between Tesla and the S&P500 holds after the post-tweet period; and that there is no hidden variable that caused both Elon to tweet and Tesla to tank. (And, of course, that [counterfactuals make sense](https://twitter.com/fdabl/status/1110944752571158528).)
  
 ## Moonshooting Dogecoin: Part I
 Let's turn to the recent Dogecoin mania. The figure below shows the price of Dogecoin and Bitcoin for a selected period of time (see the *Post Scriptum* for how to get the data).
@@ -51,7 +51,7 @@ Using the wonderful *CausalImpact* R package, we get the following result (see a
  
 We see that the model predicts the price of Dogecoin reasonably well prior to Elon's tweet. The counterfactual Dogecoin price (that is, the price of Dogecoin had Elon not tweeted) is predicted to stay rather flat, while the actual price rises. Yet it does not rise immediately, but with a delay --- maybe because he tweeted in the middle of the night? In any event, Dogecoin showed an average increase of 33% (with a 95% credible interval ranging from 23% to 42%), but note that this estimate naturally depends on the post-tweet time frame we consider. In particular, the previous figure showed that the Dogecoin price dips after the initial increase. Overall, however, it does seem that Elon's tweet had a substantial causal effect on the price of Dogecoin.
  
-Recall that the analysis assumes that Elon Musk's tweet was the only thing of significance happening to Dogecoin at that time. However, Redditors rallied around the cryptocurrency at the same time, very likely confounding the tweet's causal effect. Luckily for us, Elon struck twice.
+Recall that the analysis assumes that there were no other events at the time that selectively influenced Dogecoin but not Bitcoin. However, Redditors rallied around the cryptocurrency at the same time, very likely confounding the tweet's causal effect. Luckily for us, Elon struck twice.
  
 ## Moonshooting Dogecoin: Part II
 A week after the initial frenzy, Musk fired off a series of tweets about Dogecoin. Let's zoom in on the data.
@@ -70,7 +70,7 @@ The average causal effect estimate is a price increase of 23%, with a 95% credib
  
  
 ## Conclusion
-Causal inference always comes with assumptions. Here, we asssumed that there was no significant event that could have influenced the price of Dogecoin at the time of Elon Musk's tweets, and that there is no third variable that caused both Musk to tweet and Dogecoin to rise. These assumptions seem more plausible in the second analysis than in the first.
+Causal inference always comes with assumptions. Here, we asssumed that there was no other event that influenced the price of Dogecoin but not the price of Bitcoin at the time of Elon Musk's tweets, and that there was no third variable that caused both Musk to tweet and Dogecoin to rise. These assumptions seem more plausible in the second analysis than in the first.
  
 We also assumed that Bitcoin prices track Dogecoin prices reasonably well, and that the relation persists after the tweets. One could sanity-check how suitable Bitcoin is as a control by running the analysis on various subsets of the data, and comparing the predicted Dogecoin price with the actual Dogecoin price. But since there is only so much time I want to spend thinking about Dogecoin on a Sunday afternoon, I leave this validation to others.
  

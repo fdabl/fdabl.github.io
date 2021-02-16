@@ -12,8 +12,13 @@ Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;
 
 Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Van Mieghem, P. (under review). The lighting of the BECONs: A behavioral data science approach to tracking interventions in COVID-19 research. [[Link](https://psyarxiv.com/53ey9)]
 
+Blanken, T., Tanis, C., Nauta, F., **Dablander, F.**, Zijlstra, B., Bouten, R., ... & Borsboom, D. (under review). Smart Distance Lab: A new methodology for assessing social distancing interventions. [[Link]](https://osf.io/mjg2f)
+
+Tanis, C., Leach, N., Geiger, S. J., Nauta, F., **Dablander, F.**, van Harreveld, F., ... & Blanken, T. (under review). Smart Distance Lab Art Fair-An experimental data set on social distancing during the COVID-19 pandemic. [[Link]](https://osf.io/86sx7)
+
 ## 2021
 Brown, J., Murray, D., Furlong, K., Coco, E., & **Dablander, F.** (2021). A Breeding Pool of Ideas: Analyzing Interdisciplinary Collaborations at the Complex Systems Summer School. *PLoS One*. [[Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0246260)]
+
 
 ## 2020
 **Dablander, F.** (2020). An Introduction to Causal Inference. [[Link](https://psyarxiv.com/b3fkw)]

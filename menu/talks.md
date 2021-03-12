@@ -4,7 +4,7 @@ title: ''
 ---
 
 ## Talks & Workshops
-Causal Inference: Core Concepts and Causal Discovery. Invited Workshop at the Max Planck School of Cognition, Berlin, Germany, January, 2021.
+Causal Inference: Core Concepts and Causal Discovery. Invited Workshop at the Max Planck School of Cognition, Berlin, Germany, January, 2021. [[Slides]({{ site.url }}/assets/talks/Causal-Workshop-Max-Planck.html)]
 
 Anticipating Tipping Points in Psychological Systems. Invited Talk at the Colloquium of the Institute of Cognitive Science, Osnabrück, Germany, January 2021. [[Slides]({{ site.url }}/assets/talks/Tipping-Points.html)]
 

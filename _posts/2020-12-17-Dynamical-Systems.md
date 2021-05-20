@@ -230,7 +230,7 @@ $$
 where $C$ is the constant of integration, and the potential is defined only up to an additive constant. Notice that $V$ is a function of $x$, rather than a function of time $\tau$. As we will see shortly, $x$ will be the "ball" in the "cup" or landscape that is carved out by the potential $V$. Setting $C = 0$, the potential for the logistic equation with predation is given by:
  
 $$
-V(x) = -\gamma\, \alpha \, \text{tan}^{-1} \left(\frac{x}{\alpha}\right) + \gamma x - \frac{1}{2} x^2 - \frac{1}{3} x^3 \enspace .
+V(x) = -\gamma\, \alpha \, \text{tan}^{-1} \left(\frac{x}{\alpha}\right) + \gamma x - \frac{1}{2} x^2 + \frac{1}{3} x^3 \enspace .
 $$
  
 The figure below visualizes the potentials for three different values of $\gamma$; since the scaling of $V(x)$ is arbitrary, I removed the $y$-axis. The left panel shows the potential for $\gamma = 0.10$, and this corresponds to the case where one unstable fixed point $x^{\star} = 0$ and one stable fixed point at $x^{\star} = 0.89$ exists. We can imagine the population $x$ as a ball in this landscape; if $x = 0$ and we add individuals to the population, then the ball rolls down into the valley whose lowest point is the stable state $x^{\star} = 0.89$.

@@ -13,12 +13,13 @@ Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Va
 
 Blanken, T., Tanis, C., Nauta, F., **Dablander, F.**, Zijlstra, B., Bouten, R., ... & Borsboom, D. (under review). Smart Distance Lab: A new methodology for assessing social distancing interventions. [[Link]](https://osf.io/mjg2f)
 
-Tanis, C., Leach, N., Geiger, S. J., Nauta, F., **Dablander, F.**, van Harreveld, F., ... & Blanken, T. (under review). Smart Distance Lab Art Fair-An experimental data set on social distancing during the COVID-19 pandemic. [[Link]](https://osf.io/86sx7)
 
 ## 2021
 Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (accepted). The Sum of All Fears: Comparing Networks Based on Symptom Sum-Scores. *Psychological Methods*. [[Link](https://psyarxiv.com/3nxu9)]
 
 Brown, J., Murray, D., Furlong, K., Coco, E., & **Dablander, F.** (2021). A Breeding Pool of Ideas: Analyzing Interdisciplinary Collaborations at the Complex Systems Summer School. *PLoS One*. [[Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0246260)]
+
+Tanis, C., Leach, N., Geiger, S. J., Nauta, F., **Dablander, F.**, van Harreveld, F., ... & Blanken, T. (accepted). Smart Distance Lab Art Fair-An experimental data set on social distancing during the COVID-19 pandemic. *Scientific Data* [[Link]](https://osf.io/86sx7)
 
 
 ## 2020

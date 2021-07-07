@@ -8,11 +8,14 @@ title: ''
 
 **Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Ly, A., & Wagenmakers, E.-J. (under review). Default Bayes factors for Testing the (In)equality of Several Population Variances. [[Link](https://arxiv.org/abs/2003.06278)][[R package](https://github.com/fdabl/bfvartest)]
 
+Dekker, M., Blanken, T., **Dablander, F.**, Ou, J., Borsboom, D., & Debabrata, P. (under review). Quantifying agent impacts on contact sequences in social interactions. [[Link](https://arxiv.org/abs/2107.01443)]
+
+Burger, J., Epskamp, S., **Dablander, F.**, Schoevers, R. A., Fried, E. I., & Riese, H. (under review). A clinical PREMISE for personalized models: Towards a formal integration of case formulations and statistical networks. [[Link](https://psyarxiv.com/bdrs7/)]
+
 Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Van Mieghem, P. (under review). The lighting of the BECONs: A behavioral data science approach to tracking interventions in COVID-19 research. [[Link](https://psyarxiv.com/53ey9)]
 
 Blanken, T., Tanis, C., Nauta, F., **Dablander, F.**, Zijlstra, B., Bouten, R., ... & Borsboom, D. (under review). Smart Distance Lab: A new methodology for assessing social distancing interventions. [[Link]](https://osf.io/mjg2f)
 
-Burger, J., Epskamp, S., **Dablander, F.**, Schoevers, R. A., Fried, E. I., & Riese, H. (2021). A clinical PREMISE for personalized models: Towards a formal integration of case formulations and statistical networks. [[Link](https://psyarxiv.com/bdrs7/)]
 
 ## 2021
 Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (accepted). The Sum of All Fears: Comparing Networks Based on Symptom Sum-Scores. *Psychological Methods*. [[Link](https://psyarxiv.com/3nxu9)]

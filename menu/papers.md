@@ -22,7 +22,7 @@ Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;
 
 Brown, J., Murray, D., Furlong, K., Coco, E., & **Dablander, F.** (2021). A Breeding Pool of Ideas: Analyzing Interdisciplinary Collaborations at the Complex Systems Summer School. *PLoS One*. [[Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0246260)]
 
-Tanis, C., Leach, N., Geiger, S. J., Nauta, F., **Dablander, F.**, van Harreveld, F., ... & Blanken, T. (accepted). Smart Distance Lab Art Fair-An experimental data set on social distancing during the COVID-19 pandemic. *Scientific Data* [[Link]](https://osf.io/86sx7)
+Tanis, C., Leach, N., Geiger, S. J., Nauta, F., **Dablander, F.**, van Harreveld, F., ... & Blanken, T. (2021). Smart Distance Lab Art Fair-An experimental data set on social distancing during the COVID-19 pandemic. *Scientific Data* [[Link]](https://www.nature.com/articles/s41597-021-00971-2)
 
 
 ## 2020

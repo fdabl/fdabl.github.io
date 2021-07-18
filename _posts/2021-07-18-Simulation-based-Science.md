@@ -74,7 +74,7 @@ This has implications also for how we organize science, with psychology possibly
  
 To address the climate and ecological crises requires an all-hands-on-deck and thus necessarily interdisciplinary approach. I am glad that places like the Institute for Advanced Study exist, places that are not bound by outdated disciplinary structures and that can foster broad collaborations and coalitions.
  
-I thoroughly enjoyed co-organizing this iteration of the Simulation-based Science colloquium, and I am looking forward to seeing what future organizers will cook up!
+I thoroughly enjoyed co-organizing this iteration of the Simulation-based Science colloquium, and I am excited to see what future organizers will cook up!
  
  
 ----

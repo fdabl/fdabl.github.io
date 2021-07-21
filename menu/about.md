@@ -16,4 +16,7 @@ For my thesis, I stepped out the ivory tower academia can sometimes be and worke
 Besides academic things, I'm thinking about how we can utilize people's quantitative skills for the social good. To that end, I co-founded [CorrelAid Nederland](https://twitter.com/CorrelAidxNL), [Data versus Corona & Strategies versus Corona](https://scienceversuscorona.com/), and am a co-organizer of [DataMission](https://www.meetup.com/DataMission-Data-and-Digital-Technology-for-Humanity/). From 2015 to 2018, I was editor at the [Journal of European Psychology Students](https://jeps.efpsa.org/) where we introduced Registered Reports early on. You can find me [@fdabl](https://twitter.com/fdabl) or email me using my last name dot my first name at gmail dot com.
 
 ---
-The idea behind writing blog posts is mostly to write more and regularly. As the posts will chiefly be about statistical problems or ideas, they presuppose some affinity with mathematics. However, I am trying to make them as accessible as possible, and I hope you find some of them informative!
+
+The contents of this website are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. You are therefore free, for example, to translate any blog posts you found useful into another language and publish them on your own website, as long as you refer to the original post and give appropriate credit. If you choose to do so, I would appreciate an email providing me with a link to the republished material. Thank you!
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />

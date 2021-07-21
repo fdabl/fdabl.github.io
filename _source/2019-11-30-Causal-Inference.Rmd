@@ -377,7 +377,7 @@ $$
 \begin{aligned}
 p(R = 1\mid do(D = 0)) &= \sum_{s} p(R = 1\mid D = 0, S = s) \, p(S = s) \\[.5em]
                     &= p(R = 1\mid D = 0, S = 0) \, p(S = 0) + p(R = 1\mid D = 0, S = 1) \, p(S = 1) \\[.5em]
-                    &= \frac{243}{270} \times \frac{87 + 270}{700} + \frac{55}{80} \times \frac{263 + 80}{700} \\[.5em]
+                    &= \frac{234}{270} \times \frac{87 + 270}{700} + \frac{55}{80} \times \frac{263 + 80}{700} \\[.5em]
                     &\approx 0.782 \enspace .
 \end{aligned}
 $$

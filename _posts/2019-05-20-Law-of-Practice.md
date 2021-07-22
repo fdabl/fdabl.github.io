@@ -143,7 +143,7 @@ $$
 \text{RT}_N \sim \mathcal{N}\left(\alpha + \beta N^{-r}, \sigma_e^2\right) \enspace .
 $$
  
-Note that are not normally distributed; we address this later. We make the same assumption for the exponential model. The following code implements the power law model in Stan.
+Reaction times are known to not be normally distributed, however --- we will address this later. We make the same assumption for the exponential model. The following code implements the power law model in Stan.
  
 
 {% highlight stan %}

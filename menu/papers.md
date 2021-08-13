@@ -4,7 +4,9 @@ title: ''
 ---
 
 ## Submitted / under review
-**Dablander, F.**, Heesterbeek, H., Borsboom, D., & Drake, J.M. (submitted). Overlapping Time Scales Obscure Early Warning Signals of the Second COVID-19 Wave. [[Link](https://www.medrxiv.org/content/10.1101/2021.07.27.21261226v2)]
+**Dablander, F.**, Huth, K., Gronau, Q. F., Etz, A., & Wagenmakers, E.-J. (under review). A Puzzle of Proportions: Two Popular Bayesian Tests Can Yield Dramatically Different Conclusions. [[Link](https://arxiv.org/abs/2108.04909)]
+
+**Dablander, F.**, Heesterbeek, H., Borsboom, D., & Drake, J.M. (under review). Overlapping Time Scales Obscure Early Warning Signals of the Second COVID-19 Wave. [[Link](https://www.medrxiv.org/content/10.1101/2021.07.27.21261226v3)]
 
 **Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (under review). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. [[Link](https://psyarxiv.com/5wc28)]
 

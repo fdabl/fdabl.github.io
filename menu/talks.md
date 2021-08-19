@@ -4,7 +4,9 @@ title: ''
 ---
 
 ## Talks & Workshops
-Causal Inference: Core Concepts and Causal Discovery. Invited Workshop at the Max Planck School of Cognition, Berlin, Germany, January, 2021. [[Slides]({{ site.url }}/assets/talks/Causal-Workshop-Max-Planck.html)]
+Overlapping Time Scales Obscure Early Warning Signals of the Second COVID-19 Wave. Ignite Talk at the Interacting Tipping Elements in the Natural and Social Components of the Earth System Workshop, Bad Belzig, Germany, August, 2021. [[Slides]({{ site.url }}/assets/talks/Covid-EWS-Talk.html)]
+
+Causal Inference: Core Concepts and Causal Discovery. Invited Workshop at the Max Planck School of Cognition, Berlin, Germany, January, 2021. [[Slides]({{ site.url }}/assets/talks/Causal-Workshop-Max-Planck.html)] [[Exercises]({{ site.url }}/assets/talks/Causal-Workshop-Exercises.html)]
 
 Anticipating Tipping Points in Psychological Systems. Invited Talk at the Colloquium of the Institute of Cognitive Science, Osnabrück, Germany, January 2021. [[Slides]({{ site.url }}/assets/talks/Tipping-Points.html)]
 
@@ -28,6 +30,8 @@ Validating Driver Profiles in the Mercedes-Benz driving simulation. Invited Talk
 
 
 ## Posters
+Overlapping Time Scales Obscure Early Warning Signals of the Second COVID-19 Wave. Interacting Tipping Elements in the Natural and Social Components of the Earth System Workshop, Bad Belzig, Germany, August, 2021. [[Link]({{ site.url }}/assets/posters/PIK-Poster-2021.pdf)]
+
 A Breeding Pool of Ideas: Analyzing Interdisciplinary Collaborations at the Complex Systems Summer School. NetSci, Rome, Italy, September 2020. [[Link]({{ site.url }}/assets/posters/NetSci-Poster-2020.pdf)]
 
 Default Bayes Factor for Testing the (In)equality of Several Population Variances. O'Bayes, Warwick, United Kingdom, June 2019. [[Link]({{ site.url }}/assets/posters/OBayes-Poster-2019.pdf)]

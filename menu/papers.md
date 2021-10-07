@@ -8,8 +8,6 @@ title: ''
 
 **Dablander, F.**, Heesterbeek, H., Borsboom, D., & Drake, J.M. (under review). Overlapping Time Scales Obscure Early Warning Signals of the Second COVID-19 Wave. [[Link](https://www.medrxiv.org/content/10.1101/2021.07.27.21261226v3)]
 
-**Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (under review). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. [[Link](https://psyarxiv.com/5wc28)]
-
 **Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Ly, A., & Wagenmakers, E.-J. (under review). Default Bayes factors for Testing the (In)equality of Several Population Variances. [[Link](https://arxiv.org/abs/2003.06278)][[R package](https://github.com/fdabl/bfvartest)]
 
 Dekker, M., Blanken, T., **Dablander, F.**, Ou, J., Borsboom, D., & Debabrata, P. (under review). Quantifying agent impacts on contact sequences in social interactions. [[Link](https://arxiv.org/abs/2107.01443)]
@@ -20,6 +18,8 @@ Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Va
 
 
 ## 2021
+**Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (accepted). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. *Psychological Methods*. [[Link](https://psyarxiv.com/5wc28)]
+
 Blanken, T., Tanis, C., Nauta, F., **Dablander, F.**, Zijlstra, B., Bouten, R., ... & Borsboom, D. (in press). Smart Distance Lab: A new methodology for assessing social distancing interventions. *Scientific Report*. [[Link]](https://osf.io/mjg2f)
 
 Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (in press). The Sum of All Fears: Comparing Networks Based on Symptom Sum-Scores. *Psychological Methods*. [[Link](https://psyarxiv.com/3nxu9)]

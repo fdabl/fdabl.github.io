@@ -11,7 +11,7 @@ published: true
  
 
  
-*This blog post was originally published on July $22^{\text{th}}$, but was updated on August $9^{\text{th}}$ to compare the risks of partying in Amsterdam, Barcelona, and London using the most recent coronavirus case numbers.*
+*This blog post was originally published on July $22^{\text{th}}$ 2020, but was updated on August $9^{\text{th}}$ 2020 to compare the risks of partying in Amsterdam, Barcelona, and London using the most recent coronavirus case numbers.*
  
 There is no doubt that, every now and then, one ought to celebrate life. This usually involves people coming together, talking, laughing, dancing, singing, shouting; simply put, it means throwing a party. With temperatures rising, summer offers all the more incentive to organize such a joyous event. Blinded by the light, it is easy to forget that we are, unfortunately, still in a pandemic. But should that really deter us?
  
@@ -19,7 +19,7 @@ Walking around central Amsterdam after sunset, it is easy to notice that not eve
  
 Government retorts by shifting perspective: while the chances of virus spreading at any one party may indeed be small, this does not licence throwing it. Otherwise many parties would mushroom, considerably increasing the chances of virus spread. Indeed, government stresses, this is why such parties remain *illegal*.
  
-But while *if-everybody-did-what-you-did* type of arguments score high with parents, they usually do no score high with their children. So instead, in this post, we ask the question from an individual's perspective: what are the chances of getting the virus after attending this or that party? And what factors make this more or less likely?
+But while *if-everybody-did-what-you-did* type of arguments score high with parents, they usually do not score high with their children. So instead, in this post, we ask the question from an individual's perspective: what are the chances of getting the virus after attending this or that party? And what factors make this more or less likely?
  
 As a disclaimer, I should say that I am not an epidemiologist --- who, by the way, are a [more cautious bunch](https://www.nytimes.com/interactive/2020/06/08/upshot/when-epidemiologists-will-do-everyday-things-coronavirus.html) than I or the majority of my age group --- and so my assessment of the evidence may not agree with expert opinion. With that out of the way, and without further ado, let's dive in.
  
@@ -70,9 +70,9 @@ get_undercount(c('Spain', 'United Kingdom'), c(5.5, 5.10))
 {% highlight text %}
 ## # A tibble: 2 x 6
 ##   id    population total_cases attack_rate reported_attack_rate undercount_factor
-##   <chr>      <int>       <dbl>       <dbl>                <dbl>             <dbl>
+##   <chr>      <int>       <int>       <dbl>                <dbl>             <dbl>
 ## 1 ESP     46796540      218011         5.5                0.466              11.8
-## 2 GBR     66460344      191843         5.1                0.289              17.7
+## 2 GBR     66460344      190584         5.1                0.287              17.8
 {% endhighlight %}
  
 The table above shows that cases were undercounted by a factor of about $12$ in Spain and $18$ in the UK. The Netherlands undercounted cases by a factor of about $10$ in April (Luc Coffeng, personal communication). The attack rate estimate for Spain is confirmed by a recent seroprevalence study, which finds a similarly low overall proportion of people who have developed antibodies (around $5\%$, with substantial geographical variability) in the period between April $27^{\text{th}}$ and May $11^{\text{th}}$ (Pollán et al. [2020](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31483-5)). In another seroprevalence study, Havers et al. [2020](https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2768834) find that between March $23^{\text{rd}}$ and May $12^{\text{nd}}$, reported cases from several areas in the United States undercounted true infections by a factor between $6$ and $24$.
@@ -114,10 +114,10 @@ Take Rome and Berlin, for example. From July $22^{\text{nd}}$ to August $4^{\tex
 
 {% highlight text %}
 ##     Rome London Berlin Amsterdam Barcelona
-## 10  0.24   0.63   0.78      3.18      9.73
-## 25  0.60   1.57   1.93      7.76     22.58
-## 50  1.20   3.12   3.83     14.91     40.07
-## 100 2.38   6.14   7.52     27.60     64.08
+## 10  0.24   0.64   0.79      3.18      9.73
+## 25  0.60   1.59   1.95      7.76     22.58
+## 50  1.20   3.16   3.86     14.91     40.07
+## 100 2.38   6.22   7.58     27.60     64.08
 {% endhighlight %}
  
 While we have computed the party risk for a single party, this risk naturally increases when you attend multiple ones. Suppose you have been invited to parties of size $20$, $35$, and $50$ which will take place in the next month. Let's for simplicity assume that all guests are different each time. Let's further assume that the number of infectious cases stays constant over the next month. Together, these assumptions allow us to calculate the *total* party risk as the party risk of attending a single party of size $20 + 35 + 50 = 105$, which gives a considerable risk of $6.37\%$ for London, a whopping $28.76\%$ for Amsterdam, and a crippling $65.87\%$ for Barcelona. It seems that, in this case, fortune does not favour the bold.
@@ -224,7 +224,8 @@ data <- jsonlite::fromJSON(json_text)$data
 # From 22nd July to 4th August
 london_dat <- data %>% 
   filter(
-    date >= '2020-07-22', date <= '2020-08-04'
+    # date >= '2020-07-22', date <= '2020-08-04'
+    date >= '2020-08-03', date <= '2020-08-16'
   )
  
 london_total_cases <- sum(london_dat$newCases)
@@ -232,12 +233,12 @@ london_cases <- london_total_cases / 89.82000 # per 100,000 inhabitants
  
  
 # From https://www.rivm.nl/en/novel-coronavirus-covid-19/current-information
-amsterdam_cases <- 64.5
-amsterdam_total_cases <- 563
+amsterdam_cases <- 162.5
+amsterdam_total_cases <- 1418
  
  
 # https://dadescovid.cat/diari?drop_es_residencia=2&tipus=regio&id_html=ambit_2&codi=13
-barcelona_total_cases <- 1502 + 1745
+barcelona_total_cases <- 1390 + 1491
 barcelona_total_cases <- sum(
   c(235, 263, 63, 82, 302, 327, 279, 279, 353, 71, 99, 314, 307, 327)
 )
@@ -276,7 +277,7 @@ c(rome_cases, london_cases, berlin_cases, amsterdam_cases, barcelona_cases)
 
 
 {% highlight text %}
-## [1]   4.821241  12.669784  15.625435  64.500000 203.722298
+## [1]   4.821241  17.189935  15.758079 162.500000 203.722298
 {% endhighlight %}
  
 ### Figure
@@ -366,16 +367,16 @@ plot_total_risk(
  
 lwd <- 1.5
 lines(c(london_cases * 5, london_cases * 5), c(0, 300), lty = 2)
-arrows(122, 160, 68, 130, length = 0.10, lwd = lwd)
-text(135, 167, 'London', cex = 1.50)
+arrows(150, 160, 90, 130, length = 0.10, lwd = lwd)
+text(155, 167, 'London', cex = 1.50)
  
 lines(c(amsterdam_cases * 5, amsterdam_cases * 5), c(0, 300), lty = 2)
-arrows(390, 200, 330, 170, length = 0.10, lwd = lwd)
-text(412, 207, 'Amsterdam', cex = 1.50)
+arrows(725, 90, 800, 125, length = 0.10, lwd = lwd)
+text(725, 85, 'Amsterdam', cex = 1.50)
  
 lines(c(barcelona_cases * 5, barcelona_cases * 5), c(0, 500), lty = 2)
-arrows(950, 167, 1012, 130, length = 0.10, lwd = lwd)
-text(946, 173, 'Barcelona', cex = 1.50)
+arrows(955, 167, 900, 130, length = 0.10, lwd = lwd)
+text(970, 173, 'Barcelona', cex = 1.50)
 {% endhighlight %}
  
 ### Table
@@ -405,10 +406,10 @@ round(tab * 100, 2)
 
 {% highlight text %}
 ##     Rome London Berlin Amsterdam Barcelona
-## 10  0.24   0.63   0.78      3.18      9.73
-## 25  0.60   1.57   1.93      7.76     22.58
-## 50  1.20   3.12   3.83     14.91     40.07
-## 100 2.38   6.14   7.52     27.60     64.08
+## 10  0.24   0.86   0.79      7.83      9.73
+## 25  0.60   2.13   1.95     18.45     22.58
+## 50  1.20   4.21   3.86     33.50     40.07
+## 100 2.38   8.24   7.58     55.77     64.08
 {% endhighlight %}
  
 ---

@@ -4,6 +4,9 @@ title: ''
 ---
 
 ## Talks & Workshops
+Learning to See and Act in the Era of Climate Breakdown. Workshop at the University of Amsterdam, October, 2021. [[Slides]({{ site.url }}/assets/talks/Climate-Workshop.pdf)]
+
+
 Overlapping Time Scales Obscure Early Warning Signals of the Second COVID-19 Wave. Ignite Talk at the Interacting Tipping Elements in the Natural and Social Components of the Earth System Workshop, Bad Belzig, Germany, August, 2021. [[Slides]({{ site.url }}/assets/talks/Covid-EWS-Talk.html)]
 
 Causal Inference: Core Concepts and Causal Discovery. Invited Workshop at the Max Planck School of Cognition, Berlin, Germany, January, 2021. [[Slides]({{ site.url }}/assets/talks/Causal-Workshop-Max-Planck.html)] [[Exercises]({{ site.url }}/assets/talks/Causal-Workshop-Exercises.html)]

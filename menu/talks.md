@@ -4,8 +4,11 @@ title: ''
 ---
 
 ## Talks & Workshops
-Learning to See and Act in the Era of Climate Breakdown. Workshop at the University of Amsterdam, October, 2021. [[Slides]({{ site.url }}/assets/talks/Climate-Workshop.pdf)]
+Understanding and Preventing Climate Breakdown. Workshop for CorrelAid Netherlands, November, 2021. [[Slides]({{ site.url }}/assets/talks/Climate-Workshop.pdf)]
 
+Anticipating Tipping Points in Dynamical Systems. Invited Talk at Radboud University, The Netherlands, November 2021.
+
+Understanding and Preventing Climate Breakdown. Workshop at the University of Amsterdam, October, 2021.
 
 Overlapping Time Scales Obscure Early Warning Signals of the Second COVID-19 Wave. Ignite Talk at the Interacting Tipping Elements in the Natural and Social Components of the Earth System Workshop, Bad Belzig, Germany, August, 2021. [[Slides]({{ site.url }}/assets/talks/Covid-EWS-Talk.html)]
 

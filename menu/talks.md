@@ -4,7 +4,7 @@ title: ''
 ---
 
 ## Talks & Workshops
-Understanding and Preventing Climate Breakdown. Workshop for CorrelAid Netherlands, November, 2021. [[Slides]({{ site.url }}/assets/talks/Climate-Workshop.pdf)]
+Understanding and Preventing Climate Breakdown. Workshop for CorrelAid Netherlands, November, 2021. [[Slides]({{ site.url }}/assets/talks/Climate-Workshop.pdf)] [[Recording](https://www.youtube.com/watch?v=aYEFV4feVBs)]
 
 Anticipating Tipping Points in Dynamical Systems. Invited Talk at Radboud University, The Netherlands, November 2021.
 

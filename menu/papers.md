@@ -4,8 +4,6 @@ title: ''
 ---
 
 ## Submitted / under review
-**Dablander, F.**, Huth, K., Gronau, Q. F., Etz, A., & Wagenmakers, E.-J. (under review). A Puzzle of Proportions: Two Popular Bayesian Tests Can Yield Dramatically Different Conclusions. [[Link](https://arxiv.org/abs/2108.04909)]
-
 **Dablander, F.**, Heesterbeek, H., Borsboom, D., & Drake, J.M. (under review). Overlapping Time Scales Obscure Early Warning Signals of the Second COVID-19 Wave. [[Link](https://www.medrxiv.org/content/10.1101/2021.07.27.21261226v3)]
 
 **Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Ly, A., & Wagenmakers, E.-J. (under review). Default Bayes factors for Testing the (In)equality of Several Population Variances. [[Link](https://arxiv.org/abs/2003.06278)][[R package](https://github.com/fdabl/bfvartest)]
@@ -18,6 +16,8 @@ Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Va
 
 
 ## 2021
+**Dablander, F.**, Huth, K., Gronau, Q. F., Etz, A., & Wagenmakers, E.-J. (accepted). A Puzzle of Proportions: Two Popular Bayesian Tests Can Yield Dramatically Different Conclusions. *Statistics in Medicine*. [[Link](https://arxiv.org/abs/2108.04909)]
+
 **Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (accepted). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. *Psychological Methods*. [[Link](https://psyarxiv.com/5wc28)]
 
 Blanken, T., Tanis, C., Nauta, F., **Dablander, F.**, Zijlstra, B., Bouten, R., ... & Borsboom, D. (in press). Smart Distance Lab: A new methodology for assessing social distancing interventions. *Scientific Report*. [[Link]](https://osf.io/mjg2f)

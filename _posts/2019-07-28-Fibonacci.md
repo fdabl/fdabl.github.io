@@ -93,7 +93,7 @@ The first 30 Fibonacci numbers are: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 2
  
 This is a rapid increase, as made apparent by the left Figure below. The Figure on the right shows that there is structure in how the sequence grows.
  
-<img src="/assets/img/2019-07-28-Fibonacci.Rmd/unnamed-chunk-8-1.png" title="plot of chunk unnamed-chunk-8" alt="plot of chunk unnamed-chunk-8" style="display: block; margin: auto;" />
+<img src="/assets/img/2019-07-28-Fibonacci.Rmd/unnamed-chunk-4-1.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" style="display: block; margin: auto;" />
  
 We will return to the structure in growth at the end of the blog post. First, we need to derive a closed-form expression of the $n^{th}$ Fibonacci number. In the next section, we take a step towards that by realizing that diagonal matrices make for easier computations.
  
@@ -434,8 +434,7 @@ print(fib_closed(seq(30)))
 
 
 {% highlight text %}
-##  [1]      1      1      2      3      5      8     13     21     34     55
-## [11]     89    144    233    377    610    987   1597   2584   4181   6765
+##  [1]      1      1      2      3      5      8     13     21     34     55     89    144    233    377    610    987   1597   2584   4181   6765
 ## [21]  10946  17711  28657  46368  75025 121393 196418 317811 514229 832040
 {% endhighlight %}
  
@@ -493,7 +492,7 @@ There are various [generalizations](https://en.wikipedia.org/wiki/Generalization
 In this blog post, we have taken a detailed look at the Fibonacci sequence. In particular, we saw that it is the answer to a puzzle about procreating rabbits, and how to speed up a recursive algorithm for finding the $n^{th}$ Fibonacci number. We then used ideas from linear algebra to arrive at a closed-form expression of the $n^{th}$ Fibonacci number. Specifically, we have noted that the Fibonacci sequence is a linear recurrence relation --- it can be viewed as repeatedly applying a linear map. With this insight, we observed that the matrix of the linear map is non-diagonal, which makes repeated execution tedious; diagonal matrices, on the other hand, are easy to multiply. We arrived at a diagonal matrix by changing the basis from the standard basis to the basis of eigenvectors, which led to a diagonal matrix of eigenvalues for the linear map. With this representation, the $n^{th}$ Fibonacci number is available in closed-form. In order to get it into the standard basis, we had to change basis back from the eigenbasis. We also saw how the Fibonacci numbers relate to the golden ratio $\phi$.
  
 ---
-I would like to thank Don van den Bergh, Jonas Haslbeck, and Sophia Crüwell for helpful comments on this blog post.
+*I would like to thank Don van den Bergh, Jonas Haslbeck, and Sophia Crüwell for helpful comments on this blog post.*
  
 ---
  

@@ -490,7 +490,7 @@ There are various [generalizations](https://en.wikipedia.org/wiki/Generalization
 In this blog post, we have taken a detailed look at the Fibonacci sequence. In particular, we saw that it is the answer to a puzzle about procreating rabbits, and how to speed up a recursive algorithm for finding the $n^{th}$ Fibonacci number. We then used ideas from linear algebra to arrive at a closed-form expression of the $n^{th}$ Fibonacci number. Specifically, we have noted that the Fibonacci sequence is a linear recurrence relation --- it can be viewed as repeatedly applying a linear map. With this insight, we observed that the matrix of the linear map is non-diagonal, which makes repeated execution tedious; diagonal matrices, on the other hand, are easy to multiply. We arrived at a diagonal matrix by changing the basis from the standard basis to the basis of eigenvectors, which led to a diagonal matrix of eigenvalues for the linear map. With this representation, the $n^{th}$ Fibonacci number is available in closed-form. In order to get it into the standard basis, we had to change basis back from the eigenbasis. We also saw how the Fibonacci numbers relate to the golden ratio $\phi$.
 
 ---
-I would like to thank Don van den Bergh, Jonas Haslbeck, and Sophia Crüwell for helpful comments on this blog post.
+*I would like to thank Don van den Bergh, Jonas Haslbeck, and Sophia Crüwell for helpful comments on this blog post.*
 
 ---
 

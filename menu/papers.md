@@ -4,7 +4,7 @@ title: ''
 ---
 
 ## Submitted / under review
-**Dablander, F.**, Heesterbeek, H., Borsboom, D., & Drake, J.M. (under review). Overlapping Time Scales Obscure Early Warning Signals of the Second COVID-19 Wave. [[Link](https://www.medrxiv.org/content/10.1101/2021.07.27.21261226v3)]
+**Dablander, F.**, Heesterbeek, H., Borsboom, D., & Drake, J.M. (under review). Overlapping Time Scales Obscure Early Warning Signals of the Second COVID-19 Wave. [[Link](https://www.medrxiv.org/content/10.1101/2021.07.27.21261226v4)]
 
 **Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Ly, A., & Wagenmakers, E.-J. (under review). Default Bayes factors for Testing the (In)equality of Several Population Variances. [[Link](https://arxiv.org/abs/2003.06278)][[R package](https://github.com/fdabl/bfvartest)]
 

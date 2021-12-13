@@ -16,7 +16,7 @@ Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Va
 
 
 ## 2021
-**Dablander, F.**, Huth, K., Gronau, Q. F., Etz, A., & Wagenmakers, E.-J. (accepted). A Puzzle of Proportions: Two Popular Bayesian Tests Can Yield Dramatically Different Conclusions. *Statistics in Medicine*. [[Link](https://arxiv.org/abs/2108.04909)]
+**Dablander, F.**, Huth, K., Gronau, Q. F., Etz, A., & Wagenmakers, E.-J. (2021). A Puzzle of Proportions: Two Popular Bayesian Tests Can Yield Dramatically Different Conclusions. *Statistics in Medicine*. [[Link](https://onlinelibrary.wiley.com/doi/10.1002/sim.9278)]
 
 **Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (accepted). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. *Psychological Methods*. [[Link](https://psyarxiv.com/5wc28)]
 

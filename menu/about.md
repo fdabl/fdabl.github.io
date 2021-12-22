@@ -11,9 +11,9 @@ title:
 I began my academic journey in Graz, Austria, where I studied Psychology and Philosophy. Dissatisfied with both, I looked for a more formal way to study the human mind and behaviour and ended up in Tübingen, Germany, pursuing a Masters degree in Cognitive Science.
 
 
-For my thesis, I stepped out the ivory tower academia can sometimes be and worked with a car company on evaluating artificial driver models in their traffic simulation. While that was fun, academia is fun too, and so I started a PhD at the Department of Psychological Methods, University of Amsterdam, in December 2017. Broadly speaking, I am working on topics related to Bayesian inference and testing, causal inference, and dynamical systems.
+For my thesis, I stepped out the ivory tower academia can sometimes be and worked with a car company on evaluating artificial driver models in their traffic simulation. While that was fun, academia is fun too, and so I started a PhD at the Department of Psychological Methods, University of Amsterdam, in December 2017. Broadly speaking, I am working on topics related to Bayesian inference and testing, networks, causal inference, and dynamical systems.
 
-Besides academic things, I'm thinking about how we can utilize people's quantitative skills for the social good. To that end, I co-founded [CorrelAid Nederland](https://twitter.com/CorrelAidxNL), [Data versus Corona & Strategies versus Corona](https://scienceversuscorona.com/), and am a co-organizer of [DataMission](https://www.meetup.com/DataMission-Data-and-Digital-Technology-for-Humanity/). From 2015 to 2018, I was editor at the [Journal of European Psychology Students](https://jeps.efpsa.org/) where we introduced Registered Reports early on. You can find me [@fdabl](https://twitter.com/fdabl) or email me using my last name dot my first name at gmail dot com.
+Besides academic things, I am thinking about how we can utilize people's quantitative skills for the social good. To that end, I co-founded [CorrelAid Nederland](https://twitter.com/CorrelAidxNL) and [Data & Strategies versus Corona](https://scienceversuscorona.com/). I am also deeply concerned about the [climate emergency](https://fabiandablander.com/menu/climate.html). You can find me [@fdabl](https://twitter.com/fdabl) or email me using my last name dot my first name at gmail dot com.
 
 ---
 

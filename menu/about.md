@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title: 'About'
 ---
 
 <div style='float: right; padding-left: 10px' >

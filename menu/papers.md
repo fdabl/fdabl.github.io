@@ -57,7 +57,6 @@ Edelsbrunner, P. A., & **Dablander, F.** (2019). The Psychometric Modeling of Sc
 
 Marsman, M., Waldorp, L., **Dablander, F.**, & Wagenmakers, E. J. (2019). Bayesian estimation of explained variance in ANOVA designs. *Statistica Neerlandica, 73*(3), 351-372. [[Link](https://onlinelibrary.wiley.com/doi/full/10.1111/stan.12173)]
 
-
 ## 2018
 **Dablander, F.**, van den Bergh, D., & Wagenmakers, E. J. (2018). Another Paradox? A Comment on Lindley (1997). *PsyArXiv* [[Link](https://psyarxiv.com/gzj5t/)]
 

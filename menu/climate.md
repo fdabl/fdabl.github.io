@@ -29,19 +29,19 @@ I will try to add to this list going forward, and I hope that some things are us
 - [Doughnut Economics](https://www.goodreads.com/book/show/29214420-doughnut-economics)
     - Kate Raworth moves beyond the suffocating corset of mainstream economics and provides a framework for (actually) sustainable development in the 21$^{\text{th}}$ century. A must read!
 - [The Nutmeg's Curse](https://press.uchicago.edu/ucp/books/book/chicago/N/bo125517349.html)
-    - In this wide-ranging and very insightful book, Amitav Ghosh traces the climate crisis back to colonialism, imperialism, and a mechanistic view of nature where it exists only as a resource to be exploited. You might also enjoy [this interview](https://emergencemagazine.org/interview/beings-seen-and-unseen/) with him.
+    - In this wide-ranging and very insightful book, Amitav Ghosh traces the climate crisis back to colonialism, imperialism, and a mechanistic view of nature where it exists only as a resource to be exploited. If you want the bigger picture, this may be it. You might also enjoy [this interview](https://emergencemagazine.org/interview/beings-seen-and-unseen/) with him.
 - [This is an Uprising](https://www.goodreads.com/book/show/25273749-this-is-an-uprising)
     - This is an excellent introduction to the history, rationale, and power of non-violent direct action. The book gives lots of examples and case studies and makes you hopeful that we might, in fact, make it.
 - [How to Blow Up a Pipeline](https://www.goodreads.com/en/book/show/51686708-how-to-blow-up-a-pipeline)
     - Andreas Malm provides a convincing counter-narrative to the story that non-violent direct action is the key to success, noting the importance of sabotage, property destruction, and the threat of violence. You might also enjoy [this interview](https://www.vox.com/vox-conversations-podcast/22691428/vox-conversations-climate-change-andreas-malm) with him.
 - [On Fire](https://www.goodreads.com/en/book/show/43821569-on-fire)
-    - A collection of excellent essays, ranging from BP's devastating oil spill in 2010 to the ascent of the Green New Deal in 2019. As Greta Thunberg notes, Naomi Klein is "the great chronicler of our age, an inspirer of generations."
+    - A collection of excellent essays, with topics ranging from BP's devastating oil spill in 2010 to the ascent of the Green New Deal in 2019. As Greta Thunberg notes, Naomi Klein is "the great chronicler of our age, an inspirer of generations."
 - [The Future We Choose](https://www.goodreads.com/book/show/52117860-the-future-we-choose)
     - Christiana Figueres and Tom Rivett-Carnac, key architects of the Paris agreement, outline two futures and sketch how we can get onto the much better one.
 - [The New Climate War](https://www.goodreads.com/book/show/53441709-the-new-climate-war?from_search=true&from_srp=true&qid=pe4Sd1PDfO&rank=1)
     - World-renowned climate scientist Michael Mann has been on the frontlines ever since the publication of the ["hockey stick"](https://en.wikipedia.org/wiki/Hockey_stick_graph). The enemy's strategy has shifted from denial to delay, and Mann — using his experience and expertise — tells us how to stay alert. You might also enjoy [this interview](https://www.preposterousuniverse.com/podcast/2019/09/23/65-michael-mann-on-why-our-climate-is-changing-and-how-we-know/) with him.
 - [Merchants of Doubt](https://www.goodreads.com/book/show/7799004-merchants-of-doubt)
-    - This is one of the best and most sobering books I have ever read. Beware of science (and scientists) mobilized by ideology. There exists a [documentary](https://www.documentarymania.com/player.php?title=Merchants%20of%20Doubt) of the same name, and you might also enjoy [this interview](https://www.preposterousuniverse.com/podcast/2019/02/04/episode-33-naomi-oreskes-on-climate-change-and-the-distortion-of-scientific-facts/) with Naomi Oreskes.
+    - This is one of the best and most sobering books I have ever read. Beware of science (and scientists) motivated by ideology. There exists a [documentary](https://www.documentarymania.com/player.php?title=Merchants%20of%20Doubt) of the same name, and you might also enjoy [this interview](https://www.preposterousuniverse.com/podcast/2019/02/04/episode-33-naomi-oreskes-on-climate-change-and-the-distortion-of-scientific-facts/) with Naomi Oreskes.
 - [Thinking in Systems](https://www.goodreads.com/book/show/3828902-thinking-in-systems)
     - "There’s so much talk about the system. And so little understanding." This book is a real classic, thought-provoking and full of insights. It also includes Donella Meadows's [famous essay on leverage points](https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/). A book that deserves to be re-read from time to time.
 - [Think Like a Commoner](http://thinklikeacommoner.com/)
@@ -76,7 +76,7 @@ I will try to add to this list going forward, and I hope that some things are us
 
 ## News / Newsletter
 - [CarbonBrief](https://www.carbonbrief.org/)
-    - I cannot overstate my gratitude and appreciation for the team over at CarbonBrief. CarbonBrief is hands-down the best resource on climate; their in-depth Q&As and explainers (see for example [here](https://www.carbonbrief.org/in-depth-qa-the-ipccs-sixth-assessment-report-on-climate-science), [here](https://www.carbonbrief.org/qa-how-integrated-assessment-models-are-used-to-study-climate-change), [here](https://www.carbonbrief.org/qa-how-do-climate-models-work), [here](https://www.carbonbrief.org/explainer-nine-tipping-points-that-could-be-triggered-by-climate-change), and [here](https://www.carbonbrief.org/in-depth-qa-what-is-climate-justice)) are invaluable.
+    - I cannot begin to express my gratitude and appreciation for the team over at CarbonBrief. CarbonBrief is hands-down the best resource on climate; their in-depth Q&As and explainers (see for example [here](https://www.carbonbrief.org/in-depth-qa-the-ipccs-sixth-assessment-report-on-climate-science), [here](https://www.carbonbrief.org/qa-how-integrated-assessment-models-are-used-to-study-climate-change), [here](https://www.carbonbrief.org/qa-how-do-climate-models-work), [here](https://www.carbonbrief.org/explainer-nine-tipping-points-that-could-be-triggered-by-climate-change), and [here](https://www.carbonbrief.org/in-depth-qa-what-is-climate-justice)) are invaluable.
 - [Mongabay](https://www.mongabay.com/)
     - Excellent news source on environmental and related issues internationally.
 - [Inside Climate News](https://insideclimatenews.org/)
@@ -96,7 +96,7 @@ I will try to add to this list going forward, and I hope that some things are us
 - [David Attenborough: A Life on Our Planet](https://www.imdb.com/title/tt11989890/)
     - This film is a beautiful meditation on planet Earth and its many wonders, told through the life of the world's best known naturalist. Deeply moving.
 - [Tomorrow](https://www.tomorrow-documentary.com/)
-    - This is a wonderful documentary sketching a better tomorrow, showing that films on sustainability can lift your spirits!
+    - This is a wonderful documentary showing solutions and sketching a path towards a better tomorrow, demonstrating that films on sustainability can lift your spirits. Highly recommended!
 - [2040](https://whatsyour2040.com/)
     - Another informative and uplifting documentary.
 - [LN3: Teachings of the Anishinaabe Resistance](https://www.stopline3.org/ln3film-video)

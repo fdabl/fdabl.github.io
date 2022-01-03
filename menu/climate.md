@@ -37,6 +37,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - This is an excellent introduction to the history, rationale, and power of non-violent direct action. The book gives lots of examples and case studies and makes you hopeful that we might, in fact, make it.
 - [How to Blow Up a Pipeline](https://www.goodreads.com/en/book/show/51686708-how-to-blow-up-a-pipeline)
     - Andreas Malm provides a convincing counter-narrative to the story that non-violent direct action is the key to success, noting the importance of sabotage, property destruction, and the threat of violence. You might also enjoy [this interview](https://www.vox.com/vox-conversations-podcast/22691428/vox-conversations-climate-change-andreas-malm) with him.
+- [A Bigger Picture](https://www.goodreads.com/book/show/56817598-a-bigger-picture)
+    - In this powerful memoir, Vanessa Nakate recounts how she became an activist, only to be cropped out by Western media. Nakate describes climate impacts and climate action in Africa,arguing that a successful climate movement must center justice and be inclusive. A very informative, insightful, and inspiring read!
 - [On Fire](https://www.goodreads.com/en/book/show/43821569-on-fire)
     - A collection of excellent essays, with topics ranging from BP's devastating oil spill in 2010 to the ascent of the Green New Deal in 2019. As Greta Thunberg notes, Naomi Klein is "the great chronicler of our age, an inspirer of generations."
 - [The Future We Choose](https://www.goodreads.com/book/show/52117860-the-future-we-choose)
@@ -53,6 +55,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - [Degrowth](https://www.tandfonline.com/doi/full/10.1080/14747731.2020.1812222) is an eminently sensible proposal [worthy of discussion](https://onlinelibrary.wiley.com/doi/full/10.1111/dpr.12584) and consideration. Jason Hickel, a leading proponent, compellingly argues for it in this well-written, wide-ranging, and thought-provoking book. Highly recommended!
 - [The Divide](https://www.goodreads.com/book/show/32603498-the-divide)
     - This is an excellent book on global inequality, which makes you see the world in a different way.
+- [Post Growth: Life after Capitalism](https://www.goodreads.com/en/book/show/55404479-post-growth)
+    - Lyrical meditation hinting at what the economy — and life — could be like, told through biographical sketches of giants such as John Stuart Mill, Hannah Arendt, and Wangari Maathai. Less concrete than I had hoped given the title, but insightful nonetheless.
 - [Revolutions That Made the Earth](https://oxford.universitypressscholarship.com/view/10.1093/acprof:oso/9780199587049.001.0001/acprof-9780199587049)
     - Mother Earth has experienced a number of key revolutions that made her what she is today. This extremely informative and wide-ranging book — covering "terrain that ranges in difficulty from easy to strenuous" — will make you feel more connected to the only planet known to inhabit life.
 - [Earth System Science: A Very Short Introduction](https://global.oup.com/academic/product/earth-system-science-a-very-short-introduction-9780198718871?cc=de&lang=en&)

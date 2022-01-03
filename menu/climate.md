@@ -38,7 +38,7 @@ I will try to add to this list going forward, and I hope that some things are us
 - [How to Blow Up a Pipeline](https://www.goodreads.com/en/book/show/51686708-how-to-blow-up-a-pipeline)
     - Andreas Malm provides a convincing counter-narrative to the story that non-violent direct action is the key to success, noting the importance of sabotage, property destruction, and the threat of violence. You might also enjoy [this interview](https://www.vox.com/vox-conversations-podcast/22691428/vox-conversations-climate-change-andreas-malm) with him.
 - [A Bigger Picture](https://www.goodreads.com/book/show/56817598-a-bigger-picture)
-    - In this powerful memoir, Vanessa Nakate recounts how she became an activist, only to be cropped out by Western media. Nakate describes climate impacts and climate action in Africa,arguing that a successful climate movement must center justice and be inclusive. A very informative, insightful, and inspiring read!
+    - In this powerful memoir, Vanessa Nakate recounts how she became an activist, only to be cropped out by Western media. Nakate describes climate impacts and climate action in Africa, arguing that a successful climate movement must center justice and be inclusive. A very informative, insightful, and inspiring read!
 - [On Fire](https://www.goodreads.com/en/book/show/43821569-on-fire)
     - A collection of excellent essays, with topics ranging from BP's devastating oil spill in 2010 to the ascent of the Green New Deal in 2019. As Greta Thunberg notes, Naomi Klein is "the great chronicler of our age, an inspirer of generations."
 - [The Future We Choose](https://www.goodreads.com/book/show/52117860-the-future-we-choose)

@@ -66,6 +66,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - Amitav Ghosh makes so many interesting points that you quickly forget they are all contained in just a single book. Among many other things, provides a powerful reflection on the role of literature and the arts on a planet in crisis.
 - [The Ministry for the Future](https://www.goodreads.com/book/show/50998056-the-ministry-for-the-future)
     - It is difficult to imagine the future as the climate crisis worsens. Kim Stanley Robinson is here to help. Once you've read the book, you might also enjoy [this interview](https://www.thedigradio.com/podcast/near-futures-with-kim-stanley-robinson/) with him.
+- [Bewilderment](https://www.goodreads.com/book/show/56404444-bewilderment)
+    - A story about an astrobiologist father and his unique nine-year-old son who is bewildered by a world in pursuit of its own destruction. A book that makes you at times laugh out loud and then moves you to tears.
 - [The Collapse of Western Civilization](https://cup.columbia.edu/book/the-collapse-of-western-civilization/9780231169547)
     - You can read this book in two hours but you won't forget it in a lifetime.
 - [Penguin Green Ideas](https://www.penguin.co.uk/series/grnidea/green-ideas.1.html)

@@ -29,7 +29,7 @@ I will try to add to this list going forward, and I hope that some things are us
     - How have humans become a planetary-scale geological force? This book, which grew out of a seminal article in *Nature* on [defining the Anthropocene](https://www.nature.com/articles/nature14258), provides an extremely insightful and informative treatment of this and related questions. If you want to better understand our current predicament, look to the past and read this book.
 - [A Global Warming Primer](https://www.globalwarmingprimer.com/the-book/)
     - This short book provides a highly accessible and informative overview of the basic science behind climate change, its consequences, and potential solutions. It also debunks a number of skeptical claims. If you need a refresher or want to get the facts straight, I highly recommend this book!
-- [Don't even think about it](https://www.goodreads.com/en/book/show/18594475-don-t-even-think-about-it)
+- [Don't Even Think About it](https://www.goodreads.com/en/book/show/18594475-don-t-even-think-about-it)
   - Excellent book on the communication and social science of climate change. George Marshall talks with everybody — scientists, environmentalists, Tea Party members, climate deniers, oil executives, pastors, victims of extreme weather events, to name just a few. He draws insightful lessons of why we have such difficulties dealing with climate change — and how we can do better.
 - [Doughnut Economics](https://www.goodreads.com/book/show/29214420-doughnut-economics)
     - Kate Raworth moves beyond the suffocating corset of mainstream economics and provides a framework for (actually) sustainable development in the 21$^{\text{th}}$ century. A must read!

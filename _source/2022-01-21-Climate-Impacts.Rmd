@@ -202,7 +202,7 @@ The Greenland ice sheet, as mentioned above, is [one such tipping element](https
 
 <div style='text-align: center;'>
   <img src="../assets/img/Tipping-Points-3.png" />
-  <figcaption><b>Figure 4</b>. Map of selected tipping elements, adapted from Lenton et al. (<a href="https://www.nature.com/articles/d41586-019-03595-0" target="_blank">2019</a>).</figcaption>
+  <figcaption><b>Figure 6</b>. Map of selected tipping elements, adapted from Lenton et al. (<a href="https://www.nature.com/articles/d41586-019-03595-0" target="_blank">2019</a>).</figcaption>
 </div>
 
 Another tipping element is the Atlantic Meridional Overturning Circulation (AMOC), a system of ocean currents in the Atlantic Ocean of which the Gulf Stream — [first sketched](https://youtu.be/6wFsibz5kvw?t=417) by Benjamin Franklin — is a part of. The AMOC transports warm, salty water from the tropics to Europe and beyond. There it cools and sinks, returning the cold water to the tropics. This heat exchange warms Europe and cools the tropics. As more freshwater feds into other North Atlantic --- due to increased rainfall and increased melting of the Greenland ice sheet --- it makes the water less salty, preventing it from sinking into the depths of the ocean, thereby [slowing down the AMOC](https://www.nytimes.com/interactive/2021/03/02/climate/atlantic-ocean-climate-change.html).

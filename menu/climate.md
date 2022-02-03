@@ -7,7 +7,7 @@ We are in a [climate emergency](https://news.un.org/en/story/2021/08/1097362). A
 
 We thus need to act swiftly and with resolve, yet governments around the world are moving either [too slowly or in the wrong direction](https://climateactiontracker.org/countries/). To put pressure on them and force change, we need to build the largest, most inclusive social movement in history. Climate action has to move from something that others do to something that [we all engage in](https://twitter.com/climatehuman/status/1315065413500166144). Each and everyone of us has a role to play — this is humanity's decisive decade.
 
-Education is an important first step. Personally, I became aware of the enormous scale and urgency of the crisis only recently, starting in the summer of 2020, when the ongoing Covid disaster compelled me to take a deeper look at the (scientific) literature. Below are some resources that I have found useful on my journey so far; note that they are in no particular order. Some of the things I have learned are summarized in a [recent talk](https://www.youtube.com/watch?v=aYEFV4feVBs).
+Education is an important first step. Personally, I became aware of the [enormous scale and urgency](https://fabiandablander.com/Climate-Impacts.html) of the crisis only recently, starting in the summer of 2020, when the ongoing Covid disaster compelled me to take a deeper look at the (scientific) literature. Below are some resources that I have found useful on my journey so far; note that they are in no particular order. Some of the things I have learned are summarized in a [recent talk](https://www.youtube.com/watch?v=aYEFV4feVBs).
 
 I will try to add to this list going forward, and I hope that some things are useful to you.
 
@@ -30,7 +30,7 @@ I will try to add to this list going forward, and I hope that some things are us
 - [A Global Warming Primer](https://www.globalwarmingprimer.com/the-book/)
     - This short book provides a highly accessible and informative overview of the basic science behind climate change, its consequences, and potential solutions. It also debunks a number of skeptical claims. If you need a refresher or want to get the facts straight, I highly recommend this book!
 - [Don't Even Think About It](https://www.goodreads.com/en/book/show/18594475-don-t-even-think-about-it)
-  - Excellent book on the communication and social science of climate change. George Marshall talks with everybody — scientists, environmentalists, Tea Party members, climate deniers, oil executives, pastors, victims of extreme weather events, to name just a few. He draws insightful lessons of why we have such difficulties dealing with climate change — and how we can do better.
+  - Excellent book on the communication and social science of climate change. George Marshall talks with everybody — scientists, environmentalists, Tea Party members, climate deniers, oil executives, pastors, and victims of extreme weather events, to name just a few. He draws insightful lessons of why we have such difficulties dealing with climate change — and how we can do better.
 - [Doughnut Economics](https://www.goodreads.com/book/show/29214420-doughnut-economics)
     - Kate Raworth moves beyond the suffocating corset of mainstream economics and provides a framework for (actually) sustainable development in the 21$^{\text{th}}$ century. A must read!
 - [The Nutmeg's Curse](https://press.uchicago.edu/ucp/books/book/chicago/N/bo125517349.html)
@@ -72,6 +72,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - A story about an astrobiologist father and his exceptional nine-year-old son who is bewildered by a world in pursuit of its own destruction. A book that makes you at times laugh out loud and then moves you to tears. You might also enjoy [this conversation](https://www.nytimes.com/2021/09/28/opinion/ezra-klein-podcast-richard-powers.html) with Richard Powers.
 - [The Collapse of Western Civilization](https://cup.columbia.edu/book/the-collapse-of-western-civilization/9780231169547)
     - You can read this book in two hours but you won't forget it in a lifetime.
+- [A Short History of Progress](https://www.goodreads.com/en/book/show/331227.A_Short_History_of_Progress)
+    - In this highly engaging and insightful little book, Ronald Wright distills the reasons for why some past civilizations have collapsed while others have not. Humans have turned cleverness into recklesness; as the author puts it, ours is the last chance to get the future right.
 - [Penguin Green Ideas](https://www.penguin.co.uk/series/grnidea/green-ideas.1.html)
     - Selection of essays from an array of environmental writers and thinkers; great to get exposed to new ideas and new authors quickly.
 

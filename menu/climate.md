@@ -73,7 +73,7 @@ I will try to add to this list going forward, and I hope that some things are us
 - [The Collapse of Western Civilization](https://cup.columbia.edu/book/the-collapse-of-western-civilization/9780231169547)
     - You can read this book in two hours but you won't forget it in a lifetime.
 - [A Short History of Progress](https://www.goodreads.com/en/book/show/331227.A_Short_History_of_Progress)
-    - In this highly engaging and insightful little book, Ronald Wright distills the reasons for why some past civilizations have collapsed while others have not. Humans have turned cleverness into recklesness; as the author puts it, ours is the last chance to get the future right.
+    - In this highly engaging and insightful little book, Ronald Wright distills the reasons for why some past civilizations have collapsed while others have not. We have turned cleverness into recklessness; ours is the last chance to get the future right.
 - [Penguin Green Ideas](https://www.penguin.co.uk/series/grnidea/green-ideas.1.html)
     - Selection of essays from an array of environmental writers and thinkers; great to get exposed to new ideas and new authors quickly.
 

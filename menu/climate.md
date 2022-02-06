@@ -39,6 +39,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - This is an excellent introduction to the history, rationale, and power of non-violent direct action. The book gives lots of examples and case studies and makes you hopeful that we might, in fact, make it.
 - [How to Blow Up a Pipeline](https://www.goodreads.com/en/book/show/51686708-how-to-blow-up-a-pipeline)
     - Andreas Malm provides a convincing counter-narrative to the story that non-violent direct action is the key to success, noting the importance of sabotage, property destruction, and the threat of violence. You might also enjoy [this interview](https://www.vox.com/vox-conversations-podcast/22691428/vox-conversations-climate-change-andreas-malm) with him.
+- [Levers of Power](https://www.versobooks.com/books/3181-levers-of-power)
+    - This extremely well-researched book is nothing short of eye-opening, detailing how big corporations use their structural power over the economy — chiefly derived from their control of the investment of capital — to exert enormous influence on political decision-making. The book also describes how past social movements have disrupted business in order to achieve progress reform. Highly recommended!
 - [A Bigger Picture](https://www.goodreads.com/book/show/56817598-a-bigger-picture)
     - In this powerful memoir, Vanessa Nakate recounts how she became an activist, only to be cropped out by Western media. Nakate describes climate impacts and climate action in Africa, arguing that a successful climate movement must center justice and be inclusive. A very informative, insightful, and inspiring read!
 - [On Fire](https://www.goodreads.com/en/book/show/43821569-on-fire)

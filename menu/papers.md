@@ -4,8 +4,6 @@ title: ''
 ---
 
 ## Submitted / under review
-**Dablander, F.**, Heesterbeek, H., Borsboom, D., & Drake, J.M. (under review). Overlapping Time Scales Obscure Early Warning Signals of the Second COVID-19 Wave. [[Link](https://www.medrxiv.org/content/10.1101/2021.07.27.21261226v4)]
-
 **Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Ly, A., & Wagenmakers, E.-J. (under review). Default Bayes factors for Testing the (In)equality of Several Population Variances. [[Link](https://arxiv.org/abs/2003.06278)][[R package](https://github.com/fdabl/bfvartest)]
 
 Dekker, M., Blanken, T., **Dablander, F.**, Ou, J., Borsboom, D., & Debabrata, P. (under review). Quantifying agent impacts on contact sequences in social interactions. [[Link](https://arxiv.org/abs/2107.01443)]
@@ -14,8 +12,12 @@ Burger, J., Epskamp, S., **Dablander, F.**, Schoevers, R. A., Fried, E. I., & Ri
 
 Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Van Mieghem, P. (under review). The lighting of the BECONs: A behavioral data science approach to tracking interventions in COVID-19 research. [[Link](https://psyarxiv.com/53ey9)]
 
+Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dablander, F.**, & Sitte, H. H. (under review). Traditional Chinese medicine: A Bayesian network model of public awareness, usage determinants, and perception of scientific support in Austria. [[Link](https://www.medrxiv.org/content/10.1101/2021.12.24.21268331v2)]
+
 
 ## 2022
+**Dablander, F.**, Heesterbeek, H., Borsboom, D., & Drake, J.M. (2022). Overlapping Timescales Obscure Early Warning Signals of the Second COVID-19 Wave.  *Proceedings of the Royal Society B: Biological Sciences*. [[Link](https://royalsocietypublishing.org/doi/10.1098/rspb.2021.1809)]
+
 **Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (2022). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. *Psychological Methods*. [[Link](https://psyarxiv.com/5wc28)] [[Journal Version](https://psycnet.apa.org/record/2022-19018-001)]
 
 

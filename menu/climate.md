@@ -122,6 +122,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - This beautiful documentary will break your heart.
 - [The Sequel](https://www.flemingpolicycentre.org.uk/film/)
     - Reflections on the work of [David Fleming](https://en.wikipedia.org/wiki/David_Fleming_(writer)) and his positive vision of what may follow  our "troubled civilization".
+- [Monbiot: Arresting the Truth](https://www.youtube.com/watch?v=IZa4ukPcSoI)
+    - Wonderful short film with and about George Monbiot, who has been at it [for decades](https://www.monbiot.com/about/) and shows no signs of relenting — a true inspiration. Chapeau!
 - [How To Change the World](https://www.imdb.com/title/tt4144504/)
     - Charts the origin and fascinating history of Greenpeace.
 - [The End of the Line](https://www.dartmouthfilms.com/theendoftheline)

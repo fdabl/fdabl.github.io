@@ -142,6 +142,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - Created on a shoestring budget, this unsettling film explores the fracking boom and the devastation it causes in US communities. Who knew that tap water could be set on fire?
 - [Ancient Futures: Learning from Ladakh](https://www.youtube.com/watch?v=EnWMRR6ZCgU)
     - An eye-opening natural experiment. Highly recommended!
+- [The Economics of Happiness](https://www.youtube.com/watch?v=M2kHUKbPogQ)
+    - Inspired by the changes Helena Norberg-Hodge saw in Ladakh, this documentary presents a critique of globalization and surveys how localization could make us happier while at the same time helping arrest environmental breakdown.
 - [Awake: A Dream From Standing Rock](https://awakethefilm.org/)
     - A good film about the struggle to stop the Dakota Access Pipeline and the brutality of the present.
 - [Carbon Bomb: Exxon, the World Bank, & One of the Biggest Oil Discoveries of our Time](https://www.youtube.com/watch?v=chmOgYB7DGk)

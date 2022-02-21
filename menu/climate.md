@@ -140,6 +140,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - Great selection of topics and guests. "I don't think there is anything deeper than what's on the surface. Intellectuals have to make it look complicated, that's part of their job."
 - [Gasland](https://www.youtube.com/watch?v=6mp4ELXKv-w)
     - Created on a shoestring budget, this unsettling film explores the fracking boom and the devastation it causes in US communities. Who knew that tap water could be set on fire?
+- [Confessions of an Undercover Cop](https://www.filmsforaction.org/watch/confessions-of-an-undercover-cop-2011/)
+    - Tells the story of Mike Stone / Kennedy, who infiltrated environmental movements and did an enormous amount of damage.
 - [Ancient Futures: Learning from Ladakh](https://www.youtube.com/watch?v=EnWMRR6ZCgU)
     - An eye-opening natural experiment. Highly recommended!
 - [The Economics of Happiness](https://www.youtube.com/watch?v=M2kHUKbPogQ)

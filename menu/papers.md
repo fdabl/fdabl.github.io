@@ -6,8 +6,6 @@ title: ''
 ## Submitted / under review
 **Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Ly, A., & Wagenmakers, E.-J. (under review). Default Bayes factors for Testing the (In)equality of Several Population Variances. [[Link](https://arxiv.org/abs/2003.06278)][[R package](https://github.com/fdabl/bfvartest)]
 
-Dekker, M., Blanken, T., **Dablander, F.**, Ou, J., Borsboom, D., & Debabrata, P. (under review). Quantifying agent impacts on contact sequences in social interactions. [[Link](https://arxiv.org/abs/2107.01443)]
-
 Burger, J., Epskamp, S., **Dablander, F.**, Schoevers, R. A., Fried, E. I., & Riese, H. (under review). A clinical PREMISE for personalized models: Towards a formal integration of case formulations and statistical networks. [[Link](https://psyarxiv.com/bdrs7/)]
 
 Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Van Mieghem, P. (under review). The lighting of the BECONs: A behavioral data science approach to tracking interventions in COVID-19 research. [[Link](https://psyarxiv.com/53ey9)]
@@ -20,6 +18,8 @@ Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dab
 
 **Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (2022). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. *Psychological Methods*. [[Link](https://psyarxiv.com/5wc28)] [[Journal Version](https://psycnet.apa.org/record/2022-19018-001)]
 
+Dekker, M., Blanken, T., **Dablander, F.**, Ou, J., Borsboom, D., & Debabrata, P. (2022). Quantifying agent impacts on contact sequences in social interactions. *Scientific Reports, 12*, 3483. [[Link](https://www.nature.com/articles/s41598-022-07384-0)]
+
 
 ## 2021
 **Dablander, F.**, Huth, K., Gronau, Q. F., Etz, A., & Wagenmakers, E.-J. (2021). A Puzzle of Proportions: Two Popular Bayesian Tests Can Yield Dramatically Different Conclusions. *Statistics in Medicine*. [[Link](https://onlinelibrary.wiley.com/doi/10.1002/sim.9278)]
@@ -30,7 +30,7 @@ Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;
 
 Brown, J., Murray, D., Furlong, K., Coco, E., & **Dablander, F.** (2021). A Breeding Pool of Ideas: Analyzing Interdisciplinary Collaborations at the Complex Systems Summer School. *PLoS One*. [[Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0246260)]
 
-Tanis, C., Leach, N., Geiger, S. J., Nauta, F., **Dablander, F.**, van Harreveld, F., ... & Blanken, T. (2021). Smart Distance Lab Art Fair-An experimental data set on social distancing during the COVID-19 pandemic. *Scientific Data* [[Link]](https://www.nature.com/articles/s41597-021-00971-2)
+Tanis, C., Leach, N., Geiger, S. J., Nauta, F., **Dablander, F.**, van Harreveld, F., ... & Blanken, T. (2021). Smart Distance Lab Art Fair-An experimental data set on social distancing during the COVID-19 pandemic. *Scientific Data*. [[Link]](https://www.nature.com/articles/s41597-021-00971-2)
 
 
 ## 2020

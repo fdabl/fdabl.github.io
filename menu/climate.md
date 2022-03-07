@@ -76,6 +76,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - You can read this book in two hours but you won't forget it in a lifetime.
 - [A Short History of Progress](https://www.goodreads.com/en/book/show/331227.A_Short_History_of_Progress)
     - In this highly engaging and insightful little book, Ronald Wright distills the reasons for why some past civilizations have collapsed while others have not. We have turned cleverness into recklessness; ours is the last chance to get the future right.
+- [The ABCs of Capitalism](https://jacobinmag.us14.list-manage.com/subscribe?u=b7db5951d33a061da219ae2c8&id=05656e7027)
+    - These three short pamphlets provide a good introduction to the basic dynamics of capitalism; the (subordinate) role of the state; and the key role of labour in progressive reforms. You might also be interested in the corresponding lectures by and Q&As with author Vivek Chibber ([1](https://www.youtube.com/watch?v=PpNUNHpOCq0), [2](https://www.youtube.com/watch?v=dHWEZilWAOs), [3](https://www.youtube.com/watch?v=G8Vy7OrHR50)).
 - [Penguin Green Ideas](https://www.penguin.co.uk/series/grnidea/green-ideas.1.html)
     - Selection of essays from an array of environmental writers and thinkers; great to get exposed to new ideas and new authors quickly.
 

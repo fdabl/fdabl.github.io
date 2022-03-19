@@ -6,7 +6,7 @@ title: ''
 ## Talks & Workshops
 Understanding and Preventing Climate Breakdown. Workshop for CorrelAid Netherlands, November, 2021. [[Slides]({{ site.url }}/assets/talks/Climate-Workshop.pdf)] [[Recording](https://www.youtube.com/watch?v=aYEFV4feVBs)]
 
-Epidemiological Modelling: An Introduction. Invited Workshop for QHELP (Higher Education Learning Platform for Quantitative Thinking), March, 2022. [[Slides](https://r.qhelp.eu/qhelp/Presentations/Epidemiology-Workshop)] [[Exercises]({{ site.url }}/assets/talks/Epidemiology-Exercises.html)]
+Epidemiological Modelling: An Introduction. Invited Workshop for QHELP (Higher Education Learning Platform for Quantitative Thinking), Leuven, Belgium, March 2022. [[Slides](https://r.qhelp.eu/qhelp/Presentations/Epidemiology-Workshop)] [[Exercises]({{ site.url }}/assets/talks/Epidemiology-Exercises.html)]
 
 Anticipating Tipping Points in Dynamical Systems. Invited Talk at Radboud University, The Netherlands, November 2021.
 

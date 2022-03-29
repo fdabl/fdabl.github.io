@@ -19,7 +19,7 @@ Understanding and Preventing Climate Breakdown. Workshop at the University of Am
 
 Overlapping Time Scales Obscure Early Warning Signals of the Second COVID-19 Wave. Ignite Talk at the Interacting Tipping Elements in the Natural and Social Components of the Earth System Workshop, Bad Belzig, Germany, August, 2021. [[Slides]({{ site.url }}/assets/talks/Covid-EWS-Talk.html)]
 
-Causal Inference: Core Concepts and Causal Discovery. Invited Workshop at the Max Planck School of Cognition, Berlin, Germany, January, 2021. [[Slides]({{ site.url }}/assets/talks/Causal-Workshop-Max-Planck.html)] [[Exercises]({{ site.url }}/assets/talks/Causal-Workshop-Exercises.html)]
+Causal Inference: Core Concepts and Causal Discovery. Invited Workshop at the Max Planck School of Cognition, Berlin, Germany, January, 2021. [[Slides]({{ site.url }}/assets/talks/Causal-Workshop-Max-Planck.html)] [[Exercises]({{ site.url }}/assets/talks/Causal-Exercises-Max-Planck.html)]
 
 Anticipating Tipping Points in Psychological Systems. Invited Talk at the Colloquium of the Institute of Cognitive Science, Osnabrück, Germany, January 2021. [[Slides]({{ site.url }}/assets/talks/Tipping-Points.html)]
 

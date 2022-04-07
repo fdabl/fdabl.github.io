@@ -3,7 +3,7 @@ layout: page
 title: ''
 ---
 
-We are in a [climate emergency](https://news.un.org/en/story/2021/08/1097362). And it is getting late.
+We are in a [climate emergency](https://fabiandablander.com/Climate-Impacts.html). And it is getting late.
 
 We thus need to act swiftly and with resolve, yet governments around the world are moving either [too slowly or in the wrong direction](https://climateactiontracker.org/countries/). To put pressure on them and force change, we need to build the largest, most inclusive social movement in history. Climate action has to move from something that others do to something that [we all engage in](https://twitter.com/climatehuman/status/1315065413500166144). Each and everyone of us has a role to play — this is humanity's decisive decade.
 

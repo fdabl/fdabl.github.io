@@ -146,6 +146,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - Similar in spirit as *Cowspiracy*. Informative but also slightly annoying.
 - [Kiss the Ground](https://kisstheground.com/)
     - This documentary is uplifting and full of information, charting a promising path away from industrial agriculture (but always remember that there are no silver bullets).
+- [SEED: The Untold Story](https://www.seedthemovie.com/trailer)
+    - This is a very informative documentary about the epic history of seeds, the [vulnerability of our food system](https://www.theguardian.com/food/ng-interactive/2022/apr/14/climate-crisis-food-systems-not-ready-biodiversity), the powers that perpetuate injustice, and an alternative way of feeding the world that is both more sustainable and more resilient.
 - [The End of Poverty?](https://www.youtube.com/watch?v=_xpKKHcC8eU)
     - You thought it was bad? You ain't seen nothing yet.
 - [The Four Horsemen](https://www.youtube.com/watch?v=5fbvquHSPJU)

@@ -43,6 +43,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - This extremely well-researched book is nothing short of eye-opening, detailing how big corporations use their structural power over the economy — chiefly derived from their control of the investment of capital — to exert enormous influence on political decision-making. The book also describes how past social movements have disrupted business in order to achieve progress reform. Highly recommended!
 - [How We Win](https://www.goodreads.com/en/book/show/40068449-how-we-win)
     - Drawing on six decades of experience, George Lakey provides an extremely practical and insightful guide for nonviolent direct action campaigning. Required reading for anybody interested in strategy and tactics, in getting their hands dirty, and, indeed, in winning.
+- [Common Sense for the 21<sup>st</sup> Century](https://www.chelseagreen.com/product/common-sense-for-the-21st-century/)
+    - Roger Hallam lays out the blueprint and rationale for a nonviolent rebellion that, in his assessment, is the best option we have left to avoid climate breakdown. If you are interested in the thinking that shaped Extinction Rebellion, read this short book.
 - [A Bigger Picture](https://www.goodreads.com/book/show/56817598-a-bigger-picture)
     - In this powerful memoir, Vanessa Nakate recounts how she became an activist, only to be cropped out by Western media. Nakate describes climate impacts and climate action in Africa, arguing that a successful climate movement must center justice and be inclusive. A very informative, insightful, and inspiring read!
 - [On Fire](https://www.goodreads.com/en/book/show/43821569-on-fire)
@@ -124,6 +126,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - This short documentary has a ton of style. Indigenous peoples are at the frontlines fighting extractive industries. There is a lot we can learn from them.
 - [Bringing Down A Dictator](https://www.youtube.com/watch?v=9F7PxCVQ5Nk)
     - Great documentary about how the people's movement *Otpor* brought down Serbian dictator Slobodan Milošević using nonviolent resistance and a healthy dosage of humor that mobilized hundreds of thousands of people.
+- [The Troublemaker](https://vimeo.com/443364512)
+    - Beautifully edited documentary about Roger Hallam, Extinction Rebellion, the power of civil disobedience, and the joy of finding community and being part of something greater than oneself.
 - [Chasing Ice](https://chasingice.com/)
     - It can move surprisingly fast!
 - [Chasing Coral](https://www.chasingcoral.com/)

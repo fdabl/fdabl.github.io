@@ -11,7 +11,6 @@ Education is an important first step. Personally, I became aware of the [enormou
 
 I will try to add to this list going forward, and I hope that some things are useful to you.
 
-
 <hr>
 
 ## Online courses / lecture series
@@ -166,6 +165,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - Insightful short film made by the fantastic German organisation [urgewald](https://urgewald.org/). Let's just say that the World Bank does not look too good in this one.
 - [Coming Clean: A Demand for a Fossil Free UC](https://www.youtube.com/watch?v=1N_dq9J7mDY)
     - Great short film on the fossil fuel dependency of the University of California and the chimera of carbon offsets. Produced by [Adam Aron](https://aronlab.org/climate-psychology-and-action-lab/), who [quit neuroscience](https://www.timeshighereducation.com/blog/how-i-quit-neuroscience-focus-preventing-climate-breakdown) to focus on organizing and researching the psychology of climate action. Impressing and inspiring.
+- [Youth vs Gov](https://www.youthvgovfilm.com/)
+    - Inspiring — yet gut-wrenching — documentary about 21 brave American youngsters suing the federal government for the greatest dereliction of duty in history.
 - [Iron Jawed Angels](https://www.imdb.com/title/tt0338139)
     - Iron Jawed Angels details the extraordinary nonviolent direct action campaign that Alice Paul and Lucy Burns waged as part of the women's suffrage movement in the United States in the 1910s. While at times a bit anachronistic and (too) fictional, this is a great movie to watch!
 - [Don't Look Up](https://www.imdb.com/title/tt11286314/)

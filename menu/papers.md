@@ -6,6 +6,8 @@ title: ''
 ## Submitted / under review
 **Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Ly, A., & Wagenmakers, E.-J. (under review). Default Bayes factors for Testing the (In)equality of Several Population Variances. [[Link](https://arxiv.org/abs/2003.06278)][[R package](https://github.com/fdabl/bfvartest)]
 
+Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (submitted). Multimodality and Skewness in Emotion Time Series. [[Link](https://psyarxiv.com/qudr6)]
+
 Burger, J., Epskamp, S., **Dablander, F.**, Schoevers, R. A., Fried, E. I., & Riese, H. (under review). A clinical PREMISE for personalized models: Towards a formal integration of case formulations and statistical networks. [[Link](https://psyarxiv.com/bdrs7/)]
 
 Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Van Mieghem, P. (under review). The lighting of the BECONs: A behavioral data science approach to tracking interventions in COVID-19 research. [[Link](https://psyarxiv.com/53ey9)]
@@ -17,6 +19,8 @@ Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dab
 **Dablander, F.**, Heesterbeek, H., Borsboom, D., & Drake, J.M. (2022). Overlapping Timescales Obscure Early Warning Signals of the Second COVID-19 Wave.  *Proceedings of the Royal Society B: Biological Sciences*. [[Link](https://royalsocietypublishing.org/doi/10.1098/rspb.2021.1809)]
 
 **Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (2022). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. *Psychological Methods*. [[Link](https://psyarxiv.com/5wc28)] [[Journal Version](https://psycnet.apa.org/record/2022-19018-001)]
+
+**Dablander, F.** & van Bork, R. (2022). Causal Inference. In Isvoranu, A. M., Epskamp, S., Waldorp, L.J., & Borsboom, D. (Eds.). *Network Psychometrics with R: A Guide for Behavioral and Social Scientists.* (pp. 93-110). Routledge [[Link](https://royalsocietypublishing.org/doi/10.1098/rspb.2021.1809)]
 
 Dekker, M., Blanken, T., **Dablander, F.**, Ou, J., Borsboom, D., & Debabrata, P. (2022). Quantifying agent impacts on contact sequences in social interactions. *Scientific Reports, 12*, 3483. [[Link](https://www.nature.com/articles/s41598-022-07384-0)]
 

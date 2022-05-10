@@ -49,6 +49,10 @@ h1{
   line-height: 2.25rem;
 }
 
+.smaller-caption {
+  font-size: 0.8em;
+}
+
 h1 a {
   text-decoration: none;
 }

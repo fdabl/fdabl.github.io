@@ -16,6 +16,8 @@ Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dab
 
 
 ## 2022
+**Dablander, F.**, & Bury, T. M. (2022). Deep Learning for Tipping Points: Preprocessing Matters. [[Link](https://psyarxiv.com/j7xug)]
+
 **Dablander, F.**, Heesterbeek, H., Borsboom, D., & Drake, J.M. (2022). Overlapping Timescales Obscure Early Warning Signals of the Second COVID-19 Wave.  *Proceedings of the Royal Society B: Biological Sciences*. [[Link](https://royalsocietypublishing.org/doi/10.1098/rspb.2021.1809)]
 
 **Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (2022). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. *Psychological Methods*. [[Link](https://psyarxiv.com/5wc28)] [[Journal Version](https://psycnet.apa.org/record/2022-19018-001)]

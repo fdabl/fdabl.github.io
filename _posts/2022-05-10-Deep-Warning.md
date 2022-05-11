@@ -34,8 +34,6 @@ Bury et al. ([2021](https://www.pnas.org/content/118/39/e2106140118.short)) trai
  
 Interestingly, detrending takes on a different purpose in this context: for traditional early warning indicators, adequate detrending helps avoid biased estimates (e.g., Dakos et al., [2012](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0041010)), while for the deep learning method developed by Bury et al. ([2021](https://www.pnas.org/content/118/39/e2106140118.short)) a particular type of detrending is necessary because all training examples were detrended using it. Both Bury et al. ([2021](https://www.pnas.org/content/118/39/e2106140118.short)) and Lapeyrolerie & Boettiger ([2021](https://www.pnas.org/doi/10.1073/pnas.2115605118)) note that the training set would have to be expanded substantially to include richer dynamical behavior than fold, transcritical, and Hopf bifurcations. With this note, we suggest that other aspects of the training, including the preprocessing steps, also need careful consideration.
  
-*This note was rejected at PNAS because it was submitted 6 months after the original article appeared online. We were encouraged to contact the original authors with our concerns directly.*
- 
 ---
  
 ## Footnotes

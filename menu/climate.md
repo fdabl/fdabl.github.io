@@ -44,6 +44,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - Drawing on six decades of experience, George Lakey provides an extremely practical and insightful guide for nonviolent direct action campaigning. Required reading for anybody interested in strategy and tactics, in getting their hands dirty, and, indeed, in winning.
 - [Common Sense for the 21<sup>st</sup> Century](https://www.chelseagreen.com/product/common-sense-for-the-21st-century/)
     - Roger Hallam lays out the blueprint and rationale for a nonviolent rebellion which, in his assessment, is the best option we have left to avoid climate breakdown. If you are interested in the thinking that shaped Extinction Rebellion, read this short book.
+- [Pranksters vs. Autocrats](https://www.cornellpress.cornell.edu/book/9781501756061/pranksters-vs-autocrats)
+    - Short book on dilemma actions which — combined with a dash of humour — can topple dictators. You might also enjoy this interview with author [Srđa Popović](https://was-tun.podigee.io/23-how-to-overthrow-a-dictator).
 - [A Bigger Picture](https://www.goodreads.com/book/show/56817598-a-bigger-picture)
     - In this powerful memoir, Vanessa Nakate recounts how she became an activist, only to be cropped out by Western media. Nakate describes climate impacts and climate action in Africa, arguing that a successful climate movement must center justice and be inclusive. A very informative, insightful, and inspiring read!
 - [On Fire](https://www.goodreads.com/en/book/show/43821569-on-fire)

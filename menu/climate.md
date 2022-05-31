@@ -50,6 +50,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - In this powerful memoir, Vanessa Nakate recounts how she became an activist, only to be cropped out by Western media. Nakate describes climate impacts and climate action in Africa, arguing that a successful climate movement must center justice and be inclusive. A very informative, insightful, and inspiring read!
 - [On Fire](https://www.goodreads.com/en/book/show/43821569-on-fire)
     - A collection of excellent essays, with topics ranging from BP's devastating oil spill in 2010 to the ascent of the Green New Deal in 2019. As Greta Thunberg notes, Naomi Klein is "the great chronicler of our age, an inspirer of generations."
+- [Ending Fossil Fuels](https://www.goodreads.com/book/show/59495922-ending-fossil-fuels)
+    - In this informative and thought-provoking book, sociologist Holly Jean Buck shows why the framing of "net zero" is problematic; illustrates the multiple dimensions of phasing out fossil fuels; and provides suggestions of how we can end them before they end us.
 - [The Future We Choose](https://www.goodreads.com/book/show/52117860-the-future-we-choose)
     - Christiana Figueres and Tom Rivett-Carnac, key architects of the Paris agreement, outline two futures and sketch how we can get onto the much better one.
 - [The New Climate War](https://www.goodreads.com/book/show/53441709-the-new-climate-war?from_search=true&from_srp=true&qid=pe4Sd1PDfO&rank=1)

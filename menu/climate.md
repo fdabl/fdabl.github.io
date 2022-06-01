@@ -24,6 +24,8 @@ I will try to add to this list going forward, and I hope that some things are us
 ## Books
 - [This Changes Everything](https://thischangeseverything.org/book/)
     - A book so well-researched and wide-ranging it is in a class of its own. If you read only one book on climate, make it this one.
+- [The End of the Megamachine](https://www.megamaschine.org/en/)
+    - Another masterpiece. If you want to better understand our modern world-system, which is wrecking both people and planet, read this book.
 - [The Human Planet](https://www.goodreads.com/book/show/36004703-the-human-planet)
     - How have humans become a planetary-scale geological force? This book, which grew out of a seminal article in *Nature* on [defining the Anthropocene](https://www.nature.com/articles/nature14258), provides an extremely insightful and informative treatment of this and related questions. If you want to better understand our current predicament, look to the past and read this book.
 - [A Global Warming Primer](https://www.globalwarmingprimer.com/the-book/)

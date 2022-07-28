@@ -1,0 +1,22 @@
+.title-slide hgroup h1 {
+  font-size: 1.5em;
+}
+
+
+/*
+slides > slide:not(.nobackground):after {
+  content: '';
+}
+*/
+
+
+.recommend {
+  font-size: 0.65em;
+  position: absolute;
+  bottom: 20px !important;
+  left: 25px !important;
+}
+
+/*slides > slide:not(.nobackground):after {
+  content: '';
+}/

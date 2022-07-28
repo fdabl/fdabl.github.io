@@ -6,6 +6,8 @@ title: ''
 *If you are interested in a workshop on any of the topics below, do not hesitate to reach out.*
 
 ## 2022
+Understanding and Preventing Climate Breakdown. Talk at the Data Science for the Social Good Fellowship, July, 2022. [[Slides]({{ site.url }}/assets/talks/DSSG-Climate-Talk.pdf)]
+
 Anticipating Tipping Points in Dynamical Systems. Guest lecture, Amsterdam, The Netherlands, March 2022. [[Slides]({{ site.url }}/assets/talks/Anticipating-Tipping-Points.html)]
 
 Epidemiological Modelling: An Introduction. Invited Workshop for QHELP (Higher Education Learning Platform for Quantitative Thinking), Leuven, Belgium, March 2022. [[Slides](https://r.qhelp.eu/qhelp/Presentations/Epidemiology-Workshop)] [[Exercises]({{ site.url }}/assets/talks/Epidemiology-Exercises.html)]

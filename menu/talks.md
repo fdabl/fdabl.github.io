@@ -6,7 +6,7 @@ title: ''
 *If you are interested in a workshop on any of the topics below, do not hesitate to reach out.*
 
 ## 2022
-Understanding and Preventing Climate Breakdown. Talk at the Data Science for the Social Good Fellowship, July, 2022. [[Slides]({{ site.url }}/assets/talks/DSSG-Climate-Talk.pdf)]
+Understanding and Preventing Climate Breakdown. Talk at [Data Science for Social Good](http://dssgfellowship.org/), Carnegie Mellon University, July, 2022. [[Slides]({{ site.url }}/assets/talks/DSSG-Climate-Talk.pdf)]
 
 Anticipating Tipping Points in Dynamical Systems. Guest lecture, Amsterdam, The Netherlands, March 2022. [[Slides]({{ site.url }}/assets/talks/Anticipating-Tipping-Points.html)]
 

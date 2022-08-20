@@ -4,6 +4,8 @@ title: ''
 ---
 
 ## Submitted / under review
+van den Bergh, D.<sup><small>&#11089;</small></sup> & **Dablander, F.**<sup><small>&#11089;</small></sup>. (under review). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. [[Link](https://arxiv.org/abs/2208.07086)]
+
 **Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Ly, A., & Wagenmakers, E.-J. (under review). Default Bayes factors for Testing the (In)equality of Several Population Variances. [[Link](https://arxiv.org/abs/2003.06278)][[R package](https://github.com/fdabl/bfvartest)]
 
 Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (under review). Multimodality and Skewness in Emotion Time Series. [[Link](https://psyarxiv.com/qudr6)]
@@ -12,7 +14,7 @@ Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dab
 
 
 ## 2022
-**Dablander, F.**, & Bury, T. M. (2022). Deep Learning for Tipping Points: Preprocessing Matters. *Proceedings of the National Academy of Sciences*. [[Link](https://psyarxiv.com/j7xug)]
+**Dablander, F.**, & Bury, T. M. (2022). Deep Learning for Tipping Points: Preprocessing Matters. *Proceedings of the National Academy of Sciences*. [[Link](https://www.pnas.org/doi/10.1073/pnas.2207720119)]
 
 **Dablander, F.**, Heesterbeek, H., Borsboom, D., & Drake, J.M. (2022). Overlapping Timescales Obscure Early Warning Signals of the Second COVID-19 Wave.  *Proceedings of the Royal Society B: Biological Sciences*. [[Link](https://royalsocietypublishing.org/doi/10.1098/rspb.2021.1809)]
 

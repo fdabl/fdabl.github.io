@@ -133,6 +133,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - Great documentary about how the people's movement *Otpor* brought down Serbian dictator Slobodan Milošević using nonviolent resistance and a healthy dosage of humor that mobilized hundreds of thousands of people.
 - [The Troublemaker](https://vimeo.com/443364512)
     - Beautifully edited documentary about Roger Hallam, Extinction Rebellion, the power of civil disobedience, and the joy of finding community and being part of something bigger than oneself.
+- [Rebellion](https://www1.moviesjoy.sc/film/rebellion-2021/)
+    - Insightful documentary about (the beginnings of) Extinction Rebellion which uses unique early footage and includes reflections and struggles of key movement organizers. Trying to save the world comes with lots of human drama!
 - [Chasing Ice](https://chasingice.com/)
     - It can move surprisingly fast!
 - [Chasing Coral](https://www.chasingcoral.com/)

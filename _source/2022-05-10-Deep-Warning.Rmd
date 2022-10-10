@@ -14,7 +14,7 @@ toc: true
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, fig.align = 'center', fig.width = 8, fig.height = 6)
 ```
 
-*The text below is taken verbatim from Dablander & Bury ([2022](https://psyarxiv.com/j7xug)).*
+*The text below is taken verbatim from Dablander & Bury ([2022](https://psyarxiv.com/j7xug)), which was published [here](https://www.pnas.org/doi/10.1073/pnas.2207720119).*
 
 Bury et al. ([2021](https://www.pnas.org/content/118/39/e2106140118.short)) present a powerful approach to anticipating tipping points based on deep learning that not only substantially outperforms traditional early warning indicators, but also classifies the type of bifurcation that may lie ahead. Their work is impressive, innovative, and an important step forward. However, deep learning methods are notorious for sometimes exhibiting unintended behavior, and we show that this is also the case for the method proposed by Bury et al. ([2021](https://www.pnas.org/content/118/39/e2106140118.short)).
 

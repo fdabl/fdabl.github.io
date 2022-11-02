@@ -4,7 +4,7 @@ title: ''
 ---
 
 ## Submitted / under review
-Ryan, O.<sup>&#11089;</sup> & Dablander, F.<sup>&#11089;</sup> (under review). Equilibrium Causal Models: Connecting Dynamical Systems Modeling and Cross-Sectional Data Analysis. [[Link](https://psyarxiv.com/q4d9g)]
+Ryan, O.<sup>&#11089;</sup> & **Dablander, F.**<sup>&#11089;</sup> (under review). Equilibrium Causal Models: Connecting Dynamical Systems Modeling and Cross-Sectional Data Analysis. [[Link](https://psyarxiv.com/q4d9g)]
 
 van den Bergh, D.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup>. (under review). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. [[Link](https://arxiv.org/abs/2208.07086)]
 

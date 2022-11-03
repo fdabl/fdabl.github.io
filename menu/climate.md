@@ -131,6 +131,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - This short documentary has a ton of style. Indigenous peoples are at the frontlines fighting extractive industries. There is a lot we can learn from them.
 - [Bringing Down A Dictator](https://www.youtube.com/watch?v=9F7PxCVQ5Nk)
     - Great documentary about how the people's movement *Otpor* brought down Serbian dictator Slobodan Milošević using nonviolent resistance and a healthy dosage of humor that mobilized hundreds of thousands of people.
+- [Disobedience](https://www.youtube.com/watch?v=qNSrjpWyOi8)
+    - Inspiring short documentary about the theory and practice of civil disobedience, full of examples of historical and current struggles. "There's gonna be one hell of a fight."
 - [The Troublemaker](https://vimeo.com/443364512)
     - Beautifully edited documentary about Roger Hallam, Extinction Rebellion, the power of civil disobedience, and the joy of finding community and being part of something bigger than oneself.
 - [Rebellion](https://www1.moviesjoy.sc/film/rebellion-2021/)

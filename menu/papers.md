@@ -26,7 +26,7 @@ Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dab
 
 Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Van Mieghem, P. (2022). The lighting of the BECONs: A behavioral data science approach to tracking interventions in COVID-19 research. *Journal of Behavioral Data Science*. [[Link](https://jbds.isdsa.org/index.php/jbds/article/view/26)]
 
-Burger, J., Epskamp, S., **Dablander, F.**, Schoevers, R. A., Fried, E. I., & Riese, H. (2022). A clinical PREMISE for personalized models: Towards a formal integration of case formulations and statistical networks. *Journal of Psychopathology and Clinical Science*. [[Link](https://psyarxiv.com/bdrs7/)]
+Burger, J., Epskamp, S., **Dablander, F.**, Schoevers, R. A., Fried, E. I., & Riese, H. (2022). A clinical PREMISE for personalized models: Towards a formal integration of case formulations and statistical networks. *Journal of Psychopathology and Clinical Science, 131(8)*, 906-916.. [[Link](https://psyarxiv.com/bdrs7/)] [[Journal Version](https://psycnet.apa.org/doiLanding?doi=10.1037%2Fabn0000779)]
 
 Dekker, M., Blanken, T., **Dablander, F.**, Ou, J., Borsboom, D., & Debabrata, P. (2022). Quantifying agent impacts on contact sequences in social interactions. *Scientific Reports, 12*, 3483. [[Link](https://www.nature.com/articles/s41598-022-07384-0)]
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ''
+title: 'Talks'
 ---
 
 *If you are interested in a workshop on any of the topics below, do not hesitate to reach out.*

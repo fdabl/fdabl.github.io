@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ''
+title: 'Papers'
 ---
 
 ## Submitted / under review

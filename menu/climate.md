@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'Climate'
+title: 
 ---
 
 We are in a [climate emergency](https://fabiandablander.com/Climate-Impacts.html). And it is getting late.

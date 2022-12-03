@@ -42,6 +42,8 @@ Brown, J., Murray, D., Furlong, K., Coco, E., & **Dablander, F.** (2021). A Bree
 
 Tanis, C., Leach, N., Geiger, S. J., Nauta, F., **Dablander, F.**, van Harreveld, F., ... & Blanken, T. (2021). Smart Distance Lab Art Fair-An experimental data set on social distancing during the COVID-19 pandemic. *Scientific Data*. [[Link]](https://www.nature.com/articles/s41597-021-00971-2)
 
+**Dablander, F.**<sup>&#11089;</sup>, Blanken, T.<sup>&#11089;</sup>, Tanis, C.<sup>&#11089;</sup>, Breed, R., Coffeng, L., Crommelin, D., ..., Heesterbeek, H., & Borsboom, D. ([2021](https://psyarxiv.com/3jz8e/)). A Multidisciplinary Perspective on COVID-19 Exit Strategies.
+
 
 ## 2020
 **Dablander, F.** (2020). An Introduction to Causal Inference. [[Link](https://psyarxiv.com/b3fkw)]

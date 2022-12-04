@@ -34,6 +34,8 @@ Dekker, M., Blanken, T., **Dablander, F.**, Ou, J., Borsboom, D., & Debabrata, P
 ## 2021
 **Dablander, F.**, Huth, K., Gronau, Q. F., Etz, A., & Wagenmakers, E.-J. (2021). A Puzzle of Proportions: Two Popular Bayesian Tests Can Yield Dramatically Different Conclusions. *Statistics in Medicine*. [[Link](https://onlinelibrary.wiley.com/doi/10.1002/sim.9278)]
 
+**Dablander, F.**<sup>&#11089;</sup>, Blanken, T.<sup>&#11089;</sup>, Tanis, C.<sup>&#11089;</sup>, Breed, R., Coffeng, L., Crommelin, D., ..., Heesterbeek, H., & Borsboom, D. ([2021](https://psyarxiv.com/3jz8e/)). A Multidisciplinary Perspective on COVID-19 Exit Strategies.
+
 Blanken, T., Tanis, C., Nauta, F., **Dablander, F.**, Zijlstra, B., Bouten, R., ... & Borsboom, D. (in press). Smart Distance Lab: A new methodology for assessing social distancing interventions. *Scientific Report*. [[Link]](https://osf.io/mjg2f)
 
 Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (in press). The Sum of All Fears: Comparing Networks Based on Symptom Sum-Scores. *Psychological Methods*. [[Link](https://psyarxiv.com/3nxu9)] [[Journal Version](https://psycnet.apa.org/record/2022-14481-001)]
@@ -41,8 +43,6 @@ Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;
 Brown, J., Murray, D., Furlong, K., Coco, E., & **Dablander, F.** (2021). A Breeding Pool of Ideas: Analyzing Interdisciplinary Collaborations at the Complex Systems Summer School. *PLoS One*. [[Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0246260)]
 
 Tanis, C., Leach, N., Geiger, S. J., Nauta, F., **Dablander, F.**, van Harreveld, F., ... & Blanken, T. (2021). Smart Distance Lab Art Fair-An experimental data set on social distancing during the COVID-19 pandemic. *Scientific Data*. [[Link]](https://www.nature.com/articles/s41597-021-00971-2)
-
-**Dablander, F.**<sup>&#11089;</sup>, Blanken, T.<sup>&#11089;</sup>, Tanis, C.<sup>&#11089;</sup>, Breed, R., Coffeng, L., Crommelin, D., ..., Heesterbeek, H., & Borsboom, D. ([2021](https://psyarxiv.com/3jz8e/)). A Multidisciplinary Perspective on COVID-19 Exit Strategies.
 
 
 ## 2020

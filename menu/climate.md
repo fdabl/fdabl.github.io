@@ -119,7 +119,7 @@ I will try to add to this list going forward, and I hope that some things are us
     - This eight-part series on how oil shaped world history is extremely informative and insightful. Highly recommended!
 - [Breaking Boundaries](https://www.imdb.com/title/tt14539726/)
     - In just one hour, Johan Rockström and David Attenborough summarize the science behind the [planetary boundary framework](https://www.nature.com/articles/461472a). Excellent!
-- [The Corporation](https://www.youtube.com/watch?v=zpQYsk-8dWg)
+- [The Corporation](https://www.youtube.com/watch?v=5nFQDQMJARs)
     - A sobering reminder that the purpose of corporations is to generate profits, with usually scant attention paid to the social and environmental costs. This powerful film aired in 2003. [Little has changed](https://www.theguardian.com/us-news/2021/oct/01/apple-amazon-microsoft-disney-lobby-groups-climate-bill-analysis).
 - [The Yes Men](https://www.filmsforaction.org/watch/the-yes-men/)
     - Follows two [culture jamming activists](https://en.wikipedia.org/wiki/The_Yes_Men) who use pranks to expose the injustice and cruelty perpetuated by multinational corporations and the (international) institutions that serve them. The Yes Men made three films, see [here](https://www.filmsforaction.org/watch/the-yes-men-fix-the-world-2009/), [here](https://www.filmsforaction.org/watch/the-yes-men-fix-the-world-2009/), and [here](https://en.wikipedia.org/wiki/The_Yes_Men_Are_Revolting).

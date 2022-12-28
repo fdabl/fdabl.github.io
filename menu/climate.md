@@ -42,6 +42,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - Andreas Malm provides a convincing counter-narrative to the story that non-violent direct action is the key to success, noting the importance of sabotage, property destruction, and the threat of violence. You might also enjoy [this interview](https://www.vox.com/vox-conversations-podcast/22691428/vox-conversations-climate-change-andreas-malm) with him.
 - [Levers of Power](https://www.versobooks.com/books/3181-levers-of-power)
     - This extremely well-researched book is nothing short of eye-opening, detailing how big corporations use their structural power over the economy — chiefly derived from their control of the investment of capital — to exert enormous influence on political decision-making. The book also describes how past social movements have disrupted business in order to achieve progress reform. Highly recommended!
+- [Climate Change as Class War](https://www.goodreads.com/book/show/60694943-climate-change-as-class-war)
+    - This highly stimulating, unabashedly Marxist book argues that we should center production, not consumption; criticizes the climate movement, whose members primarily come from the [professional-managerial class](https://en.wikipedia.org/wiki/Professional%E2%80%93managerial_class); and presents an alternative approach that focuses on building working class power. Well worth a close read!
 - [How We Win](https://www.goodreads.com/en/book/show/40068449-how-we-win)
     - Drawing on six decades of experience, George Lakey provides an extremely practical and insightful guide for nonviolent direct action campaigning. Required reading for anybody interested in strategy and tactics, in getting their hands dirty, and, indeed, in winning.
 - [Common Sense for the 21<sup>st</sup> Century](https://www.chelseagreen.com/product/common-sense-for-the-21st-century/)
@@ -58,6 +60,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - Christiana Figueres and Tom Rivett-Carnac, key architects of the Paris agreement, outline two futures and sketch how we can get onto the much better one.
 - [The New Climate War](https://www.goodreads.com/book/show/53441709-the-new-climate-war?from_search=true&from_srp=true&qid=pe4Sd1PDfO&rank=1)
     - World-renowned climate scientist Michael Mann has been on the frontlines ever since the publication of the ["hockey stick"](https://en.wikipedia.org/wiki/Hockey_stick_graph). The enemy's strategy has shifted from denial to delay, and Mann — using his experience and expertise — tells us how to stay alert. You might also enjoy [this interview](https://www.preposterousuniverse.com/podcast/2019/09/23/65-michael-mann-on-why-our-climate-is-changing-and-how-we-know/) with him.
+- [Ecocide](https://www.goodreads.com/en/book/show/51702977-ecocide)
+  - Short and concise guide to the history, logic, and dangers of the corporation. At times a bit too polemic, but well researched and referenced. Nicely complements watching The Corporation [I](https://www.youtube.com/watch?v=5nFQDQMJARs) and [II](https://www.youtube.com/watch?v=gPcHjF8RmYY).
 - [Saudi America](https://www.goodreads.com/en/book/show/39028544-saudi-america)
     - The shale revolution has [transformed the US](https://www.iea.org/news/the-us-shale-revolution-has-reshaped-the-energy-landscape-at-home-and-abroad-according-to-latest-iea-policy-review) into the world's top oil and gas producer and [a leading exporter](https://twitter.com/WhiteHouse/status/1501947054259531782) of fossil fuels. Bethany McLean tells the extraordinary story of this deeply worrying development and the people behind it in this short book.
 - [Merchants of Doubt](https://www.goodreads.com/book/show/7799004-merchants-of-doubt)
@@ -121,6 +125,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - In just one hour, Johan Rockström and David Attenborough summarize the science behind the [planetary boundary framework](https://www.nature.com/articles/461472a). Excellent!
 - [The Corporation](https://www.youtube.com/watch?v=5nFQDQMJARs)
     - A sobering reminder that the purpose of corporations is to generate profits, with usually scant attention paid to the social and environmental costs. This powerful film aired in 2003. [Little has changed](https://www.theguardian.com/us-news/2021/oct/01/apple-amazon-microsoft-disney-lobby-groups-climate-bill-analysis).
+- [The New Corporation: The Unfortunately Necessary Sequel](https://www.youtube.com/watch?v=gPcHjF8RmYY)
+    - Great sequel to the original film. The amount of greenwashing is deeply disturbing. Let us not go gentle into that good night.
 - [The Yes Men](https://www.filmsforaction.org/watch/the-yes-men/)
     - Follows two [culture jamming activists](https://en.wikipedia.org/wiki/The_Yes_Men) who use pranks to expose the injustice and cruelty perpetuated by multinational corporations and the (international) institutions that serve them. The Yes Men made three films, see [here](https://www.filmsforaction.org/watch/the-yes-men-fix-the-world-2009/), [here](https://www.filmsforaction.org/watch/the-yes-men-fix-the-world-2009/), and [here](https://en.wikipedia.org/wiki/The_Yes_Men_Are_Revolting).
 - [David Attenborough: A Life on Our Planet](https://www.imdb.com/title/tt11989890/)

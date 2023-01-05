@@ -139,6 +139,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - Another informative and uplifting documentary.
 - [LN3: Teachings of the Anishinaabe Resistance](https://www.stopline3.org/ln3film-video)
     - This short documentary has a ton of style. Indigenous peoples are at the frontlines fighting extractive industries. There is a lot we can learn from them.
+- [How to Start a Revolution](https://www.youtube.com/watch?v=EKnoUbDIpjo)
+    - Uplifting documentary detailing the work of Gene Sharp and its influence on nonviolent struggles fighting for democracy.
 - [Bringing Down A Dictator](https://www.youtube.com/watch?v=9F7PxCVQ5Nk)
     - Great documentary about how the people's movement *Otpor* brought down Serbian dictator Slobodan Milošević using nonviolent resistance and a healthy dosage of humor that mobilized hundreds of thousands of people.
 - [Disobedience](https://www.youtube.com/watch?v=qNSrjpWyOi8)

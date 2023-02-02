@@ -5,6 +5,9 @@ title:
 
 *If you are interested in a workshop on any of the topics below, do not hesitate to reach out.*
 
+## 2023
+Climate Emergency & Climate Action. Invited Talk at the Winter Workshop on Complex Systems, Institute for Advanced Study, Amsterdam, February, 2023. [[Slides]({{ site.url }}/assets/talks/IAS-Climate-Talk.pdf)]
+
 ## 2022
 Understanding and Preventing Climate Breakdown. Talk at [Data Science for Social Good](http://dssgfellowship.org/), Carnegie Mellon University, July, 2022. [[Slides]({{ site.url }}/assets/talks/DSSG-Climate-Talk.pdf)]
 

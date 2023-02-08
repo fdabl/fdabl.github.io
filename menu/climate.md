@@ -171,6 +171,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - This is a very informative documentary about the epic history of seeds, the [vulnerability of our food system](https://www.theguardian.com/food/ng-interactive/2022/apr/14/climate-crisis-food-systems-not-ready-biodiversity), the powers that perpetuate injustice, and an alternative way of feeding the world that is both more sustainable and more resilient.
 - [The End of Poverty?](https://www.youtube.com/watch?v=_xpKKHcC8eU)
     - You thought it was bad? You ain't seen nothing yet.
+- [Capitalism: A Love Story](https://www.youtube.com/watch?v=cK4H79j1I4A)
+    - It is always good to remind oneself about what they are getting away with. We might not have the money, but we do have the numbers. And therein lies great power.
 - [The Four Horsemen](https://www.youtube.com/watch?v=5fbvquHSPJU)
     - Great selection of topics and guests. "I don't think there is anything deeper than what's on the surface. Intellectuals have to make it look complicated, that's part of their job."
 - [Gasland](https://www.youtube.com/watch?v=6mp4ELXKv-w)

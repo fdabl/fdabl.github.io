@@ -54,14 +54,14 @@ Tanis, C., Leach, N., Geiger, S. J., Nauta, F., **Dablander, F.**, van Harreveld
 
 Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (2020). The Support Interval. *Erkenntnis*. [[Link](https://link.springer.com/article/10.1007%2Fs10670-019-00209-z)]
 
-van Doorn, J., van den Bergh, D., Bohm, U., **Dablander, F.**, Derks, K., Draws, T., ... & Hinne, M.
+van Doorn, J., van den Bergh, D., Bohm, U., **Dablander, F.**, Derks, K., Draws, T., ... & Wagenmakers, E.-J.
 (2020). The JASP guidelines for conducting and reporting a Bayesian analysis. *Psychonomic Bulletin & Review, 1-14*. [[Link]](https://link.springer.com/article/10.3758/s13423-020-01798-5)
 
-Ly, A., Stefan, A., van Doorn, J., **Dablander, F.**, van den Bergh, D., Sarafoglou, A., ... & Boehm, U.
+Ly, A., Stefan, A., van Doorn, J., **Dablander, F.**, van den Bergh, D., Sarafoglou, A., ... & Wagenmakers, E.-J.
 (2020). The Bayesian Methodology of Sir Harold Jeffreys as a Practical Alternative to the P Value Hypothesis Test. *Computational Brain & Behavior, 3*(2), 153-161. [[Link]](https://link.springer.com/article/10.1007/s42113-019-00070-x)
 
 van den Bergh, D., Van Doorn, J., Marsman, M., Draws, T., Van Kesteren, E. J., Derks, K.,
-**Dablander, F.**, ... & Sarafoglou, A. (2020). A Tutorial on Conducting and Interpreting a Bayesian ANOVA in JASP. *LAnnee psychologique, 120*(1), 73-96. [[Link]](https://www.cairn.info/journal-l-annee-psychologique-2020-1-page-73.htm)
+**Dablander, F.**, ... & Wagenmakers, E.-J. (2020). A Tutorial on Conducting and Interpreting a Bayesian ANOVA in JASP. *LAnnee psychologique, 120*(1), 73-96. [[Link]](https://www.cairn.info/journal-l-annee-psychologique-2020-1-page-73.htm)
 
 
 ## 2019

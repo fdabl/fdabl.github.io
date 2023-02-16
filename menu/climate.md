@@ -189,6 +189,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - Insightful short film made by the fantastic German organisation [urgewald](https://urgewald.org/). Let's just say that the World Bank does not look too good in this one.
 - [Coming Clean: A Demand for a Fossil Free UC](https://www.youtube.com/watch?v=1N_dq9J7mDY)
     - Great short film on the fossil fuel dependency of the University of California and the chimera of carbon offsets. Produced by [Adam Aron](https://aronlab.org/climate-psychology-and-action-lab/), who [quit neuroscience](https://www.timeshighereducation.com/blog/how-i-quit-neuroscience-focus-preventing-climate-breakdown) to focus on organizing and researching the psychology of climate action. Impressing and inspiring.
+- [Climate change and the rich](https://www.youtube.com/watch?v=p7yAk5iYm_k)
+    - Very good short documentary on how the wealthy are rationalizing and protecting their carbon-intensive lifestyle. They are destroying the planet and the damage is irreversible. We have to stop them.
 - [Youth vs Gov](https://www.youthvgovfilm.com/)
     - Inspiring — yet gut-wrenching — documentary about 21 brave American youngsters suing the federal government for the greatest dereliction of duty in history.
 - [Youth Unstoppable](https://www.youthunstoppable.com/)

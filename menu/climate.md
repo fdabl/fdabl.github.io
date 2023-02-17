@@ -129,6 +129,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - A sobering reminder that the purpose of corporations is to generate profits, with usually scant attention paid to the social and environmental costs. This powerful film aired in 2003. [Little has changed](https://www.theguardian.com/us-news/2021/oct/01/apple-amazon-microsoft-disney-lobby-groups-climate-bill-analysis).
 - [The New Corporation: The Unfortunately Necessary Sequel](https://www.youtube.com/watch?v=gPcHjF8RmYY)
     - Great sequel to the original film. The amount of greenwashing is deeply disturbing. Let us not go gentle into that good night.
+- [The Power of Big Oil](https://www.pbs.org/wgbh/frontline/documentary/the-power-of-big-oil/)
+    - This three-part series on how Big Oil has lied and deceived the public is a must-see. They show [no signs of relenting](https://www.theguardian.com/business/2022/dec/09/oil-gas-companies-fossil-fuel-industry-house-committee). We must end them before they end us.
 - [The Yes Men](https://www.filmsforaction.org/watch/the-yes-men/)
     - Follows two [culture jamming activists](https://en.wikipedia.org/wiki/The_Yes_Men) who use pranks to expose the injustice and cruelty perpetuated by multinational corporations and the (international) institutions that serve them. The Yes Men made three films, see [here](https://www.filmsforaction.org/watch/the-yes-men-fix-the-world-2009/), [here](https://www.filmsforaction.org/watch/the-yes-men-fix-the-world-2009/), and [here](https://en.wikipedia.org/wiki/The_Yes_Men_Are_Revolting).
 - [David Attenborough: A Life on Our Planet](https://www.imdb.com/title/tt11989890/)
@@ -190,7 +192,7 @@ I will try to add to this list going forward, and I hope that some things are us
 - [Coming Clean: A Demand for a Fossil Free UC](https://www.youtube.com/watch?v=1N_dq9J7mDY)
     - Great short film on the fossil fuel dependency of the University of California and the chimera of carbon offsets. Produced by [Adam Aron](https://aronlab.org/climate-psychology-and-action-lab/), who [quit neuroscience](https://www.timeshighereducation.com/blog/how-i-quit-neuroscience-focus-preventing-climate-breakdown) to focus on organizing and researching the psychology of climate action. Impressing and inspiring.
 - [Climate change and the rich](https://www.youtube.com/watch?v=p7yAk5iYm_k)
-    - Very good short documentary on how the wealthy are rationalizing and protecting their carbon-intensive lifestyle. They are destroying the planet and the damage is irreversible. We have to stop them.
+    - Very good short documentary on how the wealthy are rationalizing and protecting their carbon-intensive lifestyle. It's quite simple: They are destroying the planet and the damage is irreversible. We have to stop them.
 - [Youth vs Gov](https://www.youthvgovfilm.com/)
     - Inspiring — yet gut-wrenching — documentary about 21 brave American youngsters suing the federal government for the greatest dereliction of duty in history.
 - [Youth Unstoppable](https://www.youthunstoppable.com/)

@@ -74,10 +74,12 @@ I will try to add to this list going forward, and I hope that some things are us
     - There is the market and then there is the state, right? No! There is also the vast space occupied by the commons. David Bollier, who also runs a [great podcast](https://david-bollier.simplecast.com/), provides a well-written and indeed mind-expanding introduction to the commons.
 - [Less is More](https://www.goodreads.com/book/show/53328332-less-is-more)
     - [Degrowth](https://www.tandfonline.com/doi/full/10.1080/14747731.2020.1812222) is an eminently sensible proposal [worthy of discussion](https://onlinelibrary.wiley.com/doi/full/10.1111/dpr.12584) and consideration. Jason Hickel, a leading proponent, compellingly argues for it in this well-written, wide-ranging, and thought-provoking book. Highly recommended!
-- [The Divide](https://www.goodreads.com/book/show/32603498-the-divide)
-    - This is an excellent book on global inequality, which makes you see the world in a different way.
 - [Post Growth: Life after Capitalism](https://www.goodreads.com/en/book/show/55404479-post-growth)
     - Lyrical meditation hinting at what the economy — and life — could be like, told through biographical sketches of giants such as John Stuart Mill, Hannah Arendt, and Wangari Maathai. Less concrete than I had hoped given the title, but insightful nonetheless.
+- [The Future is Degrowth](https://www.versobooks.com/books/3989-the-future-is-degrowth)
+    - This book provides a thorough treatment of the many aspects of degrowth. It moves from a powerful analysis and critique of economic growth to a vision of a good life for all, and includes proposals for how to get there from here. Highly recommended!
+- [The Divide](https://www.goodreads.com/book/show/32603498-the-divide)
+    - This is an excellent book on global inequality, which makes you see the world in a different way.
 - [Revolutions That Made the Earth](https://oxford.universitypressscholarship.com/view/10.1093/acprof:oso/9780199587049.001.0001/acprof-9780199587049)
     - Mother Earth has experienced a number of key revolutions that made her what she is today. This extremely informative and wide-ranging book — covering "terrain that ranges in difficulty from easy to strenuous" — will make you feel more connected to the only planet known to inhabit life.
 - [Earth System Science: A Very Short Introduction](https://global.oup.com/academic/product/earth-system-science-a-very-short-introduction-9780198718871?cc=de&lang=en&)

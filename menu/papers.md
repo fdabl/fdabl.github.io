@@ -10,10 +10,10 @@ van den Bergh, D.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><sm
 
 
 ## 2023
-**Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Wagenmakers, E.-J., & Ly, A. (accepted). Default Bayes factors for Testing the (In)equality of Several Population Variances. *Bayesian Analysis*. [[Link](https://arxiv.org/abs/2003.06278)][[R package](https://github.com/fdabl/bfvartest)]
+**Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Wagenmakers, E.-J., & Ly, A. (2023). Default Bayes factors for Testing the (In)equality of Several Population Variances. *Bayesian Analysis*. [[Link](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Default-Bayes-Factors-for-Testing-the-Inequality-of-Several-Population/10.1214/23-BA1369.full)][[R package](https://github.com/fdabl/bfvartest)]
 
 
-Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dablander, F.**, & Sitte, H. H. (accepted). Traditional Chinese medicine: A Bayesian network model of public awareness, usage determinants, and perception of scientific support in Austria. *BMJ Open*. [[Link](https://www.medrxiv.org/content/10.1101/2021.12.24.21268331v2)]
+Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dablander, F.**, & Sitte, H. H. (2023). Traditional Chinese medicine: A Bayesian network model of public awareness, usage determinants, and perception of scientific support in Austria. *BMJ Open*. [[Link](https://bmjopen.bmj.com/content/13/3/e060644.abstract)]
 
 ## 2022
 **Dablander, F.**, & Bury, T. M. (2022). Deep Learning for Tipping Points: Preprocessing Matters. *Proceedings of the National Academy of Sciences*. [[Link](https://www.pnas.org/doi/10.1073/pnas.2207720119)]

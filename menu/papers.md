@@ -8,6 +8,8 @@ Ryan, O.<sup>&#11089;</sup>, & **Dablander, F.**<sup>&#11089;</sup> (under revie
 
 van den Bergh, D.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup>. (under review). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. [[Link](https://arxiv.org/abs/2208.07086)]
 
+Ryan, O.<sup><small>&#11089;</small></sup>, **Dablander, F.**<sup><small>&#11089;</small></sup>, & Haslbeck, J.M.B.<sup><small>&#11089;</small></sup> (under review). Towards a Generative Model for Emotion Dynamics. [[Link](https://psyarxiv.com/x52ns)] 
+
 
 ## 2023
 **Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Wagenmakers, E.-J., & Ly, A. (2023). Default Bayes factors for Testing the (In)equality of Several Population Variances. *Bayesian Analysis*. [[Link](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Default-Bayes-Factors-for-Testing-the-Inequality-of-Several-Population/10.1214/23-BA1369.full)][[R package](https://github.com/fdabl/bfvartest)]

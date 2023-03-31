@@ -12,6 +12,8 @@ Ryan, O.<sup><small>&#11089;</small></sup>, **Dablander, F.**<sup><small>&#11089
 
 
 ## 2023
+**Dablander, F.** (2023). Understanding and Preventing Climate Breakdown: A Guide for Social and Behavioral Scientists. [[Link](https://psyarxiv.com/4uzjs/)]  
+
 **Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Wagenmakers, E.-J., & Ly, A. (2023). Default Bayes factors for Testing the (In)equality of Several Population Variances. *Bayesian Analysis*. [[Link](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Default-Bayes-Factors-for-Testing-the-Inequality-of-Several-Population/10.1214/23-BA1369.full)][[R package](https://github.com/fdabl/bfvartest)]
 
 

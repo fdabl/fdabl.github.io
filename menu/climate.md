@@ -205,6 +205,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - Inspiring — yet gut-wrenching — documentary about 21 brave American youngsters suing the federal government for the greatest dereliction of duty in history.
 - [Youth Unstoppable](https://www.youthunstoppable.com/)
     - Powerful documentary about the rise of the global youth climate movement, detailing developments before Fridays for Future put the youth on the map for many.
+- [How to Blow Up a Pipeline](https://www.justwatch.com/us/movie/how-to-blow-up-a-pipeline)
+    - Based on the book of the same name, follows a group of people who come together to engage in some proper sabotage. Leaves you with an eerie feeling of things to come.
 - [Iron Jawed Angels](https://www.imdb.com/title/tt0338139)
     - Iron Jawed Angels details the extraordinary nonviolent direct action campaign that Alice Paul and Lucy Burns waged as part of the women's suffrage movement in the United States in the 1910s. While at times a bit anachronistic and (too) fictional, this is a great movie to watch!
 - [Don't Look Up](https://www.imdb.com/title/tt11286314/)

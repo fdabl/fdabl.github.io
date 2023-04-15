@@ -53,7 +53,7 @@ Validating Driver Profiles in the Mercedes-Benz driving simulation. Invited Talk
 
 
 ## Posters
-Reducing the Impact of Behavioral Health Crises through Machine Learning. Data Science for the Social Good Conference, Pittsburgh, United States, August, 2022. [[Link](https://github.com/dssg/dojo_mh/blob/main/content/dojo_poster.png)]
+Reducing the Impact of Behavioral Health Crises through Machine Learning. Data Science for the Social Good Conference, Pittsburgh, United States, August, 2022. [[Link](https://github.com/dssg/dojo_mh_public/blob/main/content/dojo_poster.png)]
 
 Overlapping Time Scales Obscure Early Warning Signals of the Second COVID-19 Wave. Interacting Tipping Elements in the Natural and Social Components of the Earth System Workshop, Bad Belzig, Germany, August, 2021. [[Link]({{ site.url }}/assets/posters/PIK-Poster-2021.pdf)]
 

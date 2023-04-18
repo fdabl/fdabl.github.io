@@ -19,7 +19,7 @@ I will try to add to this list going forward, and I hope that some things are us
 - [Climate Solutions 101 by Project Drawdown](https://drawdown.org/climate-solutions-101)
     - Provides a clear and concise overview of the climate conundrum and solutions.
 - [School of Climate Change by the Oxford Climate Society](https://www.oxfordclimatesociety.com/the-oxford-school-of-climate-change.html)
-  - 9-week online course that features weekly lectures from experts on different aspects of the climate crisis and an optional group project. Provides a good overview and the opportunity to connect with people from across the world. Be sure to also check out the Oxford Climate Society's very active [YouTube Channel](https://www.youtube.com/channel/UCOoksFYBCHqZWwVBU9qewZg). I especially enjoyed the events with [Noam Chomsky](https://www.youtube.com/watch?v=WZ81-McOgdM) and with [Anuradha Mittal and Nnimmo Bassey](https://www.youtube.com/watch?v=s7uOGgi3dCM&t=521s).
+  - 9-week online course that features weekly lectures from experts on different aspects of the climate crisis and an optional group project. Provides a good overview and the opportunity to connect with people from across the world. They also have an active YouTube channel — I especially enjoyed the events with [Noam Chomsky](https://www.youtube.com/watch?v=WZ81-McOgdM) and with [Anuradha Mittal and Nnimmo Bassey](https://www.youtube.com/watch?v=s7uOGgi3dCM&t=521s).
   
 ## Books
 - [This Changes Everything](https://thischangeseverything.org/book/)

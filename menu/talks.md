@@ -6,7 +6,7 @@ title:
 *If you are interested in a workshop on any of the topics below, do not hesitate to reach out.*
 
 ## 2023
-Understanding and Preventing Climate Breakdown. Guest lecture, Amsterdam, The Netherlands, February, 2023. [[Slides]({{ site.url }}/assets/talks/UvA-Climate-Talk.pdf)]
+Understanding and Preventing Climate Breakdown. Guest lecture, Amsterdam, The Netherlands, February, 2023. [[Slides]({{ site.url }}/assets/talks/UvA-Climate-Talk.pdf)] [[Recording](https://www.youtube.com/watch?v=W6NtBz1q4ug)]
 
 Climate Emergency & Climate Action. Invited Talk at the Winter Workshop on Complex Systems, Institute for Advanced Study, Amsterdam, February, 2023. [[Slides]({{ site.url }}/assets/talks/IAS-Climate-Talk.pdf)]
 

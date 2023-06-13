@@ -28,7 +28,7 @@ Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dab
 
 **Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (2022). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. *Psychological Methods*. [[Link](https://psyarxiv.com/5wc28)] [[Journal Version](https://psycnet.apa.org/record/2022-19018-001)]
 
-**Dablander, F.** & van Bork, R. (2022). Causal Inference. In Isvoranu, A. M., Epskamp, S., Waldorp, L.J., & Borsboom, D. (Eds.). *Network Psychometrics with R: A Guide for Behavioral and Social Scientists.* (pp. 93-110). Routledge [[Link](https://royalsocietypublishing.org/doi/10.1098/rspb.2021.1809)]
+**Dablander, F.** & van Bork, R. (2022). Causal Inference. In Isvoranu, A. M., Epskamp, S., Waldorp, L.J., & Borsboom, D. (Eds.). *Network Psychometrics with R: A Guide for Behavioral and Social Scientists.* (pp. 93-110). Routledge. [[Link](https://www.taylorfrancis.com/chapters/edit/10.4324/9781003111238-16/causal-inference-fabian-dablander-riet-van-bork)]
 
 Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (accepted). Multimodality and Skewness in Emotion Time Series. *Emotion*. [[Link](https://psyarxiv.com/qudr6)]
 

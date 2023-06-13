@@ -6,7 +6,7 @@ title:
 *If you are interested in a workshop on any of the topics below, do not hesitate to reach out.*
 
 ## 2023
-Climate Crisis Globally and in Africa: Causes, Consequences, and Responses (together with [Dr. Marthe Wens](https://twitter.com/MartheWens)). Invited Talk at PharmAccess Foundation, Amsterdam, June, 2013. [[Slides]({{ site.url }}/assets/talks/PharmAccess-Talk.pdf)]
+Climate Crisis Globally and in Africa: Causes, Consequences, and Responses (together with [Dr. Marthe Wens](https://twitter.com/MartheWens)). Invited Talk at PharmAccess Foundation, Amsterdam, June, 2023. [[Slides]({{ site.url }}/assets/talks/PharmAccess-Talk.pdf)]
 
 UvA: Cut ties with the fossil industry! Invited pitch, University of Amsterdam [Dialogue](https://www.uva.nl/en/research/research-environment/third-party-collaborations/third-party-collaborations.html#Download-pitches-for-each-speaker-from-the-first-online-meeting), The Netherlands, March, 2023. [[Slides]({{ site.url }}/assets/talks/UvA-Cutting-Ties.pdf)] [[Recording](https://vimeo.com/819451727?embedded=true&source=vimeo_logo&owner=101551308)]
 

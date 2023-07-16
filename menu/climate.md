@@ -15,7 +15,7 @@ I will try to add to this list going forward, and I hope that some things are us
 
 ## Online courses / lecture series
 - [Mastering En-ROADS by Climate Interactive](https://learn.climateinteractive.org/)
-    - This is an excellent online course; the Climate Interactive team is full of energy and puts a lot of effort into making the [learning experience fun](https://twitter.com/fdabl/status/1418251414149738497). The goal of the course is to teach you how to use [En-ROADS](https://en-roads.climateinteractive.org/scenario.html) to spark conversations and educate others, becoming a [climate ambassador](https://www.climateinteractive.org/tools/en-roads/en-roads-ambassador-program/). Highly recommended!
+    - This is an excellent online course. The Climate Interactive team is full of energy and puts a lot of effort into making the [learning experience fun](https://twitter.com/fdabl/status/1418251414149738497). The goal of the course is to teach you how to use [En-ROADS](https://en-roads.climateinteractive.org/scenario.html) to spark conversations and educate others, becoming a [climate ambassador](https://www.climateinteractive.org/tools/en-roads/en-roads-ambassador-program/). Highly recommended!
 - [Climate Solutions 101 by Project Drawdown](https://drawdown.org/climate-solutions-101)
     - Provides a clear and concise overview of the climate conundrum and solutions.
 - [School of Climate Change by the Oxford Climate Society](https://www.oxfordclimatesociety.com/the-oxford-school-of-climate-change.html)
@@ -30,6 +30,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - How have humans become a planetary-scale geological force? This book, which grew out of a seminal article in *Nature* on [defining the Anthropocene](https://www.nature.com/articles/nature14258), provides an extremely insightful and informative treatment of this and related questions. If you want to better understand our current predicament, look to the past and read this book.
 - [A Global Warming Primer](https://www.globalwarmingprimer.com/the-book/)
     - This short book provides a highly accessible and informative overview of the basic science behind climate change, its consequences, and potential solutions. It also debunks a number of skeptical claims. If you need a refresher or want to get the facts straight, I highly recommend this book!
+- [No Miracles Needed](https://www.goodreads.com/en/book/show/75721816)
+    - Essential reading for understanding which technologies can help us limit global heating, reduce air pollution, and increase energy security, and which are mere distractions. Written by a [pioneering researcher](https://vimeo.com/83279421) who has shown that it is possible to power the world with 100% renewable energy, this book is a must read. Highly recommended!
 - [Don't Even Think About It](https://www.goodreads.com/en/book/show/18594475-don-t-even-think-about-it)
   - Excellent book on the communication and social science of climate change. George Marshall talks with everybody — scientists, environmentalists, Tea Party members, climate deniers, oil executives, pastors, and victims of extreme weather events, to name just a few. He draws insightful lessons of why we have such difficulties dealing with climate change — and how we can do better.
 - [Doughnut Economics](https://www.goodreads.com/book/show/29214420-doughnut-economics)
@@ -50,6 +52,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - Roger Hallam lays out the blueprint and rationale for a nonviolent rebellion which, in his assessment, is the best option we have left to avoid climate breakdown. If you are interested in the thinking that shaped Extinction Rebellion, read this short book.
 - [Pranksters vs. Autocrats](https://www.cornellpress.cornell.edu/book/9781501756061/pranksters-vs-autocrats)
     - Short book on dilemma actions which — combined with a dash of humour — can topple dictators. You might also enjoy this interview with author [Srđa Popović](https://was-tun.podigee.io/23-how-to-overthrow-a-dictator).
+- [From Dictatorship to Democracy](https://www.goodreads.com/book/show/1119326.From_Dictatorship_to_Democracy)
+    - Classic reading in the literature of nonviolent struggle that has helped people overthrow dictators around the world. You might also enjoy [this documentary](https://www.youtube.com/watch?v=EKnoUbDIpjo) about Gene Sharp's work.
 - [A Bigger Picture](https://www.goodreads.com/book/show/56817598-a-bigger-picture)
     - In this powerful memoir, Vanessa Nakate recounts how she became an activist, only to be cropped out by Western media. Nakate describes climate impacts and climate action in Africa, arguing that a successful climate movement must center justice and be inclusive. A very informative, insightful, and inspiring read!
 - [On Fire](https://www.goodreads.com/en/book/show/43821569-on-fire)

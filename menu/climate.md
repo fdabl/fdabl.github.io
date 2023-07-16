@@ -190,7 +190,7 @@ I will try to add to this list going forward, and I hope that some things are us
 - [Gasland](https://www.youtube.com/watch?v=6mp4ELXKv-w)
     - Created on a shoestring budget, this unsettling film explores the fracking boom and the devastation it causes in US communities. Who knew that tap water could be set on fire?
 - [Gasland II](https://www.youtube.com/watch?v=rA_B-AC-pB0)
-    - Devastating sequel exploring the gas industry's greenwashing, corporate lobbying, and appalling contempt for nature and human life. Environmentalists only ever get temporary victories, but the losses are always permanent.
+    - Devastating sequel exploring the gas industry's greenwashing, corporate lobbying, and contempt for nature and human life. "Environmentalists only ever get temporary victories, but the losses are always permanent."
 - [Confessions of an Undercover Cop](https://www.filmsforaction.org/watch/confessions-of-an-undercover-cop-2011/)
     - Tells the story of Mark Stone / Kennedy, who infiltrated environmental movements and did an enormous amount of damage.
 - [Ancient Futures: Learning from Ladakh](https://www.youtube.com/watch?v=EnWMRR6ZCgU)

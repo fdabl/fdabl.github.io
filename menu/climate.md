@@ -99,6 +99,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - It is difficult to imagine the future as the climate crisis worsens. Kim Stanley Robinson is here to help. Once you've read the book, you might also enjoy [this interview](https://www.thedigradio.com/podcast/near-futures-with-kim-stanley-robinson/) with him.
 - [Bewilderment](https://www.goodreads.com/book/show/56404444-bewilderment)
     - A story about an astrobiologist father and his exceptional nine-year-old son who is bewildered by a world in pursuit of its own destruction. A book that makes you at times laugh out loud and then moves you to tears. You might also enjoy [this conversation](https://www.nytimes.com/2021/09/28/opinion/ezra-klein-podcast-richard-powers.html) with Richard Powers.
+- [The Invention of Nature](https://www.goodreads.com/en/book/show/23995249)
+    - One of the last polymaths and the forgotten father of environmentalism, Alexander von Humboldt changed our view of nature. His daring expeditions, scientific drive, and interdisciplinary approach to 'understand nature as a whole' make him a deeply inspiring figure. Highly recommended!
 - [The Collapse of Western Civilization](https://cup.columbia.edu/book/the-collapse-of-western-civilization/9780231169547)
     - You can read this book in two hours but you won't forget it in a lifetime.
 - [A Short History of Progress](https://www.goodreads.com/en/book/show/331227.A_Short_History_of_Progress)

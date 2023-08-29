@@ -95,6 +95,7 @@ I will try to add to this list going forward, and I hope that some things are us
 - [Earth System Science: A Very Short Introduction](https://global.oup.com/academic/product/earth-system-science-a-very-short-introduction-9780198718871?cc=de&lang=en&)
     - Oxford University Press's "Very Short Introductions" are a great way to get an overview of any [particular topic you might imagine](https://www.veryshortintroductions.com/browse?isQuickSearch=true&pageSize=100&sort=titlesort). This and the one below are helpful if you want to dig slightly deeper into the natural science side of things.
 - [Climate: A Very Short Introduction](https://www.veryshortintroductions.com/view/10.1093/actrade/9780199641130.001.0001/actrade-9780199641130)
+- [Anarchism: A Very Short Introduction](https://academic.oup.com/book/43805)
 - [The Great Derangement](https://press.uchicago.edu/ucp/books/book/chicago/G/bo22265507.html)
     - Amitav Ghosh makes so many interesting points that you quickly forget they are all contained in just a single book. Among many other things, provides a powerful reflection on the role of literature and the arts on a planet in crisis.
 - [The Ministry for the Future](https://www.goodreads.com/book/show/50998056-the-ministry-for-the-future)

@@ -129,7 +129,7 @@ I will try to add to this list going forward, and I hope that some things are us
 - [CarbonBrief](https://www.carbonbrief.org/)
     - I cannot begin to express my gratitude and appreciation for the team over at CarbonBrief. CarbonBrief is hands-down the best resource on climate; their in-depth Q&As and explainers (see for example [here](https://www.carbonbrief.org/in-depth-qa-the-ipccs-sixth-assessment-report-on-climate-science), [here](https://www.carbonbrief.org/qa-how-integrated-assessment-models-are-used-to-study-climate-change), [here](https://www.carbonbrief.org/qa-how-do-climate-models-work), [here](https://www.carbonbrief.org/explainer-nine-tipping-points-that-could-be-triggered-by-climate-change), and [here](https://www.carbonbrief.org/in-depth-qa-what-is-climate-justice)) are invaluable. Make sure to subscribe to their [weekday morning briefings](https://www.getrevue.co/profile/CarbonBriefDailyBriefing).
 - [Energy Monitor](https://www.energymonitor.ai/)
-- Highly informative news source on topics related to the energy transition, often including own analyses. Make sure to subscribe to their [bi-weekly newsletter](https://www.energymonitor.ai/newsletters/).
+  - Highly informative news source on topics related to the energy transition, often including own analyses. Make sure to subscribe to their [bi-weekly newsletter](https://www.energymonitor.ai/newsletters/).
 - [Mongabay](https://www.mongabay.com/)
     - Excellent news source on environmental and related issues internationally.
 - [Inside Climate News](https://insideclimatenews.org/)

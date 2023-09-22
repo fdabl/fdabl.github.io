@@ -170,6 +170,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - Beautifully edited documentary about Roger Hallam, Extinction Rebellion, the power of civil disobedience, and the joy of finding community and being part of something bigger than oneself.
 - [Rebellion](https://www1.moviesjoy.sc/film/rebellion-2021/)
     - Insightful documentary about (the beginnings of) Extinction Rebellion which uses unique early footage and includes reflections and struggles of key movement organizers. Trying to save the world comes with lots of human drama!
+- [Is It Time to Break the Law?](https://www.youtube.com/watch?v=YdMvdxz_Ngo)
+    - Yes.
 - [Chasing Ice](https://chasingice.com/)
     - It can move surprisingly fast!
 - [Chasing Coral](https://www.chasingcoral.com/)

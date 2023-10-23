@@ -6,6 +6,8 @@ title:
 *If you are interested in a workshop on any of the topics below, do not hesitate to reach out.*
 
 ## 2023
+Climate Beliefs and Climate Action by Academics. Talk at the Society for Environmental, Population, and Conservation Psychology Annual Online Conference. October, 2023.
+
 Large-scale Investigation of Climate Action by Academics. Talk at the International Conference on Environmental Psychology. Aarhus, Denmark, June, 2023.
 
 Climate Crisis Globally and in Africa: Causes, Consequences, and Responses (together with [Dr. Marthe Wens](https://twitter.com/MartheWens)). Invited Talk at PharmAccess Foundation, Amsterdam, June, 2023. [[Slides]({{ site.url }}/assets/talks/PharmAccess-Talk.pdf)]

@@ -3,6 +3,12 @@ layout: page
 title: ''
 ---
 
+## Opinion pieces
+'Er is geen koolstofbudget meer voor rijke landen'. *Het Parool*, 9<sup>th</sup> October, 2023. [[Link](https://www.parool.nl/columns-opinie/opinie-er-is-geen-koolstofbudget-meer-voor-rijke-landen-stop-met-koolstofgraaien~b40169a8/)] <br>
+UvA staat voor historische keuze: wat zal zij doen? *ScienceGuide*, 10<sup>th</sup> July, 2023. [[Link](https://www.scienceguide.nl/2023/07/uva-staat-voor-historische-keuze-wat-zal-zij-doen/)] <br>
+Waar blijft het verplichte klimaatonderwijs voor studenten? *Trouw*, 10<sup>th</sup> May, 2023. [[Link](https://www.trouw.nl/opinie/waar-blijft-het-verplichte-klimaatonderwijs-voor-studenten~bd171db8/)] <br>
+The fossil industry’s real interest is delaying the energy transition. *Folia*, 21<sup>th</sup> February, 2023. [[Link](https://www.folia.nl/international/155733/the-fossil-industrys-real-interest-is-delaying-the-energy-transition)] 
+
 ## Submitted / under review
 Ryan, O.<sup>&#11089;</sup>, & **Dablander, F.**<sup>&#11089;</sup> (under review). Equilibrium Causal Models: Connecting Dynamical Systems Modeling and Cross-Sectional Data Analysis. [[Link](https://psyarxiv.com/q4d9g)]
 

@@ -24,8 +24,10 @@ Ryan, O.<sup><small>&#11089;</small></sup>, **Dablander, F.**<sup><small>&#11089
 
 **Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Wagenmakers, E.-J., & Ly, A. (2023). Default Bayes factors for Testing the (In)equality of Several Population Variances. *Bayesian Analysis*. [[Link](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Default-Bayes-Factors-for-Testing-the-Inequality-of-Several-Population/10.1214/23-BA1369.full)][[R package](https://github.com/fdabl/bfvartest)]
 
+Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (2023). Multimodality and skewness in emotion time series. *Emotion, 23*(8), 2117–2141. [[Link](https://psycnet.apa.org/fulltext/2023-72233-001.html)]
 
 Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dablander, F.**, & Sitte, H. H. (2023). Traditional Chinese medicine: A Bayesian network model of public awareness, usage determinants, and perception of scientific support in Austria. *BMJ Open*. [[Link](https://bmjopen.bmj.com/content/13/3/e060644.abstract)]
+
 
 ## 2022
 **Dablander, F.**, & Bury, T. M. (2022). Deep Learning for Tipping Points: Preprocessing Matters. *Proceedings of the National Academy of Sciences*. [[Link](https://www.pnas.org/doi/10.1073/pnas.2207720119)]
@@ -35,8 +37,6 @@ Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dab
 **Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (2022). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. *Psychological Methods*. [[Link](https://psyarxiv.com/5wc28)] [[Journal Version](https://psycnet.apa.org/record/2022-19018-001)]
 
 **Dablander, F.** & van Bork, R. (2022). Causal Inference. In Isvoranu, A. M., Epskamp, S., Waldorp, L.J., & Borsboom, D. (Eds.). *Network Psychometrics with R: A Guide for Behavioral and Social Scientists.* (pp. 93-110). Routledge. [[Link](https://www.taylorfrancis.com/chapters/edit/10.4324/9781003111238-16/causal-inference-fabian-dablander-riet-van-bork)]
-
-Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (accepted). Multimodality and Skewness in Emotion Time Series. *Emotion*. [[Link](https://psyarxiv.com/qudr6)]
 
 Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Van Mieghem, P. (2022). The lighting of the BECONs: A behavioral data science approach to tracking interventions in COVID-19 research. *Journal of Behavioral Data Science*. [[Link](https://jbds.isdsa.org/index.php/jbds/article/view/26)]
 

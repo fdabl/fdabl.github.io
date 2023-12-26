@@ -10,6 +10,7 @@ menu:
 #- {name: 'About', menu: '', path: ''}
 - {name: 'Blog', path: 'menu', url: 'blog.html'}
 - {name: 'Papers', path: 'menu', url: 'papers.html'}
+- {name: 'Press', path: 'menu', url: 'press.html'}
 - {name: 'Talks', path: 'menu', url: 'talks.html'}
 - {name: 'Climate Emergency', path: 'menu', url: 'climate.html'}
 

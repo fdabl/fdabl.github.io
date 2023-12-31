@@ -60,6 +60,8 @@ I will try to add to this list going forward, and I hope that some things are us
     - Drawing on decades of experience from one of the leaders of the Serbian resistance movement *Otpor!*, this book distils key insights relevant to nonviolent movements. The sense of comradery, the entertaining writing style, and the many anecdotes from struggles around the world make this a highly enjoyable book.
 - [A Bigger Picture](https://www.goodreads.com/book/show/56817598-a-bigger-picture)
     - In this powerful memoir, Vanessa Nakate recounts how she became an activist, only to be cropped out by Western media. Nakate describes climate impacts and climate action in Africa, arguing that a successful climate movement must center justice and be inclusive. A very informative, insightful, and inspiring read!
+- [Facing the Climate Emergency](https://www.goodreads.com/en/book/show/53014001)
+    - Written by the Executive Director of the [Climate Emergency Fund](https://www.climateemergencyfund.org/), this book provides a concise, step-by-step guide to personal transformation and shifting into emergency mode. Highly recommended if you want to reflect on your role in the struggle for a livable Earth!
 - [On Fire](https://www.goodreads.com/en/book/show/43821569-on-fire)
     - A collection of excellent essays, with topics ranging from BP's devastating oil spill in 2010 to the ascent of the Green New Deal in 2019. As Greta Thunberg notes, Naomi Klein is "the great chronicler of our age, an inspirer of generations."
 - [Ending Fossil Fuels](https://www.goodreads.com/book/show/59495922-ending-fossil-fuels)

@@ -4,7 +4,7 @@ title: ''
 ---
 
 ## Submitted / under review
-**Dablander, F.**<sup>&#11089;</sup>, Sachisthal, M., & Haslbeck, J.M.B. (submitted). Going Beyond Research: Climate Actions by Climate and Non-Climate Researchers. [[Link](https://osf.io/preprints/psyarxiv/5fqtr)]
+**Dablander, F.**, Sachisthal, M., & Haslbeck, J.M.B. (submitted). Going Beyond Research: Climate Actions by Climate and Non-Climate Researchers. [[Link](https://osf.io/preprints/psyarxiv/5fqtr)]
 
 **Dablander, F.**<sup>&#11089;</sup>, Sachisthal, M.<sup>&#11089;</sup>, Cologna, V., Strahm, N., Bosshard, A., Grüning, N., Green, A., Brick, C., Aron, A., & Haslbeck, J.M.B.<sup>&#11089;</sup> (submitted). Climate Change Engagement of Scientists. [[Link](https://osf.io/preprints/psyarxiv/73w4s)]
 

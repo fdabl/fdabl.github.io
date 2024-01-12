@@ -94,7 +94,7 @@ I will try to add to this list going forward, and I hope that some of it will be
     - This book provides a thorough treatment of the many aspects of degrowth. It moves from a powerful analysis and critique of economic growth to a vision of a good life for all, and includes proposals for how to get there from here. Highly recommended!
 - [The Divide](https://www.goodreads.com/book/show/32603498-the-divide)
     - This is an excellent book on global inequality, which makes you see the world in a different way.
-- [Revolutions That Made the Earth](https://oxford.universitypressscholarship.com/view/10.1093/acprof:oso/9780199587049.001.0001/acprof-9780199587049)
+- [Revolutions That Made the Earth](https://academic.oup.com/book/8091)
     - Mother Earth has experienced a number of key revolutions that made her what she is today. This extremely informative and wide-ranging book — covering "terrain that ranges in difficulty from easy to strenuous" — will make you feel more connected to the only planet known to inhabit life.
 - [Earth System Science: A Very Short Introduction](https://global.oup.com/academic/product/earth-system-science-a-very-short-introduction-9780198718871?cc=de&lang=en&)
     - Oxford University Press's "Very Short Introductions" are a great way to get an overview of any [particular topic you might imagine](https://www.veryshortintroductions.com/browse?isQuickSearch=true&pageSize=100&sort=titlesort). This and the one below are helpful if you want to dig slightly deeper into the natural science side of things.

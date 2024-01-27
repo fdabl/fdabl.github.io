@@ -17,7 +17,7 @@ I will try to add to this list going forward, and I hope that some of it will be
 - [Mastering En-ROADS by Climate Interactive](https://learn.climateinteractive.org/)
     - This is an excellent online course. The Climate Interactive team is full of energy and puts a lot of effort into making the [learning experience fun](https://twitter.com/fdabl/status/1418251414149738497). The goal of the course is to teach you how to use [En-ROADS](https://en-roads.climateinteractive.org/scenario.html) to spark conversations and educate others, becoming a [climate ambassador](https://www.climateinteractive.org/tools/en-roads/en-roads-ambassador-program/). Highly recommended!
 - [Climate Solutions 101 by Project Drawdown](https://drawdown.org/climate-solutions-101)
-    - Provides a clear and concise overview of the climate conundrum and solutions.
+    - Provides a clear and concise overview of the climate conundrum and solutions. 
 - [School of Climate Change by the Oxford Climate Society](https://www.oxfordclimatesociety.com/the-oxford-school-of-climate-change.html)
   - 9-week online course that features weekly lectures from experts on different aspects of the climate crisis and an optional group project. Provides a good overview and the opportunity to connect with people from across the world. They also have an active YouTube channel — I especially enjoyed the events with [Noam Chomsky](https://www.youtube.com/watch?v=WZ81-McOgdM) and with [Anuradha Mittal and Nnimmo Bassey](https://www.youtube.com/watch?v=s7uOGgi3dCM&t=521s).
   

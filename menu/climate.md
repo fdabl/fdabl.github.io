@@ -60,6 +60,8 @@ I will try to add to this list going forward, and I hope that some of it will be
     - Classic reading in the literature of nonviolent struggle that has helped people overthrow dictators around the world. You might also enjoy [this documentary](https://www.youtube.com/watch?v=EKnoUbDIpjo) about Gene Sharp's work.
 - [Blueprint for Revolution](https://www.goodreads.com/book/show/24811605-blueprint-for-revolution)
     - Drawing on decades of experience from one of the leaders of the Serbian resistance movement *Otpor!*, this book distils key insights relevant to nonviolent movements. The sense of comradery, the entertaining writing style, and the many anecdotes from struggles around the world make this a highly enjoyable book.
+- [Saving Ourselves](https://cup.columbia.edu/book/saving-ourselves/9780231557870)
+    - Short US-centered book arguing that only a sustained, heightened perception of risk can mobilize enough people to usher in systemic transformations. Ideas are at times underdeveloped and people active in the climate movement may prefer directly reading Fisher's [academic](https://www.nature.com/articles/s44168-022-00011-8) [work](https://journals.sagepub.com/doi/full/10.1177/0735275119888247). 
 - [A Bigger Picture](https://www.goodreads.com/book/show/56817598-a-bigger-picture)
     - In this powerful memoir, Vanessa Nakate recounts how she became an activist, only to be cropped out by Western media. Nakate describes climate impacts and climate action in Africa, arguing that a successful climate movement must center justice and be inclusive. A very informative, insightful, and inspiring read!
 - [Facing the Climate Emergency](https://www.goodreads.com/en/book/show/53014001)

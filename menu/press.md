@@ -11,7 +11,7 @@ Waar blijft het verplichte klimaatonderwijs voor studenten? *Trouw*, 10<sup>th</
 The fossil industry’s real interest is delaying the energy transition. *Folia*, 21<sup>th</sup> February, 2023 [[Link](https://www.folia.nl/international/155733/the-fossil-industrys-real-interest-is-delaying-the-energy-transition)]
 
 ## In the news
-Scientists under arrest: the researchers taking action over climate change, *Nature*, 21<sup>th</sup> February, 2024 [[Link](https://www.nature.com/articles/d41586-024-00480-3)] <br>
+Scientists under arrest: the researchers taking action over climate change. *Nature*, 21<sup>th</sup> February, 2024 [[Link](https://www.nature.com/articles/d41586-024-00480-3)] <br>
 Becoming ungovernable at scale. *Planet Critical*, 11<sup>th</sup> January, 2024 [[Link]](https://www.planetcritical.com/p/becoming-ungovernable-at-scale) <br>
 Scientists skip COP28 to demand climate action at home. *Nature*, 5<sup>th</sup> December, 2023 [[Link](https://www.nature.com/articles/d41586-023-03829-2)] <br>
 Wie weit soll Klimaaktivismus gehen? *Radio FM4*, 19<sup>th</sup> April, 2022 [[Link](https://fm4.orf.at/stories/3023630/)] <br>

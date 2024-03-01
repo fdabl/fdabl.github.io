@@ -58,6 +58,8 @@ I will try to add to this list going forward, and I hope that some of it will be
     - Short book on dilemma actions which — combined with a dash of humour — can topple dictators. You might also enjoy this interview with author [Srđa Popović](https://was-tun.podigee.io/23-how-to-overthrow-a-dictator).
 - [From Dictatorship to Democracy](https://www.goodreads.com/book/show/1119326.From_Dictatorship_to_Democracy)
     - Classic reading in the literature of nonviolent struggle that has helped people overthrow dictators around the world. You might also enjoy [this documentary](https://www.youtube.com/watch?v=EKnoUbDIpjo) about Gene Sharp's work.
+- [If We Burn](https://www.goodreads.com/en/book/show/62315875)
+    - Provides a neat overview of mass uprisings in ten (!) countries during the 2010s and tries to answer why so many of them failed. Although a bit scattered at times, the takeaways from the book are useful for anyone involved in social movements. Failure is always an option.
 - [Blueprint for Revolution](https://www.goodreads.com/book/show/24811605-blueprint-for-revolution)
     - Drawing on decades of experience from one of the leaders of the Serbian resistance movement *Otpor!*, this book distils key insights relevant to nonviolent movements. The sense of comradery, the entertaining writing style, and the many anecdotes from struggles around the world make this a highly enjoyable book.
 - [Saving Ourselves](https://cup.columbia.edu/book/saving-ourselves/9780231557870)

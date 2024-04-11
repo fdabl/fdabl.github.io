@@ -5,6 +5,9 @@ title:
 
 *If you are interested in a workshop on any of the topics below, do not hesitate to reach out.*
 
+## 2024
+Disrupting Climate Policymaking. Guest lecture, Breda University of Applied Sciences, The Netherlands, March, 2024. [[Slides]({{ site.url }}/assets/talks/BUAS-Climate-Policy-Talk.pdf)]
+
 ## 2023
 Climate Beliefs and Climate Action by Academics. Talk at the Society for Environmental, Population, and Conservation Psychology Annual Online Conference. October, 2023.
 

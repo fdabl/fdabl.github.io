@@ -4,6 +4,8 @@ title: ''
 ---
 
 ## Submitted / under review
+**Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (submitted). Media Coverage of Climate Activist Groups in Germany. [[Link](https://osf.io/preprints/psyarxiv/yhn54)]
+
 **Dablander, F.**, Sachisthal, M., & Haslbeck, J.M.B. (under review). Going Beyond Research: Climate Actions by Climate and Non-Climate Researchers. [[Link](https://osf.io/preprints/psyarxiv/5fqtr)]
 
 **Dablander, F.**<sup>&#11089;</sup>, Sachisthal, M.<sup>&#11089;</sup>, Cologna, V., Strahm, N., Bosshard, A., Grüning, N., Green, A., Brick, C., Aron, A., & Haslbeck, J.M.B.<sup>&#11089;</sup> (under review). Climate Change Engagement of Scientists. [[Link](https://osf.io/preprints/psyarxiv/73w4s)]

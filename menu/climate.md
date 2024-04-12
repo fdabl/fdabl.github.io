@@ -117,7 +117,7 @@ I will try to add to this list going forward, and I hope that some of it will be
 - [Bewilderment](https://www.goodreads.com/book/show/56404444-bewilderment)
     - A story about an astrobiologist father and his exceptional nine-year-old son who is bewildered by a world in pursuit of its own destruction. A book that makes you at times laugh out loud and then moves you to tears. You might also enjoy [this conversation](https://www.nytimes.com/2021/09/28/opinion/ezra-klein-podcast-richard-powers.html) with Richard Powers.
 - [Birnam Wood](https://www.goodreads.com/en/book/show/60784757)
-    - An extremely readable, character-driven novel about an activist collective, a billionaire, and — who would have guessed — some shady business. Ah, it's good to read non-fiction every now and then!
+    - An extremely readable, character-driven novel about an activist collective, a billionaire, and — who would have guessed — some shady business. Ah, it's good to read fiction every now and then!
 - [The Invention of Nature](https://www.goodreads.com/en/book/show/23995249)
     - One of the last polymaths and the forgotten father of environmentalism, Alexander von Humboldt changed our view of nature. His daring expeditions, scientific drive, and interdisciplinary approach to 'understand nature as a whole' make him a deeply inspiring figure. Highly recommended!
 - [The Collapse of Western Civilization](https://cup.columbia.edu/book/the-collapse-of-western-civilization/9780231169547)

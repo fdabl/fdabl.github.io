@@ -6,7 +6,7 @@ title:
 *If you are interested in a workshop on any of the topics below, do not hesitate to reach out.*
 
 ## 2024
-Going Beyond Research: Climate Change Engagement by Scientists. Talk at the EGU General Assembly, Vienna, Austria, April, 2024. [[Slides]({{ site.url }}/assets/talks/EGU-2024-Talk.pdf)]
+Going Beyond Research: Climate Change Engagement by Scientists. Talk at the EGU General Assembly, Vienna, Austria, April, 2024. [[Slides]({{ site.url }}/assets/talks/EGU-2024-Talk.pdf)] [[Abstract](https://meetingorganizer.copernicus.org/EGU24/EGU24-9536.html)]
 
 Disrupting Climate Policymaking. Guest lecture, Breda University of Applied Sciences, The Netherlands, March, 2024. [[Slides]({{ site.url }}/assets/talks/BUAS-Climate-Policy-Talk.pdf)]
 

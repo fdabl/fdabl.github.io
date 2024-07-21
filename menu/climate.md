@@ -48,6 +48,8 @@ I will try to add to this list going forward, and I hope that some of it will be
     - Andreas Malm provides a convincing counter-narrative to the story that nonviolent direct action is the key to success, noting the importance of sabotage, property destruction, and the threat of violence. You might also enjoy [this interview](https://www.vox.com/vox-conversations-podcast/22691428/vox-conversations-climate-change-andreas-malm) with him.
 - [Levers of Power](https://www.versobooks.com/books/3181-levers-of-power)
     - This extremely well-researched book is nothing short of eye-opening, detailing how big corporations use their structural power over the economy — chiefly derived from their control of the investment of capital — to exert enormous influence on political decision-making. The book also describes how past social movements have disrupted business in order to achieve progress reform. Highly recommended!
+- [Power in Movement](https://www.cambridge.org/nl/universitypress/subjects/politics-international-relations/comparative-politics/power-movement-social-movements-and-contentious-politics-4th-edition)
+    - Extremely insightful, readable, and comprehensive resource on social movements, written by a legend in the field. Good for reference and for moments of study and reflection.
 - [Climate Change as Class War](https://www.goodreads.com/book/show/60694943-climate-change-as-class-war)
     - This highly stimulating, unabashedly Marxist book argues that we should center production, not consumption; criticizes the climate movement, whose members primarily come from the [professional-managerial class](https://en.wikipedia.org/wiki/Professional%E2%80%93managerial_class); and presents an alternative approach that focuses on building working class power. Well worth a close read!
 - [How We Win](https://www.goodreads.com/en/book/show/40068449-how-we-win)
@@ -68,6 +70,8 @@ I will try to add to this list going forward, and I hope that some of it will be
     - In this powerful memoir, Vanessa Nakate recounts how she became an activist, only to be cropped out by Western media. Nakate describes climate impacts and climate action in Africa, arguing that a successful climate movement must center justice and be inclusive. A very informative, insightful, and inspiring read!
 - [Facing the Climate Emergency](https://www.goodreads.com/en/book/show/53014001)
     - Written by the Executive Director of the [Climate Emergency Fund](https://www.climateemergencyfund.org/), this book provides a concise, step-by-step guide to personal transformation and shifting into emergency mode. Highly recommended if you want to reflect on your role in the struggle for a livable Earth!
+- [Change](https://www.goodreads.com/book/show/53369466-change)
+    - The adoption of new behaviours and social norms does not spread by simple contagion, like viruses, but by complex contagion. An insightful and highly readable book on the implications of this fact for change.
 - [On Fire](https://www.goodreads.com/en/book/show/43821569-on-fire)
     - A collection of excellent essays, with topics ranging from BP's devastating oil spill in 2010 to the ascent of the Green New Deal in 2019. As Greta Thunberg notes, Naomi Klein is "the great chronicler of our age, an inspirer of generations."
 - [Ending Fossil Fuels](https://www.goodreads.com/book/show/59495922-ending-fossil-fuels)
@@ -170,6 +174,8 @@ I will try to add to this list going forward, and I hope that some of it will be
     - Great sequel to the original film. The amount of greenwashing is deeply disturbing. Let us not go gentle into that good night.
 - [The Power of Big Oil](https://www.pbs.org/wgbh/frontline/documentary/the-power-of-big-oil/)
     - This three-part series on how Big Oil has lied and deceived the public is a must-see. They show [no signs of relenting](https://www.theguardian.com/business/2022/dec/09/oil-gas-companies-fossil-fuel-industry-house-committee). We must end them before they end us.
+- [In the Eye of the Storm](https://eyeofthestorm.info/)
+    - Highly engaging and insightful six-part series on the political odyssey of ex-Finance Minister Yanis Varoufakis, the rise of fascism, and what is to be done. You might also enjoy the [accompanying podcast](https://open.spotify.com/show/05ob6Y1HtBA3jiXMabV5t9?si=c7dd9c8031ca47e2) with a litany of great guests and his book [Adults in the Room](https://www.goodreads.com/book/show/34673467-adults-in-the-room).
 - [The Yes Men](https://www.filmsforaction.org/watch/the-yes-men/)
     - Follows two [culture jamming activists](https://en.wikipedia.org/wiki/The_Yes_Men) who use pranks to expose the injustice and cruelty perpetuated by multinational corporations and the (international) institutions that serve them. The Yes Men made three films, see [here](https://www.filmsforaction.org/watch/the-yes-men-fix-the-world-2009/), [here](https://www.filmsforaction.org/watch/the-yes-men-fix-the-world-2009/), and [here](https://en.wikipedia.org/wiki/The_Yes_Men_Are_Revolting).
 - [David Attenborough: A Life on Our Planet](https://www.imdb.com/title/tt11989890/)

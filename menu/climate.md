@@ -182,8 +182,10 @@ I will try to add to this list going forward, and I hope that some of it will be
     - This film is a beautiful meditation on planet Earth and its many wonders, told through the life of the world's best known naturalist. Deeply moving.
 - [Tomorrow](https://www.tomorrow-documentary.com/)
     - This is a wonderful documentary showing solutions and sketching a path towards a better tomorrow, demonstrating that films on sustainability can lift your spirits. Highly recommended!
-- [2040](https://whatsyour2040.com/)
+- [2040](https://www.imdb.com/title/tt7150512/)
     - Another informative and uplifting documentary.
+- [Once you know](https://www.justwatch.com/us/movie/once-you-know)
+    - With a keen eye for capturing human moments, this somber yet [beautiful documentary](https://www.theguardian.com/film/2022/apr/20/once-you-know-review-must-watch-essay-on-climate-change-that-tells-us-its-already-here) explores collapse, connection, and what to do once you know.
 - [LN3: Teachings of the Anishinaabe Resistance](https://www.stopline3.org/ln3film-video)
     - This short documentary has a ton of style. Indigenous peoples are at the frontlines fighting extractive industries. There is a lot we can learn from them.
 - [How to Start a Revolution](https://www.youtube.com/watch?v=EKnoUbDIpjo)

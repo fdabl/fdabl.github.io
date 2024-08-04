@@ -103,7 +103,7 @@ I will try to add to this list going forward, and I hope that some of it will be
 - [Post Growth: Life after Capitalism](https://www.goodreads.com/en/book/show/55404479-post-growth)
     - Lyrical meditation hinting at what the economy — and life — could be like, told through biographical sketches of giants such as John Stuart Mill, Hannah Arendt, and Wangari Maathai. Less concrete than I had hoped given the title, but insightful nonetheless.
 - [Technofeudalism](https://www.goodreads.com/book/show/75560037-techno-feudalism)
-    - Highly stimulating economic history and analysis of what may have killed capitalism. Also important for understanding the current geopolitical moment and developing strategies for achieving economic democracy, a core element of the necessary socio-ecological transformation.
+    - Highly stimulating economic history and analysis of what may have killed capitalism, helping us to understand the new Cold War and develop strategies for achieving a better life for all.
 - [The Future is Degrowth](https://www.versobooks.com/books/3989-the-future-is-degrowth)
     - This book provides a thorough treatment of the many aspects of degrowth. It moves from a powerful analysis and critique of economic growth to a vision of a good life for all, and includes proposals for how to get there from here. Highly recommended!
 - [The Divide](https://www.goodreads.com/book/show/32603498-the-divide)

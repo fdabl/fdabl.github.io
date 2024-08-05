@@ -8,7 +8,6 @@ title: ''
 
 **Dablander, F.**, Sachisthal, M., & Haslbeck, J.M.B. (under review). Going Beyond Research: Climate Actions by Climate and Non-Climate Researchers. [[Link](https://osf.io/preprints/psyarxiv/5fqtr)]
 
-**Dablander, F.**<sup>&#11089;</sup>, Sachisthal, M.<sup>&#11089;</sup>, Cologna, V., Strahm, N., Bosshard, A., Grüning, N., Green, A., Brick, C., Aron, A., & Haslbeck, J.M.B.<sup>&#11089;</sup> (under review). Climate Change Engagement of Scientists. [[Link](https://osf.io/preprints/psyarxiv/73w4s)]
 
 Ryan, O.<sup>&#11089;</sup>, & **Dablander, F.**<sup>&#11089;</sup> (under review). Equilibrium Causal Models: Connecting Dynamical Systems Modeling and Cross-Sectional Data Analysis. [[Link](https://psyarxiv.com/q4d9g)]
 
@@ -16,11 +15,15 @@ van den Bergh, D.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><sm
 
 Ryan, O.<sup><small>&#11089;</small></sup>, **Dablander, F.**<sup><small>&#11089;</small></sup>, & Haslbeck, J.M.B.<sup><small>&#11089;</small></sup> (under review). Towards a Generative Model for Emotion Dynamics. [[Link](https://psyarxiv.com/x52ns)] 
 
+## 2024
+**Dablander, F.**<sup>&#11089;</sup>, Sachisthal, M.<sup>&#11089;</sup>, Cologna, V., Strahm, N., Bosshard, A., Grüning, N., Green, A., Brick, C., Aron, A., & Haslbeck, J.M.B.<sup>&#11089;</sup> (2024). Climate Change Engagement of Scientists. *Nature Climate Change*. [[Journal version](https://www.nature.com/articles/s41558-024-02091-2)]
 
 ## 2023
 **Dablander, F.** (2023). Changing Systems: Statistical, Causal, and Dynamical Perspectives. *Doctoral Thesis*. [[Link](https://dare.uva.nl/search?identifier=a23fb954-2ded-4d39-bf99-80532b12e19a)]
 
 **Dablander, F.** (2023). Understanding and Preventing Climate Breakdown: A Guide for Social and Behavioral Scientists. [[Link](https://psyarxiv.com/4uzjs/)]  
+
+**Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (2023). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. *Psychological Methods*, 28(4), 765. [[Link](https://psyarxiv.com/5wc28)] [[Journal Version](https://psycnet.apa.org/record/2022-19018-001)]
 
 **Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Wagenmakers, E.-J., & Ly, A. (2023). Default Bayes factors for Testing the (In)equality of Several Population Variances. *Bayesian Analysis*. [[Link](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Default-Bayes-Factors-for-Testing-the-Inequality-of-Several-Population/10.1214/23-BA1369.full)][[R package](https://github.com/fdabl/bfvartest)]
 
@@ -28,13 +31,10 @@ Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;
 
 Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dablander, F.**, & Sitte, H. H. (2023). Traditional Chinese medicine: A Bayesian network model of public awareness, usage determinants, and perception of scientific support in Austria. *BMJ Open*. [[Link](https://bmjopen.bmj.com/content/13/3/e060644.abstract)]
 
-
 ## 2022
 **Dablander, F.**, & Bury, T. M. (2022). Deep Learning for Tipping Points: Preprocessing Matters. *Proceedings of the National Academy of Sciences*. [[Link](https://www.pnas.org/doi/10.1073/pnas.2207720119)]
 
 **Dablander, F.**, Heesterbeek, H., Borsboom, D., & Drake, J.M. (2022). Overlapping Timescales Obscure Early Warning Signals of the Second COVID-19 Wave.  *Proceedings of the Royal Society B: Biological Sciences*. [[Link](https://royalsocietypublishing.org/doi/10.1098/rspb.2021.1809)]
-
-**Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (2022). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. *Psychological Methods*. [[Link](https://psyarxiv.com/5wc28)] [[Journal Version](https://psycnet.apa.org/record/2022-19018-001)]
 
 **Dablander, F.** & van Bork, R. (2022). Causal Inference. In Isvoranu, A. M., Epskamp, S., Waldorp, L.J., & Borsboom, D. (Eds.). *Network Psychometrics with R: A Guide for Behavioral and Social Scientists.* (pp. 93-110). Routledge. [[Link](https://www.taylorfrancis.com/chapters/edit/10.4324/9781003111238-16/causal-inference-fabian-dablander-riet-van-bork)]
 

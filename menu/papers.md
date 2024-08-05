@@ -16,7 +16,7 @@ van den Bergh, D.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><sm
 Ryan, O.<sup><small>&#11089;</small></sup>, **Dablander, F.**<sup><small>&#11089;</small></sup>, & Haslbeck, J.M.B.<sup><small>&#11089;</small></sup> (under review). Towards a Generative Model for Emotion Dynamics. [[Link](https://psyarxiv.com/x52ns)] 
 
 ## 2024
-**Dablander, F.**<sup>&#11089;</sup>, Sachisthal, M.<sup>&#11089;</sup>, Cologna, V., Strahm, N., Bosshard, A., Grüning, N., Green, A., Brick, C., Aron, A., & Haslbeck, J.M.B.<sup>&#11089;</sup> (2024). Climate Change Engagement of Scientists. *Nature Climate Change*. [[Journal version](https://www.nature.com/articles/s41558-024-02091-2)]
+**Dablander, F.**<sup>&#11089;</sup>, Sachisthal, M.<sup>&#11089;</sup>, Cologna, V., Strahm, N., Bosshard, A., Grüning, N., Green, A., Brick, C., Aron, A., & Haslbeck, J.M.B.<sup>&#11089;</sup> (2024). Climate Change Engagement of Scientists. *Nature Climate Change*. [[Link](https://osf.io/preprints/psyarxiv/73w4s)] [[Journal version](https://www.nature.com/articles/s41558-024-02091-2)]
 
 ## 2023
 **Dablander, F.** (2023). Changing Systems: Statistical, Causal, and Dynamical Perspectives. *Doctoral Thesis*. [[Link](https://dare.uva.nl/search?identifier=a23fb954-2ded-4d39-bf99-80532b12e19a)]

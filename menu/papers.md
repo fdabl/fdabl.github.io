@@ -18,7 +18,7 @@ Ryan, O.<sup><small>&#11089;</small></sup>, **Dablander, F.**<sup><small>&#11089
 ## 2024
 **Dablander, F.**<sup>&#11089;</sup>, Sachisthal, M.<sup>&#11089;</sup>, Cologna, V., Strahm, N., Bosshard, A., Grüning, N., Green, A., Brick, C., Aron, A., & Haslbeck, J.M.B.<sup>&#11089;</sup> (2024). Climate Change Engagement of Scientists. *Nature Climate Change*. [[Link](https://osf.io/preprints/psyarxiv/73w4s)] [[Journal version](https://www.nature.com/articles/s41558-024-02091-2)]
 
-**Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Wagenmakers, E.-J., & Ly, A. (2023). Default Bayes factors for Testing the (In)equality of Several Population Variances. *Bayesian Analysis, 19*(3), 699-723. [[Link](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Default-Bayes-Factors-for-Testing-the-Inequality-of-Several-Population/10.1214/23-BA1369.full)][[R package](https://github.com/fdabl/bfvartest)]
+**Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Wagenmakers, E.-J., & Ly, A. (2024). Default Bayes factors for Testing the (In)equality of Several Population Variances. *Bayesian Analysis, 19*(3), 699-723. [[Link](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Default-Bayes-Factors-for-Testing-the-Inequality-of-Several-Population/10.1214/23-BA1369.full)] [[R package](https://github.com/fdabl/bfvartest)]
 
 ## 2023
 **Dablander, F.** (2023). Changing Systems: Statistical, Causal, and Dynamical Perspectives. *Doctoral Thesis*. [[Link](https://dare.uva.nl/search?identifier=a23fb954-2ded-4d39-bf99-80532b12e19a)]
@@ -56,13 +56,13 @@ Blanken, T. F., Tanis, C. C., Nauta, F. H., **Dablander, F.**, Zijlstra, B. J., 
 
 Tanis, C. C., Leach, N. M., Geiger, S. J., Nauta, F. H., **Dablander, F.**, van Harreveld, F., ... & Blanken, T. F. (2021). Smart Distance Lab’s art fair, experimental data on social distancing during the COVID-19 pandemic. *Scientific Data, 8*(1), 179. [[Link]](https://www.nature.com/articles/s41597-021-00971-2)
 
-Brown, J., Murray, D., Furlong, K., Coco, E., & **Dablander, F.** (2021). A Breeding Pool of Ideas: Analyzing Interdisciplinary Collaborations at the Complex Systems Summer School. *PLoS One*. [[Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0246260)]
+Brown, J., Murray, D., Furlong, K., Coco, E., & **Dablander, F.** (2021). A Breeding Pool of Ideas: Analyzing Interdisciplinary Collaborations at the Complex Systems Summer School. *PLoS One, 16*(2), e0246260. [[Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0246260)]
 
 
 ## 2020
 **Dablander, F.** (2020). An Introduction to Causal Inference. [[Link](https://psyarxiv.com/b3fkw)]
 
-**Dablander, F.**<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & Haslbeck, J.M.B.<sup><small>&#11089;</small></sup> (2020). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. *PLoS One*. [[Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0240730)]
+**Dablander, F.**<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & Haslbeck, J.M.B.<sup><small>&#11089;</small></sup> (2020). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. *PLoS One, 15*(10), e0240730. [[Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0240730)]
 
 Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (2020). The Support Interval. *Erkenntnis*. [[Link](https://link.springer.com/article/10.1007%2Fs10670-019-00209-z)]
 

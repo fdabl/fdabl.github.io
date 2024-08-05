@@ -18,14 +18,14 @@ Ryan, O.<sup><small>&#11089;</small></sup>, **Dablander, F.**<sup><small>&#11089
 ## 2024
 **Dablander, F.**<sup>&#11089;</sup>, Sachisthal, M.<sup>&#11089;</sup>, Cologna, V., Strahm, N., Bosshard, A., Grüning, N., Green, A., Brick, C., Aron, A., & Haslbeck, J.M.B.<sup>&#11089;</sup> (2024). Climate Change Engagement of Scientists. *Nature Climate Change*. [[Link](https://osf.io/preprints/psyarxiv/73w4s)] [[Journal version](https://www.nature.com/articles/s41558-024-02091-2)]
 
+**Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Wagenmakers, E.-J., & Ly, A. (2023). Default Bayes factors for Testing the (In)equality of Several Population Variances. *Bayesian Analysis, 19*(3), 699-723. [[Link](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Default-Bayes-Factors-for-Testing-the-Inequality-of-Several-Population/10.1214/23-BA1369.full)][[R package](https://github.com/fdabl/bfvartest)]
+
 ## 2023
 **Dablander, F.** (2023). Changing Systems: Statistical, Causal, and Dynamical Perspectives. *Doctoral Thesis*. [[Link](https://dare.uva.nl/search?identifier=a23fb954-2ded-4d39-bf99-80532b12e19a)]
 
-**Dablander, F.** (2023). Understanding and Preventing Climate Breakdown: A Guide for Social and Behavioral Scientists. [[Link](https://psyarxiv.com/4uzjs/)]  
+**Dablander, F.** (2023). Understanding and Preventing Climate Breakdown: A Guide for Social and Behavioral Scientists. [[Link](https://psyarxiv.com/4uzjs/)]
 
-**Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (2023). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. *Psychological Methods*, 28(4), 765. [[Link](https://psyarxiv.com/5wc28)] [[Journal Version](https://psycnet.apa.org/record/2022-19018-001)]
-
-**Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Wagenmakers, E.-J., & Ly, A. (2023). Default Bayes factors for Testing the (In)equality of Several Population Variances. *Bayesian Analysis*. [[Link](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Default-Bayes-Factors-for-Testing-the-Inequality-of-Several-Population/10.1214/23-BA1369.full)][[R package](https://github.com/fdabl/bfvartest)]
+**Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (2023). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. *Psychological Methods, 28*(4), 765. [[Link](https://psyarxiv.com/5wc28)] [[Journal Version](https://psycnet.apa.org/record/2022-19018-001)]
 
 Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (2023). Multimodality and skewness in emotion time series. *Emotion, 23*(8), 2117–2141. [[Link](https://psycnet.apa.org/fulltext/2023-72233-001.html)]
 

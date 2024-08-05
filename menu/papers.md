@@ -25,20 +25,22 @@ Ryan, O.<sup><small>&#11089;</small></sup>, **Dablander, F.**<sup><small>&#11089
 
 **Dablander, F.** (2023). Understanding and Preventing Climate Breakdown: A Guide for Social and Behavioral Scientists. [[Link](https://psyarxiv.com/4uzjs/)]
 
-**Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (2023). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. *Psychological Methods, 28*(4), 765. [[Link](https://psyarxiv.com/5wc28)] [[Journal Version](https://psycnet.apa.org/record/2022-19018-001)]
+**Dablander, F.**, Pichler, A., Cika, A., & Bacilieri, A. (2023). Anticipating Critical Transitions in Psychological Systems using Early Warning Signals: Theoretical and Practical Considerations. *Psychological Methods, 28*(4), 765-790. [[Link](https://psyarxiv.com/5wc28)] [[Journal Version](https://psycnet.apa.org/record/2022-19018-001)]
 
 Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (2023). Multimodality and skewness in emotion time series. *Emotion, 23*(8), 2117–2141. [[Link](https://psycnet.apa.org/fulltext/2023-72233-001.html)]
 
-Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dablander, F.**, & Sitte, H. H. (2023). Traditional Chinese medicine: A Bayesian network model of public awareness, usage determinants, and perception of scientific support in Austria. *BMJ Open*. [[Link](https://bmjopen.bmj.com/content/13/3/e060644.abstract)]
+Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dablander, F.**, & Sitte, H. H. (2023). Traditional Chinese medicine: A Bayesian network model of public awareness, usage determinants, and perception of scientific support in Austria. *BMJ Open, 13*(3), e060644. [[Link](https://bmjopen.bmj.com/content/13/3/e060644.abstract)]
 
 ## 2022
-**Dablander, F.**, & Bury, T. M. (2022). Deep Learning for Tipping Points: Preprocessing Matters. *Proceedings of the National Academy of Sciences*. [[Link](https://www.pnas.org/doi/10.1073/pnas.2207720119)]
+**Dablander, F.**, & Bury, T. M. (2022). Deep Learning for Tipping Points: Preprocessing Matters. *Proceedings of the National Academy of Sciences, 119*(37), e2207720119. [[Link](https://www.pnas.org/doi/10.1073/pnas.2207720119)]
 
-**Dablander, F.**, Heesterbeek, H., Borsboom, D., & Drake, J.M. (2022). Overlapping Timescales Obscure Early Warning Signals of the Second COVID-19 Wave.  *Proceedings of the Royal Society B: Biological Sciences*. [[Link](https://royalsocietypublishing.org/doi/10.1098/rspb.2021.1809)]
+**Dablander, F.**, Heesterbeek, H., Borsboom, D., & Drake, J.M. (2022). Overlapping Timescales Obscure Early Warning Signals of the Second COVID-19 Wave.  *Proceedings of the Royal Society B: Biological Sciences, 289*(1968), 20211809. [[Link](https://royalsocietypublishing.org/doi/10.1098/rspb.2021.1809)]
+
+**Dablander, F.**, Huth, K., Gronau, Q. F., Etz, A., & Wagenmakers, E. J. (2022). A puzzle of proportions: Two popular Bayesian tests can yield dramatically different conclusions. *Statistics in Medicine, 41*(8), 1319-1333. [[Link]](https://onlinelibrary.wiley.com/doi/full/10.1002/sim.9278)
 
 **Dablander, F.** & van Bork, R. (2022). Causal Inference. In Isvoranu, A. M., Epskamp, S., Waldorp, L.J., & Borsboom, D. (Eds.). *Network Psychometrics with R: A Guide for Behavioral and Social Scientists.* (pp. 93-110). Routledge. [[Link](https://www.taylorfrancis.com/chapters/edit/10.4324/9781003111238-16/causal-inference-fabian-dablander-riet-van-bork)]
 
-Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Van Mieghem, P. (2022). The lighting of the BECONs: A behavioral data science approach to tracking interventions in COVID-19 research. *Journal of Behavioral Data Science*. [[Link](https://jbds.isdsa.org/index.php/jbds/article/view/26)]
+Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Van Mieghem, P. (2022). The lighting of the BECONs: A behavioral data science approach to tracking interventions in COVID-19 research. *Journal of Behavioral Data Science, 2*(1), 1-34. [[Link](https://jbds.isdsa.org/index.php/jbds/article/view/26)]
 
 Burger, J., Epskamp, S., **Dablander, F.**, Schoevers, R. A., Fried, E. I., & Riese, H. (2022). A clinical PREMISE for personalized models: Towards a formal integration of case formulations and statistical networks. *Journal of Psychopathology and Clinical Science, 131(8)*, 906-916. [[Link](https://psyarxiv.com/bdrs7/)] [[Journal Version](https://psycnet.apa.org/doiLanding?doi=10.1037%2Fabn0000779)]
 
@@ -46,17 +48,15 @@ Dekker, M., Blanken, T., **Dablander, F.**, Ou, J., Borsboom, D., & Debabrata, P
 
 
 ## 2021
-**Dablander, F.**, Huth, K., Gronau, Q. F., Etz, A., & Wagenmakers, E.-J. (2021). A Puzzle of Proportions: Two Popular Bayesian Tests Can Yield Dramatically Different Conclusions. *Statistics in Medicine*. [[Link](https://onlinelibrary.wiley.com/doi/10.1002/sim.9278)]
-
 **Dablander, F.**<sup>&#11089;</sup>, Blanken, T.<sup>&#11089;</sup>, Tanis, C.<sup>&#11089;</sup>, Breed, R., Coffeng, L., Crommelin, D., ..., Heesterbeek, H., & Borsboom, D. ([2021](https://psyarxiv.com/3jz8e/)). A Multidisciplinary Perspective on COVID-19 Exit Strategies.
 
-Blanken, T., Tanis, C., Nauta, F., **Dablander, F.**, Zijlstra, B., Bouten, R., ... & Borsboom, D. (in press). Smart Distance Lab: A new methodology for assessing social distancing interventions. *Scientific Report*. [[Link]](https://osf.io/mjg2f)
+Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (in press). The sum of all fears: Comparing networks based on symptom sum-scores. *Psychological Methods, 27*(6), 1061–1068. [[Link](https://psyarxiv.com/3nxu9)] [[Journal Version](https://psycnet.apa.org/record/2022-14481-001)]
 
-Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (in press). The Sum of All Fears: Comparing Networks Based on Symptom Sum-Scores. *Psychological Methods*. [[Link](https://psyarxiv.com/3nxu9)] [[Journal Version](https://psycnet.apa.org/record/2022-14481-001)]
+Blanken, T. F., Tanis, C. C., Nauta, F. H., **Dablander, F.**, Zijlstra, B. J., Bouten, R. R., ... & Borsboom, D. (2021). Promoting physical distancing during COVID-19: a systematic approach to compare behavioral interventions. *Scientific Reports, 11*(1), 19463. [[Link](https://www.nature.com/articles/s41598-021-98964-z)]
+
+Tanis, C. C., Leach, N. M., Geiger, S. J., Nauta, F. H., **Dablander, F.**, van Harreveld, F., ... & Blanken, T. F. (2021). Smart Distance Lab’s art fair, experimental data on social distancing during the COVID-19 pandemic. *Scientific Data, 8*(1), 179. [[Link]](https://www.nature.com/articles/s41597-021-00971-2)
 
 Brown, J., Murray, D., Furlong, K., Coco, E., & **Dablander, F.** (2021). A Breeding Pool of Ideas: Analyzing Interdisciplinary Collaborations at the Complex Systems Summer School. *PLoS One*. [[Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0246260)]
-
-Tanis, C., Leach, N., Geiger, S. J., Nauta, F., **Dablander, F.**, van Harreveld, F., ... & Blanken, T. (2021). Smart Distance Lab Art Fair-An experimental data set on social distancing during the COVID-19 pandemic. *Scientific Data*. [[Link]](https://www.nature.com/articles/s41597-021-00971-2)
 
 
 ## 2020
@@ -77,7 +77,7 @@ van den Bergh, D., Van Doorn, J., Marsman, M., Draws, T., Van Kesteren, E. J., D
 
 
 ## 2019
-**Dablander, F.**, & Hinne, M. (2019). Node centrality measures are a poor substitute for causal inference.  *Scientific Reports, 9*, 6846. [[Link](https://www.nature.com/articles/s41598-019-43033-9)]
+**Dablander, F.**, & Hinne, M. (2019). Node centrality measures are a poor substitute for causal inference. *Scientific Reports, 9(1)*, 6846. [[Link](https://www.nature.com/articles/s41598-019-43033-9)]
 
 **Dablander, F.**, Epskamp, S., & Haslbeck, J.M.B. (2019). Studying Statistics Anxiety Requires Sound Statistics: A Comment on Siew, McCartney, and Vitevitch (2019). *Scholarship of Teaching and Learning in Psychology*. [[Link](https://psyarxiv.com/pfnys)]
 

@@ -108,4 +108,4 @@ King, M., **Dablander, F.**, Jakob, L., Agan, M. L., Huber, F., Haslbeck, J. M.,
 
 
 ## Other
-In my younger and more vulnerable years, I have written a few blog posts for the Journal of European Psychology Students. You can find them [here](https://blog.efpsa.org/author/fabian-dablander/). I occasionally co-author blog posts at [bayesianspectacles](https://www.bayesianspectacles.org/).
+In my younger and more vulnerable years, I have written a few blog posts for the Journal of European Psychology Students. You can find them [here](https://blog.efpsa.org/author/fabian-dablander/).

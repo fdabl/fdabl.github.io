@@ -14,7 +14,7 @@ The fossil industry’s real interest is delaying the energy transition. *Folia*
 
 ## In the news
 Helft wetenschappers is bereid tot klimaatactivisme: ‘Je kunt niet enkel blijven publiceren vanuit je ivoren toren’. *NRC*, 9<sup>th</sup> August, 2024 [[Link](https://archive.is/ZjLbE)] <br>
-Forschung aktuell (from minute 05:15). *Deutschlandfunk*, 8<sup>th</sup> August, 2024 [[Link](https://www.deutschlandfunk.de/forschung-aktuell-08-08-2024-komplette-sendung-dlf-cea41dbc-100.html)] <br>
+Forschung aktuell (minute 05:05). *Deutschlandfunk*, 8<sup>th</sup> August, 2024 [[Link](https://www.deutschlandfunk.de/forschung-aktuell-08-08-2024-komplette-sendung-dlf-cea41dbc-100.html)] <br>
 Energy transition round table. *Management Scope*, 17<sup>th</sup> April, 2024 [[Link](https://managementscope.nl/en/interview/future-energy-leaders)] <br>
 Scientists under arrest: the researchers taking action over climate change. *Nature*, 21<sup>th</sup> February, 2024 [[Link](https://www.nature.com/articles/d41586-024-00480-3)] <br>
 Becoming ungovernable at scale. *Planet Critical*, 11<sup>th</sup> January, 2024 [[Link]](https://www.planetcritical.com/p/becoming-ungovernable-at-scale) <br>

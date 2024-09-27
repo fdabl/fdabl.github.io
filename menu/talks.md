@@ -6,7 +6,7 @@ title:
 *If you are interested in a workshop on any of the topics below, do not hesitate to reach out.*
 
 ## 2024
-Going Beyond Research: Climate Change Engagement of Scientists. Talk at the APA Division 34 Virtual Conference, September, 2024. [[Slides]({{ site.url }}/assets/talks/APA-2024-Talk.pdf)] [[Abstract](https://meetingorganizer.copernicus.org/EGU24/EGU24-9536.html)]
+Going Beyond Research: Climate Change Engagement of Scientists. Talk at the APA Division 34 Virtual Conference, September, 2024. [[Slides]({{ site.url }}/assets/talks/APA-2024-Talk.pdf)]
 
 Climate Action in a World on Fire. Guest lecture, University of Amsterdam, The Netherlands, September, 2024. [[Slides](https://drive.google.com/file/d/1i0Vx-zPIjH1zjtaxEjAoOKnC1k1UpI-w/view?usp=sharing)]
 

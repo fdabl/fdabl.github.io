@@ -4,6 +4,7 @@ title: ''
 ---
 
 ## Opinion pieces
+De groene golf komt er sowieso. De vraag is: surfen wij mee? *NRC*, 6<sup>th</sup> November, 2024 [[Link](https://www.nrc.nl/nieuws/2024/11/06/de-groene-golf-komt-er-sowieso-de-vraag-is-surfen-wij-mee-a4872073)] [[unpaywalled](https://archive.is/FVihA)] <br>
 Een geslaagde energietransitie begint met minder in plaats van meer. *Volkskrant*, 17<sup>th</sup> March, 2024 [[Link](https://www.volkskrant.nl/columns-opinie/opinie-een-geslaagde-energietransitie-begint-met-minder-in-plaats-van-meer~b6513f77/)] [[unpaywalled](https://archive.is/pkyib)] <br>
 Een optimistisch klimaatverhaal kunnen we goed gebruiken, maar het moet wel kloppen. *NRC*, 4<sup>th</sup> March, 2024 [[Link](https://www.nrc.nl/nieuws/2024/03/04/klimaatoptimisme-is-nodig-maar-het-moet-wel-feitelijk-zijn-a4191908)] [[unpaywalled](https://archive.is/W2WBC)] <br>
 Onze leiders doen veel te weinig voor het klimaat. Daarom zijn wij nu zelf aan zet. *NRC*, 4<sup>th</sup> December, 2023 [[Link](https://www.nrc.nl/nieuws/2023/12/04/onze-leiders-doen-veel-te-weinig-voor-het-klimaat-daarom-zijn-wij-nu-zelf-aan-zet-a4183205)] [[unpaywalled](https://archive.is/G0eob)] <br>

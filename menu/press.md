@@ -11,13 +11,13 @@ Onze leiders doen veel te weinig voor het klimaat. Daarom zijn wij nu zelf aan z
 Er is geen koolstofbudget meer voor rijke landen. *Het Parool*, 9<sup>th</sup> October, 2023 [[Link](https://www.parool.nl/columns-opinie/opinie-er-is-geen-koolstofbudget-meer-voor-rijke-landen-stop-met-koolstofgraaien~b40169a8/)] <br>
 UvA staat voor historische keuze: wat zal zij doen? *ScienceGuide*, 10<sup>th</sup> July, 2023 [[Link](https://www.scienceguide.nl/2023/07/uva-staat-voor-historische-keuze-wat-zal-zij-doen/)] <br>
 Waar blijft het verplichte klimaatonderwijs voor studenten? *Trouw*, 10<sup>th</sup> May, 2023 [[Link](https://www.trouw.nl/opinie/waar-blijft-het-verplichte-klimaatonderwijs-voor-studenten~bd171db8/)] <br>
-The fossil industry’s real interest is delaying the energy transition. *Folia*, 21<sup>th</sup> February, 2023 [[Link](https://www.folia.nl/international/155733/the-fossil-industrys-real-interest-is-delaying-the-energy-transition)]
+The fossil industry’s real interest is delaying the energy transition. *Folia*, 21<sup>st</sup> February, 2023 [[Link](https://www.folia.nl/international/155733/the-fossil-industrys-real-interest-is-delaying-the-energy-transition)]
 
 ## In the news
 Helft wetenschappers is bereid tot klimaatactivisme: ‘Je kunt niet enkel blijven publiceren vanuit je ivoren toren’. *NRC*, 9<sup>th</sup> August, 2024 [[Link](https://www.nrc.nl/nieuws/2024/08/08/helft-wetenschappers-is-bereid-tot-klimaatactivisme-a4862258)] [[Unpaywalled](https://archive.is/ZjLbE)] <br>
 Forschung aktuell (minute 05:05). *Deutschlandfunk*, 8<sup>th</sup> August, 2024 [[Link](https://www.deutschlandfunk.de/forschung-aktuell-08-08-2024-komplette-sendung-dlf-cea41dbc-100.html)] <br>
 Energy transition round table. *Management Scope*, 17<sup>th</sup> April, 2024 [[Link](https://managementscope.nl/en/interview/future-energy-leaders)] <br>
-Scientists under arrest: the researchers taking action over climate change. *Nature*, 21<sup>th</sup> February, 2024 [[Link](https://www.nature.com/articles/d41586-024-00480-3)] <br>
+Scientists under arrest: the researchers taking action over climate change. *Nature*, 21<sup>st</sup> February, 2024 [[Link](https://www.nature.com/articles/d41586-024-00480-3)] <br>
 Becoming ungovernable at scale. *Planet Critical*, 11<sup>th</sup> January, 2024 [[Link]](https://www.planetcritical.com/p/becoming-ungovernable-at-scale) <br>
 Scientists skip COP28 to demand climate action at home. *Nature*, 5<sup>th</sup> December, 2023 [[Link](https://www.nature.com/articles/d41586-023-03829-2)] <br>
 More than 1,000 climate scientists urge public to become activists. *The Guardian*, 4<sup>th</sup> December, 2023 [[Link](https://www.theguardian.com/environment/2023/dec/04/more-than-1000-climate-scientists-urge-public-to-become-activists)] (I led the [letter](https://scientistrebellion.org/sign/) writing) <br>

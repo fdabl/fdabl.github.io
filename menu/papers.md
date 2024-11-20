@@ -8,8 +8,6 @@ Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W.
 
 **Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (under review). Media Coverage of Climate Activist Groups in Germany. [[Link](https://osf.io/preprints/psyarxiv/yhn54)]
 
-**Dablander, F.**, Sachisthal, M., & Haslbeck, J.M.B. (under review). Going Beyond Research: Climate Actions by Climate and Non-Climate Researchers. [[Link](https://osf.io/preprints/psyarxiv/5fqtr)]
-
 Ryan, O.<sup>&#11089;</sup>, & **Dablander, F.**<sup>&#11089;</sup> (under review). Equilibrium Causal Models: Connecting Dynamical Systems Modeling and Cross-Sectional Data Analysis. [[Link](https://psyarxiv.com/q4d9g)]
 
 van den Bergh, D.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup>. (under review). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. [[Link](https://arxiv.org/abs/2208.07086)]
@@ -17,6 +15,8 @@ van den Bergh, D.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><sm
 Ryan, O.<sup><small>&#11089;</small></sup>, **Dablander, F.**<sup><small>&#11089;</small></sup>, & Haslbeck, J.M.B.<sup><small>&#11089;</small></sup> (under review). Towards a Generative Model for Emotion Dynamics. [[Link](https://psyarxiv.com/x52ns)] 
 
 ## 2024
+**Dablander, F.**, Sachisthal, M., & Haslbeck, J.M.B. (2024). Climate Actions by Climate and Non-Climate Researchers. [[Link](https://www.nature.com/articles/s44168-024-00187-1)]
+
 **Dablander, F.**<sup>&#11089;</sup>, Sachisthal, M.<sup>&#11089;</sup>, Cologna, V., Strahm, N., Bosshard, A., Grüning, N., Green, A., Brick, C., Aron, A., & Haslbeck, J.M.B.<sup>&#11089;</sup> (2024). Climate Change Engagement of Scientists. *Nature Climate Change*. [[Link](https://osf.io/preprints/psyarxiv/73w4s)] [[Journal version](https://www.nature.com/articles/s41558-024-02091-2)]
 
 **Dablander, F.**<sup><small>&#11089;</small></sup>, van den Bergh, D.<sup><small>&#11089;</small></sup>, Wagenmakers, E.-J., & Ly, A. (2024). Default Bayes factors for Testing the (In)equality of Several Population Variances. *Bayesian Analysis, 19*(3), 699-723. [[Link](https://projecteuclid.org/journals/bayesian-analysis/advance-publication/Default-Bayes-Factors-for-Testing-the-Inequality-of-Several-Population/10.1214/23-BA1369.full)] [[R package](https://github.com/fdabl/bfvartest)]

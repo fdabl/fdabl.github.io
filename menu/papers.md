@@ -32,7 +32,7 @@ Maier, M., Bartoš, F., Quintana, D., **Dablander, F.**, van den Bergh, D., Mars
 
 Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (2023). Multimodality and skewness in emotion time series. *Emotion, 23*(8), 2117–2141. [[Link](https://psycnet.apa.org/fulltext/2023-72233-001.html)]
 
-Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dablander, F.**, & Sitte, H. H. (2023). Traditional Chinese medicine: A Bayesian network model of public awareness, usage determinants, and perception of scientific support in Austria. *BMJ Open, 13*(3), e060644. [[Link](https://bmjopen.bmj.com/content/13/3/e060644.abstract)]
+Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dablander, F.**, & Sitte, H. H. (2023).  Cross-sectional survey and Bayesian network model analysis of traditional Chinese medicine in Austria: Investigating public awareness, usage determinants and perception of scientific support. *BMJ Open, 13*(3), e060644. [[Link](https://pubmed.ncbi.nlm.nih.gov/36863740/)]
 
 ## 2022
 **Dablander, F.**, & Bury, T. M. (2022). Deep Learning for Tipping Points: Preprocessing Matters. *Proceedings of the National Academy of Sciences, 119*(37), e2207720119. [[Link](https://www.pnas.org/doi/10.1073/pnas.2207720119)]
@@ -42,6 +42,8 @@ Eigenschink, M., Bellach, L., Leonard, S. R., Dablander, T. E., Maier, J., **Dab
 **Dablander, F.**, Huth, K., Gronau, Q. F., Etz, A., & Wagenmakers, E. J. (2022). A puzzle of proportions: Two popular Bayesian tests can yield dramatically different conclusions. *Statistics in Medicine, 41*(8), 1319-1333. [[Link]](https://onlinelibrary.wiley.com/doi/full/10.1002/sim.9278)
 
 **Dablander, F.** & van Bork, R. (2022). Causal Inference. In Isvoranu, A. M., Epskamp, S., Waldorp, L.J., & Borsboom, D. (Eds.). *Network Psychometrics with R: A Guide for Behavioral and Social Scientists.* (pp. 93-110). Routledge. [[Link](https://www.taylorfrancis.com/chapters/edit/10.4324/9781003111238-16/causal-inference-fabian-dablander-riet-van-bork)]
+
+Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (2022). The sum of all fears: Comparing networks based on symptom sum-scores. *Psychological Methods, 27*(6), 1061–1068. [[Link](https://psyarxiv.com/3nxu9)] [[Journal Version](https://psycnet.apa.org/record/2022-14481-001)]
 
 Borsboom, D., Blanken, T., **Dablander, F.**, Tanis, C., van Harreveld, F., & Van Mieghem, P. (2022). The lighting of the BECONs: A behavioral data science approach to tracking interventions in COVID-19 research. *Journal of Behavioral Data Science, 2*(1), 1-34. [[Link](https://jbds.isdsa.org/index.php/jbds/article/view/26)]
 
@@ -53,24 +55,21 @@ Dekker, M., Blanken, T., **Dablander, F.**, Ou, J., Borsboom, D., & Debabrata, P
 ## 2021
 **Dablander, F.**<sup>&#11089;</sup>, Blanken, T.<sup>&#11089;</sup>, Tanis, C.<sup>&#11089;</sup>, Breed, R., Coffeng, L., Crommelin, D., ..., Heesterbeek, H., & Borsboom, D. ([2021](https://psyarxiv.com/3jz8e/)). A Multidisciplinary Perspective on COVID-19 Exit Strategies.
 
-Haslbeck, J.M.B.<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup> (in press). The sum of all fears: Comparing networks based on symptom sum-scores. *Psychological Methods, 27*(6), 1061–1068. [[Link](https://psyarxiv.com/3nxu9)] [[Journal Version](https://psycnet.apa.org/record/2022-14481-001)]
-
 Blanken, T. F., Tanis, C. C., Nauta, F. H., **Dablander, F.**, Zijlstra, B. J., Bouten, R. R., ... & Borsboom, D. (2021). Promoting physical distancing during COVID-19: a systematic approach to compare behavioral interventions. *Scientific Reports, 11*(1), 19463. [[Link](https://www.nature.com/articles/s41598-021-98964-z)]
 
 Tanis, C. C., Leach, N. M., Geiger, S. J., Nauta, F. H., **Dablander, F.**, van Harreveld, F., ... & Blanken, T. F. (2021). Smart Distance Lab’s art fair, experimental data on social distancing during the COVID-19 pandemic. *Scientific Data, 8*(1), 179. [[Link]](https://www.nature.com/articles/s41597-021-00971-2)
 
 Brown, J., Murray, D., Furlong, K., Coco, E., & **Dablander, F.** (2021). A Breeding Pool of Ideas: Analyzing Interdisciplinary Collaborations at the Complex Systems Summer School. *PLoS One, 16*(2), e0246260. [[Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0246260)]
 
+van Doorn, J., van den Bergh, D., Bohm, U., **Dablander, F.**, Derks, K., Draws, T., ... & Wagenmakers, E.-J.
+(2021). The JASP guidelines for conducting and reporting a Bayesian analysis. *Psychonomic Bulletin & Review, 28*, 813–826. [[Link]](https://link.springer.com/article/10.3758/s13423-020-01798-5)
 
 ## 2020
 **Dablander, F.** (2020). An Introduction to Causal Inference. [[Link](https://psyarxiv.com/b3fkw)]
 
 **Dablander, F.**<sup><small>&#11089;</small></sup>, Ryan, O.<sup><small>&#11089;</small></sup>, & Haslbeck, J.M.B.<sup><small>&#11089;</small></sup> (2020). Choosing between AR(1) and VAR(1) Models in Typical Psychological Applications. *PLoS One, 15*(10), e0240730. [[Link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0240730)]
 
-Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (2020). The Support Interval. *Erkenntnis*. [[Link](https://link.springer.com/article/10.1007%2Fs10670-019-00209-z)]
-
-van Doorn, J., van den Bergh, D., Bohm, U., **Dablander, F.**, Derks, K., Draws, T., ... & Wagenmakers, E.-J.
-(2020). The JASP guidelines for conducting and reporting a Bayesian analysis. *Psychonomic Bulletin & Review, 1-14*. [[Link]](https://link.springer.com/article/10.3758/s13423-020-01798-5)
+Wagenmakers, E. J., Gronau, Q. F., **Dablander, F.**, & Etz, A. (2020). The Support Interval. *Erkenntnis, 87*, 589-601. [[Link](https://link.springer.com/article/10.1007%2Fs10670-019-00209-z)]
 
 Ly, A., Stefan, A., van Doorn, J., **Dablander, F.**, van den Bergh, D., Sarafoglou, A., ... & Wagenmakers, E.-J.
 (2020). The Bayesian Methodology of Sir Harold Jeffreys as a Practical Alternative to the P Value Hypothesis Test. *Computational Brain & Behavior, 3*(2), 153-161. [[Link]](https://link.springer.com/article/10.1007/s42113-019-00070-x)

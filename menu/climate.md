@@ -127,7 +127,7 @@ I will try to add to this list going forward, and I hope that some of it will be
 - [The Dispossessed](https://www.goodreads.com/book/show/13651.The_Dispossessed)
   - In this wonderfully rich, nuanced, compelling, and fascinating book, Ursula K. Le Guin contrasts a capitalist society with an anarchist utopia that could actually work. "You cannot buy the revolution. You cannot make the revolution. You can only be the revolution. It is in your spirit, or it is nowhere."
 - [Parable of the Sower](https://www.goodreads.com/book/show/52397.Parable_of_the_Sower)
-    - Octavia Butler's visionary 1990 novel, set in a climate-ravaged United States in the 2020s, follows a determined young woman as she navigates societal collapse and forges a new path rooted in resilience, hope, and the power of community.
+    - Octavia Butler's visionary 1993 novel, set in a climate-ravaged United States in the 2020s, follows a determined young woman as she navigates societal collapse and forges a new path rooted in resilience, hope, and the power of community.
 - [The Great Derangement](https://press.uchicago.edu/ucp/books/book/chicago/G/bo22265507.html)
     - Amitav Ghosh makes so many interesting points that you quickly forget they are all contained in just a single book. Among many other things, provides a powerful reflection on the role of literature and the arts on a planet in crisis.
 - [The Ministry for the Future](https://www.goodreads.com/book/show/50998056-the-ministry-for-the-future)

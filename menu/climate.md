@@ -38,6 +38,8 @@ I will try to add to this list going forward, and I hope that some of it will be
   - Fascinating deep dive into the fundamental materials that shaped modern civilization: salt, sand, iron, copper, oil, and lithium. Reading this book, one begins to appreciate the enormous complexity of what we have built. Highly recommended!
 - [Don't Even Think About It](https://www.goodreads.com/en/book/show/18594475-don-t-even-think-about-it)
   - Excellent book on the communication and social science of climate change. George Marshall talks with everybody — scientists, environmentalists, Tea Party members, climate deniers, oil executives, pastors, and victims of extreme weather events, to name just a few. He draws insightful lessons of why we have such difficulties dealing with climate change — and how we can do better.
+- [The Doppelganger](https://www.goodreads.com/en/book/show/138505710-doppelganger)
+    - Naomi Klein, often confused with Naomi Wolf — a once-feminist icon turned right-wing conspiracy theorist — masterfully combines political insight and historical analysis to help us understand why our world has become so ... weird.
 - [Doughnut Economics](https://www.goodreads.com/book/show/29214420-doughnut-economics)
     - Kate Raworth moves beyond the suffocating corset of mainstream economics and provides a framework for (actually) sustainable development in the 21$^{\text{th}}$ century. A must read!
 - [Making Sense of Chaos](https://www.goodreads.com/en/book/show/197643461-making-sense-of-chaos)
@@ -50,6 +52,8 @@ I will try to add to this list going forward, and I hope that some of it will be
     - This is an excellent introduction to the history, rationale, and power of nonviolent direct action. The book gives lots of examples and case studies and makes you hopeful that we might, in fact, make it.
 - [How to Blow Up a Pipeline](https://www.goodreads.com/en/book/show/51686708-how-to-blow-up-a-pipeline)
     - Andreas Malm provides a convincing counter-narrative to the story that nonviolent direct action is the key to success, noting the importance of sabotage, property destruction, and the threat of violence. You might also enjoy [this interview](https://www.vox.com/vox-conversations-podcast/22691428/vox-conversations-climate-change-andreas-malm) with him.
+- [Abolishing Fossil Fuels](https://www.goodreads.com/book/show/182093728-abolishing-fossil-fuels)
+    - Kevin Young draws on past movement successes, including the abolition of slavery, civil rights, and clean air regulations, to argue for a shift in focus for the climate movement: disrupting economic elites to achieve change because, in the words of Martin Luther King Jr, "the political power structure listens to the economic power structure." For a concise summary of the main arguments, see [this paper](https://www.nature.com/articles/s41599-023-02507-y).
 - [Levers of Power](https://www.versobooks.com/books/3181-levers-of-power)
     - This extremely well-researched book is nothing short of eye-opening, detailing how big corporations use their structural power over the economy — chiefly derived from their control of the investment of capital — to exert enormous influence on political decision-making. The book also describes how past social movements have disrupted business in order to achieve progress reform. Highly recommended!
 - [Power in Movement](https://www.cambridge.org/nl/universitypress/subjects/politics-international-relations/comparative-politics/power-movement-social-movements-and-contentious-politics-4th-edition)
@@ -122,6 +126,8 @@ I will try to add to this list going forward, and I hope that some of it will be
 - [Anarchism: A Very Short Introduction](https://academic.oup.com/book/43805)
 - [The Dispossessed](https://www.goodreads.com/book/show/13651.The_Dispossessed)
   - In this wonderfully rich, nuanced, compelling, and fascinating book, Ursula K. Le Guin contrasts a capitalist society with an anarchist utopia that could actually work. "You cannot buy the revolution. You cannot make the revolution. You can only be the revolution. It is in your spirit, or it is nowhere."
+- [Parable of the Sower](https://www.goodreads.com/book/show/52397.Parable_of_the_Sower)
+    - Set in a climate-ravaged United States in the 2020s, this visionary 1990 novel by Octavia Butler follows a determined young woman as she navigates societal collapse and forges a new path rooted in resilience, hope, and the power of community.
 - [The Great Derangement](https://press.uchicago.edu/ucp/books/book/chicago/G/bo22265507.html)
     - Amitav Ghosh makes so many interesting points that you quickly forget they are all contained in just a single book. Among many other things, provides a powerful reflection on the role of literature and the arts on a planet in crisis.
 - [The Ministry for the Future](https://www.goodreads.com/book/show/50998056-the-ministry-for-the-future)

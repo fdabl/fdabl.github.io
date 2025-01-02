@@ -14,8 +14,11 @@ van den Bergh, D.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><sm
 
 Ryan, O.<sup><small>&#11089;</small></sup>, **Dablander, F.**<sup><small>&#11089;</small></sup>, & Haslbeck, J.M.B.<sup><small>&#11089;</small></sup> (under review). Towards a Generative Model for Emotion Dynamics. [[Link](https://psyarxiv.com/x52ns)] 
 
+## 2025
+**Dablander, F.**<sup>&#11089;</sup>, Hickey, C.<sup>&#11089;</sup>, Sandberg, M., Zell-Ziegler, C., & Grin, J. (2025). Embracing sufficiency to accelerate the energy transition. *Energy Research & Social Science, 120*, 103907. [[Link]](https://www.sciencedirect.com/science/article/pii/S2214629624004985)
+
 ## 2024
-**Dablander, F.**, Sachisthal, M., & Haslbeck, J.M.B. (2024). Climate Actions by Climate and Non-Climate Researchers. [[Link](https://www.nature.com/articles/s44168-024-00187-1)]. *npj Climate Action*.
+**Dablander, F.**, Sachisthal, M. S., & Haslbeck, J. M. (2024). Climate actions by climate and non-climate researchers. *npj Climate Action, 3*(1), 105. [[Link](https://www.nature.com/articles/s44168-024-00187-1)]
 
 **Dablander, F.**<sup>&#11089;</sup>, Sachisthal, M.<sup>&#11089;</sup>, Cologna, V., Strahm, N., Bosshard, A., Grüning, N., Green, A., Brick, C., Aron, A., & Haslbeck, J.M.B.<sup>&#11089;</sup> (2024). Climate Change Engagement of Scientists. *Nature Climate Change*. [[Link](https://osf.io/preprints/psyarxiv/73w4s)] [[Journal version](https://www.nature.com/articles/s41558-024-02091-2)]
 

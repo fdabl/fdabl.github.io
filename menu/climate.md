@@ -212,6 +212,8 @@ I will try to add to this list going forward, and I hope that some of it will be
     - Great documentary about how the people's movement *Otpor* brought down Serbian dictator Slobodan Milošević using nonviolent resistance and a healthy dosage of humor that mobilized hundreds of thousands of people.
 - [Disobedience](https://www.youtube.com/watch?v=qNSrjpWyOi8)
     - Inspiring short documentary about the theory and practice of civil disobedience, full of examples of historical and current struggles. "There's gonna be one hell of a fight."
+- [Concerning Violence](https://archive.org/details/concerning-violence-documentary)
+    - Drawing on Frantz Fanon's classic *The Wretched of the Earth* and new archival footage of anti-colonial struggles, this excellent documentary highlights the utterly disgusting and shameful nature of colonialism while arguing for the necessity of violence in the struggle for liberation. 
 - [The Troublemaker](https://vimeo.com/443364512)
     - Beautifully edited documentary about Roger Hallam, Extinction Rebellion, the power of civil disobedience, and the joy of finding community and being part of something bigger than oneself.
 - [Rebellion](https://www1.moviesjoy.sc/film/rebellion-2021/)

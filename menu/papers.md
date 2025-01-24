@@ -4,6 +4,8 @@ title: ''
 ---
 
 ## Submitted / under review
+**Dablander, F.**, Nielsen, K.S., Bauer, J.M., Basconi, L., & Brick, C. (submitted). Personal climate actions in a popular smartphone app. [[Link]](https://osf.io/preprints/psyarxiv/4dx8q)
+
 Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W., Hahnel, U.J.J., Hofmann, W., & Bauer, J.M. (under review). Perceived plasticity of climate-relevant behaviors and policy support among high- and lower-income individuals. [[Link](https://osf.io/preprints/psyarxiv/x6473)]
 
 **Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (under review). Media Coverage of Climate Activist Groups in Germany. [[Link](https://osf.io/preprints/psyarxiv/yhn54)]

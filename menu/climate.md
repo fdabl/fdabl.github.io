@@ -80,6 +80,8 @@ I will try to add to this list going forward, and I hope that some of it will be
     - In this powerful memoir, Vanessa Nakate recounts how she became an activist, only to be cropped out by Western media. Nakate describes climate impacts and climate action in Africa, arguing that a successful climate movement must center justice and be inclusive. A very informative, insightful, and inspiring read!
 - [Facing the Climate Emergency](https://www.goodreads.com/en/book/show/53014001)
     - Written by the Executive Director of the [Climate Emergency Fund](https://www.climateemergencyfund.org/), this book provides a concise, step-by-step guide to personal transformation and shifting into emergency mode. Highly recommended if you want to reflect on your role in the struggle for a livable Earth!
+- [Burnout](https://www.goodreads.com/book/show/209250783-burnout)
+    - Drawing on numerous past struggles, this book critically discusses the various emotional experiences — including melancholia, depression, and exhaustion — associated with political defeat. At times extremely illuminating, at others a little too academic.
 - [Change](https://www.goodreads.com/book/show/53369466-change)
     - The adoption of new behaviours and social norms does not spread by simple contagion, like viruses, but by complex contagion. An insightful and highly readable book on the implications of this fact for change.
 - [On Fire](https://www.goodreads.com/en/book/show/43821569-on-fire)
@@ -144,6 +146,8 @@ I will try to add to this list going forward, and I hope that some of it will be
     - A fast-paced book on collapse from the founders of 'collapsology', a field of research and practice that will — you guessed it — only grow in importance.
 - [Climate change isn't everything](https://www.goodreads.com/book/show/178154132-climate-change-isn-t-everything)
     - It is crucial to avoid a myopic, single-issue focus that puts climate change above all other issues. That leads to bad policy. Climate change is indeed not everything. [But it is quite a lot](https://simonmaxwell.net/blog/climate-change-isnt-everything-by-mike-hulme.html), and a lot more than Hulme makes it out to be in this occasionally insightful but overall rather misguided book.
+- [How Fascism Works](https://www.goodreads.com/book/show/38255329-how-fascism-works)
+    - An insightful and concise book describing ten characteristics of fascist politics. Although the author is not an expert on fascism and there are [problems with his characterization of it](http://quarterly.politicsslashletters.org/fascism-doesnt-work-like-that-a-review-of-jason-stanleys-how-fascism-works/), there is a lot to take away from this book!
 - [A Short History of Progress](https://www.goodreads.com/en/book/show/331227.A_Short_History_of_Progress)
     - In this highly engaging and insightful little book, Ronald Wright distills the reasons for why some past civilizations have collapsed while others have not. We have turned cleverness into recklessness; ours is the last chance to get the future right.
 - [The Invisible Doctrine](https://www.goodreads.com/book/show/199393180-invisible-doctrine)

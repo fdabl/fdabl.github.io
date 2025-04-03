@@ -89,7 +89,7 @@ van den Bergh, D., Van Doorn, J., Marsman, M., Draws, T., Van Kesteren, E. J., D
 
 **Dablander, F.**, Epskamp, S., & Haslbeck, J.M.B. (2019). Studying Statistics Anxiety Requires Sound Statistics: A Comment on Siew, McCartney, and Vitevitch (2019). *Scholarship of Teaching and Learning in Psychology*. [[Link](https://psyarxiv.com/pfnys)]
 
-Jakob, L., Garcia-Garzon, E., Jarke, H., & **Dablander, F.** (2019). The Science Behind the Magic? The Relation of the Harry Potter "Sorting Hat Quiz" to Personality and Human Values. *Collabra: Psychology, 5*(1), 31. [[Link](https://www.collabra.org/article/10.1525/collabra.240/)]
+Jakob, L., Garcia-Garzon, E., Jarke, H., & **Dablander, F.** (2019). The Science Behind the Magic? The Relation of the Harry Potter "Sorting Hat Quiz" to Personality and Human Values. *Collabra: Psychology, 5*(1), 31. [[Link](https://online.ucpress.edu/collabra/article/5/1/31/113037/The-Science-Behind-the-Magic-The-Relation-of-the)]
 
 Edelsbrunner, P. A., & **Dablander, F.** (2019). The Psychometric Modeling of Scientific Reasoning: A Review and Recommendations for Future Avenues. *Educational Psychology Review, 31(1)*, 1-34. [[Link](https://link.springer.com/article/10.1007/s10648-018-9455-5)]
 

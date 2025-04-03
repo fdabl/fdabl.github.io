@@ -6,6 +6,8 @@ title:
 *If you are interested in a workshop on any of the topics below, do not hesitate to reach out.*
 
 ## 2024
+Exploring Sustainable Behaviour in a Popular Climate Action App. Invited Talk at the IIASA Workshop on Using Social Media Data for Climate \& Sustainability Research, December, 2024. [[Blog post](https://iiasa.ac.at/blog/dec-2024/advancing-climate-insights-with-social-media-data)]
+
 Going Beyond Research: Climate Change Engagement of Scientists. Invited Talk at Researchers' Desk, November, 2024. [[Slides](https://drive.google.com/file/d/1cAjCFtu4rkuWLtCKwkQYmU8HVgjl7mtZ/view?usp=sharing)] [[Recording](https://www.youtube.com/watch?v=uTvPDjgCGMI)]
 
 Going Beyond Research: Climate Change Engagement of Scientists. Invited Talk at the Klimacampus Colloquium at CLICCS, November, 2024. [[Slides](https://drive.google.com/file/d/1ibBZGK9jmWEvsvyoaopXThIpf2mJ7eof/view?usp=sharing)]

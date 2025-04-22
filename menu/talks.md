@@ -5,6 +5,13 @@ title:
 
 *If you are interested in a workshop on any of the topics below, do not hesitate to reach out.*
 
+## 2025
+Analyzing Media Coverage of Climate Activism & Climate Change Using Large Language Models. Invited Talk at The Netherlands Institute for Social Research, April, 2025. [[Slides](https://drive.google.com/file/d/1cuLRHleG9r0NPpv9I5vXB6rxJ03b48fP/view?usp=sharing)]
+
+Behavioural Science for a Liveable and Sustainable Future for All. Invited Talk at the Department of Psychology & Behavioural Science, London School of Economics, March, 2025.
+
+The Human Side of the Energy Transition. Invited Talk at Netherlands Energy Research Alliance Symposium, January, 2025.
+
 ## 2024
 Exploring Sustainable Behaviour in a Popular Climate Action App. Invited Talk at the IIASA Workshop on Using Social Media Data for Climate & Sustainability Research, December, 2024. [[Blog post](https://iiasa.ac.at/blog/dec-2024/advancing-climate-insights-with-social-media-data)]
 

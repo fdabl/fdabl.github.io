@@ -14,8 +14,9 @@ Ryan, O.<sup>&#11089;</sup>, & **Dablander, F.**<sup>&#11089;</sup> (under revie
 
 van den Bergh, D.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup>. (under review). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. [[Link](https://arxiv.org/abs/2208.07086)]
 
-
 ## 2025
+**Dablander, F.**<sup>&#11089;</sup>, Sachisthal, M.<sup>&#11089;</sup>, & Aron, A. (2025). Out of the labs and into the streets: Effects of climate protests by environmental scientists. *Royal Society Open Science, 12*(4), 241001. [[Link]](https://royalsocietypublishing.org/doi/10.1098/rsos.241001)
+
 **Dablander, F.**<sup>&#11089;</sup>, Hickey, C.<sup>&#11089;</sup>, Sandberg, M., Zell-Ziegler, C., & Grin, J. (2025). Embracing sufficiency to accelerate the energy transition. *Energy Research & Social Science, 120*, 103907. [[Link]](https://www.sciencedirect.com/science/article/pii/S2214629624004985)
 
 ## 2024

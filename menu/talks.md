@@ -10,6 +10,8 @@ Analyzing Media Coverage of Climate Activism & Climate Change Using Large Langua
 
 Behavioural Science for a Liveable and Sustainable Future for All. Invited Talk at the Department of Psychology & Behavioural Science, London School of Economics, March, 2025.
 
+Personal Climate Actions in a Popular Smartphone App. Invited Talk at the Amsterdam Environmental Psychology Workshop, March, 2025. [[Slides]({{ site.url }}/assets/talks/AWorld-Talk-Amsterdam.pdf)]
+
 The Human Side of the Energy Transition. Invited Talk at Netherlands Energy Research Alliance Symposium, January, 2025.
 
 ## 2024

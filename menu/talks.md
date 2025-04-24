@@ -12,7 +12,7 @@ Behavioural Science for a Liveable and Sustainable Future for All. Invited Talk 
 
 Personal Climate Actions in a Popular Smartphone App. Invited Talk at the Amsterdam Environmental Psychology Workshop, March, 2025. [[Slides]({{ site.url }}/assets/talks/AWorld-Talk-Amsterdam.pdf)]
 
-The Human Side of the Energy Transition. Invited Talk at Netherlands Energy Research Alliance Symposium, January, 2025.
+The Human Side of the Energy Transition. Invited Talk at the Netherlands Energy Research Alliance Symposium, January, 2025.
 
 ## 2024
 Exploring Sustainable Behaviour in a Popular Climate Action App. Invited Talk at the IIASA Workshop on Using Social Media Data for Climate & Sustainability Research, December, 2024. [[Blog post](https://iiasa.ac.at/blog/dec-2024/advancing-climate-insights-with-social-media-data)]

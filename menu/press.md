@@ -14,7 +14,7 @@ Waar blijft het verplichte klimaatonderwijs voor studenten? *Trouw*, 10<sup>th</
 The fossil industry’s real interest is delaying the energy transition. *Folia*, 21<sup>st</sup> February, 2023 [[Link](https://www.folia.nl/international/155733/the-fossil-industrys-real-interest-is-delaying-the-energy-transition)]
 
 ## In the news
-From the lab to the streets: Do scientists at climate protests shift public opinion? *Euronews*, 24<sup>th</sup> April, 2025 [[Link](https://www.euronews.com/green/2025/04/24/from-the-lab-to-the-streets-do-scientists-at-climate-protests-shift-public-opinion)]
+From the lab to the streets: Do scientists at climate protests shift public opinion? *Euronews*, 24<sup>th</sup> April, 2025 [[Link](https://www.euronews.com/green/2025/04/24/from-the-lab-to-the-streets-do-scientists-at-climate-protests-shift-public-opinion)] <br>
 Helft wetenschappers is bereid tot klimaatactivisme: ‘Je kunt niet enkel blijven publiceren vanuit je ivoren toren’. *NRC*, 9<sup>th</sup> August, 2024 [[Link](https://www.nrc.nl/nieuws/2024/08/08/helft-wetenschappers-is-bereid-tot-klimaatactivisme-a4862258)] [[Unpaywalled](https://archive.is/ZjLbE)] <br>
 Forschung aktuell (minute 05:05). *Deutschlandfunk*, 8<sup>th</sup> August, 2024 [[Link](https://www.deutschlandfunk.de/forschung-aktuell-08-08-2024-komplette-sendung-dlf-cea41dbc-100.html)] <br>
 Energy transition round table. *Management Scope*, 17<sup>th</sup> April, 2024 [[Link](https://managementscope.nl/en/interview/future-energy-leaders)] <br>

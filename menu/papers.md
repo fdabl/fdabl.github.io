@@ -10,11 +10,12 @@ title: ''
 
 Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W., Hahnel, U.J.J., Hofmann, W., & Bauer, J.M. (under review). Perceived plasticity of climate-relevant behaviors and policy support among high- and lower-income individuals. [[Link](https://osf.io/preprints/psyarxiv/x6473)]
 
-**Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (under review). Media Coverage of Climate Activist Groups in Germany. [[Link](https://osf.io/preprints/psyarxiv/yhn54)]
-
-Ryan, O.<sup>&#11089;</sup>, & **Dablander, F.**<sup>&#11089;</sup> (under review). Equilibrium Causal Models: Connecting Dynamical Systems Modeling and Cross-Sectional Data Analysis. [[Link](https://psyarxiv.com/q4d9g)]
-
 van den Bergh, D.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup>. (under review). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. [[Link](https://arxiv.org/abs/2208.07086)]
+
+## Accepted / in press
+**Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (accepted). Media Coverage of Climate Activist Groups in Germany. *Climatic Change*. [[Link](https://osf.io/preprints/psyarxiv/yhn54)]
+
+Ryan, O.<sup>&#11089;</sup>, & **Dablander, F.**<sup>&#11089;</sup> (accepted). Equilibrium Causal Models: Connecting Dynamical Systems Modeling and Cross-Sectional Data Analysis. *Multivariate Behavioral Research*. [[Link](https://psyarxiv.com/q4d9g)]
 
 ## 2025
 **Dablander, F.**<sup>&#11089;</sup>, Sachisthal, M.<sup>&#11089;</sup>, & Aron, A. (2025). Out of the labs and into the streets: Effects of climate protests by environmental scientists. *Royal Society Open Science, 12*(4), 241001. [[Link]](https://royalsocietypublishing.org/doi/10.1098/rsos.241001)

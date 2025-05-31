@@ -18,7 +18,7 @@ I will try to add to this list going forward, and I hope that some of it will be
     - This is an excellent online course. The Climate Interactive team is full of energy and puts a lot of effort into making the [learning experience fun](https://twitter.com/fdabl/status/1418251414149738497). The goal of the course is to teach you how to use [En-ROADS](https://en-roads.climateinteractive.org/scenario.html) to spark conversations and educate others, becoming a [climate ambassador](https://www.climateinteractive.org/tools/en-roads/en-roads-ambassador-program/). Highly recommended!
 - [Climate Solutions 101 by Project Drawdown](https://drawdown.org/climate-solutions-101)
     - Provides a clear and concise overview of the climate conundrum and solutions. 
-- [School of Climate Change by the Oxford Climate Society](https://www.oxfordclimatesociety.com/the-oxford-school-of-climate-change.html)
+- [School of Climate Change by the Oxford Climate Society](https://oxfordclimatesociety.com/school-of-climate-change)
   - 9-week online course that features weekly lectures from experts on different aspects of the climate crisis and an optional group project. Provides a good overview and the opportunity to connect with people from across the world. They also have an active YouTube channel — I especially enjoyed the events with [Noam Chomsky](https://www.youtube.com/watch?v=WZ81-McOgdM) and with [Anuradha Mittal and Nnimmo Bassey](https://www.youtube.com/watch?v=s7uOGgi3dCM&t=521s).
   
 ## Books
@@ -26,6 +26,8 @@ I will try to add to this list going forward, and I hope that some of it will be
     - A book so well-researched and wide-ranging it is in a class of its own. If you read only one book on climate, make it this one.
 - [The End of the Megamachine](https://www.megamaschine.org/en/)
     - Another masterpiece. If you want to better understand our modern world-system, which is wrecking both people and planet, read this book.
+- [The Deluge](https://www.goodreads.com/book/show/60806778-the-deluge)
+    - Having trouble imagining our near climate future? This absolutely gripping 900-page epic has you covered. It is one of the best books I have ever read — I cannot recommend it highly enough!
 - [The Human Planet](https://www.goodreads.com/book/show/36004703-the-human-planet)
     - How have humans become a planetary-scale geological force? This book, which grew out of a seminal article in *Nature* on [defining the Anthropocene](https://www.nature.com/articles/nature14258), provides an extremely insightful and informative treatment of this and related questions. If you want to better understand our current predicament, look to the past and read this book.
 - [The Climate Book](https://www.goodreads.com/en/book/show/61153762)
@@ -72,6 +74,8 @@ I will try to add to this list going forward, and I hope that some of it will be
     - Provides a neat overview of mass uprisings in ten (!) countries during the 2010s and tries to answer why so many of them failed. Although a bit scattered at times, the takeaways from the book are useful for anyone involved in social movements. Failure is always an option.
 - [Blueprint for Revolution](https://www.goodreads.com/book/show/24811605-blueprint-for-revolution)
     - Drawing on decades of experience from one of the leaders of the Serbian resistance movement *Otpor!*, this book distils key insights relevant to nonviolent movements. The sense of comradery, the entertaining writing style, and the many anecdotes from struggles around the world make this a highly enjoyable book.
+- [All In](https://all-in.now/)
+    - How can we dismantle capitalism in the short term? This short yet extremely ambitious book, written by two seasoned climate movement strategists, contains sobering reflections and insightful analyses that anyone involved in the struggle for a livable Earth should take note of. Highly recommended!
 - [Hegemony How-To](https://www.goodreads.com/book/show/29633859-hegemony-how-to)
     - I discovered and read this highly insightful book while attending a course on [transformative organizing](https://ulexproject.org/courses_events/transformative-organising2024/). The author draws on his decades of organizing experience, including during Occupy Wall Street, to distill practical lessons that anyone working in social movements should take note of. A must read!
 - [Saving Ourselves](https://cup.columbia.edu/book/saving-ourselves/9780231557870)

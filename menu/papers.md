@@ -4,8 +4,6 @@ title: ''
 ---
 
 ## Submitted / under review
-**Dablander, F.**, Lange, F., Brick, C., & Aron. A. (submitted). Expressing intentions is not climate action. [[Link]](https://osf.io/preprints/psyarxiv/edmw9_v1)
-
 **Dablander, F.** (submitted). Climate hazard experience linked to increased climate risk perception worldwide. [[Link]](https://osf.io/preprints/psyarxiv/3cxmz_v1)
 
 **Dablander, F.**, Nielsen, K.S., Bauer, J.M., Basconi, L., & Brick, C. (under review). Personal climate actions in a popular smartphone app. [[Link]](https://osf.io/preprints/psyarxiv/4dx8q)
@@ -15,6 +13,8 @@ Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W.
 van den Bergh, D.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup>. (under review). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. [[Link](https://arxiv.org/abs/2208.07086)]
 
 ## Accepted / in press
+**Dablander, F.**, Lange, F., Brick, C., & Aron. A. (accepted). Expressing intentions is not climate action. *Proceedings of the National Academy of Sciences*. [[Link]](https://osf.io/preprints/psyarxiv/edmw9_v1)
+
 **Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (accepted). Media Coverage of Climate Activist Groups in Germany. *Climatic Change*. [[Link](https://osf.io/preprints/psyarxiv/yhn54)]
 
 Ryan, O.<sup>&#11089;</sup>, & **Dablander, F.**<sup>&#11089;</sup> (accepted). Equilibrium Causal Models: Connecting Dynamical Systems Modeling and Cross-Sectional Data Analysis. *Multivariate Behavioral Research*. [[Link](https://psyarxiv.com/q4d9g)]

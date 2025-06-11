@@ -4,6 +4,7 @@ title: ''
 ---
 
 ## Opinion pieces
+Door deze miljonairsbeurs toe te staan in Amsterdam, rollen we de loper uit voor ongelijkheid en vervuiling. *Het Parool*, 11<sup>th</sup> June, 2025 [[Link](https://www.parool.nl/columns-opinie/opinie-door-deze-miljonairsbeurs-toe-te-staan-in-amsterdam-rollen-we-de-loper-uit-voor-ongelijkheid-en-vervuiling~b86e7848)] <br>
 De groene golf komt er sowieso. De vraag is: surfen wij mee? *NRC*, 6<sup>th</sup> November, 2024 [[Link](https://www.nrc.nl/nieuws/2024/11/06/de-groene-golf-komt-er-sowieso-de-vraag-is-surfen-wij-mee-a4872073)] [[unpaywalled](https://archive.is/FVihA)] <br>
 Een geslaagde energietransitie begint met minder in plaats van meer. *Volkskrant*, 17<sup>th</sup> March, 2024 [[Link](https://www.volkskrant.nl/columns-opinie/opinie-een-geslaagde-energietransitie-begint-met-minder-in-plaats-van-meer~b6513f77/)] [[unpaywalled](https://archive.is/pkyib)] <br>
 Een optimistisch klimaatverhaal kunnen we goed gebruiken, maar het moet wel kloppen. *NRC*, 4<sup>th</sup> March, 2024 [[Link](https://www.nrc.nl/nieuws/2024/03/04/klimaatoptimisme-is-nodig-maar-het-moet-wel-feitelijk-zijn-a4191908)] [[unpaywalled](https://archive.is/W2WBC)] <br>

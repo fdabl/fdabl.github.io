@@ -6,7 +6,7 @@ title:
 *If you are interested in a workshop on any of the topics below, do not hesitate to reach out.*
 
 ## 2025
-Analyzing Media Coverage of Climate Activism & Climate Change Using Large Language Models. Invited Talk at The Generate AI for Socio-Ecological Modelling Workshop, Brussels, Belgium, June, 2025.
+Analyzing Media Coverage of Climate Activism & Climate Change Using Large Language Models. Invited Talk at The Generative AI for Socio-Ecological Modelling Workshop, Brussels, Belgium, June, 2025.
 
 Climate Action in a World on Fire. Guest lecture, University of Amsterdam, The Netherlands, May, 2025. [[Slides](https://drive.google.com/file/d/1e8ONipYPETC1RciGgFs63AXV7eRLdrVM/view?usp=sharing)]
 

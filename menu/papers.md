@@ -4,7 +4,7 @@ title: ''
 ---
 
 ## Submitted / under review
-**Dablander, F.** (submitted). Climate hazard experience linked to increased climate risk perception worldwide. [[Link]](https://osf.io/preprints/psyarxiv/3cxmz_v1)
+**Dablander, F.** (submitted). Climate hazard experience linked to increased climate risk perception worldwide. [[Link]](https://osf.io/preprints/psyarxiv/3cxmz_v2)
 
 **Dablander, F.**, Nielsen, K.S., Bauer, J.M., Basconi, L., & Brick, C. (under review). Personal climate actions in a popular smartphone app. [[Link]](https://osf.io/preprints/psyarxiv/4dx8q)
 

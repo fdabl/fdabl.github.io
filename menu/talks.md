@@ -6,6 +6,8 @@ title:
 *If you are interested in a workshop on any of the topics below, do not hesitate to reach out.*
 
 ## 2025
+Out of the Labs and into the Streets: Effects of Protests by (Environmental) Scientists. Talk at the Degrowth & Ecological Economics Conference, Oslo, Norway, June, 2025. [[Slides]](https://drive.google.com/file/d/1LFOc88wKBxUQWVEUhL2Yd_EasBa3cadb/view?usp=sharing)
+
 Analyzing Media Coverage of Climate Activism & Climate Change Using Large Language Models. Invited Talk at The Generative AI for Socio-Ecological Modelling Workshop, Brussels, Belgium, June, 2025.
 
 Climate Action in a World on Fire. Guest lecture, University of Amsterdam, The Netherlands, May, 2025. [[Slides](https://drive.google.com/file/d/1e8ONipYPETC1RciGgFs63AXV7eRLdrVM/view?usp=sharing)]

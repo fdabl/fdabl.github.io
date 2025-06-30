@@ -10,7 +10,7 @@ title: ''
 
 Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W., Hahnel, U.J.J., Hofmann, W., & Bauer, J.M. (under review). Perceived plasticity of climate-relevant behaviors and policy support among high- and lower-income individuals. [[Link](https://osf.io/preprints/psyarxiv/x6473)]
 
-van den Bergh, D.<sup><small>&#11089;</small></sup>, & **Dablander, F.**<sup><small>&#11089;</small></sup>. (under review). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. [[Link](https://arxiv.org/abs/2208.07086)]
+van den Bergh, D., & **Dablander, F.**. (under review). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. [[Link](https://arxiv.org/abs/2208.07086)]
 
 ## Accepted / in press
 **Dablander, F.**, Lange, F., Brick, C., & Aron. A. (accepted). Expressing intentions is not climate action. *Proceedings of the National Academy of Sciences*. [[Link]](https://osf.io/preprints/psyarxiv/edmw9_v1)

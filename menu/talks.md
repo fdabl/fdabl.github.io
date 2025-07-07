@@ -14,7 +14,7 @@ Climate Action in a World on Fire. Guest lecture, University of Amsterdam, The N
 
 Analyzing Media Coverage of Climate Activism & Climate Change Using Large Language Models. Invited Talk at The Netherlands Institute for Social Research, April, 2025. [[Slides](https://drive.google.com/file/d/1cuLRHleG9r0NPpv9I5vXB6rxJ03b48fP/view?usp=sharing)]
 
-Behavioural Science for a Liveable and Sustainable Future for All. Invited Talk at the Department of Psychology & Behavioural Science, London School of Economics, March, 2025.
+Behavioural Science for a Liveable and Sustainable Future for All. Invited Talk at the Department of Psychology & Behavioural Science, London School of Economics and Political Science, March, 2025.
 
 Personal Climate Actions in a Popular Smartphone App. Invited Talk at the Amsterdam Environmental Psychology Workshop, March, 2025. [[Slides]({{ site.url }}/assets/talks/AWorld-Talk-Amsterdam.pdf)]
 

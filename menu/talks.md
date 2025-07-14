@@ -3,7 +3,7 @@ layout: page
 title:
 ---
 
-*If you are interested in a workshop on any of the topics below, do not hesitate to reach out.*
+*If you are interested in a talk, workshop, or guest lecture on any of the topics below, do not hesitate to reach out.*
 
 ## 2025
 Out of the Labs and into the Streets: Effects of Protests by (Environmental) Scientists. Talk at the Degrowth & Ecological Economics Conference, Oslo, Norway, June, 2025. [[Slides]](https://drive.google.com/file/d/1LFOc88wKBxUQWVEUhL2Yd_EasBa3cadb/view?usp=sharing)

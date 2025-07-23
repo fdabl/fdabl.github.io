@@ -13,11 +13,11 @@ Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W.
 van den Bergh, D., & **Dablander, F.**. (under review). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. [[Link](https://arxiv.org/abs/2208.07086)]
 
 ## Accepted / in press
-**Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (accepted). Media Coverage of Climate Activist Groups in Germany. *Climatic Change*. [[Link](https://osf.io/preprints/psyarxiv/yhn54)]
-
 Ryan, O.<sup>&#11089;</sup>, & **Dablander, F.**<sup>&#11089;</sup> (accepted). Equilibrium Causal Models: Connecting Dynamical Systems Modeling and Cross-Sectional Data Analysis. *Multivariate Behavioral Research*. [[Link](https://psyarxiv.com/q4d9g)]
 
 ## 2025
+**Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (2025). Media Coverage of Climate Activist Groups in Germany. *Climatic Change 178*, 144 (2025). [[Link](https://link.springer.com/article/10.1007/s10584-025-03959-8)]
+
 **Dablander, F.**, Lange, F., Brick, C., & Aron. A. (2025). Expressing intentions is not climate action. *Proceedings of the National Academy of Sciences, 122*(28), e2512457122. [[Link]](https://www.pnas.org/doi/10.1073/pnas.2512457122)
 
 **Dablander, F.**<sup>&#11089;</sup>, Sachisthal, M.<sup>&#11089;</sup>, & Aron, A. (2025). Out of the labs and into the streets: Effects of climate protests by environmental scientists. *Royal Society Open Science, 12*(4), 241001. [[Link]](https://royalsocietypublishing.org/doi/10.1098/rsos.241001)

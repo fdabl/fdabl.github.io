@@ -10,10 +10,10 @@ title: ''
 
 Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W., Hahnel, U.J.J., Hofmann, W., & Bauer, J.M. (under review). Perceived plasticity of climate-relevant behaviors and policy support among high- and lower-income individuals. [[Link](https://osf.io/preprints/psyarxiv/x6473)]
 
-van den Bergh, D., & **Dablander, F.**. (under review). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. [[Link](https://arxiv.org/abs/2208.07086)]
-
 ## Accepted / in press
 Ryan, O.<sup>&#11089;</sup>, & **Dablander, F.**<sup>&#11089;</sup> (accepted). Equilibrium Causal Models: Connecting Dynamical Systems Modeling and Cross-Sectional Data Analysis. *Multivariate Behavioral Research*. [[Link](https://psyarxiv.com/q4d9g)]
+
+van den Bergh, D., & **Dablander, F.**. (accepted). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. *The American Statistician*. [[Link](https://arxiv.org/abs/2208.07086)]
 
 ## 2025
 **Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (2025). Media Coverage of Climate Activist Groups in Germany. *Climatic Change 178*, 144 (2025). [[Link](https://link.springer.com/article/10.1007/s10584-025-03959-8)]

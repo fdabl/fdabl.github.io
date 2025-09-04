@@ -11,8 +11,6 @@ title: ''
 Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W., Hahnel, U.J.J., Hofmann, W., & Bauer, J.M. (under review). Perceived plasticity of climate-relevant behaviors and policy support among high- and lower-income individuals. [[Link](https://osf.io/preprints/psyarxiv/x6473)]
 
 ## Accepted / in press
-Ryan, O.<sup>&#11089;</sup>, & **Dablander, F.**<sup>&#11089;</sup> (accepted). Equilibrium Causal Models: Connecting Dynamical Systems Modeling and Cross-Sectional Data Analysis. *Multivariate Behavioral Research*. [[Link](https://psyarxiv.com/q4d9g)]
-
 van den Bergh, D., & **Dablander, F.**. (accepted). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. *The American Statistician*. [[Link](https://arxiv.org/abs/2208.07086)]
 
 ## 2025
@@ -23,6 +21,8 @@ van den Bergh, D., & **Dablander, F.**. (accepted). Flexible Bayesian Multiple C
 **Dablander, F.**<sup>&#11089;</sup>, Sachisthal, M.<sup>&#11089;</sup>, & Aron, A. (2025). Out of the labs and into the streets: Effects of climate protests by environmental scientists. *Royal Society Open Science, 12*(4), 241001. [[Link]](https://royalsocietypublishing.org/doi/10.1098/rsos.241001)
 
 **Dablander, F.**<sup>&#11089;</sup>, Hickey, C.<sup>&#11089;</sup>, Sandberg, M., Zell-Ziegler, C., & Grin, J. (2025). Embracing sufficiency to accelerate the energy transition. *Energy Research & Social Science, 120*, 103907. [[Link]](https://www.sciencedirect.com/science/article/pii/S2214629624004985)
+
+Ryan, O.<sup>&#11089;</sup>, & **Dablander, F.**<sup>&#11089;</sup> (2025). Equilibrium Causal Models: Connecting Dynamical Systems Modeling and Cross-Sectional Data Analysis. *Multivariate Behavioral Research*, 1–35. [[Link](https://www.tandfonline.com/doi/full/10.1080/00273171.2025.2522733)]
 
 ## 2024
 **Dablander, F.**, Sachisthal, M. S., & Haslbeck, J. M. (2024). Climate actions by climate and non-climate researchers. *npj Climate Action, 3*(1), 105. [[Link](https://www.nature.com/articles/s44168-024-00187-1)]

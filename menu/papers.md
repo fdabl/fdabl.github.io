@@ -4,6 +4,8 @@ title: ''
 ---
 
 ## Submitted / under review
+van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (submitted). Drought permanently displaces agricultural labor: Evidence from 450,000 Indian villages. [[Link](https://osf.io/preprints/socarxiv/yvjb5_v1)]
+
 Young, K.A., **Dablander, F.**, & Aron, A. (submitted). Growing the climate movement by centering transformative adaptation. [[Link]](https://osf.io/preprints/socarxiv/erbx9_v1)
 
 **Dablander, F.** (under review). Climate hazard experience linked to increased climate risk perception worldwide. [[Link]](https://osf.io/preprints/psyarxiv/3cxmz_v3)

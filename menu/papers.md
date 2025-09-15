@@ -8,6 +8,8 @@ van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (submitted). Drou
 
 Young, K.A., **Dablander, F.**, & Aron, A. (submitted). Growing the climate movement by centering transformative adaptation. [[Link]](https://osf.io/preprints/socarxiv/erbx9_v1)
 
+Urai, A., **Dablander, F.**, & Bolderdijk, J.W. (under review). Impactful environmental psychology needs formal theories. [[Link](https://osf.io/preprints/psyarxiv/mxc9e_v1)]
+
 **Dablander, F.** (under review). Climate hazard experience linked to increased climate risk perception worldwide. [[Link]](https://osf.io/preprints/psyarxiv/3cxmz_v3)
 
 **Dablander, F.**, Nielsen, K.S., Bauer, J.M., Basconi, L., & Brick, C. (under review). Personal climate actions in a popular smartphone app. [[Link]](https://osf.io/preprints/psyarxiv/4dx8q)

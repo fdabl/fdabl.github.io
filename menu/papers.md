@@ -10,13 +10,13 @@ Young, K.A., **Dablander, F.**, & Aron, A. (submitted). Growing the climate move
 
 Urai, A., **Dablander, F.**, & Bolderdijk, J.W. (under review). Impactful environmental psychology needs formal theories. [[Link](https://osf.io/preprints/psyarxiv/mxc9e_v1)]
 
-**Dablander, F.** (under review). Climate hazard experience linked to increased climate risk perception worldwide. [[Link]](https://osf.io/preprints/psyarxiv/3cxmz_v3)
-
 **Dablander, F.**, Nielsen, K.S., Bauer, J.M., Basconi, L., & Brick, C. (under review). Personal climate actions in a popular smartphone app. [[Link]](https://osf.io/preprints/psyarxiv/4dx8q)
 
 Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W., Hahnel, U.J.J., Hofmann, W., & Bauer, J.M. (under review). Perceived plasticity of climate-relevant behaviors and policy support among high- and lower-income individuals. [[Link](https://osf.io/preprints/psyarxiv/x6473)]
 
 ## Accepted / in press
+**Dablander, F.** (accepted). Climate hazard experience linked to increased climate risk perception worldwide. *Environmental Research Letters*. [[Link]](https://osf.io/preprints/psyarxiv/3cxmz_v3)
+
 van den Bergh, D., & **Dablander, F.**. (accepted). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. *The American Statistician*. [[Link](https://arxiv.org/abs/2208.07086)]
 
 ## 2025

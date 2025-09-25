@@ -6,7 +6,7 @@ title: ''
 ## Submitted / under review
 van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (submitted). Drought permanently displaces agricultural labor: Evidence from 450,000 Indian villages. [[Link](https://osf.io/preprints/socarxiv/yvjb5_v1)]
 
-Young, K.A., **Dablander, F.**, & Aron, A. (submitted). Growing the climate movement by centering transformative adaptation. [[Link]](https://osf.io/preprints/socarxiv/erbx9_v1)
+Young, K.A., **Dablander, F.**, & Aron, A. (under review). Growing the climate movement by centering transformative adaptation. [[Link]](https://osf.io/preprints/socarxiv/erbx9_v1)
 
 Urai, A., **Dablander, F.**, & Bolderdijk, J.W. (under review). Impactful environmental psychology needs formal theories. [[Link](https://osf.io/preprints/psyarxiv/mxc9e_v1)]
 
@@ -17,7 +17,6 @@ Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W.
 ## Accepted / in press
 **Dablander, F.** (accepted). Climate hazard experience linked to increased climate risk perception worldwide. *Environmental Research Letters*. [[Link]](https://osf.io/preprints/psyarxiv/3cxmz_v3)
 
-van den Bergh, D., & **Dablander, F.**. (accepted). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. *The American Statistician*. [[Link](https://arxiv.org/abs/2208.07086)]
 
 ## 2025
 **Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (2025). Media Coverage of Climate Activist Groups in Germany. *Climatic Change 178*, 144 (2025). [[Link](https://link.springer.com/article/10.1007/s10584-025-03959-8)]
@@ -29,6 +28,9 @@ van den Bergh, D., & **Dablander, F.**. (accepted). Flexible Bayesian Multiple C
 **Dablander, F.**<sup>&#11089;</sup>, Hickey, C.<sup>&#11089;</sup>, Sandberg, M., Zell-Ziegler, C., & Grin, J. (2025). Embracing sufficiency to accelerate the energy transition. *Energy Research & Social Science, 120*, 103907. [[Link]](https://www.sciencedirect.com/science/article/pii/S2214629624004985)
 
 Ryan, O.<sup>&#11089;</sup>, & **Dablander, F.**<sup>&#11089;</sup> (2025). Equilibrium Causal Models: Connecting Dynamical Systems Modeling and Cross-Sectional Data Analysis. *Multivariate Behavioral Research*, 1–35. [[Link](https://www.tandfonline.com/doi/full/10.1080/00273171.2025.2522733)]
+
+van den Bergh, D., & **Dablander, F.**. (2025). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. *The American Statistician*. [[Link](https://arxiv.org/abs/2208.07086)]
+
 
 ## 2024
 **Dablander, F.**, Sachisthal, M. S., & Haslbeck, J. M. (2024). Climate actions by climate and non-climate researchers. *npj Climate Action, 3*(1), 105. [[Link](https://www.nature.com/articles/s44168-024-00187-1)]

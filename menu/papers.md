@@ -14,11 +14,9 @@ Urai, A., **Dablander, F.**, & Bolderdijk, J.W. (under review). Impactful enviro
 
 Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W., Hahnel, U.J.J., Hofmann, W., & Bauer, J.M. (under review). Perceived plasticity of climate-relevant behaviors and policy support among high- and lower-income individuals. [[Link](https://osf.io/preprints/psyarxiv/x6473)]
 
-## Accepted / in press
-**Dablander, F.** (accepted). Climate hazard experience linked to increased climate risk perception worldwide. *Environmental Research Letters*. [[Link]](https://osf.io/preprints/psyarxiv/3cxmz_v3)
-
-
 ## 2025
+**Dablander, F.** (2025). Climate hazard experience linked to increased climate risk perception worldwide. *Environmental Research Letters, 20* 114010. [[Link]](https://iopscience.iop.org/article/10.1088/1748-9326/ae0ae9)
+
 **Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (2025). Media Coverage of Climate Activist Groups in Germany. *Climatic Change 178*, 144 (2025). [[Link](https://link.springer.com/article/10.1007/s10584-025-03959-8)]
 
 **Dablander, F.**, Lange, F., Brick, C., & Aron. A. (2025). Expressing intentions is not climate action. *Proceedings of the National Academy of Sciences, 122*(28), e2512457122. [[Link]](https://www.pnas.org/doi/10.1073/pnas.2512457122)

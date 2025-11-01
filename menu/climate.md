@@ -9,7 +9,7 @@ We thus need to act swiftly and with resolve, yet governments around the world a
 
 Education is a vital first step. Personally, I became truly aware of the [enormous scale and urgency](https://fabiandablander.com/Climate-Impacts.html) of the crisis only recently, starting in the summer of 2020, when the ongoing Covid disaster compelled me to take a closer look at the (scientific) literature. Below are some resources that I have found useful on my journey so far; note that they are in no particular order. Some of the things I have learned are summarized in a [recent talk](https://www.youtube.com/watch?v=W6NtBz1q4ug).
 
-I will try to add to this list going forward, and I hope that some of it will be useful to you.
+I am not very good at updating this list, but I hope that some of it can still be useful to you.
 
 <hr>
 

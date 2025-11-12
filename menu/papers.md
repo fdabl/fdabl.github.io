@@ -32,6 +32,8 @@ Ryan, O.<sup>&#11089;</sup>, & **Dablander, F.**<sup>&#11089;</sup> (2025). Equi
 
 van den Bergh, D., & **Dablander, F.**. (2025). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. *The American Statistician*. [[Link](https://arxiv.org/abs/2208.07086)]
 
+**Dablander, F.**, Berglund, O., Bhatnagar, D., ..., Aron, A., & Steinberger, J. (2025). Understanding and Accelerating Collective Climate Action. [[Link]](https://zenodo.org/records/17583133)
+
 
 ## 2024
 **Dablander, F.**, Sachisthal, M. S., & Haslbeck, J. M. (2024). Climate actions by climate and non-climate researchers. *npj Climate Action, 3*(1), 105. [[Link](https://www.nature.com/articles/s44168-024-00187-1)]

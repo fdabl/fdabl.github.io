@@ -4,6 +4,8 @@ title: ''
 ---
 
 ## Submitted / under review
+**Dablander, F.**, Cologna, V., Sachisthal, M. S., & Haslbeck, J. M. (submitted). Techno-optimistic scientists take fewer climate actions. [[Link](https://osf.io/preprints/psyarxiv/c3skb_v1)]
+
 van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (under review). Drought permanently displaces agricultural labor: Evidence from 450,000 Indian villages. [[Link](https://osf.io/preprints/socarxiv/yvjb5_v1)]
 
 Young, K.A., **Dablander, F.**, & Aron, A. (under review). Growing the climate movement by centering transformative adaptation. [[Link]](https://osf.io/preprints/socarxiv/erbx9_v1)

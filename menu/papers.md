@@ -4,7 +4,7 @@ title: ''
 ---
 
 ## Submitted / under review
-Finnerty, S., Sachisthal, M. S., Cologna, V., **Dablander, F.**, Messling, L., & van Eck. C. (submitted). Climate advocacy and actiism by scientists: A narrative review. [[Link](https://osf.io/preprints/psyarxiv/6c24e_v1)]
+Finnerty, S., Sachisthal, M. S., Cologna, V., **Dablander, F.**, Messling, L., & van Eck. C. (submitted). Climate advocacy and activism by scientists: A narrative review. [[Link](https://osf.io/preprints/psyarxiv/6c24e_v1)]
 
 **Dablander, F.**, Cologna, V., Sachisthal, M. S., & Haslbeck, J. M. (submitted). Techno-optimistic scientists take fewer climate actions. [[Link](https://osf.io/preprints/psyarxiv/c3skb_v1)]
 

@@ -16,12 +16,9 @@ Young, K.A., **Dablander, F.**, & Aron, A. (under review). Growing the climate m
 
 Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W., Hahnel, U.J.J., Hofmann, W., & Bauer, J.M. (under review). Perceived plasticity of climate-relevant behaviors and policy support among high- and lower-income individuals. [[Link](https://osf.io/preprints/psyarxiv/x6473)]
 
-## Accepted / in press
-
-Urai, A., **Dablander, F.**, & Bolderdijk, J.W. (accepted). Impactful environmental psychology needs formal theories. *Current Opinion in Behavioral Sciences*. [[Link](https://osf.io/preprints/psyarxiv/mxc9e_v2)]
-
-
 ## 2025
+Urai, A., **Dablander, F.**, & Bolderdijk, J.W. (2025). Impactful environmental psychology needs formal theories. *Current Opinion in Behavioral Sciences, 66*. [[Link](https://www.sciencedirect.com/science/article/pii/S235215462500138X)]
+
 **Dablander, F.** (2025). Climate hazard experience linked to increased climate risk perception worldwide. *Environmental Research Letters, 20* 114010. [[Link]](https://iopscience.iop.org/article/10.1088/1748-9326/ae0ae9)
 
 **Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (2025). Media Coverage of Climate Activist Groups in Germany. *Climatic Change 178*, 144 (2025). [[Link](https://link.springer.com/article/10.1007/s10584-025-03959-8)]

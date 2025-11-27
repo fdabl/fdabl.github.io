@@ -6,6 +6,10 @@ title:
 *If you are interested in a talk, workshop, or guest lecture on any of the topics below, do not hesitate to reach out.*
 
 ## 2025
+Going Beyond Research: Climate Change Engagement of Scientists. Invited Talk at the Royal Observatory of Belgium, Brussels, November, 2025.
+
+The State of Behaviour Change in The Netherlands. New Narratives for Leaving Fossil Fuels Underground Conference, Amsterdam, November, 2025.
+
 Out of the Labs and into the Streets: Effects of Protests by (Environmental) Scientists. Talk at the Degrowth & Ecological Economics Conference, Oslo, Norway, June, 2025. [[Slides]](https://drive.google.com/file/d/1LFOc88wKBxUQWVEUhL2Yd_EasBa3cadb/view?usp=sharing)
 
 Analyzing Media Coverage of Climate Activism & Climate Change Using Large Language Models. Invited Talk at The Generative AI for Socio-Ecological Modelling Workshop, Brussels, Belgium, June, 2025.

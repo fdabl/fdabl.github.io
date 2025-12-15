@@ -33,7 +33,7 @@ Urai, A., **Dablander, F.**, & Bolderdijk, J.W. (2025). Impactful environmental 
 
 Ryan, O.<sup>&#11089;</sup>, & **Dablander, F.**<sup>&#11089;</sup> (2025). Equilibrium Causal Models: Connecting Dynamical Systems Modeling and Cross-Sectional Data Analysis. *Multivariate Behavioral Research*, 1–35. [[Link](https://www.tandfonline.com/doi/full/10.1080/00273171.2025.2522733)]
 
-van den Bergh, D., & **Dablander, F.**. (2025). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. *The American Statistician*. [[Link](https://arxiv.org/abs/2208.07086)]
+van den Bergh, D., & **Dablander, F.**. (2025). Flexible Bayesian Multiple Comparison Adjustment Using Dirichlet Process and Beta-Binomial Model Priors. *The American Statistician*, 1-15. [[Link](https://www.tandfonline.com/doi/full/10.1080/00031305.2025.2561146)]
 
 **Dablander, F.**, Berglund, O., Bhatnagar, D., ..., Aron, A., & Steinberger, J. (2025). Understanding and Accelerating Collective Climate Action. [[Link]](https://zenodo.org/records/17583133)
 

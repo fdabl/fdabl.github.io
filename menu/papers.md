@@ -14,7 +14,7 @@ van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (under review). D
 
 Young, K.A., **Dablander, F.**, & Aron, A. (under review). Growing the climate movement by centering transformative adaptation. [[Link]](https://osf.io/preprints/socarxiv/erbx9_v1)
 
-**Dablander, F.**, Nielsen, K.S., Bauer, J.M., Basconi, L., & Brick, C. (under review). Personal climate actions in a popular smartphone app. [[Link]](https://osf.io/preprints/psyarxiv/4dx8q)
+**Dablander, F.**, Nielsen, K.S., Bauer, J.M., Basconi, L., & Brick, C. (under review). Personal climate actions in a popular smartphone app. [[Link]](https://osf.io/preprints/psyarxiv/4dx8q_v2)
 
 Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W., Hahnel, U.J.J., Hofmann, W., & Bauer, J.M. (under review). Perceived plasticity of climate-relevant behaviors and policy support among high- and lower-income individuals. [[Link](https://osf.io/preprints/psyarxiv/x6473)]
 

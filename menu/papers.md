@@ -8,7 +8,7 @@ title: ''
 
 Finnerty, S., Sachisthal, M. S., Cologna, V., **Dablander, F.**, Messling, L., & van Eck, C. (submitted). Climate advocacy and activism by scientists: A narrative review. [[Link](https://osf.io/preprints/psyarxiv/6c24e_v1)]
 
-**Dablander, F.**, Cologna, V., Sachisthal, M. S., & Haslbeck, J. M. (submitted). Techno-optimistic scientists take fewer climate actions. [[Link](https://osf.io/preprints/psyarxiv/c3skb_v1)]
+**Dablander, F.**, Cologna, V., Sachisthal, M. S., & Haslbeck, J. M. (under review). Techno-optimistic scientists take fewer climate actions. [[Link](https://osf.io/preprints/psyarxiv/c3skb_v1)]
 
 van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (under review). Drought permanently displaces agricultural labor: Evidence from 450,000 Indian villages. [[Link](https://osf.io/preprints/socarxiv/yvjb5_v1)]
 

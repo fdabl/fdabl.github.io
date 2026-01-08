@@ -17,9 +17,11 @@ Young, K.A., **Dablander, F.**, & Aron, A. (under review). Growing the climate m
 **Dablander, F.**, Nielsen, K.S., Bauer, J.M., Basconi, L., & Brick, C. (under review). Personal climate actions in a popular smartphone app. [[Link]](https://osf.io/preprints/psyarxiv/4dx8q_v2)
 
 
-## 2025
-Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W., Hahnel, U.J.J., Hofmann, W., & Bauer, J.M. (2025). Perceived plasticity of climate-relevant behaviors and policy support among high- and lower-income individuals. *Global Environmental Change*. [[Link](https://www.sciencedirect.com/science/article/pii/S095937802500144X)]
+## 2026
+Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W., Hahnel, U.J.J., Hofmann, W., & Bauer, J.M. (2026). Perceived plasticity of climate-relevant behaviors and policy support among high- and lower-income individuals. *Global Environmental Change, 96*, 103107. [[Link](https://www.sciencedirect.com/science/article/pii/S095937802500144X)]
 
+
+## 2025
 Urai, A., **Dablander, F.**, & Bolderdijk, J.W. (2025). Impactful environmental psychology needs formal theories. *Current Opinion in Behavioral Sciences, 66*. [[Link](https://www.sciencedirect.com/science/article/pii/S235215462500138X)]
 
 **Dablander, F.** (2025). Climate hazard experience linked to increased climate risk perception worldwide. *Environmental Research Letters, 20* 114010. [[Link]](https://iopscience.iop.org/article/10.1088/1748-9326/ae0ae9)

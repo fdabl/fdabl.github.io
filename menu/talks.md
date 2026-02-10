@@ -5,6 +5,9 @@ title:
 
 *If you are interested in a talk, workshop, or guest lecture on any of the topics below, do not hesitate to reach out.*
 
+## 2026
+Planetary Breakdown and Political Inaction. Guest lecture, Leiden University, The Netherlands, February, 2026. [[Slides](https://drive.google.com/file/d/1vJ0C9ym2l4BMkM8h7qiPwock8AImtsRU/view?usp=sharing)]
+
 ## 2025
 Going Beyond Research: Climate Change Engagement of Scientists. Invited Talk at the Royal Observatory of Belgium, Brussels, November, 2025.
 

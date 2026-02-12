@@ -6,6 +6,8 @@ title:
 *If you are interested in a talk, workshop, or guest lecture on any of the topics below, do not hesitate to reach out.*
 
 ## 2026
+Mapping Media Coverage of Climate Change Using Large Language Models. Invited Talk at CSD3, Exeter University, United Kingdom, February, 2026. [[Slides](https://drive.google.com/file/d/15qOkdZdZBonEwQyDbY7XEMwX6i0yZUEH/view?usp=sharing)]
+
 Planetary Breakdown and Political Inaction. Guest lecture, Leiden University, The Netherlands, February, 2026. [[Slides](https://drive.google.com/file/d/1vJ0C9ym2l4BMkM8h7qiPwock8AImtsRU/view?usp=sharing)]
 
 ## 2025

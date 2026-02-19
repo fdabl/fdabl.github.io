@@ -10,8 +10,6 @@ Climate Advocacy and Activism by Scientists. Invited Talk for the International 
 
 Mapping Media Coverage of Climate Change Using Large Language Models. Invited Talk at CSD3, University of Exeter, United Kingdom, February, 2026. [[Slides](https://drive.google.com/file/d/15qOkdZdZBonEwQyDbY7XEMwX6i0yZUEH/view?usp=sharing)] [[Recording](https://www.youtube.com/watch?v=iYGulaQWkzg)]
 
-Mapping Media Coverage of Climate Change Using Large Language Models. Invited Talk at CSD3, University of Exeter, United Kingdom, February, 2026. [[Slides](https://drive.google.com/file/d/15qOkdZdZBonEwQyDbY7XEMwX6i0yZUEH/view?usp=sharing)] [[Recording](https://www.youtube.com/watch?v=iYGulaQWkzg)]
-
 Planetary Breakdown and Political Inaction. Guest lecture, Leiden University, The Netherlands, February, 2026. [[Slides](https://drive.google.com/file/d/1vJ0C9ym2l4BMkM8h7qiPwock8AImtsRU/view?usp=sharing)]
 
 ## 2025

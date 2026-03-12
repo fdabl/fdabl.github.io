@@ -8,7 +8,7 @@ title:
 ## 2026
 Behavioural Insights for Policy: From Influencing Individuals to Shaping Systems. Guest lecture, University of Amsterdam, The Netherlands, February, 2026.
 
-Climate Advocacy and Activism by Scientists. Invited Talk for the International Society for Environmental Epidemiology, February. 2026. [[Slides](https://drive.google.com/file/d/1qK76SonPUgw45p8qjogTSE_lBqsMaIoF/view?usp=sharing)]
+Climate Advocacy and Activism by Scientists. Invited Talk for the International Society for Environmental Epidemiology, February. 2026. [[Slides](https://drive.google.com/file/d/1qK76SonPUgw45p8qjogTSE_lBqsMaIoF/view?usp=sharing)] [[Recording](https://members.iseepi.org/video/individual.php?vid=2696633&nohead&org_id=ISEE)]
 
 Mapping Media Coverage of Climate Change Using Large Language Models. Invited Talk at CSD3, University of Exeter, United Kingdom, February, 2026. [[Slides](https://drive.google.com/file/d/15qOkdZdZBonEwQyDbY7XEMwX6i0yZUEH/view?usp=sharing)] [[Recording](https://www.youtube.com/watch?v=iYGulaQWkzg)]
 

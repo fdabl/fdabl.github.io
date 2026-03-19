@@ -6,6 +6,8 @@ title:
 *If you are interested in a talk, workshop, or guest lecture on any of the topics below, do not hesitate to reach out.*
 
 ## 2026
+Going Beyond Research: Climate Change Engagement of Scientists. Invited Talk at the Behavioural Science Institute, Radboud University, March, 2026.
+
 Behavioural Insights for Policy: From Influencing Individuals to Shaping Systems. Guest lecture, University of Amsterdam, The Netherlands, February, 2026.
 
 Climate Advocacy and Activism by Scientists. Invited Talk for the International Society for Environmental Epidemiology, February. 2026. [[Slides](https://drive.google.com/file/d/1qK76SonPUgw45p8qjogTSE_lBqsMaIoF/view?usp=sharing)] [[Recording](https://members.iseepi.org/video/individual.php?vid=2696633&nohead&org_id=ISEE)]

@@ -6,6 +6,8 @@ title:
 *If you are interested in a talk, workshop, or guest lecture on any of the topics below, do not hesitate to reach out.*
 
 ## 2026
+From Moral Motivations to Material Interests: Building a Mass Climate Movement through Transformative Adaptation. Invited Talk at the Social Science and the Tactics of the Climate Movement Workshop, University of Amsterdam, April, 2026. [[Slides](https://drive.google.com/file/d/16wArC7VHavZ_EXPDBsdXpRqQ6DLKDhuH/view?usp=sharing)]
+
 Going Beyond Research: Climate Change Engagement of Scientists. Invited Talk at the Behavioural Science Institute, Radboud University, March, 2026. [[Slides](https://drive.google.com/file/d/1Q4PmmHtwsMeGuHnCf1NpAijvLPJx_YFs/view?usp=sharinge)]
 
 Behavioural Insights for Policy: From Influencing Individuals to Shaping Systems. Guest lecture, University of Amsterdam, The Netherlands, February, 2026.

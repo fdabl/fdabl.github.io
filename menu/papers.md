@@ -12,7 +12,7 @@ Finnerty, S., Sachisthal, M. S., Cologna, V., **Dablander, F.**, Messling, L., &
 
 **Dablander, F.**, Cologna, V., Sachisthal, M. S., & Haslbeck, J. M. (under review). Techno-optimistic scientists take fewer climate actions. [[Link](https://osf.io/preprints/psyarxiv/c3skb_v1)]
 
-van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (under review). Drought permanently displaces agricultural labor: Evidence from 450,000 Indian villages. [[Link](https://osf.io/preprints/socarxiv/yvjb5_v1)]
+van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (under review). Drought displaces agricultural labor: Evidence from 450,000 Indian villages. [[Link](https://osf.io/preprints/socarxiv/yvjb5_v2)]
 
 ## Accepted / in press
 **Dablander, F.**, Nielsen, K.S., Bauer, J.M., Basconi, L., & Brick, C. (accepted). Personal climate actions in a popular smartphone app. *Environmental Research Communications*. [[Link]](https://osf.io/preprints/psyarxiv/4dx8q_v2)

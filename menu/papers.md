@@ -4,6 +4,8 @@ title: ''
 ---
 
 ## Submitted / under review
+**Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (under review). Climate change overage in The Guardian, 2010–2025. [[Link](https://osf.io/preprints/socarxiv/hy6re_v1)]
+
 Haslbeck, J. M., Sachisthal, M. S., & **Dablander, F.** (under review). Techno-optimism reduces willingness to address climate change. [[Link](https://osf.io/preprints/psyarxiv/x3jqa_v2)]
 
 **Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (under review). Mapping climate change coverage: Causes, consequences, and solutions in German news media, 2010–2024. [[Link](https://osf.io/preprints/socarxiv/mv2q6_v1)]

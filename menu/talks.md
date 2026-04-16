@@ -6,6 +6,8 @@ title:
 *If you are interested in a talk, workshop, or guest lecture on any of the topics below, do not hesitate to reach out.*
 
 ## 2026
+Going Beyond Research: Climate Change Engagement of Scientists. Invited Talk at the Amsterdam University of Applied Sciences, April, 2026. [[Slides](https://drive.google.com/file/d/14w6UbOdZAc6ZAvXKvrZGpTBDRuSzFYyd/view?usp=sharing)]
+
 Overcoming Capitalism and Theory of Change Workshop. Guest lecture, University of Amsterdam, The Netherlands, April, 2026. [[Slides](https://drive.google.com/file/d/1iPj2hFcLWHi7kZsBtYs_0ZdtMz0iYp3T/view?usp=sharing)]
 
 From Moral Motivations to Material Interests: Building a Mass Climate Movement through Transformative Adaptation. Invited Talk at the Social Science and the Tactics of the Climate Movement Workshop, University of Amsterdam, April, 2026. [[Slides](https://drive.google.com/file/d/16wArC7VHavZ_EXPDBsdXpRqQ6DLKDhuH/view?usp=sharing)]

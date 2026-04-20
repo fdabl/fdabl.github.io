@@ -19,7 +19,7 @@ van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (under review). D
 ## Accepted / in press
 **Dablander, F.**, Nielsen, K.S., Bauer, J.M., Basconi, L., & Brick, C. (accepted). Personal climate actions in a popular smartphone app. *Environmental Research Communications*. [[Link]](https://osf.io/preprints/psyarxiv/4dx8q_v2)
 
-Young, K.A., **Dablander, F.**, & Aron, A. (accepted). From moral motivations to material interests: Building a mass climate movement through transformative adaptation. *Energy Research & Social Science*. [[Link]](https://osf.io/preprints/socarxiv/erbx9_v3)
+Young, K.A., **Dablander, F.**, & Aron, A. (accepted). From moral motivations to material interests: Building a mass climate movement through transformative adaptation. *Energy Research & Social Science*. [[Link]](https://osf.io/preprints/socarxiv/erbx9_v4)
 
 
 ## 2026

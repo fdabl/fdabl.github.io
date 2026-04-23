@@ -6,6 +6,8 @@ title:
 *If you are interested in a talk, workshop, or guest lecture on any of the topics below, do not hesitate to reach out.*
 
 ## 2026
+Climate Action in a World on Fire. Guest lecture, University of Amsterdam, The Netherlands, April, 2026. [[Slides](https://drive.google.com/file/d/1L21cBLPKZ18qJZSNdz-dhU-8dnum4Va8/view?usp=sharing)]
+
 Going Beyond Research: Climate Change Engagement of Scientists. Invited Talk at the Amsterdam University of Applied Sciences, April, 2026. [[Slides](https://drive.google.com/file/d/14w6UbOdZAc6ZAvXKvrZGpTBDRuSzFYyd/view?usp=sharing)]
 
 Overcoming Capitalism and Theory of Change Workshop. Guest lecture, University of Amsterdam, The Netherlands, April, 2026. [[Slides](https://drive.google.com/file/d/1iPj2hFcLWHi7kZsBtYs_0ZdtMz0iYp3T/view?usp=sharing)]

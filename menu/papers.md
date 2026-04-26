@@ -8,7 +8,7 @@ title: ''
 
 Haslbeck, J. M., Sachisthal, M. S., & **Dablander, F.** (under review). Techno-optimism reduces willingness to address climate change. [[Link](https://osf.io/preprints/psyarxiv/x3jqa_v2)]
 
-**Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (under review). Mapping climate change coverage: Causes, consequences, and solutions in German news media, 2010–2024. [[Link](https://osf.io/preprints/socarxiv/mv2q6_v1)]
+**Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (under review). Mapping climate change coverage: Causes, consequences, and solutions in German news media, 2010–2024. [[Link](https://osf.io/preprints/socarxiv/mv2q6_v2)]
 
 Finnerty, S., Sachisthal, M. S., Cologna, V., **Dablander, F.**, Messling, L., & van Eck, C. (under review). Climate advocacy and activism by scientists: A narrative review. [[Link](https://osf.io/preprints/psyarxiv/6c24e_v2)]
 

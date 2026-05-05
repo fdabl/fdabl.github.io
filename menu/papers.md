@@ -17,12 +17,12 @@ Finnerty, S., Sachisthal, M. S., Cologna, V., **Dablander, F.**, Messling, L., &
 van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (under review). Drought displaces agricultural labor: Evidence from 450,000 Indian villages. [[Link](https://osf.io/preprints/socarxiv/yvjb5_v2)]
 
 ## Accepted / in press
-**Dablander, F.**, Nielsen, K.S., Bauer, J.M., Basconi, L., & Brick, C. (accepted). Personal climate actions in a popular smartphone app. *Environmental Research Communications*. [[Link]](https://osf.io/preprints/psyarxiv/4dx8q_v2)
-
 Young, K.A., **Dablander, F.**, & Aron, A. (accepted). From moral motivations to material interests: Building a mass climate movement through transformative adaptation. *Energy Research & Social Science*. [[Link]](https://osf.io/preprints/socarxiv/erbx9_v4)
 
 
 ## 2026
+**Dablander, F.**, Nielsen, K.S., Bauer, J.M., Basconi, L., & Brick, C. (2026). Personal climate actions in a popular smartphone app. *Environmental Research Communications, 8*(5), 055007. [[Link]](https://iopscience.iop.org/article/10.1088/2515-7620/ae5b4c)
+
 Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W., Hahnel, U.J.J., Hofmann, W., & Bauer, J.M. (2026). Perceived plasticity of climate-relevant behaviors and policy support among high- and lower-income individuals. *Global Environmental Change, 96*, 103107. [[Link](https://www.sciencedirect.com/science/article/pii/S095937802500144X)]
 
 

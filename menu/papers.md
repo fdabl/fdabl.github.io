@@ -10,13 +10,13 @@ Haslbeck, J. M., Sachisthal, M. S., & **Dablander, F.** (under review). Techno-o
 
 **Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (under review). Mapping climate change coverage: Causes, consequences, and solutions in German news media, 2010–2024. [[Link](https://osf.io/preprints/socarxiv/mv2q6_v2)]
 
-Finnerty, S., Sachisthal, M. S., Cologna, V., **Dablander, F.**, Messling, L., & van Eck, C. (under review). Climate advocacy and activism by scientists: A narrative review. [[Link](https://osf.io/preprints/psyarxiv/6c24e_v2)]
-
 **Dablander, F.**, Cologna, V., Sachisthal, M. S., & Haslbeck, J. M. (under review). Techno-optimistic scientists take fewer climate actions. [[Link](https://osf.io/preprints/psyarxiv/c3skb_v1)]
 
 van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (under review). Drought displaces agricultural labor: Evidence from 450,000 Indian villages. [[Link](https://osf.io/preprints/socarxiv/yvjb5_v2)]
 
 ## Accepted / in press
+Finnerty, S., Sachisthal, M. S., Cologna, V., **Dablander, F.**, Messling, L., & van Eck, C. (accepted). Climate advocacy and activism by scientists: A narrative review. *PLoS Climate*. [[Link](https://osf.io/preprints/psyarxiv/6c24e_v2)]
+
 Young, K.A., **Dablander, F.**, & Aron, A. (accepted). From moral motivations to material interests: Building a mass climate movement through transformative adaptation. *Energy Research & Social Science*. [[Link]](https://osf.io/preprints/socarxiv/erbx9_v4)
 
 

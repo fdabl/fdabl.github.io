@@ -19,10 +19,10 @@ van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (under review). D
 ## Accepted / in press
 Finnerty, S., Sachisthal, M. S., Cologna, V., **Dablander, F.**, Messling, L., & van Eck, C. (accepted). Climate advocacy and activism by scientists: A narrative review. *PLoS Climate*. [[Link](https://osf.io/preprints/psyarxiv/6c24e_v2)]
 
-Young, K.A., **Dablander, F.**, & Aron, A. (accepted). From moral motivations to material interests: Building a mass climate movement through transformative adaptation. *Energy Research & Social Science*. [[Link]](https://osf.io/preprints/socarxiv/erbx9_v4)
-
 
 ## 2026
+Young, K.A., **Dablander, F.**, & Aron, A. (2026). From moral motivations to material interests: Building a mass climate movement through transformative adaptation. *Energy Research & Social Science, 137*, 104687. [[Link]](https://www.sciencedirect.com/science/article/pii/S2214629626001581)
+
 **Dablander, F.**, Nielsen, K.S., Bauer, J.M., Basconi, L., & Brick, C. (2026). Personal climate actions in a popular smartphone app. *Environmental Research Communications, 8*(5), 055007. [[Link]](https://iopscience.iop.org/article/10.1088/2515-7620/ae5b4c)
 
 Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W., Hahnel, U.J.J., Hofmann, W., & Bauer, J.M. (2026). Perceived plasticity of climate-relevant behaviors and policy support among high- and lower-income individuals. *Global Environmental Change, 96*, 103107. [[Link](https://www.sciencedirect.com/science/article/pii/S095937802500144X)]

@@ -4,7 +4,7 @@ title: ''
 ---
 
 ## Submitted / under review
-**Dablander, F.**, Sachisthal, M.S.M., & Haslbeck, J.M.B. (submitted). Material life satisfaction increases willingness to engage in costly climate action. [[Link](https://osf.io/preprints/psyarxiv/fmn7t_v1)]
+**Dablander, F.**, Sachisthal, M.S.M., & Haslbeck, J.M.B. (under review). Material life satisfaction increases willingness to engage in costly climate action. [[Link](https://osf.io/preprints/psyarxiv/fmn7t_v1)]
 
 **Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (under review). Climate change coverage in The Guardian, 2010–2025. [[Link](https://osf.io/preprints/socarxiv/hy6re_v1)]
 

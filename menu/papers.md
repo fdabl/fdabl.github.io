@@ -16,11 +16,10 @@ Haslbeck, J. M., Sachisthal, M. S., & **Dablander, F.** (under review). Techno-o
 
 van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (under review). Drought displaces agricultural labor: Evidence from 450,000 Indian villages. [[Link](https://osf.io/preprints/socarxiv/yvjb5_v2)]
 
-## Accepted / in press
-Finnerty, S., Sachisthal, M. S., Cologna, V., **Dablander, F.**, Messling, L., & van Eck, C. (accepted). Climate advocacy and activism by scientists: A narrative review. *PLoS Climate*. [[Link](https://osf.io/preprints/psyarxiv/6c24e_v2)]
-
 
 ## 2026
+Finnerty, S., Sachisthal, M. S., Cologna, V., **Dablander, F.**, Messling, L., & van Eck, C. (2026). Climate advocacy and activism by scientists: A narrative review. *PLOS Climate, 5*(6), e0000942. [[Link](https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000942)]
+
 Young, K.A., **Dablander, F.**, & Aron, A. (2026). From moral motivations to material interests: Building a mass climate movement through transformative adaptation. *Energy Research & Social Science, 137*, 104687. [[Link]](https://www.sciencedirect.com/science/article/pii/S2214629626001581)
 
 **Dablander, F.**, Nielsen, K.S., Bauer, J.M., Basconi, L., & Brick, C. (2026). Personal climate actions in a popular smartphone app. *Environmental Research Communications, 8*(5), 055007. [[Link]](https://iopscience.iop.org/article/10.1088/2515-7620/ae5b4c)

@@ -18,7 +18,7 @@ van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (under review). D
 
 
 ## 2026
-Finnerty, S., Sachisthal, M. S., Cologna, V., **Dablander, F.**, Messling, L., & van Eck, C. (2026). Climate advocacy and activism by scientists: A narrative review. *PLOS Climate, 5*(6), e0000942. [[Link](https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000942)]
+Finnerty, S., Sachisthal, M. S., Cologna, V., **Dablander, F.**, Messling, L., & van Eck, C. (2026). Climate advocacy and activism by scientists: A narrative review. *PLoS Climate, 5*(6), e0000942. [[Link](https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000942)]
 
 Young, K.A., **Dablander, F.**, & Aron, A. (2026). From moral motivations to material interests: Building a mass climate movement through transformative adaptation. *Energy Research & Social Science, 137*, 104687. [[Link]](https://www.sciencedirect.com/science/article/pii/S2214629626001581)
 

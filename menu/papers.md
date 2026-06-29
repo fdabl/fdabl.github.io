@@ -10,11 +10,13 @@ title: ''
 
 Haslbeck, J. M., Sachisthal, M. S., & **Dablander, F.** (under review). Techno-optimism reduces willingness to address climate change. [[Link](https://osf.io/preprints/psyarxiv/x3jqa_v3)]
 
-**Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (under review). Mapping climate change coverage: Causes, consequences, and solutions in German news media, 2010–2024. [[Link](https://osf.io/preprints/socarxiv/mv2q6_v2)]
-
 **Dablander, F.**, Cologna, V., Sachisthal, M. S., & Haslbeck, J. M. (under review). Techno-optimistic scientists take fewer climate actions. [[Link](https://osf.io/preprints/psyarxiv/c3skb_v1)]
 
 van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (under review). Drought displaces agricultural labor: Evidence from 450,000 Indian villages. [[Link](https://osf.io/preprints/socarxiv/yvjb5_v2)]
+
+
+## Accepted / in press
+**Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (accepted). Mapping climate change coverage: Causes, consequences, and solutions in German news media, 2010–2024. *Energy Research & Social Science*. [[Link](https://osf.io/preprints/socarxiv/mv2q6_v2)]
 
 
 ## 2026

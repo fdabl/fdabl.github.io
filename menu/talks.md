@@ -6,6 +6,8 @@ title:
 *If you are interested in a talk, workshop, or guest lecture on any of the topics below, do not hesitate to reach out.*
 
 ## 2026
+How techno-optimism shapes scientists' climate action. Talk at the 16th Conference of the European Society for Ecological Economics, Belgium,July, 2026. [[Slides](https://drive.google.com/file/d/1v5dHP55N4njaImZTCzLyZhOD1ORxSn2z/view?usp=sharing)]
+
 Mapping Media Coverage of Climate Change Using Large Language Models. Talk at the AI, Media & Democracy Lab, Institute for Advanced Study, The Netherlands, June, 2026. [[Slides](https://drive.google.com/file/d/13BygykwnGJtbf7QmwxuXdFeoDg3fDEfy/view?usp=sharing)]
 
 Climate Action in a World on Fire. Guest lecture, University of Amsterdam, The Netherlands, April, 2026. [[Slides](https://drive.google.com/file/d/1L21cBLPKZ18qJZSNdz-dhU-8dnum4Va8/view?usp=sharing)]

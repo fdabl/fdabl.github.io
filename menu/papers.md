@@ -10,7 +10,7 @@ title: ''
 
 Haslbeck, J. M., Sachisthal, M. S., & **Dablander, F.** (under review). Techno-optimism reduces willingness to address climate change. [[Link](https://osf.io/preprints/psyarxiv/x3jqa_v3)]
 
-**Dablander, F.**, Cologna, V., Sachisthal, M. S., & Haslbeck, J. M. (under review). Techno-optimistic scientists take fewer climate actions. [[Link](https://osf.io/preprints/psyarxiv/c3skb_v1)]
+**Dablander, F.**, Cologna, V., Sachisthal, M. S., & Haslbeck, J. M. (under review). Techno-optimistic scientists take fewer climate actions. [[Link](https://osf.io/preprints/psyarxiv/c3skb_v3)]
 
 van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (under review). Drought displaces agricultural labor: Evidence from 450,000 Indian villages. [[Link](https://osf.io/preprints/socarxiv/yvjb5_v2)]
 

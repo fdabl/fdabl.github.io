@@ -14,6 +14,8 @@ toc: true
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, fig.align = 'center', fig.width = 8, fig.height = 6)
 ```
 
+*This blog post was also published on SEVEN's blog, see [here](https://seven.uva.nl/en/output/blog/blog-fabian-dablander/blog-fabian-dablander.html).*
+
 We are increasingly feeling the heat. Hounded by an unprecedented number of heatwaves this summer, temperature records were shattered (39.4°C in the Netherlands!) while vast wildfires forced hundreds of thousands from their homes in France, Spain, and Greece, among others. Elsewhere, Morocco endured four heatwaves in three months, with temperatures reaching 50°C, and in South Korea, record 42.5°C heat destroyed crops, with farmers finding potatoes effectively cooked in the ground.
 
 This is at a mere 1.4°C of global heating. We are headed—if one is to put much credence in such projections—for [around 2.6°C](https://climateactiontracker.org/global/emissions-pathways/) under current policies by the end of the century, resulting in a world of climate extremes far outside anything modern society has ever experienced. It is difficult to see how anything resembling today’s social, political, and economic order could remain stable under such pressures. In the [immortal words](https://www.ipcc.ch/report/ar6/syr/resources/spm-headline-statements/) of the IPCC, “there is a rapidly closing window of opportunity to secure a liveable and sustainable future for all (very high confidence)”.

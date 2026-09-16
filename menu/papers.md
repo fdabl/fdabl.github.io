@@ -6,7 +6,7 @@ title: ''
 ## Submitted / under review
 Finnemann, A., **Dablander, F.**, Wiers, R., & Haslbeck, J.M.B. (submitted). Heat-related mortality attributable to climate change across age and sex in the Netherlands, 1971–2019. [[Link](https://www.medrxiv.org/content/10.64898/2026.09.03.26362192v1)]
 
-**Dablander, F.**, Sachisthal, M.S.M., & Haslbeck, J.M.B. (under review). Material life satisfaction increases willingness to engage in costly climate action. [[Link](https://osf.io/preprints/psyarxiv/fmn7t_v1)]
+**Dablander, F.**, Sachisthal, M.S.M., & Haslbeck, J.M.B. (under review). Material life satisfaction increases willingness to engage in costly climate action. [[Link](https://osf.io/preprints/psyarxiv/fmn7t_v2)]
 
 **Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (under review). Climate change coverage in The Guardian, 2010–2025. [[Link](https://osf.io/preprints/socarxiv/hy6re_v1)]
 

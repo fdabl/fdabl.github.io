@@ -10,8 +10,6 @@ Finnemann, A., **Dablander, F.**, Wiers, R., & Haslbeck, J.M.B. (submitted). Hea
 
 **Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (under review). Climate change coverage in The Guardian, 2010–2025. [[Link](https://osf.io/preprints/socarxiv/hy6re_v3)]
 
-Haslbeck, J. M., Sachisthal, M. S., & **Dablander, F.** (under review). Techno-optimism reduces willingness to address climate change. [[Link](https://osf.io/preprints/psyarxiv/x3jqa_v3)]
-
 **Dablander, F.**, Cologna, V., Sachisthal, M. S., & Haslbeck, J. M. (under review). Techno-optimistic scientists take fewer climate actions. [[Link](https://osf.io/preprints/psyarxiv/c3skb_v3)]
 
 van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (under review). Drought displaces agricultural labor: Evidence from 450,000 Indian villages. [[Link](https://osf.io/preprints/socarxiv/yvjb5_v2)]

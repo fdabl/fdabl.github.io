@@ -13,7 +13,7 @@ Finnemann, A., **Dablander, F.**, Wiers, R., & Haslbeck, J.M.B. (submitted). Hea
 van Duijne, R.J., Cottier, F., Pareek, T., & **Dablander, F.** (under review). Drought displaces agricultural labor: Evidence from 450,000 Indian villages. [[Link](https://osf.io/preprints/socarxiv/yvjb5_v2)]
 
 ## 2026
-**Dablander, F.**, Cologna, V., Sachisthal, M. S., & Haslbeck, J. M. (2026). Techno-optimistic scientists take fewer climate actions. [[Link](https://iopscience.iop.org/article/10.1088/1748-9326/aea4c7)]
+**Dablander, F.**, Cologna, V., Sachisthal, M. S., & Haslbeck, J. M. (2026). Techno-optimistic scientists take fewer climate actions. *Environmental Research Letters, 21* 194012 [[Link](https://iopscience.iop.org/article/10.1088/1748-9326/aea4c7)]
 
 **Dablander, F.**<sup>&#11089;</sup>, Wimmer, S.<sup>&#11089;</sup>, & Haslbeck, J.M.B.<sup>&#11089;</sup> (2026). Mapping climate change coverage: Causes, consequences, and solutions in German news media, 2010–2024. *Energy Research & Social Science, 138*, 104833. [[Link](https://www.sciencedirect.com/science/article/pii/S221462962600304X)]
 

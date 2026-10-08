@@ -25,6 +25,8 @@ Waar blijft het verplichte klimaatonderwijs voor studenten? [Where is the mandat
 The fossil industry’s real interest is delaying the energy transition. *Folia*, 21<sup>st</sup> February, 2023 [[Link](https://www.folia.nl/international/155733/the-fossil-industrys-real-interest-is-delaying-the-energy-transition)]
 
 ## In the news
+Real men don't do climate change. *Financial Times*, 8<sup>th</sup> October, 2026 [[Link](https://www.ft.com/content/61118fd6-b5d2-4ce1-9a78-4535a0ef3ead?syn-25a6b1a6=1)] <br>
+
 Scientists who put faith in technology less likely to take climate action. *The Guardian*, 7<sup>th</sup> October, 2026 [[Link](https://www.theguardian.com/environment/2026/oct/07/scientists-technology-less-likely-climate-crisis-action)] <br>
 
 When disaster strikes, climate change becomes real. *Earth*, 17<sup>th</sup> October, 2025 [[Link](https://www.earth.com/news/when-disaster-strikes-climate-change-becomes-real/)] <br>

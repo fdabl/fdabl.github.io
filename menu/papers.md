@@ -4,7 +4,7 @@ title: ''
 ---
 
 ## Submitted / under review
-Nielsen, K.S., Jianing, D., Ejsing, M., Sekara, V., & **Dablander, F.**. (submitted). Personal climate agency in a high-income context. [[Link](https://zenodo.org/records/23453366)]
+Nielsen, K.S., Jianing, D., Ejsing, M., Sekara, V., & **Dablander, F.** (submitted). Personal climate agency in a high-income context. [[Link](https://zenodo.org/records/23453366)]
 
 Finnemann, A., **Dablander, F.**, Wiers, R., & Haslbeck, J.M.B. (submitted). Heat-related mortality attributable to climate change across age and sex in the Netherlands, 1971–2019. [[Link](https://www.medrxiv.org/content/10.64898/2026.09.03.26362192v1)]
 

@@ -27,6 +27,8 @@ Young, K.A., **Dablander, F.**, & Aron, A. (2026). From moral motivations to mat
 
 Nielsen, K.S., **Dablander, F.**, Debnath, R., Emegor, C.A., Ghai, S. Gwozdz, W., Hahnel, U.J.J., Hofmann, W., & Bauer, J.M. (2026). Perceived plasticity of climate-relevant behaviors and policy support among high- and lower-income individuals. *Global Environmental Change, 96*, 103107. [[Link](https://www.sciencedirect.com/science/article/pii/S095937802500144X)]
 
+**Dablander, F.**, & Ekinci, J. (2026). Enabling Sustainable Behaviour: A Systems Perspective on Home Insulation and Peak Electricity Demand. [[Link]](https://zenodo.org/records/23669830)
+
 
 ## 2025
 Urai, A., **Dablander, F.**, & Bolderdijk, J.W. (2025). Impactful environmental psychology needs formal theories. *Current Opinion in Behavioral Sciences, 66*. [[Link](https://www.sciencedirect.com/science/article/pii/S235215462500138X)]
